@@ -2,13 +2,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SchoolTool User's Guide's documentation!
-===================================================
+Welcome to SchoolTool User's Guide!
+===================================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
+
+   install
 
 Indices and tables
 ==================

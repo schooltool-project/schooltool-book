@@ -1,0 +1,4 @@
+Installing SchoolTool
+=====================
+
+On Ubuntu.

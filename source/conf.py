@@ -117,7 +117,7 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_use_opensearch = False
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'SchoolTool User's Guidedoc'
+htmlhelp_basename = "SchoolTool User's Guidedoc"
 
 
 # Options for LaTeX output
@@ -132,7 +132,7 @@ htmlhelp_basename = 'SchoolTool User's Guidedoc'
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
 latex_documents = [
-  ('index', 'SchoolTool User's Guide.tex', 'SchoolTool User's Guide Documentation', 'Tom Hoffman', 'manual'),
+  ('index', "SchoolTool User's Guide.tex", "SchoolTool User's Guide Documentation", 'Tom Hoffman', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
