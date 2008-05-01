@@ -36,7 +36,7 @@ master_doc = 'index'
 
 # General substitutions.
 project = "SchoolTool User's Guide"
-copyright = '2008, Tom Hoffman'
+copyright = '2008, The Shuttleworth Foundation'
 
 # The default replacements for |version| and |release|, also used in various
 # other places throughout the built documents.
@@ -76,11 +76,11 @@ pygments_style = 'sphinx'
 # The style sheet to use for HTML and HTML Help pages. A file of that name
 # must exist either in Sphinx' static/ path, or in one of the custom paths
 # given in html_static_path.
-html_style = 'default.css'
+html_style = 'schooltool.css'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "SchoolTool User's Guide"
 
 # The name of an image file (within the static path) to place at the top of
 # the sidebar.
@@ -132,7 +132,7 @@ htmlhelp_basename = "SchoolTool User's Guidedoc"
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
 latex_documents = [
-  ('index', "SchoolTool User's Guide.tex", "SchoolTool User's Guide Documentation", 'Tom Hoffman', 'manual'),
+  ('index', "SchoolTool User's Guide.tex", "SchoolTool User's Guide Documentation", 'The Shuttleworth Foundation', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
