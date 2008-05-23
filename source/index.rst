@@ -11,11 +11,10 @@ Contents:
    :maxdepth: 2
 
    install
+   sample
 
 Indices and tables
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 

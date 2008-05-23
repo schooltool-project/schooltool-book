@@ -29,5 +29,7 @@ For the forseeable future we are only supporting deployment on `Ubuntu Linux <ht
 
    Either type ``sudo apt-get install schooltool-2008`` in a terminal (and answer "y" to the subsequent questions), or in Synaptic search for "schooltool-2008", select it for installation, and hit **Apply**.
 
-   If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080.  The login is "manager" and the default password is "schooltool".
+   If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080.  
+   
+   **The login is "manager" and the default password is "schooltool".**
 
