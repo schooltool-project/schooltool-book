@@ -35,16 +35,16 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General substitutions.
-project = "SchoolTool User's Guide"
+project = "The SchoolTool Book"
 copyright = '2008, The Shuttleworth Foundation'
 
 # The default replacements for |version| and |release|, also used in various
 # other places throughout the built documents.
 #
 # The short X.Y version.
-version = '2008'
+version = '2008.4'
 # The full version, including alpha/beta/rc tags.
-release = '2008.1'
+release = '2008.4.1'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -80,7 +80,7 @@ html_style = 'schooltool.css'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "SchoolTool User's Guide"
+html_title = "The SchoolTool Book"
 
 # The name of an image file (within the static path) to place at the top of
 # the sidebar.
@@ -117,7 +117,7 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_use_opensearch = False
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "SchoolTool User's Guidedoc"
+htmlhelp_basename = "The SchoolTool Book"
 
 
 # Options for LaTeX output
@@ -132,7 +132,7 @@ htmlhelp_basename = "SchoolTool User's Guidedoc"
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, document class [howto/manual]).
 latex_documents = [
-  ('index', "SchoolTool User's Guide.tex", "SchoolTool User's Guide Documentation", 'The Shuttleworth Foundation', 'manual'),
+  ('index', "schooltool-book.tex", "The SchoolTool Book", 'The Shuttleworth Foundation', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
