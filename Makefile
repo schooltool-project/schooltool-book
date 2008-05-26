@@ -3,7 +3,7 @@
 
 # You can set these variables from the command line.
 SPHINXOPTS    =
-SPHINXBUILD   = sphinx-build
+SPHINXBUILD   = bin/sphinx-build
 PAPER         =
 
 # Internal variables.
@@ -24,14 +24,23 @@ help:
 
 clean:
 	-rm -rf build/*
+	-rm -rf python
+	-rm -rf bin
+	-rm .installed.cfg
+	-rm -rf develop-eggs
+	-rm -rf parts
 
-html:
+bin/sphinx-build:
+	python bootstrap.py
+	bin/buildout
+
+html: bin/sphinx-build
 	mkdir -p build/html build/doctrees
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) build/html
 	@echo
 	@echo "Build finished. The HTML pages are in build/html."
 
-pickle:
+pickle: bin/sphinx-build
 	mkdir -p build/pickle build/doctrees
 	$(SPHINXBUILD) -b pickle $(ALLSPHINXOPTS) build/pickle
 	@echo
@@ -41,14 +50,14 @@ pickle:
 
 web: pickle
 
-htmlhelp:
+htmlhelp: bin/sphinx-build
 	mkdir -p build/htmlhelp build/doctrees
 	$(SPHINXBUILD) -b htmlhelp $(ALLSPHINXOPTS) build/htmlhelp
 	@echo
 	@echo "Build finished; now you can run HTML Help Workshop with the" \
 	      ".hhp project file in build/htmlhelp."
 
-latex:
+latex: bin/sphinx-build
 	mkdir -p build/latex build/doctrees
 	$(SPHINXBUILD) -b latex $(ALLSPHINXOPTS) build/latex
 	@echo
@@ -56,13 +65,13 @@ latex:
 	@echo "Run \`make all-pdf' or \`make all-ps' in that directory to" \
 	      "run these through (pdf)latex."
 
-changes:
+changes: bin/sphinx-build
 	mkdir -p build/changes build/doctrees
 	$(SPHINXBUILD) -b changes $(ALLSPHINXOPTS) build/changes
 	@echo
 	@echo "The overview file is in build/changes."
 
-linkcheck:
+linkcheck: bin/sphinx-build
 	mkdir -p build/linkcheck build/doctrees
 	$(SPHINXBUILD) -b linkcheck $(ALLSPHINXOPTS) build/linkcheck
 	@echo
