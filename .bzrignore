@@ -1,0 +1,6 @@
+.installed.cfg
+bin
+build
+develop-eggs
+parts
+python
