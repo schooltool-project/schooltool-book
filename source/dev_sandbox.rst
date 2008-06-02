@@ -44,7 +44,7 @@ This will take long, very long actually.
 Set up buildout
 ~~~~~~~~~~~~~~~
 
-Edit `buildout.cfg` in schooltool.stapp2008spring:
+Edit ``buildout.cfg`` in schooltool.stapp2008spring:
 
 Change::
 
@@ -76,13 +76,12 @@ Run buildout::
 Work on new features
 --------------------
 
-Commit using "bzr ci" diff using "bzr diff" update your branch using
-"bzr pull"
+Commit using ``bzr ci`` diff using ``bzr diff`` update your branch using ``bzr pull``
 
 Publish your changes
 --------------------
 
-(assuming you worked on schooltoo.gradebook and your launchpad
+(assuming you worked on schooltool.gradebook and your launchpad
 username is ignas)
 
 (parts you are expected to change depending on who you are or what you
@@ -206,7 +205,7 @@ when I merge your bug-fix from the branch, I will never miss a checkin
 and merging something that does not belong in the release will be a
 lot more difficult than it was with svn.
 
-Commands like "bzr send" will allow people without commit access send
+Commands like ``bzr send`` will allow people without commit access send
 structured patches and make making cosmetic fixes without me
 integrating incomplete feature to trunk actually doable.
 

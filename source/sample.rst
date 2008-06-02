@@ -1,3 +1,5 @@
+.. _sample:
+
 Generating Sample Data
 ======================
 
