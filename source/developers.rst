@@ -11,3 +11,4 @@ Contents:
    dev_sandbox
    state_of_the_nation
    dev_devmode
+   introspector
