@@ -19,8 +19,8 @@ While it is possible to do a "hot" backup of SchoolTool's database while the app
 
 Substitute the actual location of your backup in the place of ``/media/backups``.  Of course, if you've got a more sophisticated backup system than ``cp``, by all means use that!
 
-How do I erase the entire database while I'm experimenting?
------------------------------------------------------------
+How can I erase the entire database?
+------------------------------------
 
 Delete the ``-Data.fs`` file.  This is, of course, permanent.  If there is the slightest chance you'll ever want that data, moving rather than deleting the file is advisable.
 
@@ -29,5 +29,11 @@ Packing the database.
 
 The ZODB is designed to keep a record of transactions, which can be used by an application to allow "undo" functionality.  One implication of this, however, is that the database file grows in size as it stores a longer and longer list of changes to each object.  To shrink the database back to a more efficient size, one can "pack" it.  
 
-Because SchoolTool does not allow you to undo transactions, you can pack the database at any time.  It does not have to be done very frequently.  Monthly or weekly should suffice, but your mileage may vary.  It may be something you do prior to high demand periods, such as before teachers submit grades.  Backing up your database prior to packing it should not be necessary, but also is not a bad idea.
+Because SchoolTool does not allow you to undo transactions, you can pack the database at any time.  It does not have to be done very frequently, not daily.  Monthly or weekly should suffice, but your mileage may vary.  It may be something you do prior to high demand periods, such as before teachers submit grades.  Backing up your database prior to packing it should not be necessary, but also is not a bad idea.
+
+To pack the database via the web, log in as a site manager, click on the **Manage** link at the top of the page, then select the **Application Control** link, and then the **ZODB Control** button:
+
+   .. image:: images/packing.png
+
+By default, all your data will be in one database as shown above.  Check the box in the **pack** column next to the name of the database, and click the **Pack** button.  Packing will take several minutes and puts a load on the server, so do this at an off-peak time.  Leave the browser open until the page re-loads.
 
