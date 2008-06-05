@@ -1,3 +1,5 @@
+.. _install:
+
 Installing SchoolTool on Ubuntu
 ===============================
 
