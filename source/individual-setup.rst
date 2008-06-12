@@ -13,10 +13,14 @@ Once you've installed the SchoolTool server, it will automatically start running
 
 You can start and stop the process manually if you'd like.  If you aren't used to doing this, you can install the ``sysvconfig`` package to make the commands a little more straightforward::
 
+    $ sudo apt-get install sysvconfig
+    
+then you can use::
+
     $ sudo service schooltool-2008 stop
     $ sudo service schooltool-2008 start
 
-Will do the trick (as will ``sudo /etc/init.d/schooltool-2008 stop``, if you prefer).  Note that there can be a delay between when you issue the start command and when SchoolTool's web interface is accessible.
+Note that there can be a delay between when you issue the start command and when SchoolTool's web interface is accessible.
 
 Changing the Management Password
 --------------------------------
