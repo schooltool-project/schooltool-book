@@ -46,7 +46,7 @@ Now click on **Manage** at the top of the screen:
 
    .. image:: images/manage.png
 
-Click **Change Site Preferences**:
+Click **Change Site Preferences**.
 
 SchoolTool is designed to be usable in many different countries, and different parts of the world handle calendars and dates differently, so you may have to change some settings here to suit your local needs.  SchoolTool's calendar uses a more or less European configuration by default.  I've changed it below to suit my American tastes.  
 
