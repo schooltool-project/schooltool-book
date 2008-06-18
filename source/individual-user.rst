@@ -4,7 +4,7 @@ Setting Up People
 Making Your Teacher Account
 ---------------------------
 
-You should create a teacher account to do your actual grading.  Logged in as "manager," click on the **Manage** link at the top of the page, then **Persons** to end up here:
+You should not use the "manager" account for your day-to-day SchoolTool tasks, such as grading and taking attendance.  You need to make a second account for yourself in the role of a teacher.  Logged in as "manager," click on the **Manage** link at the top of the page, then **Persons** to end up here:
 
    .. image:: images/person-index.png
 
@@ -32,6 +32,12 @@ You can manually add your students one at a time using the same procedure as abo
 Note that since SchoolTool will only be accessible from your computer, and the students will not be logging onto SchoolTool themselves, you **do not** need to give students **Passwords**, and you can use whatever you want for their **Usernames**.
 
 Do not feel obligated to add contact or demographic information unless doing so is useful to you.
+
+    .. image:: images/add-student.png
+
+There are alternate methods of adding multiple students at one time.  We will cover two below.  Note that these methods do not currently allow you to automatically add demographic data, just the username, first and last names, and password for each person.
+
+Logged in as "manager," click on the **Manage** link at the top of the page, then **Persons** and finally click the "Import Persons" button:
 
     .. image:: images/add-student.png
 

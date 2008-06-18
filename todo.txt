@@ -1,2 +1,1 @@
-* database control & backup/delete
-* application control
+* add new to do's to todo.txt
