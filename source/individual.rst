@@ -17,5 +17,5 @@ Contents:
    individual-setup
    individual-user
    individual-courses
-
+   individual-timetable
 
