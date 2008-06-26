@@ -9,7 +9,9 @@ The first step is :ref:`install`.  The good news is that this is no more difficu
 Controlling the Server
 ----------------------
 
-Once you've installed the SchoolTool server, it will automatically start running and restart itself whenever you start the computer.  Thus, SchoolTool will be running in the background and available at http://localhost:7080 whenever you need it.  The SchoolTool server process will take up some of your computer's memory.  
+Once you've installed the SchoolTool server, it will automatically start running and restart itself whenever you start the computer.  Thus, SchoolTool will be running in the background and available at http://localhost:7080 whenever you need it.  
+
+The SchoolTool server process will take up some of your computer's memory.  Whether or not you will notice this depends on how much memory you have on your computer, which other applications you use, and how many applications you use at the same time.
 
 You can start and stop the process manually if you'd like.  If you aren't used to doing this, you can install the ``sysvconfig`` package to make the commands a little more straightforward::
 
@@ -20,7 +22,7 @@ then you can use::
     $ sudo service schooltool-2008 stop
     $ sudo service schooltool-2008 start
 
-Note that there can be a delay between when you issue the start command and when SchoolTool's web interface is accessible.
+Note that there can be a delay of 30 seconds to a minute between when you issue the start command and when SchoolTool's web interface is accessible.
 
 Changing the Management Password
 --------------------------------
@@ -48,9 +50,9 @@ Now click on **Manage** at the top of the screen:
 
 Click **Change Site Preferences**.
 
-SchoolTool is designed to be usable in many different countries, and different parts of the world handle calendars and dates differently, so you may have to change some settings here to suit your local needs.  SchoolTool's calendar uses a more or less European configuration by default.  I've changed it below to suit my American tastes.  
-
    .. image:: images/site-prefs.png
+
+SchoolTool is designed to be usable in many different countries, and different parts of the world handle calendars and dates differently, so you may have to change some settings here to suit your local needs.  SchoolTool's calendar uses a more or less European configuration by default.  I've changed it below to suit my American tastes.  
 
 For an individual using SchoolTool (rather than a school), it makes most sense to set the **Title** to your name as you would want it to appear to parents and students.
 
