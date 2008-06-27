@@ -1,1 +1,3 @@
-* add new to do's to todo.txt
+* Add user preferences.
+* Split student import into separate page.
+* Finish page on viewing terms and timetables in calendar.
