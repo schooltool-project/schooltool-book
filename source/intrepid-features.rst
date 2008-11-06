@@ -12,7 +12,7 @@ SchoolTool is designed for extensibility, however, so we hope that in collaborat
 
 Because SchoolTool is free and easy to install, it can also practically be deployed and used within a school by a small subset of teachers, or even installed on a laptop or desktop PC and used by a single teacher as an online gradebook or attendance journal.  Likewise, schools can use individual components of SchoolTool, such as resource booking, without committing to using it as a complete student information system.
 
-Currently, the primary use case for SchoolTool is for one server instance corresponding to one school.  You can handle multiple schools by running multiple server processes (software) on one physical server (hardware).  Managing multiple schools efficiently is a long-term goal for SchoolTool.  It is possible in some cases to track specific data about several similar schools on one SchoolTool instance.  
+Currently, the primary deployment strategy for SchoolTool is for one server instance corresponding to one school.  You can handle multiple schools by running multiple server processes (software) on one physical server (hardware).  Managing multiple schools efficiently is a long-term goal for SchoolTool.  It is possible in some cases to track specific data about several similar schools on one SchoolTool instance.  
 
 School Model
 ------------
@@ -51,6 +51,8 @@ Calendaring
 
 * Calendars can be imported and exported to other popular applications like iCal and Google Calendar using the iCal (.ics) format.
 
+   .. image:: images/intrepid/calendar.png
+
 Resource Booking
 ----------------
 
@@ -66,6 +68,8 @@ How it works:
 
 Users can monitor or print the schedule for each resource by viewing its calendar.
 
+   .. image:: images/intrepid/resource.png
+
 Attendance and Participation Journal
 ------------------------------------
 
@@ -77,12 +81,16 @@ The current system is adequate for teacher record keeping and providing basic da
 
 The attendance journal was created in collaboration with faculty from the Vilnius Lyceum in Vilnius, Lithuania.
 
+   .. image:: images/intrepid/journal.png
+
 Gradebook
 ---------
 
 SchoolTool includes a basic assignment-oriented gradebook for each section.  Each section can have multiple spreadsheet worksheets.  Teachers create assignments (or "activities") that are organized and may be weighted by category, such as "exam" or "presentation."  Grades can be assigned by a variety of systems, including point values and letter grades.  Additional scoring systems can be added in code; suggestions are welcome.
 
 The gradebook is fairly complete in functionality, but still rough around the edges, and gradebooks are imfamously full of edge cases.  Beta testing is strongly encouraged!  Let us know what needs fixing.
+
+   .. image:: images/intrepid/activity.png
 
 Reporting
 ---------

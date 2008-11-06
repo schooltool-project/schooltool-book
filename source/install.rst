@@ -3,13 +3,18 @@
 Installing SchoolTool on Ubuntu
 ===============================
 
-For the forseeable future we are only supporting deployment on `Ubuntu Linux <http://ubuntu.com>`_ (currently, the Gutsy and Hardy releases).
+For the forseeable future we are only supporting deployment on `Ubuntu Linux <http://ubuntu.com>`_ (currently, the Gutsy, Hardy and Intrepid releases).
 
 #. Add SchoolTool's Launchpad PPA to your Software Sources.
 
-   Either manually edit ``/etc/apt/sources.list``, or go to the **System** menu, select **Software Sources** and select the **Third-Party Software** tab.
+   Either manually edit ``/etc/apt/sources.list``, or go to the **System** menu, then **Administration** and select **Software Sources**.  Select the **Third-Party Software** tab.
 
    Add these lines:
+
+   If you're running intrepid::
+
+    deb http://ppa.launchpad.net/schooltool-owners/ubuntu intrepid main
+    deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu intrepid main
 
    If you're running gutsy::
 

@@ -42,9 +42,9 @@ copyright = '2008, The Shuttleworth Foundation'
 # other places throughout the built documents.
 #
 # The short X.Y version.
-version = '2008.4'
+version = '2008.10'
 # The full version, including alpha/beta/rc tags.
-release = '2008.4.1'
+release = '2008.10.0'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
