@@ -17,17 +17,17 @@ Currently, the primary deployment strategy for SchoolTool is for one server inst
 School Model
 ------------
 
-* Persons: Default roles for people are students, teachers, school administrators, and site administrators (technical).  Parent access is planned for future releases.  People can be imported and exported from text files.  By design all people can log in, but currently our development focus has been on teacher and administrator views.  If people are not assigned passwords, they cannot log in.
+* **Persons:** Default roles for people are students, teachers, school administrators, and site administrators (technical).  Parent access is planned for future releases.  People can be imported and exported from text files.  By design all people can log in, but currently our development focus has been on teacher and administrator views.  If people are not assigned passwords, they cannot log in.
 
-* Groups: Create arbitrary groups of people representing school organizations, clubs, teams, etc.  Group rosters can be imported from text files.
+* **Groups:** Create arbitrary groups of people representing school organizations, clubs, teams, etc.  Group rosters can be imported from text files.
 
-* Courses and sections: Courses define blocks of curriculum; e.g., 1st grade Math, 9th grade English.  Sections are the groupings of teachers and students working on a course; e.g., Mr. Hoffman's 9:30 Algebra I class, Fall 2009 semester.  Courses and sections can be imported from text files.
+* **Courses and sections:** Courses define blocks of curriculum; e.g., 1st grade Math, 9th grade English.  Sections are the groupings of teachers and students working on a course; e.g., Mr. Hoffman's 9:30 Algebra I class, Fall 2009 semester.  Courses and sections can be imported from text files.
 
-* Years and terms: Years are the longest block of time in SchoolTool.  The transition between years represents a regular point of significant reorganization within the school; e.g., when most students are promoted, teachers hired, etc.).  Terms define when sections begin and end.
+* **Years and terms:** Years are the longest block of time in SchoolTool.  The transition between years represents a regular point of significant reorganization within the school; e.g., when most students are promoted, teachers hired, etc.).  Terms define when sections begin and end.
 
-* Timetables: Timetables define when sections meet during the week.  This is the school's "bell schedule."  SchoolTool handles simple timetables; e.g., classes meet the same time every day; and many complex ones, such as rotating schedules and schedules with different start and end times on different days of the week.  SchoolTool does not currently generate class rosters or automatically schedule sections into rooms and times.  It tracks the timetables you enter or import.
+* **Timetables:** Timetables define when sections meet during the week.  This is the school's "bell schedule."  SchoolTool handles simple timetables; e.g., classes meet the same time every day; and many complex ones, such as rotating schedules and schedules with different start and end times on different days of the week.  SchoolTool does not currently generate class rosters or automatically schedule sections into rooms and times.  It tracks the timetables you enter or import.
 
-* Resources: SchoolTool allows you to manage and track shared resources.  These are divided into "locations" and "resources," with further user-created types such as "classrooms" or "projectors."  Each has additional meta-data, such as the seating capacity of a location.  Resources can be imported from a text file.
+* **Resources:** SchoolTool allows you to manage and track shared resources.  These are divided into "locations" and "resources," with further user-created types such as "classrooms" or "projectors."  Each has additional meta-data, such as the seating capacity of a location.  Resources can be imported from a text file.
 
 Demographics
 ------------
@@ -114,30 +114,30 @@ There are two additional SchoolTool components being tested at two US high schoo
 Technical
 ---------
 
-* 100% free and open source software stack:
-  - Python programming language;
-  - Zope 3 component architecture;
-  - Zope Object Database (ZODB);
-  - ReportLab PDF generation.
+* **100% free and open source software stack:**
+  * Python programming language;
+  * Zope 3 component architecture;
+  * Zope Object Database (ZODB);
+  * ReportLab PDF generation.
 
-* Security: Our custom security model manages permissions based both on role (e.g., teacher, school adminitrator) and relationships (e.g., between a specific teacher and student).  Basic customization of some key aspects of the security policy can be done through the web by the site manager.  Complete customization is possible through XML configuration files.
+* **Security:** Our custom security model manages permissions based both on role (e.g., teacher, school adminitrator) and relationships (e.g., between a specific teacher and student).  Basic customization of some key aspects of the security policy can be done through the web by the site manager.  Complete customization is possible through XML configuration files.
 
-* Test-driven development: SchoolTool includes a comprehensive test suite, including unit and functional tests.  Python "doctests" double as narrative developer documentation.
+* **Test-driven development:** SchoolTool includes a comprehensive test suite, including unit and functional tests.  Python "doctests" double as narrative developer documentation.
 
-* Installation and upgrades: are managed via the Ubuntu packaging system and Launchpad.net.  Two step production server deployment on Ubuntu Linux.  One-step bugfix upgrades within SchoolTool release versions.  Major releases synchronized to Ubunutu releases.
+* **Installation and upgrades:** are managed via the Ubuntu packaging system and Launchpad.net.  Two step production server deployment on Ubuntu Linux.  One-step bugfix upgrades within SchoolTool release versions.  Major releases synchronized to Ubunutu releases.
 
-* Internationalization: SchoolTool is completely translatable.  New translations can be contributed via the Rosetta system on Launchpad.net.
+* **Internationalization:** SchoolTool is completely translatable.  New translations can be contributed via the Rosetta system on Launchpad.net.
 
-* Single-sign on: SchoolTool includes somewhat unpolished implementation of the Central Authentication Service (CAS) for single sign on with other enterprise applications such as Moodle and Drupal.  CAS requires a separate authentication server; we have been using RubyCAS in this role at a test site.  The CAS server can be easily configured to authenticate against your LDAP server or another external database.
+* **Single-sign on:** SchoolTool includes somewhat unpolished implementation of the Central Authentication Service (CAS) for single sign on with other enterprise applications such as Moodle and Drupal.  CAS requires a separate authentication server; we have been using RubyCAS in this role at a test site.  The CAS server can be easily configured to authenticate against your LDAP server or another external database.
 
-* Web server: SchoolTool contains its own server for easy testing and simple deployments.  For sites requiring a encrypted (SSL) connection, we recommend using Apache as a secure proxy.
+* **Web server:** SchoolTool contains its own server for easy testing and simple deployments.  For sites requiring a encrypted (SSL) connection, we recommend using Apache as a secure proxy.
 
-* Virtual servers: For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition JeOS.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution.
+* **Virtual servers:** For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition JeOS.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution.
 
-* Developer tools: "devmode" provides object introspection and API documentation via the SchoolTool web interface.
+* **Developer tools:** "devmode" provides object introspection and API documentation via the SchoolTool web interface.
 
-* Sample data: To aid in testing SchoolTool, we provide tools for generating sample data for two years in a school of 1000 students (NOTE: this is temporarily disabled in SchoolTool 2008.10.0).  
+* **Sample data:** To aid in testing SchoolTool, we provide tools for generating sample data for two years in a school of 1000 students (NOTE: this is temporarily disabled in SchoolTool 2008.10.0).  
 
-* Consistent programming style: For readibility and easier modification, SchoolTool conforms to the official PEP 8 Style Guide for Python Code.
+* **Consistent programming style:** For readibility and easier modification, SchoolTool conforms to the official PEP 8 Style Guide for Python Code.
 
 

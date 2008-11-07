@@ -1,6 +1,10 @@
 Generating Sample Data
 ======================
 
+Note::
+
+  Sample data generation is disabled in SchoolTool 2008.10.0.  We are working to update its implementation and it will return in an upcoming bugfix release.
+
 To make SchoolTool easier to test and evaluate, it has a built-in system for generating sample data.  The current system generates a fake school of 1000 students and creates fake data for four semesters (two years).  This provides a realistic sense of database responsiveness with a fully populated database.  Generating this data takes quite a bit of processor time, however.
 
 SchoolTool has a special development mode called "devmode" that turns on several features which are handy for developing, testing, or setting up SchoolTool, but that should not be left on in a production system.  Sample data generation is one of these functions -- you don't want someone accidentally dumping a school of 1000 fake students on top of your real one.  As a reminder, when SchoolTool is in devmode the top of each page is yellow, instead of gray.
