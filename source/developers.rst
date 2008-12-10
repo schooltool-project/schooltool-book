@@ -11,3 +11,6 @@ Contents:
    dev_sandbox
    dev_devmode
    introspector
+   style-guide
+   intrepid-release-notes
+

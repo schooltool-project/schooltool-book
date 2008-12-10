@@ -13,7 +13,7 @@ For more information:
     * `Mailing lists <http://lists.schooltool.org/mailman/listinfo>`_
     * IRC channel: #schooltool on freenode.net
 
-**Founder and funder: `Mark Shuttleworth <http://markshuttleworth.com/>`_**
+**Founder and funder: Mark Shuttleworth**
 
 **Project Manager: Tom Hoffman (email)**
 
