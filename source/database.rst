@@ -8,16 +8,44 @@ Where is the data?
 
 All the data in a given SchoolTool instance is stored in a file conventionally named ``schooltool-(version)-Data.fs``.  On an Ubuntu system this file can be found in the ``/var/lib/schooltool/`` directory.  For example, in SchoolTool 2008, the database file is at ``/var/lib/schooltool-2008-Data.fs``.  The additional files in that directory ending with ``.index``, ``.lock``, and ``.tmp`` are used by the application in various ways but **do not** contain any data about your school which is not also included in the main ``-Data.fs`` file.  That is, you can back up all your data with just the ``-Data.fs`` file.
 
-How do I do a backup?
----------------------
+Automatic backups
+-----------------
 
-While it is possible to do a "hot" backup of SchoolTool's database while the application is running, for the sake of simplicity, in this document we will just cover a standard backup.  Basically, just stop SchoolTool, copy Data.fs, and restart the Server::
+Whenever SchoolTool is updated to a new version via Ubuntu's update mechanisms, it creates a backup of the current database.  It also compresses and retains previous backups.  The most recent back up in ``/var/lib/schooltool/`` has a ``.0`` appended, like ``schooltool-2008-Data.fs.0``.  Older backups are also gzipped, with increasing numbers as suffixes.  ``schooltool-2008-Data.fs.2.gz`` is older than ``schooltool-2008-Data.fs.1.gz`` for example.
+
+How do I do a manual backup?
+----------------------------
+
+While it is possible to do a "hot" backup of SchoolTool's database while the application is running, for the sake of simplicity, in this document we will just cover a standard backup.  Basically, just stop SchoolTool, copy ``Data.fs``, and restart the erver::
 
     sudo /etc/init.d/schooltool-2008 stop
     sudo cp /var/lib/schooltool-2008-Data.fs /media/backups/
     sudo /etc/init.d/schooltool-2008 start
 
 Substitute the actual location of your backup in the place of ``/media/backups``.  Of course, if you've got a more sophisticated backup system than ``cp``, by all means use that!
+
+Restoring from an Backup
+------------------------
+
+In most cases, if you need to return to a previous automatic database backup, you should stop SchoolTool, rename the current ``Data.fs`` just in case you *do* need it later, remove the ``.0`` from the most recent backup, and restart the server::
+
+    sudo /etc/init.d/schooltool-2008 stop
+    sudo mv /var/lib/schooltool-2008-Data.fs /var/lib/schooltool-2008-Data.fs.bad
+    sudo mv /var/lib/schooltool-2008-Data.fs.0 /var/lib/schooltool-2008-Data.fs
+    sudo /etc/init.d/schooltool-2008 start
+
+If you need to try an even older backup, ungzip it::
+
+    sudo gunzip /var/lib/schooltool-2008-Data.fs.1.gz 
+
+The procedure for restoring from a previous manual backup is the same, that is, copy the file to the ``Data.fs`` position, except only you know where it is coming from.
+
+What if My Database is Empty After an Upgrade?
+----------------------------------------------
+
+If something goes awry during the backup process, it is possible that your current database will be moved ``.0`` first backup position but a blank database will be in the "current" ``Data.fs`` position::
+
+    sudo mv /var/lib/schooltool-2008-Data.fs.0 /var/lib/schooltool-2008-Data.fs
 
 How can I erase the entire database?
 ------------------------------------
