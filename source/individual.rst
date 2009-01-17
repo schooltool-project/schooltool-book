@@ -16,7 +16,8 @@ Contents:
 
    individual-setup
    individual-user
-   individual-courses
+   years
    individual-terms
+   individual-courses
    individual-timetable
    individual-view-timetables

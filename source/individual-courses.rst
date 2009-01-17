@@ -8,9 +8,9 @@ In SchoolTool, there is a distinction between "courses" and "sections."  A "cour
 
 Where one teacher teaches all subjects to a single group of kids, for example, in a kindergarten, you can either make everything one course ("Kindergarten") or split it up ("Kindergarten Math," etc.).  Whichever makes more sense for you.  Things like "homeroom" or "advisory" or "internship" that are scheduled at a specific time but don't have a set academic curriculum or grades are also considered courses.
 
-The course setup is important when a whole school is using SchoolTool.  For an individual, the most important thing is to keep it simple and functional.
+The course setup is significant when a whole school is using SchoolTool.  For an individual, the most important thing is to keep it simple and functional.
 
-To create courses, logged in as "manager," click **Manage** and then **Courses**:
+To create courses, logged in as "manager," click the active school year (below it is **2008-2009**) and then **Courses**:
 
    .. image:: images/course-index.png
 
