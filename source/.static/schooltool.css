@@ -47,7 +47,7 @@ div.clearer {
 }
 
 div.footer {
-    color: #fff;
+    color: #444;
     width: 100%;
     padding: 9px 0 9px 0;
     text-align: center;
@@ -55,7 +55,7 @@ div.footer {
 }
 
 div.footer a {
-    color: #fff;
+    color: #333;
     text-decoration: underline;
 }
 

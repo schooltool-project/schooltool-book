@@ -36,6 +36,8 @@ For the forseeable future we are only supporting deployment on `Ubuntu Linux <ht
 
    Either type ``sudo apt-get install schooltool-2008`` in a terminal (and answer "y" to the subsequent questions), or in Synaptic search for "schooltool-2008", select it for installation, and hit **Apply**.
 
+   **Note:** The above mentioned error messages are caused because your system is not checking to see if the packages are properly "signed" by the SchoolTool development team.  This is sufficient for testing, but in production, installing the OpenPGP key for the package archive will verify that you are getting the official signed packages direct from us.  If you are using SchoolTool in production, we highly recommend following the instructions to install our key at `Launchpad help <https://help.launchpad.net/Packaging/PPA#Adding%20a%20PPA%27s%20keys%20to%20your%20system>`_.  You'll need to get the schooltool-owners key from `our PPA website <https://launchpad.net/~schooltool-owners/+archive/ppa>`_.
+
    Note that on intrepid schooltool-2008 does not seem to show up in the initial search on Synaptic, so you should use the terminal method.
 
    If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080.  If that doesn't work, try http://127.0.0.1
