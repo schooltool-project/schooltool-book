@@ -14,6 +14,8 @@ Change the ``host =``  line to read::
 
     host = 0.0.0.0
 
+You will then need to restart SchoolTool following the instructions in :ref:`setup-initial`
+
 To make SchoolTool's web interface only accessible from the server
 ------------------------------------------------------------------
 

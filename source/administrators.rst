@@ -9,4 +9,5 @@ Contents:
    install
    remote
    sample
+   setup
    database

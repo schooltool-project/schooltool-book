@@ -1,3 +1,5 @@
+.. _individual:
+
 SchoolTool for an Individual Teacher
 ====================================
 
@@ -15,9 +17,9 @@ Contents:
    :maxdepth: 2
 
    individual-setup
-   individual-user
    years
-   individual-terms
-   individual-courses
-   individual-timetable
+   terms
+   timetable
+   courses-sections
    individual-view-timetables
+   individual-user

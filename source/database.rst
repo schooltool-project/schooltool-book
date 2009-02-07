@@ -16,13 +16,13 @@ Whenever SchoolTool is updated to a new version via Ubuntu's update mechanisms, 
 How do I do a manual backup?
 ----------------------------
 
-While it is possible to do a "hot" backup of SchoolTool's database while the application is running, for the sake of simplicity, in this document we will just cover a standard backup.  Basically, just stop SchoolTool, copy ``Data.fs``, and restart the erver::
+While it is possible to do a "hot" backup of SchoolTool's database while the application is running, for the sake of simplicity, in this document we will just cover a standard backup.  Basically, just stop SchoolTool, copy ``Data.fs``, and restart the server::
 
     sudo /etc/init.d/schooltool-2008 stop
-    sudo cp /var/lib/schooltool-2008-Data.fs /media/backups/
+    sudo cp /var/lib/schooltool-2008-Data.fs /media/backups/schooltool-2008-Data.fs-`date +%Y%m%d-%H%M`
     sudo /etc/init.d/schooltool-2008 start
 
-Substitute the actual location of your backup in the place of ``/media/backups``.  Of course, if you've got a more sophisticated backup system than ``cp``, by all means use that!
+Substitute the actual location of your backup in the place of ``/media/backups``.  The ``date +%Y%m%d-%H%M`` command embedded into the cp command is a bash command to embed the current date and time into the filename.  That will allow you to keep a bunch of backups by date easily.  Of course, if you've got a more sophisticated backup system than ``cp``, by all means use that!
 
 Restoring from an Backup
 ------------------------
