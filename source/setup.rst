@@ -8,6 +8,7 @@ Contents:
 
    install
    setup-initial
+   sample
    years
    terms
    timetable
