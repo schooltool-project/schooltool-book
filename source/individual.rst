@@ -24,6 +24,4 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   courses-sections
    individual-view-timetables
-   individual-user

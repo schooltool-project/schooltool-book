@@ -1,16 +1,16 @@
-Initial Configuration
-=====================
-
-Users looking to install an instance of SchoolTool for their own personal use should look at :ref:`individual`.  That will reference these pages as needed.
-
+Installation and Basic Setup
+============================
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   install
    setup-initial
    years
    terms
    timetable
    import
+   courses-sections
+   user
