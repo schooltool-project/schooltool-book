@@ -1,4 +1,4 @@
-Setting up SchoolTool
+Initial Configuration
 =====================
 
 Users looking to install an instance of SchoolTool for their own personal use should look at :ref:`individual`.  That will reference these pages as needed.
@@ -10,9 +10,7 @@ Contents:
    :maxdepth: 2
 
    setup-initial
-   individual-user
    years
    terms
    timetable
-   courses-sections
-   individual-view-timetables
+   import
