@@ -11,15 +11,19 @@ A single user installation also provides a way to test SchoolTool before introdu
 
 Most of documentation is also relevant to setting up SchoolTool for multiple users.  One of the biggest differences is that a school-wide installation will hopefully use more mass data imports to streamline the process of setting up hundreds of accounts, whereas an individual teacher can easily do most of the setup simply entering data into web forms.  
 
+Configuring SchoolTool
+----------------------
+
+The first step is :ref:`install`.  The good news is that this is no more difficult than installing a regular desktop application.  The bad news is that it is only this easy on Ubuntu.
+
+Once SchoolTool is installed, the next steps are described by :ref:`setup-initial`, :ref:`years`, :ref:`terms`, and :ref:`timetable` in the Administrator's Handbook.
+
+
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-   individual-setup
-   years
-   terms
-   timetable
    courses-sections
    individual-view-timetables
    individual-user
