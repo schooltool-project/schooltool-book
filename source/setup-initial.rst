@@ -26,6 +26,9 @@ Or, if you are more used to init.d scripts you can still use::
     $ sudo /etc/init.d/schooltool-2008 stop
     $ sudo /etc/init.d/schooltool-2008 start
 
+
+.. _managepass:
+
 Changing the Management Password
 --------------------------------
 

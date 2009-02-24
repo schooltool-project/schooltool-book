@@ -1,3 +1,5 @@
+.. _user:
+
 Setting Up People
 =================
 

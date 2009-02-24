@@ -15,3 +15,4 @@ Contents:
    users
    developers
    about
+   cando
