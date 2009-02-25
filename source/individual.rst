@@ -1,3 +1,5 @@
+.. _individual:
+
 SchoolTool for an Individual Teacher
 ====================================
 
@@ -9,15 +11,3 @@ A single user installation also provides a way to test SchoolTool before introdu
 
 Most of documentation is also relevant to setting up SchoolTool for multiple users.  One of the biggest differences is that a school-wide installation will hopefully use more mass data imports to streamline the process of setting up hundreds of accounts, whereas an individual teacher can easily do most of the setup simply entering data into web forms.  
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-
-   individual-setup
-   individual-user
-   years
-   individual-terms
-   individual-courses
-   individual-timetable
-   individual-view-timetables

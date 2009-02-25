@@ -1,10 +1,7 @@
-Installation and Site Configuration
-===================================
+.. _setup-initial:
 
-Installation
-------------
-
-The first step is :ref:`install`.  The good news is that this is no more difficult than installing a regular desktop application.  The bad news is that it is only this easy on Ubuntu.
+Initial Setup Process
+=====================
 
 Controlling the Server
 ----------------------
@@ -23,6 +20,14 @@ then you can use::
     $ sudo service schooltool-2008 start
 
 Note that there can be a delay of 30 seconds to a minute between when you issue the start command and when SchoolTool's web interface is accessible.
+
+Or, if you are more used to init.d scripts you can still use:: 
+
+    $ sudo /etc/init.d/schooltool-2008 stop
+    $ sudo /etc/init.d/schooltool-2008 start
+
+
+.. _managepass:
 
 Changing the Management Password
 --------------------------------

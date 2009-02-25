@@ -1,5 +1,7 @@
+.. _terms:
+
 Creating Terms
---------------
+==============
 
 Terms are periods of time within school years that correspond to the duration of a section, like semesters and trimesters.  
 
@@ -7,7 +9,7 @@ For example, if you work with the same group of students on the same schedule fo
 
 In this example, we will create two semesters.
 
-Logged in as "manager," click the active school year (below it is **2008-2009**) and then the **Add a new term** link, above **Groups**:
+Logged in as "manager," click the active school year.  The active school year will be in red in the top menu. (below it is **2008-2009**)  Then the **Add a new term** link, above **Groups**:
 
    .. image:: images/empty-terms.png
 

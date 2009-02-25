@@ -1,6 +1,8 @@
 Setting Up Courses and Sections
 ===============================
 
+.. _courses:
+
 Creating Courses
 ----------------
 
@@ -23,6 +25,8 @@ After you click **Add**, you should see your new course:
    .. image:: images/index-with-course.png
 
 Repeat until you've got all your courses entered.
+
+.. _sections:
 
 Creating Your Sections
 ----------------------

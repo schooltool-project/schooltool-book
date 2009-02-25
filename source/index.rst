@@ -10,7 +10,9 @@ Contents:
    :maxdepth: 2
 
    intrepid-features
+   setup
    administrators
    users
    developers
    about
+   cando
