@@ -14,5 +14,6 @@ Contents:
    administrators
    users
    developers
+   glossary
    about
    cando
