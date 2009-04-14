@@ -1,7 +1,7 @@
 .. _cando:
 
-Cando Server Configuration
-==========================
+Cando Notes
+===========
 
 Installation
 ------------
