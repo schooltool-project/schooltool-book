@@ -23,7 +23,7 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
-   intrepid-features
+   features
    setup
    administrators
    users

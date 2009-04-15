@@ -4,20 +4,20 @@ Overview of Features
 Basic Use Cases
 ---------------
 
-SchoolTool is configured by default to act as what is often called a "student information system" or SIS.  The focus is on tracking information related to students.  It is a subset of a complete "management information system" or MIS for schools, which might also cover systems like accounting.  
+SchoolTool is configured by default to act as what is often called a "student information system" or SIS.  The focus is on tracking information related to students: demographics, enrollment grades, attendance, reporting.  It is a subset of a complete "management information system" or MIS for schools, which might also cover systems like accounting.  
 
-SchoolTool is not a "learning managment system," or LMS, such as Moodle, although they share some overlapping components, such as a gradebook.  SchoolTool does not contain curriculum or learning objects.  One way to differentiate between SIS and LMS roles is note that LMS's don't print student report cards, while SIS's do.  SIS data focuses on students; the LMS is organized around courses.
+SchoolTool is not a "learning managment system," or LMS, such as Moodle, although they share some overlapping feature sets, such as a gradebook.  SchoolTool does not contain curriculum or learning objects.  One way to differentiate between SIS and LMS roles is note that LMS's don't print student report cards, while SIS's do.  SIS data focuses on students; the LMS is organized around courses.
 
-SchoolTool is designed for extensibility, however, so we hope that in collaboration with outside users, governments and vendors SchoolTool will offer more functionality beyond basic SIS components in the future.
+SchoolTool is designed for extensibility, however, so we hope that in collaboration with outside users, governments and vendors SchoolTool will offer more functionality beyond basic SIS components in the future.  SchoolTool's built-in calendaring and resource booking features are an example of non-SIS functionality in SchoolTool.
 
-Because SchoolTool is free and easy to install, it can also practically be deployed and used within a school by a small subset of teachers, or even installed on a laptop or desktop PC and used by a single teacher as an online gradebook or attendance journal.  Likewise, schools can use individual components of SchoolTool, such as resource booking, without committing to using it as a complete student information system.
+Currently, the primary deployment strategy for SchoolTool is for one server instance corresponding to one school.  You can handle multiple schools by running multiple server processes (software) on one physical server (hardware).  Adding management tools for multi-school installations is a long-term goal for SchoolTool.  It is possible in some cases to track specific data about several similar schools on one SchoolTool instance. 
 
-Currently, the primary deployment strategy for SchoolTool is for one server instance corresponding to one school.  You can handle multiple schools by running multiple server processes (software) on one physical server (hardware).  Managing multiple schools efficiently is a long-term goal for SchoolTool.  It is possible in some cases to track specific data about several similar schools on one SchoolTool instance.  
+Because SchoolTool is free and easy to install, it can also practically be deployed and used within a school by a small subset of teachers, or even installed on a laptop or desktop PC and used by a single teacher as an online gradebook or attendance journal.  Likewise, schools can use individual components of SchoolTool, such as resource booking, without committing to using it as a complete student information system. 
 
 School Model
 ------------
 
-* **Persons:** Default roles for people are students, teachers, school administrators, and site administrators (technical).  Parent access is planned for future releases.  By design all people can log in, but currently our development focus has been on teacher and administrator views.  If people are not assigned passwords, they cannot log in.
+* **Persons:** Default groups for people are students, teachers, school administrators, and site administrators (technical).  Parent access is planned for future releases.  By design all people can log in, but currently our development focus has been on teacher and administrator views.  If people are not assigned passwords, they cannot log in.
 
 * **Groups:** Create arbitrary groups of people representing school organizations, clubs, teams, etc.  
 
@@ -31,12 +31,14 @@ School Model
 
 * All of the above can be imported via a set of spreadsheets included with SchoolTool.
 
-Demographics
-------------
+For more detailed explanations of the above terms, see :ref:`glossary`.
 
-SchoolTool 2008.10 has a simple implementation of demographics, tracking the following data: first name, last name, gender, email, phone, birth date and advisor.  Based on user feedback, we will add to this to create a more complete default schema for SchoolTool 2009.04.  We will also help local developers create custom demographic schemas.
+Demographics and Contacts
+-------------------------
 
-In the long run we hope to support end-user customizable demographic fields.
+* Each school can customize the fields of demographic and other data stored for each person.
+
+* Each person can be associated with one or more contacts, typically parents or guardians in a primary or secondary school.  In the case of siblings, multiple people can be associated with a single contact.
 
 Calendaring
 -----------
@@ -58,7 +60,7 @@ Calendaring
 Resource Booking
 ----------------
 
-Teachers, administrators and managers can schedule shared resources via their calendar.  This component is fairly mature and stable; some schools may use SchoolTool for this functionality alone.
+Teachers, administrators and managers can schedule shared resources via their calendar.  Several schools have successfully deployed SchoolTool just for this purpose.
 
 How it works:
 
@@ -75,22 +77,18 @@ Users can monitor or print the schedule for each resource by viewing its calenda
 Attendance and Participation Journal
 ------------------------------------
 
-SchoolTool provides a simple attendance and participation journal for each section which allows a teacher to track absences and tardies, and optionally assign each student a numeric score for each class meeting.  Each meeting of a section can also be assigned a description.  The teacher can add a cumulative attendance/participation grade for the term.
+SchoolTool provides a simple attendance and participation journal allows a teacher to track absences and tardies, and optionally assign each student a numeric score for each class meeting.  Each meeting of a section can also be assigned a description.  The teacher can add a cumulative attendance/participation grade for the term.
 
 Individual entries in the journal grid are stored to the server without requiring a page reload using Ajax.  The journal displays average participation scores and total absences for the term.  
 
 The current system is adequate for teacher record keeping and providing basic data for report cards.  We have not implemented a full workflow to manage excused and unexcused absences for a school with strict legal requirements, such as US public schools.  We will focus on improving the user experience and reports for this simpler case first.
-
-The attendance journal was created in collaboration with faculty from the Vilnius Lyceum in Vilnius, Lithuania.
 
    .. image:: images/intrepid/journal.png
 
 Gradebook
 ---------
 
-SchoolTool includes a basic assignment-oriented gradebook for each section.  Each section can have multiple spreadsheet worksheets.  Teachers create assignments (or "activities") that are organized and may be weighted by category, such as "exam" or "presentation."  Grades can be assigned by a variety of systems, including point values and letter grades.  Additional scoring systems can be added in code; suggestions are welcome.
-
-The gradebook is fairly complete in functionality, but still rough around the edges, and gradebooks are imfamously full of edge cases.  Beta testing is strongly encouraged!  Let us know what needs fixing.
+SchoolTool includes a assignment-oriented gradebook for each section.  Each section can have multiple spreadsheet worksheets.  Teachers create assignments (or "activities") that are organized and may be weighted by category, such as "exam" or "presentation."  Grades are assigned by numerical point values.  
 
    .. image:: images/intrepid/activity.png
 
