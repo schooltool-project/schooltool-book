@@ -14,7 +14,7 @@ For more information:
 
     * `Homepage <http://schooltool.org/>`_
     * `Launchpad project page <https://launchpad.net/schooltool>`_
-    * `Mailing lists <http://lists.schooltool.org/mailman/listinfo>`_
+    * `Mailing List <https://launchpad.net/~schooltoolers>`_
     * IRC channel: #schooltool on freenode.net
 
 
