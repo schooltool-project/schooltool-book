@@ -1,3 +1,5 @@
+.. _remote:
+
 Making SchoolTool's Web Interface Accessible to Other Computers (or not)
 ========================================================================
 
