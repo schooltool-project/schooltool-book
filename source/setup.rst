@@ -9,10 +9,11 @@ Contents:
    system-requirements
    install
    setup-initial
-   sample
+   web-v-import
    years
    terms
    timetable
    import
    courses-sections
    user
+   sample

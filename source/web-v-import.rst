@@ -1,0 +1,15 @@
+Entering Data: Web Interface or Import?
+=======================================
+
+Setting up and entering data into a student information system is, unfortunately, often a time-consuming and complex process.  SchoolTool strives to provide a variety of methods appropriate to deployments of different scales and technical capacity.
+
+Currently the three primary methods are:
+
+* manual data entry via web forms;
+* importing via a set of spreadsheets;
+* importing data through comma separated value (CSV) files.
+
+Where you are pulling data from outside sources, spreadsheet and CSV import is likely to be most efficient.  When you're entering data not availiable in another digital format, or setting up the basic components of the system like years and timetables, the web interface is usually the friendliest route.
+
+As we progress through setting up different parts of the system we will disucss the various options at each step.   We will also note which steps can be skipped for different types of usage, such as an individual teacher using SchoolTool as a gradebook.
+
