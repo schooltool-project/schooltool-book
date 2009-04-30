@@ -7,9 +7,13 @@ Terms are periods of time within school years that correspond to the duration of
 
 For example, if you work with the same group of students on the same schedule for a full year, you only need one big term.  If you switch schedules and/or student groupings at the end of semesters or trimesters, define those as your terms.
 
-In this example, we will create two semesters.
+Because there is no hierarchy of terms, define your terms by the *shortest* unit that a class section might meet.  For example if some sections meet all year, some by semester, and some by quarter, use quarters as your terms.
 
-Logged in as "manager," click the active school year.  The active school year will be in red in the top menu. (below it is **2008-2009**)  Then the **Add a new term** link, above **Groups**:
+In almost every case, you end up needing terms in SchoolTool.  This is easiest to do through the web interface.
+
+In this example, we will create one semester.
+
+Logged in as "manager," click the active school year.  The active school year will be in red in the top menu.  Next click the **Add a new term** link, above **Groups**:
 
    .. image:: images/empty-terms.png
 
@@ -19,7 +23,7 @@ Enter a title for the term and the start and end dates. Then click **Next**.
 
 You will now see a calendar view which allows you to toggle specific days and dates on and off by clicking on them.  If a date is black means classes are in session; dates in red mean no classes.  Any day that student attendance will be taken should be in black.  A teacher training day with no classes would be red.  
 
-For example, I've set the standard school week from Monday to Friday and added Thanksgiving vacation the week of November 27th:
+For example, I've set the standard school week from Monday to Friday and added Thanksgiving vacation the week of November 26th:
 
    .. image:: images/term-daily.png
 

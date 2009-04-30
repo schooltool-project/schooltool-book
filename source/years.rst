@@ -7,11 +7,15 @@ A school year encompasses the annual cycle of a school.  For example, most stude
 
 The school year does not have to correspond to calendar year.  Whatever suits the processes of your school.  It is best to set this up so that every date is part of one school year or another.  School years **cannot** overlap.
 
+Setting up a year is necessary for just about any use of SchoolTool, and it is easiest through the web interface.
+
 As "manager," click **Manage** and then **School Years**:
 
    .. image:: images/empty-years.png
 
 Press the **New School Year** button and enter the Title for the year and the start and end dates and hit **Add**.  Keep the title as short as possible, because it is used as a link frequently.
+
+Click the **[...]** buttons to pull up a calendar widget and select the dates.  Or, if you really want to type them, you have to use YYYY-MM-DD format.
 
    .. image:: images/new-year.png
 
