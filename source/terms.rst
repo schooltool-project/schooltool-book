@@ -17,7 +17,7 @@ Logged in as "manager," click the active school year.  The active school year wi
 
    .. image:: images/empty-terms.png
 
-Enter a title for the term and the start and end dates. Then click **Next**.
+Enter a title for the term.  Pick the start and end dates by clicking on the **[...]**. Then click **Next**.
 
    .. image:: images/term-add.png
 
