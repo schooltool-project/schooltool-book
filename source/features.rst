@@ -6,18 +6,18 @@ Basic Use Cases
 
 SchoolTool is configured by default to act as what is often called a "student information system" or SIS.  The focus is on tracking information related to students: demographics, enrollment grades, attendance, reporting.  It is a subset of a complete "management information system" or MIS for schools, which might also cover systems like accounting.  
 
-SchoolTool is not a "learning managment system," or LMS, such as Moodle, although they share some overlapping feature sets, such as a gradebook.  SchoolTool does not contain curriculum or learning objects.  One way to differentiate between SIS and LMS roles is note that LMS's don't print student report cards, while SIS's do.  SIS data focuses on students; the LMS is organized around courses.
+SchoolTool is not a "learning managment system," or LMS, such as Moodle, although they share some overlapping feature sets, such as a gradebook.  SchoolTool does not contain curriculum or learning objects.
 
 SchoolTool is designed for extensibility, however, so we hope that in collaboration with outside users, governments and vendors SchoolTool will offer more functionality beyond basic SIS components in the future.  SchoolTool's built-in calendaring and resource booking features are an example of non-SIS functionality in SchoolTool.
 
-Currently, the primary deployment strategy for SchoolTool is for one server instance corresponding to one school.  You can handle multiple schools by running multiple server processes (software) on one physical server (hardware).  Adding management tools for multi-school installations is a long-term goal for SchoolTool.  It is possible in some cases to track specific data about several similar schools on one SchoolTool instance. 
+Currently, the primary deployment strategy for SchoolTool is for one server instance corresponding to one school.  You can handle multiple schools by running multiple server processes (software) on one physical server (hardware).  
 
-Because SchoolTool is free and easy to install, it can also practically be deployed and used within a school by a small subset of teachers, or even installed on a laptop or desktop PC and used by a single teacher as an online gradebook or attendance journal.  Likewise, schools can use individual components of SchoolTool, such as resource booking, without committing to using it as a complete student information system. 
+Because SchoolTool is free and easy to install, it can be installed on a laptop or desktop PC and used by a single teacher as an online gradebook or attendance journal.  Likewise, schools can use individual components of SchoolTool, such as resource booking, without committing to using it as a complete student information system. 
 
 School Model
 ------------
 
-* **Persons:** Default groups for people are students, teachers, school administrators, and site administrators (technical).  Parent access is planned for future releases.  By design all people can log in, but currently our development focus has been on teacher and administrator views.  If people are not assigned passwords, they cannot log in.
+* **Persons:** Default groups for people are students, teachers, school administrators, and site administrators (technical).  Parent access is planned for future releases.  Each person in the system can be given a login password with permissions appropriate to their role, but currently our development focus has been on teacher and administrator views.
 
 * **Groups:** Create arbitrary groups of people representing school organizations, clubs, teams, etc.  
 
@@ -25,7 +25,9 @@ School Model
 
 * **Years and terms:** Years are the longest block of time in SchoolTool.  The transition between years represents a regular point of significant reorganization within the school; e.g., when most students are promoted, teachers hired, etc.).  Terms define when sections begin and end.
 
-* **Timetables:** Timetables define when sections meet during the week.  This is the school's "bell schedule."  SchoolTool handles simple timetables; e.g., classes meet the same time every day; and many complex ones, such as rotating schedules and schedules with different start and end times on different days of the week.  SchoolTool does not currently generate class rosters or automatically schedule sections into rooms and times.  It tracks the timetables you enter or import.
+* **Timetables:** Timetables define when sections meet during the week.  This is the school's "bell schedule."  SchoolTool handles simple timetables; e.g., classes meet the same time every day; and many complex ones, such as rotating schedules and schedules with different start and end times on different days of the week.  
+
+SchoolTool does not currently generate class rosters or automatically schedule sections into rooms and times.  It tracks the timetables you enter or import.
 
 * **Resources:** SchoolTool allows you to manage and track shared resources.  These are divided into "locations" and "resources," with further user-created types such as "classrooms" or "projectors."  Each has additional meta-data, such as the seating capacity of a location.  
 
@@ -36,9 +38,9 @@ For more detailed explanations of the above terms, see :ref:`glossary`.
 Demographics and Contacts
 -------------------------
 
-* Each school can customize the fields of demographic and other data stored for each person.
+* A school can customize the fields of demographic and other data stored for each person.
 
-* Each person can be associated with one or more contacts, typically parents or guardians in a primary or secondary school.  In the case of siblings, multiple people can be associated with a single contact.
+* Each person can be associated with one or more contacts, typically parents or guardians in a primary or secondary school.  Multiple students can be associated with a single contact.
 
 Calendaring
 -----------
@@ -52,8 +54,6 @@ Calendaring
 * Calendars are aware of the school timetable, so by default new events will start and end at the beginning and end of class periods.
 
 * Users can create single or repeating events.  Teachers can edit section events to note tests, assignment and other class information.
-
-* Calendars can be imported and exported to other popular applications like iCal and Google Calendar using the iCal (.ics) format.
 
    .. image:: images/intrepid/calendar.png
 
@@ -79,9 +79,9 @@ Attendance and Participation Journal
 
 SchoolTool provides a simple attendance and participation journal allows a teacher to track absences and tardies, and optionally assign each student a numeric score for each class meeting.  Each meeting of a section can also be assigned a description.  The teacher can add a cumulative attendance/participation grade for the term.
 
-Individual entries in the journal grid are stored to the server without requiring a page reload using Ajax.  The journal displays average participation scores and total absences for the term.  
+Individual entries in the journal grid are stored to the server without requiring a page reload.  The journal displays average participation scores and total absences for the term.  
 
-The current system is adequate for teacher record keeping and providing basic data for report cards.  We have not implemented a full workflow to manage excused and unexcused absences for a school with strict legal requirements, such as US public schools.  We will focus on improving the user experience and reports for this simpler case first.
+The current system is sufficient for teacher record keeping and providing basic data for report cards.  We have not implemented a full workflow to manage excused and unexcused absences for a school with strict legal requirements, such as US public schools.  We will focus on improving the user experience and reports for this simpler case first.
 
    .. image:: images/intrepid/journal.png
 
@@ -92,10 +92,19 @@ SchoolTool includes a assignment-oriented gradebook for each section.  Each sect
 
    .. image:: images/intrepid/activity.png
 
+Gradebook scores can be exported to .xls spreadsheet format.
+
 Reporting
 ---------
 
-SchoolTool's printed reports are generated using the free and powerful ReportLab library.  Now that SchoolTool can capture a variety of data for a school, we need your feedback on exactly what kind of reports are needed at your school.  Creating a set of high quality printable and web-viewable reports is a priority for development.  Let us know what you need!
+SchoolTool's printed reports are generated using the free and powerful ReportLab library, including support for reports defined in RML, an HTML-like markup language.
+
+Now that SchoolTool can capture a variety of data for a school, we need your feedback on exactly what kind of reports are needed at your school.  Creating a set of high quality printable and web-viewable reports is a priority for development.  Let us know what you need!
+
+Report Cards
+------------
+
+Administrators can define what grades and other data are collected for report cards and other regular assessments.  Teachers enter scores via special sheets in their gradebook, giving them a consistent and user-friendly interface.
 
 Interoperability Between SchoolTool Components
 ----------------------------------------------
@@ -120,6 +129,8 @@ Technical
   * Zope Object Database (ZODB);
   * ReportLab PDF generation.
 
+* **Importing and Exporting Data:**  SchoolTool provides a variety of ways to import data into the system, in addition to its web interface.  The all the major components of the school, including people, timetables, courses and section enrollment, can be imported from and exported to .xls spreadsheets.  People, groups, section enrollments and other objects can also be imported from comma separated value (CSV) files.  For testing and evaluation, a spreadsheet of fake data for a school of 1000 students is provided. 
+
 * **Security:** Our custom security model manages permissions based both on role (e.g., teacher, school adminitrator) and relationships (e.g., between a specific teacher and student).  Basic customization of some key aspects of the security policy can be done through the web by the site manager.  Complete customization is possible through XML configuration files.
 
 * **Test-driven development:** SchoolTool includes a comprehensive test suite, including unit and functional tests.  Python "doctests" double as narrative developer documentation.
@@ -128,15 +139,13 @@ Technical
 
 * **Internationalization:** SchoolTool is completely translatable.  New translations can be contributed via the Rosetta system on Launchpad.net.
 
-* **Single-sign on:** SchoolTool includes somewhat unpolished implementation of the Central Authentication Service (CAS) for single sign on with other enterprise applications such as Moodle and Drupal.  CAS requires a separate authentication server; we have been using RubyCAS in this role at a test site.  The CAS server can be easily configured to authenticate against your LDAP server or another external database.
+* **Single-sign on:** SchoolTool includes somewhat unpolished implementation of the Central Authentication Service (CAS) for single sign on with other enterprise applications such as Moodle and Drupal.  CAS requires a separate authentication server; we have been using RubyCAS in this role at a test site.  The CAS server can be easily configured to authenticate against your LDAP server or another external database.  If you are interested in using CAS or LDAP authentication, contact the SchoolTool team via Launchpad, email or IRC.
 
 * **Web server:** SchoolTool contains its own server for easy testing and simple deployments.  For sites requiring a encrypted (SSL) connection, we recommend using Apache as a secure proxy.
 
-* **Virtual servers:** For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition JeOS.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution.
+* **Virtual servers:** For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution.
 
-* **Developer tools:** "devmode" provides object introspection and API documentation via the SchoolTool web interface.
-
-* **Sample data:** To aid in testing SchoolTool, we provide tools for generating sample data for two years in a school of 1000 students (NOTE: this is temporarily disabled in SchoolTool 2008.10.0).  
+* **Developer tools:** "devmode" provides object introspection and API documentation via the SchoolTool web interface. 
 
 * **Consistent programming style:** For readibility and easier modification, SchoolTool conforms to the official PEP 8 Style Guide for Python Code.
 

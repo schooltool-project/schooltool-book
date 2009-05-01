@@ -24,9 +24,9 @@ Contents:
    :maxdepth: 1
 
    features
+   what-is-1_0
    setup
    administrators
-   users
    developers
    glossary
    about

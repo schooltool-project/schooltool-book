@@ -1,5 +1,5 @@
-Installation and Basic Setup
-============================
+Installation and School Setup
+=============================
 
 Contents:
 
@@ -8,12 +8,12 @@ Contents:
 
    system-requirements
    install
+   upgrade2009
    setup-initial
    web-v-import
    years
    terms
    timetable
-   import
    courses-sections
    user
    sample

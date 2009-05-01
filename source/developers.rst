@@ -6,11 +6,12 @@ This section of the book contains information relevant to programmers interested
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    dev_sandbox
    dev_devmode
    introspector
    style-guide
+   jaunty-release-notes
    intrepid-release-notes
 
