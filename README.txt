@@ -13,10 +13,10 @@ Ubuntu, you need to do::
 
 Then, to fetch the source::
 
-    bzr branch lp:~schooltool-owners/schooltool/users-guide
+    bzr branch lp:~schooltool-owners/schooltool/st-book
 
 To grab the rest of the Python dependencies and put them in a nice sandbox 
-away from your system Python, ``cd`` into the ``users-guide/`` directory 
+away from your system Python, ``cd`` into the ``st-book/`` directory 
 and do::
 
     make html

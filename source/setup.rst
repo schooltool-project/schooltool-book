@@ -10,6 +10,7 @@ Contents:
    install
    upgrade2009
    setup-initial
+   translations
    web-v-import
    years
    terms

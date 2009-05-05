@@ -30,4 +30,5 @@ Contents:
    developers
    glossary
    about
+   editing-this-book
    cando

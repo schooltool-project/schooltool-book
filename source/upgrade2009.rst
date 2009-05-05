@@ -10,3 +10,7 @@ Thus we have **schooltool-2008** and **schooltool-2009**.  As of April 2009, the
     $ sudo apt-get install schooltool-2009
 
 The second step copies the database to a new location.  If you don't do that, **schooltool-2009** will start with a blank database.  This may cause you to briefly panic.  We do this to help ensure that a bug in the upgrade process will not automatically clobber your existing database.
+
+Also please note that when you upgrade from one version of Ubuntu to another, you should also change the distribution version of your SchoolTool PPA on Launchpad to match the name of the new Ubuntu distribution.
+
+
