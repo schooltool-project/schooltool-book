@@ -25,7 +25,10 @@ Contents:
 
    features
    what-is-1_0
-   setup
+   install-toc
+   setup-toc
+   spreadsheet
+   populating
    administrators
    developers
    glossary
