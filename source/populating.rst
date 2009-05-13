@@ -7,5 +7,6 @@ Contents:
    :maxdepth: 2
 
    user
+   demographics-schema
    persons
    sections

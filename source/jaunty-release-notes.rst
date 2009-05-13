@@ -1,6 +1,43 @@
 2009.04 Release Notes
 =====================
 
+2009.04.12
+++++++++++
+
+
+Major
+-----
+
+Translations are back in SchoolTool.
+
+As usual, please select set a preferred language in your browser or
+follow instructions in the SchoolTool book:
+http://book.schooltool.org/htmlhelp/translations.html#selecting-schooltool-s-language
+
+Tweaks and fixes
+----------------
+
+Douglas Cerna:
+ * Made CSV importer support blank lines.  See https://bugs.launchpad.net/schooltool/+bug/253663
+
+Justas Sadzevičius:
+ * Added section linking to the edit section view.
+
+
+Gradebook
+---------
+
+Alan Elkner:
+ * Re-enabled final grades as "summary" view.  See https://bugs.launchpad.net/schooltool/+bug/372557
+
+Alan Elkner:
+ * Fixed unicode encoding bug.
+   Having unicode characters in activity descriptions prevented access to the gradebook.  See https://bugs.launchpad.net/schooltool/+bug/371577
+
+
+2009.04.11
+++++++++++
+
 Person and Demographics
 -----------------------
 

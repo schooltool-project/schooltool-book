@@ -54,3 +54,9 @@ For the forseeable future we are only supporting deployment on `Ubuntu Linux <ht
    
    **The login is "manager" and the default password is "schooltool".**
 
+Installing TrueType Fonts for PDF Reports
+-----------------------------------------
+
+   To create pdf reports, you currently need to enable the Ubuntu "multiverse" software repositories.  Go to the **System** menu, then **Administration** and select **Software Sources**.  Check the box that says **Software restricted by copyright or legal issues (multiverse)**.  You can also do this by uncommenting the multiverse entries in ``/etc/apt/sources.list``.
+   
+   Then ``sudo apt-get install msttcorefonts`` or install the ``msttcorefonts`` package via Synaptic.  We're working on replacing this with completely free and unencumbered fonts that will eliminate these extra steps.
