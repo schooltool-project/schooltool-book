@@ -1,7 +1,11 @@
 Customizing Demographics
 ========================
 
-SchoolTool allows you to modify the demographic information stored about each person.  Note that currently the same information is stored about both students and teachers.  You do not need to enter optional fields when it is not relevant to the individual's role in the school.
+SchoolTool allows you to modify the demographic information stored about each person.  If you are using SchoolTool as the primary student information system for a school, you will probably need to customize the demographics fields to meet your local government's reporting requirements.
+
+Contact information -- parents names, address, phone, email, etc. -- is stored separately.
+
+Note that currently the same information is stored about both students and teachers.  You do not need to enter values in optional fields when it is not relevant to the individual's role in the school.
 
 To see the default demographics fields, as "manager," click the **Home** and then the **Edit** button.  
 
@@ -11,7 +15,7 @@ To see the default demographics fields, as "manager," click the **Home** and the
 
 **Gender** and **Birthdate** also cannot be changed.  
 
-In the default settings, **ID, Ethnicity, Language, Place of birth, and Citizenship** can be edited or removed.
+In the default settings, **ID, Ethnicity, Language, Place of birth, and Citizenship** can be edited or removed.  In this case **ID** is just a generic text field which you can use for whatever student ID or number you might need to keep track of.
 
 To customize the demographics fields for your school, click **Manage** and then **Demographics**:
 

@@ -13,8 +13,6 @@ Click the **New Person** action button, then fill out the subsequent form:
 
 Most of the fields are optional except for the fields with red asterixes **first name**, **last name**, **username** and **password**.  For now, just put in your basic information.
 
-**Group** allows you to add a person directly to "students" or "teachers."
-
 Click **Add** and you should see:
 
    .. image:: images/view-user.png

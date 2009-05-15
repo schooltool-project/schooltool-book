@@ -1,3 +1,5 @@
+.. _spreadsheet:
+
 Importing and Exporting from Spreadsheet
 ========================================
 
