@@ -34,7 +34,7 @@ Create the bzr shared repository::
 Checkout branches::
 
   ~$ cd schooltool_sandbox
-  ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool.stapp2008spring/
+  ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool.stapp2008fall/
   ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool.gradebook/
   ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool/
   ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool.lyceum.journal/
@@ -44,7 +44,7 @@ This will take long, very long actually.
 Set up buildout
 ~~~~~~~~~~~~~~~
 
-Edit ``buildout.cfg`` in schooltool.stapp2008spring:
+Edit ``buildout.cfg`` in schooltool.stapp2008fall:
 
 Change::
 
@@ -55,7 +55,7 @@ Add::
 
   [test-all]
   recipe = zc.recipe.testrunner
-  eggs = schooltool.stapp2008spring
+  eggs = schooltool.stapp2008fall
       schooltool
       schooltool.gradebook
       schooltool.lyceum.journal
@@ -63,14 +63,14 @@ Add::
 
 Change::
 
- "parts = schooltool.stapp2008spring scripts test tags" to
- "parts = schooltool.stapp2008spring scripts test tags test-all"
+ "parts = schooltool.stapp2008fall scripts test tags" to
+ "parts = schooltool.stapp2008fall scripts test tags test-all"
 
 Run buildout::
 
-  ~/schooltool_sandbox$ cd schooltool.stapp2008spring
-  ~/schooltool_sandbox/schooltool.stapp2008spring$ sudo make ubuntu-environment
-  ~/schooltool_sandbox/schooltool.stapp2008spring$ make build
+  ~/schooltool_sandbox$ cd schooltool.stapp2008fall
+  ~/schooltool_sandbox/schooltool.stapp2008fall$ sudo make ubuntu-environment
+  ~/schooltool_sandbox/schooltool.stapp2008fall$ make build
 
 
 Work on new features
