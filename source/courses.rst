@@ -1,7 +1,7 @@
+.. _courses:
+
 Setting Up Courses
 ==================
-
-.. _courses:
 
 In SchoolTool, there is a distinction between "courses" and "sections."  A "course" describes what is taught -- the curriculum.  A section is an actual group of students being taught this content.  For example, "1st Grade Mathematics," "British Literature," and "Algebra II" are all courses.  "9:30 Algebra II, Spring 2008" or "Period B Algebra II, 2009 - 2010" are sections.
 

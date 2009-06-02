@@ -1,3 +1,5 @@
+.. _persons:
+
 Adding People
 =============
 

@@ -1,5 +1,5 @@
-Administrators' Handbook
-========================
+System Administration
+=====================
 
 Contents:
 
@@ -7,4 +7,5 @@ Contents:
    :maxdepth: 2
 
    remote
+   security
    database

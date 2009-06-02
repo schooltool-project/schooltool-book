@@ -1,9 +1,25 @@
 2009.04 Release Notes
 =====================
 
-2009.04.12
+2009.04.13
 ++++++++++
 
+Justas Sadzevičius:
+
+ * SchoolTool no longer supports groups as members of a section.  To add all members of a group, please use the filter in section's "edit individuals" page.  See: https://bugs.launchpad.net/schooltool/+bug/370629
+
+ * Optional "Course ID", "Goverment ID" and "Credits" fields added to a Course.  See:  https://bugs.launchpad.net/schooltool/+bug/381031
+
+Gediminas Paulauskas:
+
+ * Fixed broken packages.  See: https://bugs.edge.launchpad.net/schooltool/+bug/352096
+
+ * Server properly starts after installation or upgrade.  See: https://bugs.edge.launchpad.net/schooltool/+bug/334365
+
+
+
+2009.04.12
+++++++++++
 
 Major
 -----

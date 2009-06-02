@@ -9,5 +9,6 @@ Contents:
    user
    demographics-schema
    persons
+   groups
    contacts
    sections
