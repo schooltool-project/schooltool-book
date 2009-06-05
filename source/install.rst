@@ -3,9 +3,9 @@
 Installing SchoolTool on Ubuntu
 ===============================
 
-For the forseeable future we are only supporting deployment on `Ubuntu Linux <http://ubuntu.com>`_ (currently, the Gutsy, Hardy and Intrepid and Jaunty releases).
+For the forseeable future we are only supporting deployment on `Ubuntu Linux <http://ubuntu.com>`_ (currently, the Hardy, Intrepid and Jaunty releases).
 
-#. Add SchoolTool's Launchpad PPA to your Software Sources.
+#. Add SchoolTool PPA to your Software Sources.
 
    Either manually edit ``/etc/apt/sources.list``, or go to the **System** menu, then **Administration** and select **Software Sources**.  Select the **Third-Party Software** tab.
 
@@ -20,11 +20,6 @@ For the forseeable future we are only supporting deployment on `Ubuntu Linux <ht
 
     deb http://ppa.launchpad.net/schooltool-owners/ubuntu intrepid main
     deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu intrepid main
-
-   If you're running gutsy::
-
-    deb http://ppa.launchpad.net/schooltool-owners/ubuntu gutsy main
-    deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu gutsy main
 
    If you're running hardy::
 
@@ -50,7 +45,7 @@ For the forseeable future we are only supporting deployment on `Ubuntu Linux <ht
 
    Either type ``sudo apt-get install schooltool-2009`` in a terminal (and answer "y" to the subsequent questions), or in Synaptic search for "schooltool-2009", select it for installation, and hit **Apply**.  If it doesn't show up in Synaptic try the terminal method.
 
-   If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080.  If that doesn't work, try http://127.0.0.1
+   If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080.  If that doesn't work, try http://127.0.0.1:7080
    
    **The login is "manager" and the default password is "schooltool".**
 
