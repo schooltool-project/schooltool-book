@@ -30,8 +30,10 @@ clean:
 	-rm -rf develop-eggs
 	-rm -rf parts
 
-bin/sphinx-build:
+bin/buildout:
 	python bootstrap.py
+
+bin/sphinx-build: bin/buildout
 	bin/buildout
 
 html: bin/sphinx-build
