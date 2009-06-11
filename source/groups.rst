@@ -22,6 +22,26 @@ Then click the **Groups** link:
 
    .. image:: images/groups-2.png
 
-And select **Students**.
+And select **Students**:
 
    .. image:: images/groups-3.png
+
+First we will "manually" add a member.  Click **edit members**:
+
+   .. image:: images/groups-4.png
+
+Check the box next to "Sally Brown" and hit **Add**:
+
+   .. image:: images/groups-5.png
+
+Then **OK** to get back to the main page for the group.
+
+Next we will import a list of group members.  Click **Import Groups Members** (sic).  This form accepts a simple list of person ID's to be *added* to the group.  That is, people not in the list are not *removed* from the existing group membership.  You may create a text file and upload it, or simply type or copy/paste the ID's into the textbox provided:
+
+   .. image:: images/groups-6.png
+
+Hit **Submit** and you should get a "CSV text imported successfully" message.
+
+At this point you're unfortunately stuck in a navigational dead-end bug.  Selecting the year at the top of the page and **Groups** and **Students** is probably the best route back.  Or using your back arrow/history.  Regardless, here's what your completed group should look like:
+
+   .. image:: images/groups-7.png

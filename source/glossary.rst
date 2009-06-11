@@ -6,7 +6,11 @@ Glossary of Usage in SchoolTool
 
 **administrator** - An administrator of the school itself.  This is a school governance role, not a technical role.  For example, the principal or headmaster of a school is an administrator.  Compare with "manager."
 
+**advisor/advisee** - In some US schools, "advisors" are adults, usually teachers, who have a relationship with a student throughout their career at a school.  The "advisee" is the student being advised.  "Mentor" and "protege" expresses a similar, if tighter, relationship.
+
 **class** - We avoid using "class" as an educational term. It has too many overlapping usages. Plus it has a different meaning in computer science. If someone is using "class" in an educational context, they often usually mean what SchoolTool calls a "section."
+
+**course** - A course in SchoolTool describes curriculum.  For example, Algebra I, American History, 3rd Grade Reading, and Biology I are all courses.  This definition is *different* from the way many learning management systems, such as Moodle, use "course."  A Moodle "course" is closer to a SchoolTool "section."
 
 **period** - A period represents a specific configuration of sections and locations in the school. That is, for any given period, you should be able to identify what sections should be meeting in what locations. Periods occur during one or more slots in the school timetable.  
 
