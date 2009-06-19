@@ -37,7 +37,7 @@ Back at the main section page, to add an instructor or instructors for the class
 
    .. image:: images/sections-6.png
 
-Likewise, click **edit individuals** to add pupils to the section.  The terminology in this page is a bit misleading.  The search widget is not limited to available "students."  It displays all people.  In this case, we know all the students we want to add to the section are part of the "Cats" team, so we use the search widget to return that group's members and **Invert Selection** to select them all efficiently.
+Likewise, click **edit individuals** to add pupils to the section.  The terminology in this page is a bit misleading.  The list of people you may add is not limited to available "students."  It can display all people in the system.  In this case, we know all the students we want to add to the section are part of the "Cats" team, so :ref:`search` we can narrow the selection down to that group's members and **Invert Selection** to check all their boxes with one click:
 
    .. image:: images/sections-7.png
 

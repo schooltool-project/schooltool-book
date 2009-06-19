@@ -1,3 +1,5 @@
+.. _search:
+
 Using the Search Widget
 =======================
 
