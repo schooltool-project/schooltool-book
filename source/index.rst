@@ -29,6 +29,7 @@ Contents:
    setup-toc
    spreadsheet
    populating
+   gradebook-toc
    administrators
    developers
    glossary
