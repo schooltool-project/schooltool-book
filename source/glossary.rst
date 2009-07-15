@@ -26,6 +26,8 @@ In simple cases, a period simply corresponds to a time; at 9:00, it describes wh
 
 **school year** - A school year encompasses the annual cycle of a school.  For example, most students are promoted at the end of a year.  Most teachers start work at the beginning of the year.  Terms must be contained within years.  The school year does not have to correspond to calendar year.  Whatever suits the processes of your school.  It is best to set this up so that each year begins immediately after the previous one.  Every date is part of one school year or another.  School years cannot overlap.
 
+**score system** - A scale used for assessment.  A grading scale or rubric scale.  
+
 **section** - A section is a set of one or more learners who meet during a term. There are lots of other optional attributes and relationships associated with sections. They may have instructors, they may be implementations of courses.  
 
 The standard example of a section would be something like "Mr. Hoffman's 9:00 Algebra II class, spring semester, 1995." Less traditional structures like eLearning and internships are still expressed as sections.  
