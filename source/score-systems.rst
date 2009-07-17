@@ -1,3 +1,5 @@
+.. _score-systems:
+
 Managing Score Systems and Total Columns
 ========================================
 

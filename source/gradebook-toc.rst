@@ -13,4 +13,5 @@ Contents:
    gradebook
    gradebook-2
    score-systems
+   report-sheet
 
