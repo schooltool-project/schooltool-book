@@ -5,9 +5,9 @@ SchoolTool provides a mechanism called "report sheets" for collecting data about
 
 However, the system is designed to be very flexible.  It leverages the features of the SchoolTool gradebook.  You can use it for any data you'd like to collect regularly about student performance or behavior in all classes.  You can use SchoolTool's customizable score systems to gather non-traditional grading or assessment data.  Support for comments in the report sheet system is partially implemented -- currently you can save comments but not include them in the default printed report cards.
 
-The printed report cards are currently *very* simple.  The intention is to develop them further based on feedback, so *please* let us know what you'd like to see on report cards and how they ought to look.  We *will* respond to feedback.  Also, we are transitioning to a system where the report cards will be laid out using an HTML-like markup, which in the medium term will allow schools to design custom printed reports.
+The printed report cards are currently *very* simple.  The intention is to develop them further based on feedback, so `please let us know what you'd like to see <http://bugs.launchpad.net/schooltool>`_ on report cards and how they ought to look.  We *will* respond to feedback.  Also, we are transitioning to a system where the report cards will be laid out using an HTML-like markup, which in the medium term will allow schools to design custom printed reports.
 
-Also, based on user feedback we shall develop other web and printed reports.  *Let us know what you need.*
+Also, based on user feedback we shall develop other web and printed reports.  `Let us know what you need. <http://bugs.launchpad.net/schooltool>`_
 
 There are several steps involved in getting from the initial design of a report sheet to a printed report card.  
 
@@ -26,7 +26,7 @@ Defining a Report Sheet Template
 
 In our ongoing example, we've defined a year and one semester within the year.  At the example school, each semester the teachers report three grades: first quarter, second quarter and a final grade.  So each report sheet will contain columns for these values.
 
-Note that you can deploy multiple report sheets.  So if you wanted you could deploy three sheets with one value per sheet.  Or if you also had interim reports every three weeks, you could also deploy those on the same report sheet, or on a separate one.  Whichever makes the most sense in your case.
+Note that you can deploy multiple report sheets.  So if you wanted you could deploy three sheets with one value per sheet.  Or if you also had interim reports every three weeks, you could also deploy those on the same report sheet, or on a separate one.  You should experiment on a test server and see what maps best to your school's operation.  Having said that, a basic report card is pretty straightforward.
 
 To define a report sheet template, as "manager" go to **Manage** then **Report Sheet Templates**:
 
@@ -99,7 +99,7 @@ Enter the grades as you would in a regular gradebook and hit **Save**.
 
    .. image:: images/report-sheet-14.png
 
-That's it.  There is no step two for the teacher.
+That's it.  Repeat for each of the teacher's sections in the term.  In real life, if this was the end of the first quarter, only the first quarter grades would be entered.
 
 Printing Report Cards
 ---------------------
@@ -115,4 +115,7 @@ Click **Print Report Card**.  A .pdf file will be downloaded.  Open it and it lo
    .. image:: images/report-sheet-16.png
 
 Basic, but it is a good start.  Let us know what to add!
+
+To generate a single .pdf with all the report cards for the members of a group (e.g., students), navigate to the group and hit the **Print Report Card** button.
+
 
