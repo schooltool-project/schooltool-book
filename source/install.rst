@@ -35,8 +35,13 @@ For the forseeable future we are only supporting deployment on `Ubuntu Linux <ht
    * the packages you're downloading haven't been altered since Launchpad built them;
    * you are downloading from the PPA you wanted. 
 
-   Please follow the instructions to install our key at `Launchpad Help <https://help.launchpad.net/Packaging/PPA#Adding%20a%20PPA%27s%20keys%20to%20your%20system>`_.  You'll need to get the schooltool-owners key from the `SchoolTool-Owners PPA <https://launchpad.net/~schooltool-owners/+archive/ppa>`_.  `Adding the keys in the terminal <https://help.launchpad.net/Packaging/PPA#Adding%20the%20keys%20in%20the%20terminal>`_ is the easier method.
+To do this, open a Terminal: go to **Applications > Accessories > Terminal** and run the following command::
+ 
+   sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com c95c0e19386b7051
 
+
+Full instructions instructions for installing our key at `Launchpad Help <https://help.launchpad.net/Packaging/PPA#Adding%20a%20PPA%27s%20keys%20to%20your%20system>`_.  
+   
 #. Update your software list.
 
    Either type ``sudo apt-get update`` in a Terminal or, if you've got the Synaptic package manager installed, go to **System > Administration > Synaptic Package Manager**, launch it, and click **Reload**.
