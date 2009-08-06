@@ -14,4 +14,4 @@ Contents:
    gradebook-2
    score-systems
    report-sheet
-
+   journal
