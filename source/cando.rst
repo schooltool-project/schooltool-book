@@ -3,8 +3,13 @@
 Cando Notes
 ===========
 
-Installation
-------------
+User Installation
+-----------------
+
+To install CanDo's Ubuntu packages, follow `the instructions on the Virginia Career and Technical Education Resource Center <http://cando.cteresource.org/phase2install.html>`_.  The CTE site is the main source of CanDo documentation.
+
+Developer Installation
+----------------------
 
 CanDo installs slightly differently than schooltool.  CanDo currently does not have packages available and uses a buildout process.
 

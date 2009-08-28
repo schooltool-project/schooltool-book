@@ -1,6 +1,8 @@
 Report Sheets and Report Cards
 ==============================
 
+You can use SchoolTool to generate report cards using traditional grades, scores on a list of standards, or other measures.
+
 SchoolTool provides a mechanism called "report sheets" for collecting data about each student in each section in a school.  Most commonly, this is one or more grades for a section, which will subsequently be published as a report card (and stored for other use, of course).  
 
 However, the system is designed to be very flexible.  It leverages the features of the SchoolTool gradebook.  You can use it for any data you'd like to collect regularly about student performance or behavior in all classes.  You can use SchoolTool's customizable score systems to gather non-traditional grading or assessment data.  Support for comments in the report sheet system is partially implemented -- currently you can save comments but not include them in the default printed report cards.
