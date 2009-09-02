@@ -1,6 +1,76 @@
 2009.04 Release Notes
 =====================
 
+2009.04.17
+++++++++++
+
+New features 
+------------
+
+* New section adding view.  
+
+  - Multiple-term (linked) sections can now be created.
+  
+  - "New Section" button replaced with a link in action menu in course view.  
+  
+  - Sections now can also be added from term's "sections" view. 
+  
+  - See https://bugs.launchpad.net/schooltool/+bug/389283
+
+* You can specify the relationship between a person and a contact from a standard set (parent, guardian, step-parent, etc). See https://bugs.launchpad.net/schooltool/+bug/381412
+
+* There is a new gradebook view for grading a single student.  Please follow ">" next to a student's name in the gradebook.
+
+* Report sheet activities can have comments as their scores now, to allow comments on report cards.  See https://bugs.edge.launchpad.net/bugs/381054
+
+* Administrators can define custom score systems (grading scales) used in the gradebook and report sheets.
+
+* Removed ability to delete calendar events that come from (section) timetables.  See https://bugs.launchpad.net/schooltool/+bug/271391
+
+Douglas Cerna:
+
+* Added missing attributes to the course adding form and the csv import.  See https://bugs.launchpad.net/schooltool/+bug/384945 and https://bugs.launchpad.net/schooltool/+bug/384957
+
+Tweaks and fixes
+----------------
+
+* Active year is no longer highlighted in red.  See https://bugs.launchpad.net/schooltool/+bug/317651
+
+* Fixed contact deletion crash. See https://bugs.launchpad.net/schooltool/+bug/382239
+
+* Section and course descriptions are displayed properly now.  See https://bugs.launchpad.net/schooltool/+bug/370581
+
+* Fixed a typo in default ethnicity demographics field.  See https://bugs.launchpad.net/schooltool/+bug/376116
+
+* Graceful handling of incomplete set up in gradebook report card pdfs.  See https://bugs.launchpad.net/schooltool/+bug/379968
+
+* Gradebook: "Update" button renamed to "Save".  See https://bugs.launchpad.net/schooltool/+bug/395272
+
+* Fixed average gradebook score calculation when dealing with invalid scores.  See https://bugs.launchpad.net/schooltool/+bug/391310
+
+* Fixed glitches (events not displayed or displayed in wrong day) in weekly calendar views. See https://bugs.launchpad.net/schooltool/+bug/285514 and https://bugs.launchpad.net/schooltool/+bug/389626  Thanks go to Daniel Höger for the report and part of the fix.
+
+* Cleaned up pre-release ui bugs in "Add a new score system" view.  See https://bugs.launchpad.net/schooltool/+bug/394792, https://bugs.launchpad.net/schooltool/+bug/394805 and https://bugs.launchpad.net/schooltool/+bug/394778
+
+Fixes by Douglas Cerna:
+
+* Fixed keyboard navigation in gradebook.  See https://bugs.launchpad.net/schooltool/+bug/391313
+
+* Improved gradebook XLS export - added First Name, Last Name, ID fields.  See https://bugs.launchpad.net/schooltool/+bug/391787
+
+* Tweaked text in gradebook column set up page.  See https://bugs.edge.launchpad.net/schooltool/+bug/394774
+
+Unicode fixes
+-------------
+
+Fixes by Douglas Cerna:
+
+* Contacts views.  See https://bugs.launchpad.net/schooltool/+bug/382251
+
+* Gradebook activities. See https://bugs.launchpad.net/schooltool/+bug/383416
+
+* Course CSV import.  See https://bugs.launchpad.net/schooltool/+bug/375792
+
 2009.04.13
 ++++++++++
 
