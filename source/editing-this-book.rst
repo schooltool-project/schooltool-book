@@ -1,3 +1,5 @@
+.. _translate-book:
+
 Editing or Translating This Book
 ================================
 
@@ -15,7 +17,7 @@ Getting the Sources
 
 For non-programmers, the weird part will be using the `Bazaar version control system <http://bazaar-vcs.org/>`_ (aka bzr).   
 
-To install on Ubuntu bzr do::
+To install bzr on Ubuntu do::
 
     sudo apt-get install bzr
 
@@ -73,5 +75,3 @@ Then::
 This should create a schooltool-book.pdf file in the **build/latex** directory.
 
 For a more complete explanation of the above, see `Sphinx PDF Generation with LaTeX <http://jimmyg.org/blog/2009/sphinx-pdf-generation-with-latex.html>`_.
-
-to be continued...
