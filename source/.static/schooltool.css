@@ -479,6 +479,10 @@ img.toggler {
     cursor: pointer;
 }
 
+img.logo {
+    border: 0px;
+}
+
 form.pfform {
     margin: 10px 0 20px 0;
 }
