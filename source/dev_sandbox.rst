@@ -34,17 +34,15 @@ Create the bzr shared repository::
 Checkout branches::
 
   ~$ cd schooltool_sandbox
-  ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool.stapp2008fall/
-  ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool.gradebook/
-  ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool/
-  ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool.lyceum.journal/
-
-This will take long, very long actually.
+  ~/schooltool_sandbox$ bzr branch lp:schooltool
+  ~/schooltool_sandbox$ bzr branch lp:schooltool/2009.04
+  ~/schooltool_sandbox$ bzr branch lp:schooltool.gradebook
+  ~/schooltool_sandbox$ bzr branch lp:schooltool.lyceum.journal
 
 Set up buildout
 ~~~~~~~~~~~~~~~
 
-Edit ``buildout.cfg`` in schooltool.stapp2008fall:
+Edit ``buildout.cfg`` in 2009.04:
 
 Change::
 
@@ -63,14 +61,14 @@ Add::
 
 Change::
 
- "parts = schooltool.stapp2008fall scripts test tags" to
- "parts = schooltool.stapp2008fall scripts test tags test-all"
+ "parts = schooltool scripts test tags" to
+ "parts = schooltool scripts test tags test-all"
 
 Run buildout::
 
-  ~/schooltool_sandbox$ cd schooltool.stapp2008fall
-  ~/schooltool_sandbox/schooltool.stapp2008fall$ sudo make ubuntu-environment
-  ~/schooltool_sandbox/schooltool.stapp2008fall$ make build
+  ~/schooltool_sandbox$ cd 2009.04
+  ~/schooltool_sandbox/2009.04$ sudo make ubuntu-environment
+  ~/schooltool_sandbox/2009.04$ make build
 
 
 Work on new features
