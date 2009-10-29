@@ -9,13 +9,15 @@ Create ~/.buildout/default.cfg and add::
   [buildout]
   eggs-directory = /home/*your-user*/.buildout/eggs
   download-cache = /home/*your-user*/.buildout/cache
+  extends-cache = /home/*your-user*/.buildout/extends
 
 Buildout does not understand the unix ~ notation, so use the full
 path.
 
-Create the cache directory::
+Create the cache directories::
 
   ~$ mkdir ~/.buildout/cache
+  ~$ mkdir ~/.buildout/extends
 
 Checkout all the code you will be working on
 --------------------------------------------
