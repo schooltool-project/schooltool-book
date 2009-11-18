@@ -8,9 +8,9 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
-   translation-toc
    dev_sandbox
    dev_devmode
    introspector
    style-guide
+   translation-toc
 
