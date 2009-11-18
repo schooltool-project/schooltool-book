@@ -1,8 +1,8 @@
-2009.04 Release Notes
+1.0 Release Notes
 =====================
 
-2009.04.17
-++++++++++
+1.0.3
++++++
 
 New features 
 ------------
@@ -71,8 +71,9 @@ Fixes by Douglas Cerna:
 
 * Course CSV import.  See https://bugs.launchpad.net/schooltool/+bug/375792
 
-2009.04.13
-++++++++++
+
+1.0.2
++++++
 
 Justas Sadzevičius:
 
@@ -87,16 +88,15 @@ Gediminas Paulauskas:
  * Server properly starts after installation or upgrade.  See: https://bugs.edge.launchpad.net/schooltool/+bug/334365
 
 
-
-2009.04.12
-++++++++++
+1.0.1
++++++
 
 Major
 -----
 
 Translations are back in SchoolTool.
 
-As usual, please select set a preferred language in your browser or
+As usual, please set a preferred language in your browser or
 follow instructions in the SchoolTool book:
 http://book.schooltool.org/htmlhelp/translations.html#selecting-schooltool-s-language
 
@@ -109,7 +109,6 @@ Douglas Cerna:
 Justas Sadzevičius:
  * Added section linking to the edit section view.
 
-
 Gradebook
 ---------
 
@@ -121,8 +120,8 @@ Alan Elkner:
    Having unicode characters in activity descriptions prevented access to the gradebook.  See https://bugs.launchpad.net/schooltool/+bug/371577
 
 
-2009.04.11
-++++++++++
+1.0.0
++++++
 
 Person and Demographics
 -----------------------
