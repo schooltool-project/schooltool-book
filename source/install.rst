@@ -3,7 +3,7 @@
 Installing SchoolTool on Ubuntu
 ===============================
 
-For the forseeable future we are only supporting deployment on `Ubuntu Linux <http://ubuntu.com>`_ (currently, the Hardy, Intrepid and Jaunty releases).
+For the forseeable future we are only supporting deployment on `Ubuntu Linux <http://ubuntu.com>`_ (currently, Intrepid, Jaunty and Karmic releases).
 
 #. Add SchoolTool PPA to your Software Sources.
 
@@ -11,21 +11,32 @@ For the forseeable future we are only supporting deployment on `Ubuntu Linux <ht
 
    Add these lines:
 
-   If you're running jaunty::
+   If you're running Jaunty::
 
     deb http://ppa.launchpad.net/schooltool-owners/ubuntu jaunty main
     deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu jaunty main
 
-   If you're running intrepid::
+   If you're running Intrepid::
 
     deb http://ppa.launchpad.net/schooltool-owners/ubuntu intrepid main
     deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu intrepid main
 
-   If you're running hardy::
+   If you're running Karmic::
 
-    deb http://ppa.launchpad.net/schooltool-owners/ubuntu hardy main
-    deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu hardy main
-    
+    deb http://ppa.launchpad.net/schooltool-owners/ubuntu karmic main
+    deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu karmic main
+
+   **On Karmic there is an additional step.**
+   
+   Create and edit (as root) ``/etc/apt/preferences`` to contain::
+
+    Explanation: prefer packages from SchoolTool PPA
+    Package: *
+    Pin: release o=LP-PPA-schooltool-owners
+    Pin-Priority: 1001
+
+   This will *downgrade* certain Zope packages on your system to versions compatible with SchoolTool.  In future releases we will bring SchoolTool's requirements in sync with the Ubuntu packages.
+
    .. image:: images/sources.png
 
 #. Add the digital keys for the SchoolTool-Owner's Personal Package Archive (PPA) to your system.

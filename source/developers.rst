@@ -13,6 +13,4 @@ Contents:
    dev_devmode
    introspector
    style-guide
-   jaunty-release-notes
-   intrepid-release-notes
 

@@ -10,13 +10,21 @@ Glossary of Usage in SchoolTool
 
 **class** - We avoid using "class" as an educational term. It has too many overlapping usages. Plus it has a different meaning in computer science. If someone is using "class" in an educational context, they often usually mean what SchoolTool calls a "section."
 
-**course** - A course in SchoolTool describes curriculum.  For example, Algebra I, American History, 3rd Grade Reading, and Biology I are all courses.  This definition is *different* from the way many learning management systems, such as Moodle, use "course."  A Moodle "course" is closer to a SchoolTool "section."
+**contact** - A student may have one or more "contacts," people who may need to recieve notifications and information about the student or the school as a whole.  A user may also be a contact for him or herself (particularly in the case of older students and adults).  Contact information includes home address, phone number, email address, etc.   For example, parent, guardian, parole officer; for report cards, announcements, notification of absence via email, etc.  
+
+**course** - A course in SchoolTool describes a set curriculum taught in a section.  For example, Algebra I, American History, 3rd Grade Reading, and Biology I are all courses.  This definition is *different* from the way many learning management systems, such as Moodle, use "course."  A Moodle "course" is closer to a SchoolTool "section."
+
+**demographics** - In SchoolTool, we use the word "demographics" to refer to a set of information that may be stored for each person in the system.  The fields used in demographics can be edited at the school level.  Note that all data in "demographics" might not fit the dictionary definition of "demographics."
+
+**group** - Groups are sets of persons.  They can be used for organization, facilitating sorting and searching, and reporting.  They also have calendars.
 
 **period** - A period represents a specific configuration of sections and locations in the school. That is, for any given period, you should be able to identify what sections should be meeting in what locations. Periods occur during one or more slots in the school timetable.  
 
 In simple cases, a period simply corresponds to a time; at 9:00, it describes which sections are meeting where.  In more complex cases, periods will occur at different times and are often identified by letters (A period, B period, etc).
 
 **manager** - A person who maintains an instance of SchoolTool.  This is a technical role, not a school governance role.  For example, a systems administrator or webmaster that is responsible for setting up SchoolTool and keeping it running is a manager.  Compare to "administrator."
+
+**resources** - These are locations or objects within a school.  SchoolTool's calendar can function as a reservation and tracking system for resources.
 
 **schedule** - This is used as a verb in the SchoolTool UI, to refer to the process of assigning a student to his or her sections.
 

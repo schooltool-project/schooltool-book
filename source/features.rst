@@ -4,7 +4,7 @@ Overview of Features
 Basic Use Cases
 ---------------
 
-SchoolTool is configured by default to act as what is often called a "student information system" or SIS.  The focus is on tracking information related to students: demographics, enrollment grades, attendance, reporting.  It is a subset of a complete "management information system" or MIS for schools, which might also cover systems like accounting.  
+SchoolTool is configured by default to act as what is often called a "student information system" or SIS.  The focus is on tracking information related to students: demographics, enrollment grades, attendance, intervention tracking, and reporting.  It is a subset of a complete "management information system" or MIS for schools, which might also cover systems like accounting.  
 
 SchoolTool is not a "learning managment system," or LMS, such as Moodle, although they share some overlapping feature sets, such as a gradebook.  SchoolTool does not contain curriculum or learning objects.
 
@@ -94,31 +94,24 @@ SchoolTool includes a assignment-oriented gradebook for each section.  Each sect
 
 Gradebook scores can be exported to .xls spreadsheet format.
 
+Intervention
+------------
+
+SchoolTool's Intervention system is used to manage an "intervention" meeting between a student and other stakeholders to address disciplinary, academic or other issues, to set goals, and to facilitate tracking progress towards those goals, and to foster ongoing communication between stakeholders about student growth and achievement.
+
+Intervention was developed and used at Science Leadership Academy in Philadelphia, in a collaboration between SchoolTool core developers, Principal Chris Lehmann, and other faculty and staff at the school.  
+
 Reporting
 ---------
 
 SchoolTool's printed reports are generated using the free and powerful ReportLab library, including support for reports defined in RML, an HTML-like markup language.
 
-Now that SchoolTool can capture a variety of data for a school, we need your feedback on exactly what kind of reports are needed at your school.  Creating a set of high quality printable and web-viewable reports is a priority for development.  Let us know what you need!
+SchoolTool 1.2 ships with a small set of default reports for grading and attendance.  We need your feedback on exactly what kind of reports are needed at your school.  Creating a set of high quality printable and web-viewable reports is a priority for development.  Let us know what you need!
 
 Report Cards
 ------------
 
 Administrators can define what grades and other data are collected for report cards and other regular assessments.  Teachers enter scores via special sheets in their gradebook, giving them a consistent and user-friendly interface.
-
-Interoperability Between SchoolTool Components
-----------------------------------------------
-
-SchoolTool 2008.10.1 does not support some rather obvious kinds of interaction between components, such as displaying the attendance journal grade in the gradebook, or adding gradebook assignments to student calendars.  We will be working on adding "low hanging fruit" like this to the 2009.4 release.
-
-Additional Components Under Development
----------------------------------------
-
-There are two additional SchoolTool components being tested at two US high schools.  Each is a powerful and compelling application in its own right, and an example of the kind of user-driven extensions we hope to see as part of a growing SchoolTool ecosystem.  We hope to have them packaged for general use with SchoolTool in 2009.
-
-* CanDo is a full-featured competency tracking system developed primarily by students in and around Arlington, Virginia for use initially at the Arlington Career Center.  It has been under development in various iterations for almost five years; the current SchoolTool-based version is cleanly integrated into SchoolTool and running stably with a production installation tracking 8000 students.  CanDo development has been funded by the Arlington School District, State of Virginia, and Mark Shuttleworth.
-
-* At Science Leadership Academy in Philadelphia, Pennsylvania, we have developed a student intervention tracking system.  This provides a workflow for managing a set of goals for a student, coordinating the process between relevant stakeholders. 
 
 Technical
 ---------
@@ -131,7 +124,7 @@ Technical
 
 * **Importing and Exporting Data:**  SchoolTool provides a variety of ways to import data into the system, in addition to its web interface.  The all the major components of the school, including people, timetables, courses and section enrollment, can be imported from and exported to .xls spreadsheets.  People, groups, section enrollments and other objects can also be imported from comma separated value (CSV) files.  For testing and evaluation, a spreadsheet of fake data for a school of 1000 students is provided. 
 
-* **Security:** Our custom security model manages permissions based both on role (e.g., teacher, school adminitrator) and relationships (e.g., between a specific teacher and student).  Basic customization of some key aspects of the security policy can be done through the web by the site manager.  Complete customization is possible through XML configuration files.
+* **Security:** Our custom security model manages permissions based both on role (e.g., teacher, school adminitrator) and relationships (e.g., between a specific teacher and student).  A detailed view of permissions on specific objects in SchoolTool's core model is available through the web interface.  Basic customization of some key aspects of the security policy can be done through the web by the site manager.  Complete customization is possible through XML configuration files.
 
 * **Test-driven development:** SchoolTool includes a comprehensive test suite, including unit and functional tests.  Python "doctests" double as narrative developer documentation.
 

@@ -31,6 +31,7 @@ Contents:
    populating
    gradebook-toc
    administrators
+   release-notes
    developers
    glossary
    about
