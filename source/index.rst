@@ -13,7 +13,7 @@ This document is the primary source of user and developer documentation on Schoo
 For more information:
 
     * `Homepage <http://schooltool.org/>`_
-    * `Launchpad project page <https://launchpad.net/schooltool>`_
+    * `Launchpad project page <https://launchpad.net/schooltool-project>`_
     * `Mailing List <https://launchpad.net/~schooltoolers>`_
     * IRC channel: #schooltool on freenode.net
 

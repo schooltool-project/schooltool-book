@@ -1,6 +1,9 @@
 SchoolTool Release Notes
 ========================
 
-   karmic-release-notes
+.. toctree::
+   :maxdepth: 1
+
+   karmic-release
    jaunty-release-notes
    intrepid-release-notes

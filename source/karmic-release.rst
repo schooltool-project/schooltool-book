@@ -1,3 +1,6 @@
+1.2 Release Notes
++++++++++++++++++
+
 SchoolTool Core
 ===============
 
@@ -80,5 +83,7 @@ Tweaks and fixes
   glitches.  For a full list see
   https://launchpad.net/schooltool.gradebook/+milestone/0.5.0
 
-* Show period in section journal view, https://launchpad.net/bugs/409959
+SchoolTool Lyceum Journal
+=========================
 
+* Show period in section journal view, https://launchpad.net/bugs/409959

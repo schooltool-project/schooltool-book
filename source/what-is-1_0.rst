@@ -1,12 +1,12 @@
 What Can I Expect From SchoolTool 1.2?
 ======================================
 
-SchoolTool 1.2 is a student information system (SIS), a suite of applications for tracking data about students.  Each one of these applications -- gradebook, attendance, demographics -- is simple on its face but potentially strives to accommodate almost infinite variation in local implementation.  This is software which is never "complete" or "finished."  Talk to a vendor with a successful, full-featured SIS and you'll likely find that the roots of the product go back well over a decade.
+SchoolTool 1.2 is a student information system (SIS), a suite of applications for tracking data about students.  Each one of these applications -- gradebook, attendance, demographics, discipline tracking -- is simple on its face but potentially strives to accommodate almost infinite variation in local implementation.  This is software which is never "complete" or "finished."  Talk to a vendor with a successful, full-featured SIS and you'll likely find that the roots of the product go back well over a decade.
 
 Reports
 -------
 
-Arguably, the entire reason for an SIS is to produce reports.  SchoolTool currently has a small set of reports.  Adding reports, both web and printed, will be a major focus going forward.  If you are interested in using SchoolTool, **tell us what reports you would like to see**, and we'll try to accommodate your needs, because more than likely you aren't the only one with that requirement.  
+Arguably, the entire reason for an SIS is to produce reports.  SchoolTool currently has a small set of reports.  Adding more reports, both web and printed, will be a major focus going forward.  If you are interested in using SchoolTool, **tell us what reports you would like to see**, and we'll try to accommodate your needs, because more than likely you aren't the only one with that requirement.  
 
 How Much Has SchoolTool Been Used and Tested?
 ---------------------------------------------
