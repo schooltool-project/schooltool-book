@@ -37,14 +37,14 @@ Checkout branches::
 
   ~$ cd schooltool_sandbox
   ~/schooltool_sandbox$ bzr branch lp:schooltool
-  ~/schooltool_sandbox$ bzr branch lp:schooltool/2009.04
+  ~/schooltool_sandbox$ bzr branch lp:~schooltool-owners/schooltool/schooltool.stapp2008fall
   ~/schooltool_sandbox$ bzr branch lp:schooltool.gradebook
   ~/schooltool_sandbox$ bzr branch lp:schooltool.lyceum.journal
 
 Set up buildout
 ~~~~~~~~~~~~~~~
 
-Edit ``buildout.cfg`` in 2009.04:
+Edit ``buildout.cfg`` in schooltool.stapp2008fall:
 
 Change::
 
@@ -56,9 +56,9 @@ Add::
   [test-all]
   recipe = zc.recipe.testrunner
   eggs = schooltool.stapp2008fall
-      schooltool
-      schooltool.gradebook
-      schooltool.lyceum.journal
+         schooltool
+         schooltool.gradebook
+         schooltool.lyceum.journal
   defaults = ['--exit-with-status', '--tests-pattern', '^f?tests$', '-v']
 
 Change::
@@ -68,9 +68,9 @@ Change::
 
 Run buildout::
 
-  ~/schooltool_sandbox$ cd 2009.04
-  ~/schooltool_sandbox/2009.04$ sudo make ubuntu-environment
-  ~/schooltool_sandbox/2009.04$ make build
+  ~/schooltool_sandbox$ cd schooltool.stapp2008fall
+  ~/schooltool_sandbox/schooltool.stapp2008fall$ sudo make ubuntu-environment
+  ~/schooltool_sandbox/schooltool.stapp2008fall$ make build
 
 
 Work on new features

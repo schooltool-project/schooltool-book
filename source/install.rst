@@ -3,28 +3,33 @@
 Installing SchoolTool on Ubuntu
 ===============================
 
-For the forseeable future we are only supporting deployment on `Ubuntu Linux <http://ubuntu.com>`_ (currently, Intrepid, Jaunty and Karmic releases).
+For the forseeable future we are only supporting deployment on `Ubuntu Linux <http://ubuntu.com>`_ (currently, Hardy, Intrepid, Jaunty and Karmic releases).
 
-#. Add SchoolTool PPA to your Software Sources.
+#. Add `SchoolTool PPA <https://launchpad.net/~schooltool-owners/+archive/ppa/>`_ to your Software Sources.
 
    Either manually edit ``/etc/apt/sources.list``, or go to the **System** menu, then **Administration** and select **Software Sources**.  Select the **Third-Party Software** tab.
 
    Add these lines:
 
-   If you're running Jaunty::
+   If you're running Hardy::
 
-    deb http://ppa.launchpad.net/schooltool-owners/ubuntu jaunty main
-    deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu jaunty main
+    deb http://ppa.launchpad.net/schooltool-owners/ppa/ubuntu hardy main
+    deb-src http://ppa.launchpad.net/schooltool-owners/ppa/ubuntu hardy main
 
    If you're running Intrepid::
 
-    deb http://ppa.launchpad.net/schooltool-owners/ubuntu intrepid main
-    deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu intrepid main
+    deb http://ppa.launchpad.net/schooltool-owners/ppa/ubuntu intrepid main
+    deb-src http://ppa.launchpad.net/schooltool-owners/ppa/ubuntu intrepid main
+
+   If you're running Jaunty::
+
+    deb http://ppa.launchpad.net/schooltool-owners/ppa/ubuntu jaunty main
+    deb-src http://ppa.launchpad.net/schooltool-owners/ppa/ubuntu jaunty main
 
    If you're running Karmic::
 
-    deb http://ppa.launchpad.net/schooltool-owners/ubuntu karmic main
-    deb-src http://ppa.launchpad.net/schooltool-owners/ubuntu karmic main
+    deb http://ppa.launchpad.net/schooltool-owners/ppa/ubuntu karmic main
+    deb-src http://ppa.launchpad.net/schooltool-owners/ppa/ubuntu karmic main
 
    **On Karmic there is an additional step.**
    
@@ -39,7 +44,7 @@ For the forseeable future we are only supporting deployment on `Ubuntu Linux <ht
 
    .. image:: images/sources.png
 
-#. Add the digital keys for the SchoolTool-Owner's Personal Package Archive (PPA) to your system.
+#. Add the digital keys of the Launchpad PPA for SchoolTool Owners to your system.
 
    This step ensures that you're getting the official version of SchoolTool, that:
 

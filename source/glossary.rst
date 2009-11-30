@@ -1,7 +1,7 @@
 .. _glossary:
 
 
-Glossary of Usage in SchoolTool
+Glossary of SchoolTool
 ===============================
 
 **administrator** - An administrator of the school itself.  This is a school governance role, not a technical role.  For example, the principal or headmaster of a school is an administrator.  Compare with "manager."

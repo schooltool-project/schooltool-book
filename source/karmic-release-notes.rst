@@ -1,5 +1,13 @@
 1.2 Release Notes
+<<<<<<< TREE
 +++++++++++++++++
+=======
+~~~~~~~~~~~~~~~~~
+
+1.2.0
++++++
+
+>>>>>>> MERGE-SOURCE
 
 SchoolTool Core
 ===============
@@ -33,15 +41,17 @@ Bug fixes
 * Much better SchoolTool translatability coverage.
 
 * Failed to create sections that span multiple terms.
-  https://bugs.launchpad.net/bugs/427321
+  https://launchpad.net/bugs/427321
 
 * Crufty section name display for section.
   https://launchpad.net/bugs/394388
+
 
 SchoolTool Intervention
 =======================
 
 This is the first public release of SchoolTool Intervention, a system to create goals for students in collaboration with key stakeholders, to keep those stakeholders up to date on progress toward the goals, and provide a central interface for reports and communication about a student.
+
 
 SchoolTool Gradebook
 ====================
@@ -83,6 +93,10 @@ Tweaks and fixes
   glitches.  For a full list see
   https://launchpad.net/schooltool.gradebook/+milestone/0.5.0
 
+<<<<<<< TREE
+=======
+
+>>>>>>> MERGE-SOURCE
 SchoolTool Lyceum Journal
 =========================
 

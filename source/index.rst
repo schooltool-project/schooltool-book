@@ -25,15 +25,15 @@ Contents:
 
    features
    what-is-1_0
+   release-notes
    install-toc
    setup-toc
    spreadsheet
    populating
    gradebook-toc
    administrators
-   release-notes
    developers
+   editing-this-book
    glossary
    about
-   editing-this-book
    cando
