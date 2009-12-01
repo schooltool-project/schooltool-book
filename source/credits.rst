@@ -5,9 +5,9 @@ SchoolTool Credits
 
 **Project Manager: Tom Hoffman**
 
-**Lead Developer: Ignas Mikalajūnas**
+**Lead Developer: Justas Sadzevicius**
 
-**Release Managers: Gediminas Paulauskas Brian Sutherland**
+**Release Managers: Gediminas Paulauskas**
 
 **Contributors:**
 
@@ -20,6 +20,7 @@ SchoolTool Credits
     * Martijn Faassen
     * Marius Gedminas
     * William Johnston
+    * Ignas Mikalajūnas
     * Gintautas Miliauskas
     * Eldar Omuraliev
     * Stephan Richter
@@ -27,5 +28,6 @@ SchoolTool Credits
     * Andrew Rodriguez
     * Brian Skahan
     * Filip Sufitchi
+    * Brian Sutherland
     * Tom von Schwerdtner
 

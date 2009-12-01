@@ -11,7 +11,11 @@ Well, this is not a way to develop SchoolTool, but it will give you a quick tast
   ~$ bzr co lp:schooltool schooltool
   ~$ cd schooltool
 
-Enable plugins (optional).  Note, that we currently **do not support** disabling the plugins.
+The **schooltool** package just contains the "core" functionality of SchoolTool: gets the server up and running, lets you define the structure of the school and the calendar.
+
+To *use* SchoolTool for anything (beyond calendaring) you need plugins.
+
+Enable plugins (optional).  Note, that we currently **do not support** disabling the plugins.  That is, you can't enable the gradebook, use it a while, and then remove the gradebook module.
 So, you'll need to delete your instance (along with all the data, sadly) to run again without a plugin.
 
 To enable plugins, edit buildout.cfg to contain::
