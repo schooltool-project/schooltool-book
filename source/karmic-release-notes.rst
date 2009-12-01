@@ -1,13 +1,5 @@
 1.2 Release Notes
-<<<<<<< TREE
-+++++++++++++++++
-=======
 ~~~~~~~~~~~~~~~~~
-
-1.2.0
-+++++
-
->>>>>>> MERGE-SOURCE
 
 SchoolTool Core
 ===============
@@ -93,10 +85,6 @@ Tweaks and fixes
   glitches.  For a full list see
   https://launchpad.net/schooltool.gradebook/+milestone/0.5.0
 
-<<<<<<< TREE
-=======
-
->>>>>>> MERGE-SOURCE
 SchoolTool Lyceum Journal
 =========================
 
