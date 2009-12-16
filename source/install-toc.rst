@@ -10,4 +10,5 @@ Contents:
    install
    upgrade2009
    setup-initial
+   email
    translations
