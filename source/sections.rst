@@ -18,20 +18,24 @@ We will create a new section of the **English 9** course, so click that link:
 
    .. image:: images/sections-2.png
 
-Next to the **New Section** button is a drop-down menu which allows you to select the term within the current year in which the section will take place.  In this case, there is only one term defined, **Fall 2009**, so we can simply click **New Section**.  This creates a new, empty section, with a default name:
+Click the **New Section** button under the red bar:
 
    .. image:: images/sections-3.png
 
-If you'd like to change the name and/or add a description, click **edit info**, change the relevant fields and hit **Apply**:
+In the above form, the **Description** is optional.  The relevant **Course** should be pre-selected.  In this case, we only have one term set up, but if the section continues across multiple terms, you can create "linked" sections across multiple terms in this form.
+
+Hit **Add**:
 
    .. image:: images/sections-4.png
 
-The **Linked sections** information at the bottom of the form indicates which sections in preceeding or following terms are "linked," and will be treated as extensions of the current section in different terms (i.e., a multi-term section).  The user interface for this functionality is not yet completely developed.
+And click on the new section title, **English 9 (1) (Fall 2009)** to view the main page for the section:
+
+   .. image:: images/sections-4.5.png
 
 Adding and Editing Instructors and Pupils
 -----------------------------------------
 
-Back at the main section page, to add an instructor or instructors for the class click **edit instructor**.  The subsequent form works like the add form for :ref:`groups`.  Use the user you created in :ref:`user`.
+To add an instructor or instructors for the class click **edit instructor**.  The subsequent form works like the add form for :ref:`groups`.  Use the user you created in :ref:`user`.
 
    .. image:: images/sections-5.png
 
