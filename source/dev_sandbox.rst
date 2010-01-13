@@ -27,6 +27,7 @@ To enable plugins, edit buildout.cfg to contain::
 
 Build and run schooltool::
 
+  ~/schooltool$ sudo make ubuntu-environment
   ~/schooltool$ make run
 
 Open http://localhost:7080/ in your browser.
@@ -38,7 +39,6 @@ If you want to change enabled plugins, delete your instance (be careful with thi
 Edit buildout.cfg, re-build and run SchoolTool again::
 
   ~/schooltool$ make update
-  ~/schooltool$ sudo make ubuntu-environment
   ~/schooltool$ make run
 
 
