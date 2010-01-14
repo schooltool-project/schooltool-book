@@ -4,8 +4,9 @@ About SchoolTool
 Contents:
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    vision
    history
+   annual_reports
    credits
