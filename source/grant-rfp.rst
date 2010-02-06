@@ -2,7 +2,7 @@ SchoolTool 2010 Development Grants
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-The SchoolTool project is excited to announce a program to provide 50,000 Euro in custom development grants for schools, government, and organizations to pilot and integrate SchoolTool for computer based school management in of developing countries.  These grants will be funded by by South African entrepreneur Mark Shuttleworth.
+The SchoolTool project is excited to announce an initiative to provide 50,000 Euro in custom development grants to help schools, government, and organizations in the developing world to pilot and deploy SchoolTool for computer based school management.  These grants will be funded by by South African entrepreneur Mark Shuttleworth.
 
 Background
 ==========
