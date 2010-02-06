@@ -1,5 +1,5 @@
-SchoolTool Development Grants
-=============================
+SchoolTool 2010 Development Grants
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 The SchoolTool project is excited to announce a program to provide 50,000 Euro in custom development grants for schools, government, and organizations to pilot and integrate SchoolTool for computer based school management in of developing countries.  These grants will be funded by by South African entrepreneur Mark Shuttleworth.
@@ -127,11 +127,11 @@ Timeline
 
  - March 5: A preliminary application is not required, but recommended.  This includes the first part of "Who" and "What."  One submitted later in March is better than none at all.
 
- - April 1: Final proposal deadline.
+ - April 1, 2010: Final proposal deadline.
 
- - Mid-April: Winners announced.
+ - Mid-April, 2010: Winners announced.
 
- - May 1: Development work begins.
+ - May 1, 2010: Development work begins.
 
 Questions
 ---------
