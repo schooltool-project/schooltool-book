@@ -67,7 +67,7 @@ Create the cache directories::
 Create the shared repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If possible get the newest version of bzr, at least 1.5rc1 is recommended.
+If possible get the newest version of bzr, at least 1.6 is required.
 
 (http://bazaar-vcs.org/DistroDownloads)
 
