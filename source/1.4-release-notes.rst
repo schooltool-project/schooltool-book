@@ -1,9 +1,8 @@
-~~~~~~~~~~~~~~~~~
 1.4 Release Notes
 ~~~~~~~~~~~~~~~~~
 
-SchoolTool Core
-===============
+SchoolTool
+==========
 
 1.3.1 (2010-04-07)
 ------------------
@@ -28,4 +27,92 @@ More info at https://launchpad.net/schooltool/+release/1.3.1
 - Update translations
 
 More info at https://launchpad.net/schooltool/+release/1.3.0
+
+
+SchoolTool Gradebook
+====================
+
+0.6.1 (2010-02-24)
+------------------
+
+- Main "Gradebook" link now remembers last section (LP: #513246)
+- Add gradebook pdf (LP: #509672)
+- Add request page for report cards (LP: #485595)
+- Overhauled report card layout view for easier use (LP: #485609)
+- Ability to unhide worksheets (LP: #511246)
+- Linked columns that link to hidden worksheets will now also be hidden
+- Fix gradebook crashes with linked activities (LP: 513351)
+- Fix viewing gradebook for sections without courses (LP: #484485)
+- Accept the term filter for student reports
+- Fix removing scores from gradebook
+- Left-justify names in gradebook overview (LP: #513469)
+- Add security descriptions (LP: #513476)
+- Made cell ids predictable for selenium scripts (LP: #422641)
+- Reduce dependency on ``zope.app.*`` packages
+- Update translations (es, fi, nl, pl, pt)
+
+
+0.6.0 (2010-01-06)
+------------------
+
+- Port to zope versions available in karmic https://launchpad.net/bugs/498803
+
+
+SchoolTool Intervention
+=======================
+
+0.3.0 (2010-04-08)
+------------------
+
+- Multiple UI changes including new dashboard page
+- Refactored intervention security model
+- Created security descriptions (https://launchpad.net/bugs/513476)
+- Need user interventions dashboard (https://launchpad.net/bugs/507313)
+- Better css for goal add/edit and other intervention views (https://launchpad.net/bugs/513466)
+- Evolution script and subscriber for person removal (https://launchpad.net/bugs/523274)
+- Need evolution script and subscriber for schoolyear deletion (https://launchpad.net/bugs/523261)
+- Search student view now also matches on username
+- Do not crash when there are no terms set up (https://launchpad.net/bugs/480616, https://launchpad.net/bugs/540530)
+- Added first translations (es, fi, nl, vi)
+
+More info at https://launchpad.net/schooltool.intervention/+release/0.3.0
+
+
+0.2.1 (2010-02-10)
+------------------
+
+- Fix evolution scripts if there is no container yet (https://launchpad.net/bugs/515863)
+
+
+0.2.0 (2010-01-06)
+------------------
+
+- Port to zope versions available in karmic https://launchpad.net/bugs/498803
+
+
+SchoolTool Lyceum Journal
+=========================
+
+0.5.1 (2010-02-05)
+------------------
+
+- Reduce dependencies
+- Fix to work with zc.table >= 0.7.0
+- Update translations
+
+
+0.5.0 (2010-01-06)
+------------------
+
+- Port to zope versions available in karmic https://launchpad.net/bugs/498803
+- Update translations
+
+
+SchoolTool CAS
+==============
+
+0.4.0 (2010-01-06)
+------------------
+
+- Fix for stricter redirect rules in newer zope.publisher
 
