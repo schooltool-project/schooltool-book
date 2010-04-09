@@ -93,6 +93,13 @@ More info at https://launchpad.net/schooltool.intervention/+release/0.3.0
 SchoolTool Lyceum Journal
 =========================
 
+0.5.2 (2010-04-09)
+------------------
+
+- Add security descriptions (https://launchpad.net/bugs/513476)
+- Update translations
+
+
 0.5.1 (2010-02-05)
 ------------------
 
