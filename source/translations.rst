@@ -19,7 +19,8 @@ Edit main.conf with your favorite editor::
 And append a line "lang LANG_CODE" at the end, where LANG_CODE is the desired language code.  Several examples::
 
   lang ru
-  lang en_UK
+  lang en-gb
+  lang es-sv
   lang fr
 
 Translating SchoolTool
