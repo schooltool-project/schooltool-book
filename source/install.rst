@@ -3,9 +3,14 @@
 Installing SchoolTool on Ubuntu
 ===============================
 
-We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubuntu.com>`_ version 10.04, "Lucid Lynx" or 9.10, "Karmic Koala."  With either of these versions you will get SchoolTool 1.4.  Since 10.04 is designated a long-term support (LTS) release by `Canonical <http://canonical.com>`_ supported for five years, it generally would make more sense to use Lucid.
+We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubuntu.com>`_ version 10.04, "Lucid Lynx" or 9.10, "Karmic Koala."  With either of these versions you will get SchoolTool 1.4.  
 
 #. Add `SchoolTool PPA <https://launchpad.net/~schooltool-owners/+archive/ppa/>`_ to your Software Sources.
+
+   If you're using the command line, enter::
+
+    sudo add-apt-repository ppa:schooltool-owners/ppa
+    sudo apt-get update
 
    If you'd prefer to use the graphical interface, go to the **System** menu, **Administration** submenu and select **Software Sources**.  Select the **Other Software** tab, then **Add** and enter::
    
@@ -13,14 +18,13 @@ We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubu
 
    .. image:: images/sources.png
 
-   If you're using the command line, enter::
-
-    sudo add-apt-repository ppa:schooltool-owners/ppa
-    sudo apt-get update
-
 #. Install schooltool-2009.
 
-   Either type ``sudo apt-get install schooltool-2009`` in a terminal (and answer "y" to the subsequent questions), or access the **Ubuntu Software Center** from the **Applications** menu.  Search for "schooltool-2009", and then click **Install** and enter your password. 
+   In the terminal type::
+
+    sudo apt-get install schooltool-2009
+
+   Or access the **Ubuntu Software Center** from the **Applications** menu.  Search for "schooltool-2009", and then click **Install** and enter your password. 
 
    .. image:: images/uss.png
 
