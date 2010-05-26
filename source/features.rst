@@ -17,13 +17,13 @@ Because SchoolTool is free and easy to install, it can be installed on a laptop 
 School Model
 ------------
 
-* **Persons:** Default groups for people are students, teachers, school administrators, and site administrators (technical).  Parent access is planned for future releases.  Each person in the system can be given a login password with permissions appropriate to their role, but currently our development focus has been on teacher and administrator views.
+* **Persons:** Default groups for people are students, teachers, school administrators, and site administrators (technical).  Parent access is planned for future releases.  Each person in the system can be given a login password with permissions appropriate to their role, but currently our development focus has been on teacher and administrator views.  Students can review the grades in their gradebook.
 
 * **Groups:** Create arbitrary groups of people representing school organizations, clubs, teams, etc.  
 
 * **Courses and sections:** Courses define blocks of curriculum; e.g., 1st grade Math, 9th grade English.  Sections are the groupings of teachers and students working on a course; e.g., Mr. Hoffman's 9:30 Algebra I class, Fall 2009 semester.  
 
-* **Years and terms:** Years are the longest block of time in SchoolTool.  The transition between years represents a regular point of significant reorganization within the school; e.g., when most students are promoted, teachers hired, etc.).  Terms define when sections begin and end.
+* **Years and terms:** Years are the longest block of time in SchoolTool.  The transition between years represents a regular point of significant reorganization within the school; e.g., when most students are promoted, teachers hired, etc.).  Terms define when sections begin and end or when partial reorganization is common; e.g., class enrollments or schedules change.
 
 * **Timetables:** Timetables define when sections meet during the week.  This is the school's "bell schedule."  SchoolTool handles simple timetables; e.g., classes meet the same time every day; and many complex ones, such as rotating schedules and schedules with different start and end times on different days of the week.  
 
@@ -106,7 +106,7 @@ Reporting
 
 SchoolTool's printed reports are generated using the free and powerful ReportLab library, including support for reports defined in RML, an HTML-like markup language.
 
-SchoolTool 1.2 ships with a small set of default reports for grading and attendance.  We need your feedback on exactly what kind of reports are needed at your school.  Creating a set of high quality printable and web-viewable reports is a priority for development.  Let us know what you need!
+SchoolTool ships with a small set of default reports for grading and attendance.  We need your feedback on exactly what kind of reports are needed at your school.  Creating a set of high quality printable and web-viewable reports is a priority for development.  Let us know what you need!
 
 Report Cards
 ------------

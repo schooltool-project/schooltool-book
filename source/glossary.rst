@@ -32,7 +32,11 @@ In simple cases, a period simply corresponds to a time; at 9:00, it describes wh
 
 **school timetable** - This is a "bell schedule" in US parlance, defining where the "slots" fall during the school's weekly (or other) cycle, when section meetings start and end each day.  
 
-**school year** - A school year encompasses the annual cycle of a school.  For example, most students are promoted at the end of a year.  Most teachers start work at the beginning of the year.  Terms must be contained within years.  The school year does not have to correspond to calendar year.  Whatever suits the processes of your school.  It is best to set this up so that each year begins immediately after the previous one.  Every date is part of one school year or another.  School years cannot overlap.
+**school year** - A school year encompasses the annual cycle of a school.  For example, most students are promoted at the end of a year.  Most teachers start work at the beginning of the year.  Terms must be contained within years.  
+
+The school year does not have to correspond to calendar year or be limited to a single calendar year.  Whatever suits the processes of your school.  
+
+It is best to set this up so that each year begins immediately after the previous one.  Every date is part of one school year or another.  School years cannot overlap.
 
 **score system** - A scale used for assessment.  A grading scale or rubric scale.  
 
@@ -50,9 +54,11 @@ In a simple schedule, a given period will always occur in the same slots, and th
 
 **term** - A unit of time that defines the beginning and end of sections on the calendar. For example, a semester or trimester.  Students generally recieve evaluations for each section at the end of the term.  
 
+If section enrollments or schedules are changed at a certain point in the school year, that transition should be represented by a change in terms.
+
 SchoolTool does not recognize a hierarchy of terms.  If in a particular school some sections last all year, some change by semesters, and some change quarterly, a "term" for this school would be defined as a quarter -- the shortest unit that defines the lifetime of a section.  In this case a year-long section would be modeled as four separate but linked sections.  
 
-Terms cannot overlap and must be contained within school years.
+Terms cannot overlap and must be contained within school years.  If you don't feel you need terms, you can simply create a term that spans the entire school year.
 
 **time period** - Synonymous with "term."  Deprecated.
 

@@ -4,7 +4,7 @@ System Requirements
 School Level Deployments or Greater
 -----------------------------------
 
-For production deployment in a school or district, proper server hardware is, of course, recommended.  If SchoolTool is not the only service provided on the server, we recommend running SchoolTool by itself on a virtual server, running the "minimal virtual machine" configuration offered in Ubuntu Server 9.10 and later, or _the JeOS version of `Ubuntu 8.04 LTS <http://www.ubuntu.com/products/whatisubuntu/serveredition/jeos>`_. 
+For production deployment in a school or district, proper server hardware is, of course, recommended.  If SchoolTool is not the only service provided on the server, we recommend running SchoolTool by itself on a virtual server, running the "minimal virtual machine" configuration. 
 
 Personal
 --------
@@ -14,11 +14,11 @@ For personal use, SchoolTool can be installed and used on a personal desktop or 
 Hardware
 --------
 
-The primary bottleneck in SchoolTool's performance is usually memory.  The minimum  RAM requirement is 256 megabytes.  512 megabytes is recommended and if you are setting up dedicated server, adding more than 1 gigabyte of RAM is worth it if you can afford it.
+The primary bottleneck in SchoolTool's performance is usually memory.  The bare minimum RAM requirement is estimated to be 256 megabytes.  At least 512 megabytes is recommended and if you are setting up for a production server, adding more than 1 gigabyte of RAM is worth it if you can afford it.
 
-Faster processors will make SchoolTool run faster.  Over 1 gHz is recommended.  SchoolTool is multi-threaded but only one thread can run at one time, so it does not directly benefit from multiple processors or multi-core processors.  
+Faster processors will make SchoolTool run faster.  Over 1 gHz is recommended.  SchoolTool is multi-threaded but due to the Python programming language's implementation only one thread will run at one time, so SchoolTool's performance does not directly benefit from multiple processors or multi-core processors.  
 
-By the scale of modern storage technology, SchoolTool doesn't require significant disk space.  Around 1 gigabyte should handle it.  Speed is more important than volume.
+By the scale of modern storage technology, SchoolTool doesn't require significant disk space.  One gigabyte should handle it for quite a while.  Disk speed is more important than volume.
 
 Sample Data
 -----------
