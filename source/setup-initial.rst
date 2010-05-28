@@ -10,23 +10,19 @@ Once you've installed the SchoolTool server, it will automatically start running
 
 The SchoolTool server process will take up some of your computer's memory.  Whether or not you will notice this depends on how much memory you have on your computer, which other applications you use, and how many applications and server processes you use at the same time.
 
-You can start and stop the process manually if you'd like.  If you aren't used to doing this, you can install the ``sysvconfig`` package to make the commands a little more straightforward::
-
-    $ sudo apt-get install sysvconfig
-    
-then you can use::
+You can start and stop the process manually if you'd like::
 
     $ sudo service schooltool-2009 stop
     $ sudo service schooltool-2009 start
 
-Note that there can be a delay of 30 seconds to a minute between when you issue the start command and when SchoolTool's web interface is accessible.
+Note that there can be a delay of 30 seconds to a minute between when you issue the start command and the prompt returns, and when SchoolTool's web interface is actually accessible from a browser.
 
 Or, if you are more used to init.d scripts you can still use:: 
 
     $ sudo /etc/init.d/schooltool-2009 stop
     $ sudo /etc/init.d/schooltool-2009 start
 
-If you want to use SchoolTool over a network or the internet go to :ref:`remote`.
+**If you want to use SchoolTool over a network or the internet go to :ref:`remote`.**
 
 .. _managepass:
 
