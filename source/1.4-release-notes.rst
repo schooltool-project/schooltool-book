@@ -4,6 +4,17 @@
 SchoolTool
 ==========
 
+1.4.2 (2010-07-15)
+------------------
+
+- Speed up editing of section learners and instructors (https://launchpad.net/bugs/599258)
+- XLS Importer catches errors before trying to create objects. (https://launchpad.net/bugs/306339)
+- Removed SchoolTool logo from PDF footers (https://launchpad.net/bugs/561558)
+- Update translations (ca, en_AU, eu, ne, pl, tr)
+
+More info at https://launchpad.net/schooltool/+release/1.4.2
+
+
 1.4.1 (2010-06-15)
 ------------------
 
@@ -67,6 +78,15 @@ More info at https://launchpad.net/schooltool/+release/1.3.1
 
 SchoolTool Gradebook
 ====================
+
+0.7.1 (2010-06-25)
+------------------
+
+- Fixed accessing gradebook if last visited section was deleted (https://launchpad.net/bugs/591872)
+- Fixed all averages displayed as "A" (https://launchpad.net/bugs/596311)
+- Fix a crash in manage Activity categories (https://launchpad.net/bugs/585805)
+- Updated translations (es, ru, tr)
+
 
 0.7.0 (2010-05-20)
 ------------------
@@ -207,6 +227,12 @@ This release goes with SchoolTool 1.4.0
 
 SchoolTool CAS
 ==============
+
+0.4.2 (2010-07-01)
+------------------
+
+Final release for SchoolTool 1.4
+
 
 0.4.1 (2010-04-09)
 ------------------
