@@ -4,22 +4,37 @@
 SchoolTool
 ==========
 
+1.0.6 (2010-07-20)
+------------------
+
+New features 
+++++++++++++
+
+- Removed SchoolTool logo from PDF footers (https://launchpad.net/bugs/561558)
+- Copy data from previous school year (https://launchpad.net/bugs/541673)
+- Added course names to section links in the person view, sorting Sections and
+  Groups links by school year (https://launchpad.net/bugs/545793)
+
+Bug fixes
++++++++++
+
+- Speed up editing of section learners and instructors (https://launchpad.net/bugs/599258)
+- XLS Importer catches errors before trying to create objects. (https://launchpad.net/bugs/306339)
+- Fix Timetable Schemas page for non-manager users (https://launchpad.net/bugs/545780)
+- Fix timetable display when first day of the week is empty (https://launchpad.net/bugs/545763)
+- Fix timetable plugin for sampledata (https://launchpad.net/bugs/306107)
+- Translate "Confirm" button in delete forms correctly.
+- Made edit links on person, section and group views available only to managers (https://launchpad.net/bugs/361436)
+- Display resources of calendar events on weekly view (https://launchpad.net/bugs/540099)
+- Use semicolon to separate instructors in section's label (https://launchpad.net/bugs/558911)
+- Prevent the user to enter non-ascii usernames (https://launchpad.net/bugs/397610)
+- Update translations
+
+
 1.0.5 (2010-03-09)
 ------------------
 
 - Backport report template refactoring for CanDo
-
-
-1.0.4.2 (2010-01-05)
---------------------
-
-- Revert a fix that broke CanDo instance creation (https://launchpad.net/bugs/503206)
-
-
-1.0.4.1 (2009-12-30)
---------------------
-
-- Fixed some translations
 
 
 1.0.4 (2009-12-28)
@@ -31,7 +46,7 @@ SchoolTool
 
 - Many build improvements by Justas and Gediminas
 
-Bug Fixes
+Bug fixes
 +++++++++
 
 - Broken urls in help window when application URL is not /
@@ -43,7 +58,8 @@ Bug Fixes
 - Failed to create sections that span multiple terms.
   https://launchpad.net/bugs/427321
 
-- Crufty section name display for section. https://launchpad.net/bugs/394388
+- Crufty section name display for section.
+  https://launchpad.net/bugs/394388
 
 
 1.0.3 (2009-07-07)
@@ -98,7 +114,7 @@ Tweaks and fixes
 Unicode fixes
 +++++++++++++
 
-Fixes by Douglas Cerna:
+Douglas Cerna:
 
 - Contacts views.  See https://launchpad.net/bugs/382251
 
@@ -155,16 +171,13 @@ Justas Sadzevičius:
 Person and Demographics
 +++++++++++++++++++++++
 
-Ignas Mikalajūnas <ignas@pov.lt>:
-
-- Added custom demographics field storage and fields themselves.
-
 Filip Sufitchi <fsufitch@charon>:
 
 - Initial implementation of demographics field management views.
 
 Ignas Mikalajūnas <ignas@pov.lt>:
 
+- Added custom demographics field storage and fields themselves.
 - Added contacts to schooltool with list/add/edit/display views.
 - Added contact managemenet view and made it possbile to add+assign contact
   in one go.
@@ -179,12 +192,12 @@ Alan Elkner <aelkner@gmail.com>:
 PDF Reporting improvements
 ++++++++++++++++++++++++++
 
-Justas Sadzevicius <justas@pov.lt>:
+Justas Sadzevičius <justas@pov.lt>:
 
 - Rewrite calendar PDF views to use RML.
 - Added headers and footers to PDF views.
 
-XLS import export
+XLS import/export
 +++++++++++++++++
 
 Tom Hoffman <tom.hoffman@gmail.com>:
@@ -225,11 +238,11 @@ Alan Elkner <aelkner@gmail.com>:
 
 - Removed unused identifier field from add forms.
 
-Filip Sufitchi <fsufitch@charon>:
+Filip Sufitchi:
 
 - Made Delete buttons look consistently (Red) all over the system.
 
-Chris Carey <cpcarey@cpcarey-laptop>:
+Chris Carey:
 
 - Unify color color scheme in schooltool.gradebook and schooltool.lyceum.journal
   ajax status indicators.
@@ -248,7 +261,7 @@ Ignas Mikalajūnas <ignas@pov.lt>:
 
 - Removed resource booking link from the section view.
 
-Justas Sadzevicius <justas@pov.lt>:
+Justas Sadzevičius <justas@pov.lt>:
 
 - Added simple section cross-term copying and linking interface.
 
