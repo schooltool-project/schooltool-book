@@ -3,7 +3,7 @@
 Modeling Your School's Timetable
 ================================
 
-Creating a school timetable is necessary to designate when sections meet.  SchoolTool is designed to understand a wide variety of school timetables.  This, unfortunately, makes set up somewhat complex, so if you can avoid it, you should.
+Creating a school timetable is necessary to designate when sections meet.  SchoolTool is designed to understand a wide variety of school timetables.  This, unfortunately, makes set up somewhat complex, so if you can avoid it, you probably want to.
 
 If you are using SchoolTool for attendance, you need a timetable.  You can use the calendaring and resource booking without a timetable, but you'll be missing out on the school-specific features of our calendar.  If you are using SchoolTool only as a personal gradebook, you don't need a calendar.  Some add-on components of SchoolTool, like CanDo, don't require a calendar.
 

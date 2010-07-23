@@ -7,6 +7,8 @@ A school year encompasses the annual cycle of a school.  For example, most stude
 
 The school year does not have to correspond to calendar year.  Whatever suits the processes of your school.  It is best to set this up so that every date is part of one school year or another.  School years **cannot** overlap.
 
+If this does not fit the structure of your school, you can simply create a single year that spans three or more calendar years.  It is likely that by the time that year expires, we'll have come up with a revised model for schools that don't work within individual years.
+
 Setting up a year is necessary for just about any use of SchoolTool, and it is easiest through the web interface.
 
 As "manager," click **Manage** and then **School Years**:
