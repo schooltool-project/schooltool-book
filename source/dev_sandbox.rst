@@ -22,7 +22,7 @@ To enable plugins, edit buildout.cfg to contain::
 
   eggs += schooltool
           schooltool.gradebook
-          schooltool.lyecum.journal
+          schooltool.lyceum.journal
           schooltool.intervention
 
 Build and run schooltool::
