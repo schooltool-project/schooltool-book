@@ -1,12 +1,17 @@
 Developing SchoolTool
 =====================
 
+SchoolTool uses bazaar VCS.  Be sure to install it first::
+
+  ~$ sudo apt-get install bzr
+
+
 Quickstart
 ----------
 
 "But I just want to look at it!"
 
-Well, this is not a way to develop SchoolTool, but it will give you a quick taste::
+This is not a preferred way to develop SchoolTool, but it will give you a quick taste::
 
   ~$ bzr co lp:schooltool schooltool
   ~$ cd schooltool
