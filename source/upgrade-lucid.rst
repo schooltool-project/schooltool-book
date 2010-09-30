@@ -23,5 +23,5 @@ Edit ``/etc/apt/sources.list`` and change schooltool-owners line from "hardy" to
 You can then `upgrade Ubuntu <https://help.ubuntu.com/10.04/serverguide/C/installing-upgrading.html>`_ normally.
 
 After the upgrade is complete, edit ``/etc/apt/sources.list`` and change
-schooltool-owners line to "lucid". Then ''sudo apt-get update`` and ``sudo apt-get upgrade`` again to get the newest Schooltool and Zope libraries.
+schooltool-owners line to "lucid". Then ``sudo apt-get update`` and ``sudo apt-get upgrade`` again to get the newest Schooltool and Zope libraries.
 

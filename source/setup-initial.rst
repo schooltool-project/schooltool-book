@@ -22,7 +22,7 @@ Or, if you are more used to init.d scripts you can still use::
     $ sudo /etc/init.d/schooltool-2009 stop
     $ sudo /etc/init.d/schooltool-2009 start
 
-**If you want to use SchoolTool over a network or the internet go to :ref:`remote`.**
+**Note:** If you want to use SchoolTool over a network or the internet go to :ref:`remote`.
 
 .. _managepass:
 

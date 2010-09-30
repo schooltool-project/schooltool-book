@@ -56,33 +56,47 @@ Scheduling the Section into a Timetable
 
 If you have set up timetables, you can now assign the section's meeting times.  If you did not create a timetable, you can still use the section gradebook and some other SchoolTool functionality, just not anything that is dependent on knowing when the section meets, like the attendance journal or calendar.
 
-From the main section view, click **Schedule** (the **Timetable** view is redundant and will be removed):
+From the main section view, click **Schedule**:
 
    .. image:: images/sections-9.png
 
-Since we just have one timetable defined for the year, we don't need to pick one.  If your school has two different timetables (i.e., some classes start and end at overlapping times), you can select which one to use for this section.  For now, we've just got the "default" one we created in :ref:`timetable`.
-
-This section meets Monday through Thursday at 10:00.  So we check the appropriate boxes:
+Then **Add Timetable**:
 
    .. image:: images/sections-10.png
 
-And hit **Save**.  Unfortunately, this leaves you at one of our navigational dead ends.  Back-arrowing out or routing back through the year link are your best options until we fix this bug.
+Since we just have one timetable defined for the year, we don't have to change that field.  If your school has two different timetables (i.e., some classes start and end at overlapping times), you can select which one to use for this section.  For now, we've just got the "default" one we created in :ref:`timetable`.
 
-At this point, to demonstrate what all this adds up to, we'll **Log Out** (upper right), and **Log In** as the instructor of the section, with the username and password created in :ref:`user` (if you're running the selenium scripts that's "hoffman" and "passwd"): 
+By default, the beginning and end of the span of days the section meets is the same as the beginning and the end of the term.  You can change this to a shorter span within the term if you'd like.  Click **Add**:
 
    .. image:: images/sections-11.png
 
-You can see the term and the section we created appear at the color legend for the calendar at left:
+This section meets Monday through Thursday at 10:00.  So we check the appropriate boxes:
 
    .. image:: images/sections-12.png
 
-If the current day in real life is not a day when our fake section is meeting, you will want to navigate to a day during the term when the section meets.  The easiest way to do this is to click **Yearly** at the top of the calendar and then click on a highlighted date that indicates a term is in session.  In this case a Monday through Thursday since that's when our section meets:
+You can apply this And hit **Save**.  If you want to apply this timetable to only a specific span of dates within the term, you can changes the **Apply from:** and **Apply to:** dates, which by default begin and end with the term.
+
+If in the timetable there are consecutive periods which you would like to be treated as a single long period, check the **Treat consecutive periods as a single meeting** box.  The most obvious reason you would want to do this is to count attendance only once at the beginning of a double period.
+
+Hit **Save**:
 
    .. image:: images/sections-13.png
 
-As you can see, an event has been created for the meeting of the section:
+At this point, to demonstrate what all this adds up to, we'll **Log Out** (upper right), and **Log In** as the instructor of the section, with the username and password created in :ref:`user` (if you're running the selenium scripts that's "hoffman" and "passwd"): 
 
    .. image:: images/sections-14.png
+
+You can see the term and the section we created appear at the color legend for the calendar at left:
+
+   .. image:: images/sections-15.png
+
+If the current day in real life is not a day when our fake section is meeting, you will want to navigate to a day during the term when the section meets.  The easiest way to do this is to click **Yearly** at the top of the calendar and then click on a highlighted date that indicates a term is in session.  In this case a Monday through Thursday since that's when our section meets:
+
+   .. image:: images/sections-16.png
+
+As you can see, an event has been created for the meeting of the section:
+
+   .. image:: images/sections-17.png
 
 Also note that the hourly rows in the calendar are adjusted automatically to conform to the start and end times in the timetable.
 
