@@ -4,8 +4,28 @@
 SchoolTool
 ==========
 
+1.5.2 (2010-10-04)
+------------------
+
+Maverick release candidate.
+
+- Activation of selected school year (https://launchpad.net/bugs/635160)
+- Added "Add Multiple Persons" to Manage->Persons and "New Person" (for
+  administration) to all other person views (https://launchpad.net/bugs/268127)
+- Empty usernames no longer crash when adding a person (https://launchpad.net/bugs/644296)
+- Replace access setting checkboxes with radio buttons (https://launchpad.net/bugs/638651)
+- Fix security checks to let teachers edit learners and other section info
+  if they have access rights.
+- Add "View Person" action button in contact views (https://launchpad.net/bugs/635207)
+- Update translations.
+
+More info at https://launchpad.net/schooltool/+release/1.5.2
+
+
 1.5.1 (2010-09-09)
 ------------------
+
+Maverick beta.
 
 - Tweaked WYSIWYG CK editor (https://launchpad.net/bugs/485446)
 - Make CK editor work with servers under mod-rewrite (https://launchpad.net/bugs/258951)
@@ -14,6 +34,8 @@ SchoolTool
   This change is not backwards compatible, plugins may need updating.
 - Added error checking on demographics edit form (https://launchpad.net/bugs/610870)
 - Update translations.
+
+More info at https://launchpad.net/schooltool/+release/1.5.1
 
 
 1.5.0 (2010-07-13)
@@ -52,8 +74,23 @@ This is a development release that requires SchoolTool 1.5.0
 SchoolTool Gradebook
 ====================
 
+0.8.1 (2010-10-04)
+------------------
+
+Maverick release candidate.
+
+- Grades rounding mismatch (https://launchpad.net/bugs/585796)
+- Calculate average grade with more precision (https://launchpad.net/bugs/333971)
+- Use fixed precision for total and linked columns (https://launchpad.net/bugs/650838)
+- Fix to let students view section's gradebook.
+- Cosmetic fixes in various pages.
+- Updated translations (es, nl)
+
+
 0.8.0 (2010-09-16)
 ------------------
+
+Maverick beta.
 
 - Update tests for use with SchoolTool 1.5.1
 
@@ -61,8 +98,20 @@ SchoolTool Gradebook
 SchoolTool Intervention
 =======================
 
+0.4.1 (2010-10-04)
+------------------
+
+Maverick release candidate.
+
+- Change style of some buttons to neutral (https://launchpad.net/bugs/613571)
+- Changed recipients to email addresses for both messages and goals csv
+- Do not crash if persons are removed or don't have email
+
+
 0.4.0 (2010-09-15)
 ------------------
+
+Maverick beta.
 
 - CSV export of messages and goals (requested by SLA)
 - Update for API changes in schooltool 1.5.1
