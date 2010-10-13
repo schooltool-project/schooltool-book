@@ -3,7 +3,11 @@
 Installing SchoolTool on Ubuntu
 ===============================
 
-Start by installing the server or desktop edition of `Ubuntu Linux <http://ubuntu.com>`_ version 10.04, "Lucid Lynx" or 9.10, "Karmic Koala."  With either of these versions you will get SchoolTool 1.4.  
+Start by installing the server or desktop edition of `Ubuntu Linux <http://ubuntu.com>`_ version 10.10, "Maverick Meerkat," or 10.04, "Lucid Lynx."  With Lucid you will get SchoolTool 1.4; with Maverick you will get SchoolTool 1.5.  
+
+SchoolTool 1.5 is considered a maintenance release.  If you are creating a dedicated system to run SchoolTool, using Maverick will give you a few extra features, but if you have some reason to prefer Lucid, the overall differences between SchoolTool 1.4 and 1.5 are small.
+
+SchoolTool 1.6 for Ubuntu 11.04 "Natty Narwhal" is slated for more substantial changes and improvements.  You will need to upgrade your distribution from Lucid or Maverick to get SchoolTool 1.6 when the time comes.
 
 #. Add `SchoolTool PPA <https://launchpad.net/~schooltool-owners/+archive/ppa/>`_ to your Software Sources.
 
