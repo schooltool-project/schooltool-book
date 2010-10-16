@@ -58,7 +58,7 @@ Note that there is currently a bug that causes the up and down arrows to move in
 
 Note that the full title of the activity in the active column appears at the top of the worksheet, in this case, "Vocab Quiz #1."
 
-*Scores are not saved until you click **Update**.*
+*Scores are not saved until you click **Save**.*
 
    .. image:: images/gradebook-8.png
 

@@ -76,7 +76,7 @@ And then click the Deploy Report Worksheet button, select the relevant template 
 Laying Out a Report Card
 ------------------------
 
-While we're here and logged in as "manager," we might as well lay out the final report card.  Click **Layout Report Card**:
+While we're here and logged in as "manager," we might as well lay out the final report card.  Click **Report Card Layout**:
 
    .. image:: images/report-sheet-10.png
 
