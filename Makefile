@@ -81,4 +81,4 @@ linkcheck: bin/sphinx-build
 	      "or in build/linkcheck/output.txt."
 
 upload: build/html
-	rsync -vzr build/html/ schooltool.org:/var/www/book.schooltool.org/htmlhelp/
+	rsync -vzr -cO build/html/ schooltool.org:/var/www/book.schooltool.org/htmlhelp/

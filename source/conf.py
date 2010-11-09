@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# SchoolTool User's Guide documentation build configuration file, created by
+# The SchoolTool Book build configuration file, created by
 # sphinx-quickstart on Wed Apr 30 14:02:38 2008.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -20,6 +20,9 @@ import sys, os
 
 # General configuration
 # ---------------------
+
+# If your documentation needs a minimal Sphinx version, state it here.
+needs_sphinx = '0.6'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
@@ -73,10 +76,24 @@ pygments_style = 'sphinx'
 # Options for HTML output
 # -----------------------
 
-# The style sheet to use for HTML and HTML Help pages. A file of that name
-# must exist either in Sphinx' static/ path, or in one of the custom paths
-# given in html_static_path.
-html_style = 'schooltool.css'
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+html_theme = 'default'
+
+# Theme options are theme-specific and customize the look and feel of a theme
+# further.  For a list of options available for each theme, see the
+# documentation.
+html_theme_options = {
+    'bodyfont': 'Ubuntu, sans-serif',
+    'footerbgcolor': '#EAE8E3',
+    'footertextcolor': '#444444',
+    'sidebarbgcolor': '#EAE8E3',
+    'sidebartextcolor': '#000000',
+    'sidebarlinkcolor': '#000000',
+    'relbarbgcolor': '#990000',
+    'headbgcolor': '#EAE8E3',
+}
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -109,6 +126,9 @@ html_last_updated_fmt = '%b %d, %Y'
 # If false, no module index is generated.
 html_use_modindex = False
 
+# If false, no index is generated.
+html_use_index = False
+
 # If true, the reST sources are included in the HTML build as _sources/<name>.
 #html_copy_source = True
 
@@ -117,7 +137,7 @@ html_use_modindex = False
 #html_use_opensearch = False
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "The SchoolTool Book"
+htmlhelp_basename = "schooltool-book"
 
 
 # Options for LaTeX output
