@@ -79,6 +79,17 @@ More info at https://launchpad.net/schooltool/+release/1.3.1
 SchoolTool Gradebook
 ====================
 
+0.7.3 (2010-10-27)
+------------------
+
+- Grades rounding mismatch (https://launchpad.net/bugs/585796)
+- Calculate average grade with more precision (https://launchpad.net/bugs/333971)
+- Use fixed precision for total and linked columns (https://launchpad.net/bugs/650838)
+- Fix to let students view section's gradebook.
+- Cosmetic fixes in various pages.
+- Updated translations (es, lt, nl)
+
+
 0.7.2 (2010-09-16)
 ------------------
 
@@ -165,6 +176,14 @@ Stable release to go with SchoolTool 1.4.0.
 SchoolTool Intervention
 =======================
 
+0.3.3 (2010-10-27)
+------------------
+
+- Change style of some buttons to neutral (https://launchpad.net/bugs/613571)
+- Do not crash if persons are removed or don't have email
+- Added and updated translations (it, nl, pt_BR, sk)
+
+
 0.3.2 (2010-07-15)
 ------------------
 
@@ -209,6 +228,12 @@ More info at https://launchpad.net/schooltool.intervention/+release/0.3.0
 
 SchoolTool Lyceum Journal
 =========================
+
+0.6.1 (2010-10-20)
+------------------
+
+- Update translations
+
 
 0.6.0 (2010-05-26)
 ------------------
