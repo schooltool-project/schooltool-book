@@ -4,6 +4,15 @@
 SchoolTool
 ==========
 
+1.5.3 (2010-11-24)
+------------------
+
+Final release for Maverick.
+
+- Fixed Section meeting time misalignment in calendar (https://launchpad.net/bugs/611797)
+- Added Bengali and Faroese translations, updated many others
+
+
 1.5.2 (2010-10-04)
 ------------------
 
@@ -63,6 +72,12 @@ More info at https://launchpad.net/schooltool/+release/1.5.0
 SchoolTool Lyceum Journal
 =========================
 
+0.7.1 (2010-10-20)
+------------------
+
+- Update translations
+
+
 0.7.0 (2010-07-13)
 ------------------
 
@@ -84,7 +99,7 @@ Maverick release candidate.
 - Use fixed precision for total and linked columns (https://launchpad.net/bugs/650838)
 - Fix to let students view section's gradebook.
 - Cosmetic fixes in various pages.
-- Updated translations (es, nl)
+- Updated translations (es, lt, nl)
 
 
 0.8.0 (2010-09-16)

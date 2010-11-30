@@ -4,6 +4,26 @@
 SchoolTool
 ==========
 
+1.4.3 (2010-11-23)
+------------------
+
+Stable release that contains bugfixes backported from development series up to 1.5.3.
+
+- Fixed Section meeting time misalignment in calendar (https://launchpad.net/bugs/611797)
+- Activation of selected school year (https://launchpad.net/bugs/635160)
+- Added "New Person" (for administration) to all person views
+  (https://bugs.launchpad.net/bugs/268127)
+- Empty usernames no longer crash when adding a person (https://launchpad.net/bugs/644296)
+- Fix security checks to let teachers edit learners and other section info
+  if they have access rights.
+- Allow teachers to view student info and contacts
+- Add "View Person" action button in contact views (https://launchpad.net/bugs/635207)
+- Tweaked WYSIWYG CK editor (https://launchpad.net/bugs/485446)
+- Make CK editor work with servers under mod-rewrite (https://launchpad.net/bugs/258951)
+- Added error checking on demographics edit form (https://launchpad.net/bugs/610870)
+- Update translations.
+
+
 1.4.2 (2010-07-15)
 ------------------
 
