@@ -42,3 +42,26 @@ Installing TrueType Fonts for PDF Reports
    To create pdf reports, you currently need to enable the Ubuntu "multiverse" software repositories.  Go to the **System** menu, then **Administration** and select **Software Sources**.  Check the box that says **Software restricted by copyright or legal issues (multiverse)**.  You can also do this by uncommenting the multiverse entries in ``/etc/apt/sources.list``.
    
    Then ``sudo apt-get install msttcorefonts`` or install the ``msttcorefonts`` package via Synaptic.  We're working on replacing this with completely free and unencumbered fonts that will eliminate these extra steps.
+
+Controlling the Server
+----------------------
+
+Once you've installed the SchoolTool server, it will automatically start running and restart itself whenever you start the computer.  Thus, SchoolTool will be running in the background and available at http://localhost:7080 whenever you need it.  
+
+The SchoolTool server process will take up some of your computer's memory.  Whether or not you will notice this depends on how much memory you have on your computer, which other applications you use, and how many applications and server processes you use at the same time.
+
+You can start and stop the process manually if you'd like::
+
+    $ sudo service schooltool-2009 stop
+    $ sudo service schooltool-2009 start
+
+Note that there can be a delay of 30 seconds to a minute between when you issue the start command and the prompt returns, and when SchoolTool's web interface is actually accessible from a browser.
+
+Or, if you are more used to init.d scripts you can still use:: 
+
+    $ sudo /etc/init.d/schooltool-2009 stop
+    $ sudo /etc/init.d/schooltool-2009 start
+
+**Note:** If you want to use SchoolTool over a network or the internet go to :ref:`remote`.
+
+.. _managepass:
