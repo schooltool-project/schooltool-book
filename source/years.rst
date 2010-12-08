@@ -9,7 +9,7 @@ The school year does not have to correspond to calendar year.  Whatever suits th
 
 If this does not fit the structure of your school, you can simply create a single year that spans three or more calendar years.  It is likely that by the time that year expires, we'll have come up with a revised model for schools that don't work within individual years.
 
-Setting up a year is necessary for just about any use of SchoolTool, and it is easiest through the web interface.
+**Setting up a year is necessary for just about any use of SchoolTool**, and it is easiest through the web interface.
 
 As "manager," click **Manage** and then **School Years**:
 

@@ -9,6 +9,8 @@ The default roles as defined by the **Clerks, School Administrators, Site Manage
 
 Groups are stored by year.  That is, each school year has its own set of groups.  For example, you have "Students" for year "2008-2009" and a separate "Students" group for "2009-2010."
 
+**Note that you must create years before you can do anything with groups.**  See :ref:`years`.
+
 Groups can be managed through the web, imported via CSV or by :ref:`spreadsheet`.
 
 Adding People to Existing Groups
