@@ -29,16 +29,16 @@ After you click **Add**, you should see your new course:
 Entering Courses Using CSV Format
 ---------------------------------
 
-You can also import a simple text list of course titles, descriptions and id's.
+You can also import a simple text list of course titles, descriptions and IDs.
 
-From the courses index, select **Import Courses**.You can then either upload a text file from your local filesystem, or use the textbox provided to either copy/paste from another document or simply the necessary information.  
+From the courses index, select **Import Courses**.  You can then either upload a text file from your local filesystem, or use the textbox provided to either copy/paste from another document or simply type the necessary information.  
 
    .. image:: images/import-courses.png
 
-The format, as described on the form is simply::
+The format, as described on the form, is simply::
 
    title, description (optional), id (optional)
 
-When you're ready press **Submit**, and if the import is successful you'll see a "CSV text imported successfully." message.  You can click **View** to get back to the index:
+When you're ready, press **Submit**, and if the import is successful you'll see a "CSV text imported successfully." message.  You can click **View** to get back to the index:
 
    .. image:: images/index-with-courses.png
