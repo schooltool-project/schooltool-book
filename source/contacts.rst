@@ -22,7 +22,7 @@ And **Manage Contacts**
 
     .. image:: images/contacts-2.png
 
-This form presents a list of contacts for the person (there are none to start) and lets you add a new contact or search for and link an existing contact. 
+This form presents a list of contacts for the person (there are none in the beginning) and lets you add a new contact or search for and link an existing contact. 
 
 To start we'll **Create a new contact**:
 

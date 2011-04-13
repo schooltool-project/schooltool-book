@@ -14,7 +14,7 @@ Click **Log In** at the right end of the red bar, and click the **Log in** butto
 
    .. image:: images/login.png
 
-Next you should change the manager password.  To change the logged in lick on **Home** at the top of the screen:
+Next you should change the manager password.  To change the password, click on **Home** at the top of the screen:
 
    .. image:: images/manager-info.png
 

@@ -24,7 +24,7 @@ with::
 
     wget http://ftp.schooltool.org/rpms/fedora_13.schooltool.repo
 
-To make schooltool start at every boot, execute this command at the terminal as a privileged user::
+To make SchoolTool start at every boot, execute this command at the terminal as a privileged user::
 
     chkconfig --add schooltoold
     chkconfig schooltoold on
