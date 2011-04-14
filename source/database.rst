@@ -24,7 +24,7 @@ While it is possible to do a "hot" backup of SchoolTool's database while the app
 
 Substitute the actual location of your backup in the place of ``/media/backups``.  The ``date +%Y%m%d-%H%M`` command embedded into the ``cp'' command is a bash command to embed the current date and time into the filename.  That will allow you to keep a bunch of backups by date easily.  Of course, if you've got a more sophisticated backup system than ``cp``, by all means use that!
 
-Restoring from an Backup
+Restoring from a Backup
 ------------------------
 
 In most cases, if you need to return to a previous automatic database backup, you should stop SchoolTool, rename the current ``Data.fs`` just in case you *do* need it later, remove the ``.0`` from the most recent backup, and restart the server::
