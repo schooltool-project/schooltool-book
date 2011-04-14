@@ -1,7 +1,7 @@
 Using the Attendance Journal
 ============================
 
-The Journal provides a method of tracking classroom attendance as well as other data attached to specific class meetings, such as class particpation grades.  The current emphasis is on creating a fast and convenient method for teachers to enter this data during class.  More advanced attendance functionality, such as excuse workflows, will follow in subsequent releases.
+The Journal provides a method of tracking classroom attendance as well as other data attached to specific class meetings, such as class participation grades.  The current emphasis is on creating a fast and convenient method for teachers to enter this data during class.  More advanced attendance functionality, such as excuse workflows, will follow in subsequent releases.
 
 Finding the Journal
 -------------------
