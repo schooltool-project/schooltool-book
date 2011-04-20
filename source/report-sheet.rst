@@ -21,7 +21,7 @@ There are several steps involved in getting from the initial design of a report 
  
  #. Teachers enter scores in the relevant report sheet in each section's gradebook.
  
- #. Generate report card pdf's by group or student.
+ #. Generate report card PDFs by group or student.
 
 Defining a Report Sheet Template
 --------------------------------
@@ -34,7 +34,7 @@ To define a report sheet template, as "manager" go to **Manage** then **Report S
 
    .. image:: images/report-sheet-1.png
 
-Click **New Report Worksheet** and give the sheet a descriptive title (although avoid refering to the year if you want to re-use it):
+Click **New Report Worksheet** and give the sheet a descriptive title (although avoid referring to the year if you want to re-use it):
 
    .. image:: images/report-sheet-2.png
 
