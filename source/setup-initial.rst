@@ -8,7 +8,7 @@ Changing the Management Password
 
 The first step is to log in as the site manager, do a little basic customization and create a user account for yourself.  So first go to http://localhost:7080.  You should see a blank calendar like this:
 
-   .. image:: images/setup-initial-0.png
+   .. image:: images/setup_initial-0.png
 
 Click **Log In** at the right end of the red bar, and click the **Log in** button after entering "manager" as the **Username** and "schooltool" as the **Password**:
 
