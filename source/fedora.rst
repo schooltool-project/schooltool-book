@@ -31,4 +31,4 @@ To make SchoolTool start at every boot, execute this command at the terminal as 
 
 The Fedora packages are maintained by Abhishek Singh, aks (at) fedoraproject.org.  The packaging sources (spec files and patches) are available from `this git repository <http://gitorious.org/schooltool-rpm/schooltool-rpm/>`_. 
 
-Continue setup at :ref:`setup-initial`
+Continue setup at :ref:`setup_initial`

@@ -1,4 +1,4 @@
-.. _setup-initial:
+.. _setup_initial:
 
 Initial Setup Process
 =====================
