@@ -9,7 +9,7 @@ School Level Deployments or Greater
 
 For production deployment in a school or district, dedicated server hardware is recommended.  If SchoolTool is not the only service provided on the server, we recommend running SchoolTool by itself on a virtual server. 
 
-We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubuntu.com>`_ version 10.04, "Lucid Lynx" or later.  Note, however, that in most cases, the packages for the most recent version of SchoolTool will only be available for the most recent version of Ubuntu.  
+We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubuntu.com>`_ version 10.04, "Lucid Lynx" or later.  Note, however, that in most cases the packages for the most recent version of SchoolTool will only be available for the most recent version of Ubuntu.  
 
 Personal
 --------

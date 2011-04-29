@@ -13,11 +13,11 @@ SchoolTool is included in the `"Universe" software repository <https://help.ubun
 
    .. image:: images/uss-natty.png
 
+You should also search for and install "ttf-liberation" to enable generation of PDF reports.
+
    If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080 or http://127.0.0.1:7080.  The server may take a minute or two to actually start up.
    
    **The login is "manager" and the default password is "schooltool".**
-
-   From the **Ubuntu Software Center** you should also search for and install "ttf-liberation" to enable generation of PDF reports.
 
 Controlling the Server
 ----------------------
