@@ -9,6 +9,6 @@ Contents:
    system-requirements
    install
    upgrade-lucid
-   setup-initial
+   setup_initial
    email
    translations
