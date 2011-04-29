@@ -9,7 +9,7 @@ You can also install and use a free mail server using the Ubuntu package manager
 
 As an example of an external email service, here's the relevant data for enabling GMail:
 
-    .. image:: images/email-1.pngq
+    .. image:: images/email-1.png
     
 
 To send email through Gmail, log in as **manager**, and go to **Manage** and then **Outgoing Email**:

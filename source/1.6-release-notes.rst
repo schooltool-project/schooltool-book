@@ -4,12 +4,13 @@
 SchoolTool Release
 ==================
 
-1.6.0 (unreleased)
+1.6.0 (2011-04-26)
 ------------------
 
-Initial release as a new project, a SchoolTool suite including all supported
-plugins, to https://launchpad.net/schooltool.release
-This project is what has been tested by http://source.schooltool.org/buildbot/
+Final release for Natty
+
+- New umbrella project https://launchpad.net/schooltool.release
+- Add schooltool.commendation plugin that was split from schooltool.
 
 
 1.6.0b1 (2011-04-20)
@@ -29,15 +30,19 @@ Alpha1 for Natty
 
 - Update to ZTK 1.0.1
 - Update external dependencies versions to match Natty:
+
   + PIL 1.1.7
   + Reportlab 2.5
   + lxml 2.3
+
 - Add ttf-liberation external dependency.
 - Removed deprecated Zope dependencies:
+
   + zope.app.catalog
   + zope.app.intid
   + zope.app.session
   + zope.app.zptpage
+
 - Remove schooltool.stapp2008fall from package set.
 
 
@@ -60,9 +65,11 @@ New features
 ++++++++++++
 
 - Added report package (https://launchpad.net/bugs/429588)
-  - New Manage->Reports page listing all available reports.
-  - New reportLink directive for registering reports.
-  - Copied translations from gradebook.
+
+  + New Manage->Reports page listing all available reports.
+  + New reportLink directive for registering reports.
+  + Copied translations from gradebook.
+
 - Removed 'Report a bug on Launchpad' link from the footer
 - Include meta.zcml of plugins first to allow them have optional dependencies.
 - Updated translations.
