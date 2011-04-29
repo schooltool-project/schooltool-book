@@ -1,23 +1,21 @@
-Installing SchoolTool on Ubuntu on Ubuntu 11.04 or Later
-========================================================
+Installing SchoolTool Ubuntu 11.04 or Later
+===========================================
 
 Start by installing the server or desktop edition of `Ubuntu Linux <http://ubuntu.com>`_.  
 
 SchoolTool is included in the `"Universe" software repository <https://help.ubuntu.com/community/Repositories/Ubuntu>`_, which is enabled by default on installation.  
 
-   In the terminal type::
+In the terminal type::
 
-    sudo apt-get install schooltool ttf-liberation
+ sudo apt-get install schooltool
 
-   Or access the **Ubuntu Software Center** from the **Applications** menu.  Search for "schooltool", and then click **Install** and enter your password. 
+Or access the **Ubuntu Software Center** from the **Applications** menu.  Search for "schooltool", and then click **Install** and enter your password. 
 
-   .. image:: images/uss-natty.png
+.. image:: images/uss-natty.png
 
-You should also search for and install "ttf-liberation" to enable generation of PDF reports.
-
-   If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080 or http://127.0.0.1:7080.  The server may take a minute or two to actually start up.
+If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080 or http://127.0.0.1:7080.  The server may take a minute or two to actually start up.
    
-   **The login is "manager" and the default password is "schooltool".**
+**The login is "manager" and the default password is "schooltool".**
 
 Controlling the Server
 ----------------------
