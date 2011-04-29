@@ -38,7 +38,7 @@ Operating System
 Ubuntu
 ------
 
-The core SchoolTool development team recommends and supports installation of SchoolTool on Ubuntu Linux version 10.04, “Lucid Lynx” or later.
+The core SchoolTool development team recommends installation of SchoolTool on the most recent released version of Ubuntu.
 
 Fedora Linux & OLPC Server
 --------------------------
