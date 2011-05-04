@@ -12,15 +12,15 @@ The first step is to log in as the site manager, do a little basic customization
 
 Click **Log In** at the right end of the red bar, and click the **Log in** button after entering "manager" as the **Username** and "schooltool" as the **Password**:
 
-   .. image:: images/login.png
+   .. image:: images/setup_initial-1.png
 
 Next you should change the manager password.  To change the password, click on **Home** at the top of the screen:
 
-   .. image:: images/manager-info.png
+   .. image:: images/setup_initial-2.png
 
 Then click **Change Password**, enter a new one (twice) and click **Apply**:
 
-   .. image:: images/change-password.png
+   .. image:: images/setup_initial-3.png
 
 Evem if you don't plan to make your SchoolTool server's web pages accessible from another computer, but you should set manager and user passwords to prevent another person with physical access to your computer from accessing your SchoolTool data with the default password.
 
@@ -29,11 +29,11 @@ Changing Site Preferences
 
 Now click on **Manage** at the top of the screen:
 
-   .. image:: images/manage.png
+   .. image:: images/setup_initial-4.png
 
 Click **Change Site Preferences**.
 
-   .. image:: images/site-prefs.png
+   .. image:: images/setup_initial-5.png
 
 SchoolTool is designed to be usable in many different countries, and different parts of the world handle calendars and dates differently, so you may have to change some settings here to suit your local needs.  SchoolTool's calendar uses a more or less European configuration by default.  I've changed it below to suit my American tastes.  
 

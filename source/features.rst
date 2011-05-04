@@ -38,7 +38,7 @@ For more detailed explanations of the above terms, see :ref:`glossary`.
 Demographics and Contacts
 -------------------------
 
-* A school can customize the fields of demographic and other data stored for each person.
+* A school can customize the fields of demographic and other data stored for each person.  Fields can be assigned to teachers, students, administrators or all people.
 
 * Each person can be associated with one or more contacts, typically parents or guardians in a primary or secondary school.  Multiple students can be associated with a single contact.
 
@@ -136,9 +136,7 @@ Technical
 
 * **Web server:** SchoolTool contains its own server for easy testing and simple deployments.  For sites requiring a encrypted (SSL) connection, we recommend using Apache as a secure proxy.
 
-* **Virtual servers:** For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution.
-
-* **Developer tools:** "devmode" provides object introspection and API documentation via the SchoolTool web interface. 
+* **Virtual servers:** For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution. 
 
 * **Consistent programming style:** For readibility and easier modification, SchoolTool conforms to the official PEP 8 Style Guide for Python Code.
 
