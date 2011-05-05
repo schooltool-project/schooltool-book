@@ -9,12 +9,12 @@ You can also install and use a free mail server using the Ubuntu package manager
 
 As an example of an external email service, here's the relevant data for enabling GMail:
 
-    .. image:: images/email-1.png
+    .. image:: images/email-gmail.png
     
 
 To send email through Gmail, log in as **manager**, and go to **Manage** and then **Outgoing Email**:
 
-    .. image:: images/email-2.png
+    .. image:: images/email-0.png
 
 Click on Settings, and enter the appropriate data for your server.  Note that the the username and password in question in this form are the username and password of a user *on the mail server*, not on SchoolTool. 
 
@@ -24,18 +24,18 @@ A TLS connection is a type of secure connection between SchoolTool and the mail 
 
 As the label suggests, the outgoing email service won't do anything until you check (and **Apply**) the **Enable** box.  Do the opposite to turn it off.
 
-    .. image:: images/email-3.png
+    .. image:: images/email-1.png
 
 Hit **Apply** when you're done.
 
 To see if it is working, click **Send Test** and enter some relevant data, including one of your email addresses as recipient so you can make sure the message arrives safely:
 
-    .. image:: images/email-4.png
+    .. image:: images/email-2.png
 
 After you hit **Send**, you'll find yourself on the **Email Queue** page, and hopefully it is telling you that the server is enabled and the queue is clear (not that your message is stuck):
 
-    .. image:: images/email-5.png
+    .. image:: images/email-3.png
 
 Check your mail, and you should see the message:
 
-    .. image:: images/email-6.png
+    .. image:: images/email-gmail-2.png
