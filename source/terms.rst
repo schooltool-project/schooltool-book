@@ -15,24 +15,26 @@ In this example, we will create one semester.
 
 Logged in as "manager," click the active school year.  The active school year will be in red in the top menu.  Next click the **Add a new term** link, above **Groups**:
 
-   .. image:: images/empty-terms.png
+   .. image:: images/terms-0.png
 
 Enter a title for the term.  Pick the start and end dates by clicking on the **[...]**. Then click **Next**.
 
-   .. image:: images/term-add.png
+   .. image:: images/terms-1.png
 
 You will now see a calendar view which allows you to toggle specific days and dates on and off by clicking on them.  If a date is black means classes are in session; dates in red mean no classes.  Any day that student attendance will be taken should be in black.  A teacher training day with no classes would be red.  
 
 For example, I've set the standard school week from Monday to Friday and added Thanksgiving vacation the week of November 26th:
 
-   .. image:: images/term-daily.png
+   .. image:: images/terms-2.png
 
 When you are satisfied with this, select **Add Term**:
 
-   .. image:: images/term-added.png
+   .. image:: images/terms-3.png
 
 If you need to edit the term, click on its title and select **Edit**.
 
+We'll add a second term for the spring by following the same procedure:
 
+   .. image:: images/terms-4.png
 
 
