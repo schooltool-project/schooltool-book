@@ -9,5 +9,5 @@ Contents:
    web-v-import
    years
    terms
-   timetable
+   timetables
    courses
