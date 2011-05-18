@@ -13,42 +13,42 @@ In this section we will walk you through one common example.  The most important
 
 In this case, each section meets either at a specific time on Monday, Wednesday or Friday, or at a specific time on Tuesday and Thursday.  There are three one hour periods on Mon./Wed./Fri. and two hour and a half long periods Tue./Thurs, as shown:
 
-   .. image:: images/tt-table.png
+   .. image:: images/timetables-8.png
 
 To start creating a timetable, logged in as "manager," select the active school year (in red at the top of the screen) and then **School Timetables**:
 
-   .. image:: images/empty-timetables.png
+   .. image:: images/timetables-0.png
 
 Click the **New Timetable** button.
 
 Give the timetable a name.  We'll just leave it at default.
 
-   .. image:: images/tt-name.png
+   .. image:: images/timetables-1.png
 
 Our schedule is based on the actual days of the week on the calendar.  That is, certain classes meet on Mondays, Wednesdays and Fridays, others meet Tuesdays and Thursdays, so we choose **Days of the week**.
 
-   .. image:: images/tt-cycle.png
+   .. image:: images/timetables-2.png
 
 Because Tuesday and Thursday classes start at different times than Mon./Wed./Fri. classes, on the next page we select **Different times**:
 
-   .. image:: images/tt-begin.png
+   .. image:: images/timetables-3.png
 
 Now we enter the start and end times of each class on each day.  This form is finicky and wants the times in 24 hour (military) format:
 
-   .. image:: images/tt-times.png
+   .. image:: images/timetables-4.png
 
 At our school, periods don't **Have names** (for example "A," B," etc.), but are simply **Designated by time** (e.g., the 9:00 class):
 
-   .. image:: images/tt-names.png
+   .. image:: images/timetables-5.png
 
 The homeroom functionality is not really implemented in SchoolTool yet, so you can just say **No** to this question:
 
-   .. image:: images/tt-homeroom.png
+   .. image:: images/timetables-6.png
 
 If everything has worked you should see this:
 
-   .. image:: images/tt-success.png
+   .. image:: images/timetables-7.png
 
 And when you click on the **default** link (that is, the title of the timetable you created) you should see a simple representation of it:
 
-   .. image:: images/tt-table.png
+   .. image:: images/timetables-8.png
