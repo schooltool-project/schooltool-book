@@ -18,7 +18,7 @@ To create courses, logged in as "manager," click the active school year and then
 
    .. image:: images/courses-0.png
 
-Then, click the **New Course** button and fill out the form.  A title is required; a description is optional:
+Then, click the **New Course** button and fill out the form.  A title is required.  Description, course and government ID's and credits are optional:
 
    .. image:: images/courses-1.png
 
