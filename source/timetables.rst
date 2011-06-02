@@ -1,4 +1,4 @@
-.. _timetable:
+.. _timetables:
 
 Modeling Your School's Timetable
 ================================

@@ -64,7 +64,7 @@ Then **Add Timetable**:
 
    .. image:: images/sections-10.png
 
-Since we just have one timetable defined for the year, we don't have to change that field.  If your school has two different timetables (i.e., some classes start and end at overlapping times), you can select which one to use for this section.  For now, we've just got the "default" one we created in :ref:`timetable`.
+Since we just have one timetable defined for the year, we don't have to change that field.  If your school has two different timetables (i.e., some classes start and end at overlapping times), you can select which one to use for this section.  For now, we've just got the "default" one we created in :ref:`timetables`.
 
 By default, the beginning and end of the span of days the section meets is the same as the beginning and the end of the term.  You can change this to a shorter span within the term if you'd like.  Click **Add**:
 
