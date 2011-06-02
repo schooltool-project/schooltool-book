@@ -12,8 +12,12 @@ By default, the language displayed is selected from browser's preferences.  For 
 
 You can force SchoolTool pages to be always displayed in a desired language.
 
-Edit main.conf with your favorite editor::
+Edit conf file with your favorite editor::
 
+  # Ubuntu Natty or later
+  $ sudo gedit /etc/schooltool/standard/schooltool.conf
+
+  # Or, for earlier versions
   $ sudo gedit /etc/schooltool/schooltool-2009/main.conf
 
 And append a line "lang LANG_CODE" at the end, where LANG_CODE is the desired language code.  Several examples::
@@ -32,16 +36,15 @@ Translations submitted to Launchpad will be included in subsequent updates of Sc
 
 If you would like to install a translation that has been entered into Launchpad but not yet included in a SchoolTool release: 
 
- * Go to the relevant translation download page, for example, the Russian translation at https://translations.launchpad.net/schooltool/development/+pots/schooltool/ru/+export
+ * Go to the relevant translation download page, for example, the Russian translation at https://translations.launchpad.net/schooltool/trunk/+pots/schooltool/ru/+export
 
- * Select a .MO export and download it.
+ * Select "MO export" and request download.
 
- * The suggested filename for Russian export is **ru_LC_MESSAGES_schooltool.mo**.  
+ * You will get an email in a few minutes. Save the file to disk.
 
- * Download to your local filesystem::
+ * Replace current translations with the exported file::
  
-     mv schooltool.mo
-     sudo mv /usr/lib/python2.5/site-packages/schooltool/locales/ru/LC_MESSAGES/schooltool.mo
+     sudo mv ru_LC_MESSAGES_schooltool.mo /usr/share/pyshared/schooltool/locales/ru/LC_MESSAGES/schooltool.mo
 
  * Restart the SchoolTool services, your translation should be applied.
 
