@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /htmlhelp/_sources/
+Disallow: /_sources/
