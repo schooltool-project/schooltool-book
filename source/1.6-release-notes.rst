@@ -185,3 +185,13 @@ SchoolTool Lyceum Journal
 - Add meta.zcml to support making this plugin optional.
 - Update translations.
 
+
+SchoolTool Intervention
+=======================
+
+0.4.3 (2011-09-16)
+------------------
+
+- Fixed single-digit user id crash bug (https://launchpad.net/bugs/716455)
+- Fix crash in student search with non-ascii characters (https://launchpad.net/bugs/738351) 
+- Added (sr) and updated (es_SV, pt_BR, ru) translations
