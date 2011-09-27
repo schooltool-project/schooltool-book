@@ -4,6 +4,21 @@
 SchoolTool
 ==========
 
+1.4.4 (2011-09-05)
+------------------
+
+- Allowed non-integer values for course credits (https://bugs.launchpad.net/bugs/488376)
+- Add School Year copies all course attributes (https://bugs.launchpad.net/bugs/785994)
+- Fixed XLS import crashes:
+
+  + Username is a number (https://launchpad.net/bugs/801870)
+  + No file selected for import
+  + Section timetables without resources (https://launchpad.net/bugs/839031)
+  + Empty sections or groups (https://launchpad.net/bugs/382566)
+
+- Update translations.
+
+
 1.4.3 (2010-11-23)
 ------------------
 
