@@ -25,7 +25,13 @@ And append a line "lang LANG_CODE" at the end, where LANG_CODE is the desired la
   lang ru
   lang en-gb
   lang es-sv
-  lang fr
+
+You can specify more than one locale, separated by commas.  Then a language
+selector will appear in the top bar, allowing the user to switch the
+language::
+
+  lang en-ca,fr
+
 
 Translating SchoolTool
 ----------------------
@@ -46,6 +52,6 @@ If you would like to install a translation that has been entered into Launchpad 
  
      sudo mv ru_LC_MESSAGES_schooltool.mo /usr/share/pyshared/schooltool/locales/ru/LC_MESSAGES/schooltool.mo
 
- * Restart the SchoolTool services, your translation should be applied.
+ * Restart the SchoolTool service, your translation should be applied.
 
 Of course, for languages other than Russian, the "ru" above should be replaced with the relevant prefix.
