@@ -4,6 +4,14 @@
 SchoolTool Release
 ==================
 
+1.9.2 (2011-11-04)
+------------------
+
+Flourish bugfixes.
+
+- Make sandbox with virtualenv. Fixes bootstrap with Python 2.7.
+
+
 1.9.1 (2011-10-06)
 ------------------
 
@@ -24,6 +32,25 @@ interface.
 
 SchoolTool
 ==========
+
+1.9.2 (2011-11-04)
+------------------
+
+- Group sections by term in calendar (https://launchpad.net/bugs/872289)
+- Terms are listed upside down (https://launchpad.net/bugs/872240)
+- Moved Demographics into General Information accordion
+- Added two "Other" contact fields (https://launchpad.net/bugs/874568)
+- User information doesn't show username (https://launchpad.net/bugs/545767)
+- Username in login bar should go to user home (https://launchpad.net/bugs/868394)
+- No language selector in flourish (https://launchpad.net/bugs/868397)
+- Many calendaring fixes
+- Updated translations.
+
+Export
+++++++
+
+- XLS import of boolean or required demo fields (https://launchpad.net/bugs/859424)
+
 
 1.9.1 (2011-10-07)
 ------------------
@@ -69,6 +96,15 @@ API changes
 SchoolTool Gradebook
 ====================
 
+1.9.2 (2011-11-02)
+------------------
+
+- Fixed the overzealous security checks to improve performance (https://lauchpad.net/bugs/561217)
+- Add a link from Section to Gradebook (https://lauchpad.net/bugs/868426)
+- Fix Gradebook breadcrumb (https://lauchpad.net/bugs/868431)
+- Updated translations
+
+
 1.9.1 (2011-10-06)
 ------------------
 
@@ -91,6 +127,12 @@ Cleanup
 SchoolTool Intervention
 =======================
 
+1.9.2 (2011-10-28)
+------------------
+
+- Updated translations
+
+
 1.9.1 (2011-10-06)
 ------------------
 
@@ -107,6 +149,17 @@ New skin for SchoolTool 1.9 (flourish) and many other changes.
 
 SchoolTool Lyceum Journal
 =========================
+
+1.9.2 (2011-10-28)
+------------------
+
+- Fix saving attendance/grades for months other than first (https://launchpad.net/bugs/879425)
+- Fix upgrading from versions earlier than 1.9 (https://launchpad.net/bugs/859708)
+- Minimize amount of permission checks for performance reasons (https://launchpad.net/bugs/879402)
+- Section stays the same when switching between Gradebook and Journal (https://launchpad.net/bugs/661240)
+- Selenium testing support
+- Update translations
+
 
 1.9.1 (2011-10-06)
 ------------------
