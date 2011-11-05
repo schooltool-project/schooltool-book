@@ -11,7 +11,7 @@ PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d build/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 
-.PHONY: help clean html web pickle htmlhelp latex changes linkcheck upload
+.PHONY: help clean bootstrap html web pickle htmlhelp latex changes linkcheck upload
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
@@ -30,8 +30,12 @@ clean:
 	-rm -rf develop-eggs
 	-rm -rf parts
 
-bin/buildout:
-	python bootstrap.py
+python:
+	rm -rf python
+	virtualenv python
+
+bootstrap bin/buildout: python
+	python/bin/python bootstrap.py
 
 bin/sphinx-build: bin/buildout
 	bin/buildout
