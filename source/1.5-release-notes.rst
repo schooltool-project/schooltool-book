@@ -1,18 +1,45 @@
 1.5 Release Notes
 ~~~~~~~~~~~~~~~~~
 
-SchoolTool
-==========
+SchoolTool for Ubuntu 10.10 (Maverick).
 
-1.5.3 (2010-11-24)
-------------------
+
+SchoolTool Intervention 0.4.3 (2011-09-16)
+------------------------------------------
+
+- Fixed single-digit user id crash bug (https://launchpad.net/bugs/716455)
+- Fix crash in student search with non-ascii characters (https://launchpad.net/bugs/738351) 
+- Added (sr) and updated (es_SV, pt_BR, ru) translations
+
+
+SchoolTool Lyceum Journal 0.7.2 (2011-04-18)
+--------------------------------------------
+
+- Add meta.zcml to support making this plugin optional.
+- Update translations.
+
+
+SchoolTool Intervention 0.4.2 (2011-02-19)
+------------------------------------------
+
+- Updated translations (es, it, nl)
+
+
+SchoolTool 1.5.3 (2010-11-24)
+-----------------------------
 
 - Fixed Section meeting time misalignment in calendar (https://launchpad.net/bugs/611797)
 - Added Bengali and Faroese translations, updated many others
 
 
-1.5.2 (2010-10-04)
-------------------
+SchoolTool Lyceum Journal 0.7.1 (2010-10-20)
+--------------------------------------------
+
+- Update translations
+
+
+SchoolTool 1.5.2 (2010-10-04)
+-----------------------------
 
 - Activation of selected school year (https://launchpad.net/bugs/635160)
 - Added "Add Multiple Persons" to Manage->Persons and "New Person" (for
@@ -25,8 +52,41 @@ SchoolTool
 - Update translations.
 
 
-1.5.1 (2010-09-09)
-------------------
+SchoolTool Gradebook 0.8.1 (2010-10-04)
+---------------------------------------
+
+- Grades rounding mismatch (https://launchpad.net/bugs/585796)
+- Calculate average grade with more precision (https://launchpad.net/bugs/333971)
+- Use fixed precision for total and linked columns (https://launchpad.net/bugs/650838)
+- Fix to let students view section's gradebook.
+- Cosmetic fixes in various pages.
+- Updated translations (es, lt, nl)
+
+
+SchoolTool Intervention 0.4.1 (2010-10-04)
+------------------------------------------
+
+- Change style of some buttons to neutral (https://launchpad.net/bugs/613571)
+- Changed recipients to email addresses for both messages and goals csv
+- Do not crash if persons are removed or don't have email
+
+
+SchoolTool Gradebook 0.8.0 (2010-09-16)
+---------------------------------------
+
+- Update tests for use with SchoolTool 1.5.1
+
+
+SchoolTool Intervention 0.4.0 (2010-09-15)
+------------------------------------------
+
+- CSV export of messages and goals (requested by SLA)
+- Update for API changes in schooltool 1.5.1
+- Updated translations (it, nl, pt_BR)
+
+
+SchoolTool 1.5.1 (2010-09-09)
+-----------------------------
 
 - Tweaked WYSIWYG CK editor (https://launchpad.net/bugs/485446)
 - Make CK editor work with servers under mod-rewrite (https://launchpad.net/bugs/258951)
@@ -37,8 +97,16 @@ SchoolTool
 - Update translations.
 
 
-1.5.0 (2010-07-13)
-------------------
+SchoolTool Lyceum Journal 0.7.0 (2010-07-13)
+--------------------------------------------
+
+This is a development release that requires SchoolTool 1.5.0
+
+- Section journal removes consecutive periods if timetable is so configured.
+
+
+SchoolTool 1.5.0 (2010-07-13)
+-----------------------------
 
 New features
 ++++++++++++
@@ -55,81 +123,3 @@ Bug fixes
 - XLS Importer catches errors before trying to create objects. (https://launchpad.net/bugs/306339)
 - Removed SchoolTool logo from PDF footers (https://launchpad.net/bugs/561558)
 - Update translations (ca, en_AU, eu, ne, pl, tr)
-
-
-SchoolTool Lyceum Journal
-=========================
-
-0.7.2 (2011-04-18)
-------------------
-
-- Add meta.zcml to support making this plugin optional.
-- Update translations.
-
-
-0.7.1 (2010-10-20)
-------------------
-
-- Update translations
-
-
-0.7.0 (2010-07-13)
-------------------
-
-This is a development release that requires SchoolTool 1.5.0
-
-- Section journal removes consecutive periods if timetable is so configured.
-
-
-SchoolTool Gradebook
-====================
-
-0.8.1 (2010-10-04)
-------------------
-
-- Grades rounding mismatch (https://launchpad.net/bugs/585796)
-- Calculate average grade with more precision (https://launchpad.net/bugs/333971)
-- Use fixed precision for total and linked columns (https://launchpad.net/bugs/650838)
-- Fix to let students view section's gradebook.
-- Cosmetic fixes in various pages.
-- Updated translations (es, lt, nl)
-
-
-0.8.0 (2010-09-16)
-------------------
-
-- Update tests for use with SchoolTool 1.5.1
-
-
-SchoolTool Intervention
-=======================
-
-0.4.3 (2011-09-16)
-------------------
-
-- Fixed single-digit user id crash bug (https://launchpad.net/bugs/716455)
-- Fix crash in student search with non-ascii characters (https://launchpad.net/bugs/738351) 
-- Added (sr) and updated (es_SV, pt_BR, ru) translations
-
-
-0.4.2 (2011-02-19)
-------------------
-
-- Updated translations (es, it, nl)
-
-
-0.4.1 (2010-10-04)
-------------------
-
-- Change style of some buttons to neutral (https://launchpad.net/bugs/613571)
-- Changed recipients to email addresses for both messages and goals csv
-- Do not crash if persons are removed or don't have email
-
-
-0.4.0 (2010-09-15)
-------------------
-
-- CSV export of messages and goals (requested by SLA)
-- Update for API changes in schooltool 1.5.1
-- Updated translations (it, nl, pt_BR)
-

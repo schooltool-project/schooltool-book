@@ -1,56 +1,27 @@
 1.6 Release Notes
 ~~~~~~~~~~~~~~~~~
 
-SchoolTool Release
-==================
-
-1.6.0 (2011-04-26)
-------------------
-
-Final release for Natty
-
-- New umbrella project https://launchpad.net/schooltool.release
-- Add schooltool.commendation plugin that was split from schooltool.
+The first SchoolTool release available in Ubuntu 11.04 (Natty).
 
 
-1.6.0b1 (2011-04-20)
---------------------
+Updates in SchoolTool PPA
+=========================
 
-Beta1 for Natty
+There are bugfix releases for Natty in the `SchoolTool PPA`_
 
-- Update to ZTK 1.0.2
-- Plugins now have optional optional inter-dependencies, include
-  meta.zcml that defines a feature before including plugin.zcml.
+.. _`SchoolTool PPA`: https://launchpad.net/~schooltool-owners/+archive/ppa/
 
 
-1.6.0a1 (2011-02-23)
---------------------
+SchoolTool Intervention 0.4.3 (2011-09-16)
+------------------------------------------
 
-Alpha1 for Natty
-
-- Update to ZTK 1.0.1
-- Update external dependencies versions to match Natty:
-
-  + PIL 1.1.7
-  + Reportlab 2.5
-  + lxml 2.3
-
-- Add ttf-liberation external dependency.
-- Removed deprecated Zope dependencies:
-
-  + zope.app.catalog
-  + zope.app.intid
-  + zope.app.session
-  + zope.app.zptpage
-
-- Remove schooltool.stapp2008fall from package set.
+- Fixed single-digit user id crash bug (https://launchpad.net/bugs/716455)
+- Fix crash in student search with non-ascii characters (https://launchpad.net/bugs/738351) 
+- Added (sr) and updated (es_SV, pt_BR, ru) translations
 
 
-SchoolTool
-==========
-
-1.6.1 (2011-09-14)
-------------------
+SchoolTool 1.6.1 (2011-09-14)
+-----------------------------
 
 - Add paste.ini_tmpl to .tar.gz to fix start-schooltool-instance not creating
   the required paste.ini file.
@@ -70,61 +41,8 @@ SchoolTool
 - Update translations.
 
 
-1.6.0 (2011-04-25)
-------------------
-
-- Move schooltool.commendation example plugin into its own project
-  https://launchpad.net/schooltool.commendation
-- Workaround tests failing if translations have been compiled (https://launchpad.net/bugs/79761).
-- Fixed crashes when term title is "First" or "Last" (https://launchpad.net/bugs/485639).
-
-
-1.6.0b1 (2011-04-18)
---------------------
-
-New features
-++++++++++++
-
-- Added report package (https://launchpad.net/bugs/429588)
-
-  + New Manage->Reports page listing all available reports.
-  + New reportLink directive for registering reports.
-  + Copied translations from gradebook.
-
-- Removed 'Report a bug on Launchpad' link from the footer
-- Include meta.zcml of plugins first to allow them have optional dependencies.
-- Updated translations.
-
-
-1.6.0a1 (2011-02-23)
---------------------
-
-New features
-++++++++++++
-
-- Added boolean demographic fields.
-- Added customizable fields for resources.
-- Added limit keys property to demographic fields.
-- Created group-aware (teacher, student, administrator) person add views.
-- Use Liberation fonts instead of non-free Microsoft fonts (https://launchpad.net/bugs/371655).
-  You have to edit schooltool.conf and change msttcorefonts to ttf-liberation to
-  re-enable PDF generation.
-- Update included jQuery to 1.5 (https://launchpad.net/bugs/588645).
-- Developer documentation can be generated from source.
-
-Cleanup
-+++++++
-
-- Removed obsolete dependencies, support upgrading from schooltool >= 1.0 only.
-- Removed obsolete config keys.
-- Renamed the default schooltool application to schooltool.standard.
-
-
-SchoolTool Gradebook
-====================
-
-0.9.1 (2011-07-04)
-------------------
+SchoolTool Gradebook 0.9.1 (2011-07-04)
+---------------------------------------
 
 New features
 ++++++++++++
@@ -144,8 +62,26 @@ Bugfixes
 - Fixed unhide worksheets when all the worksheets are hidden (https://launchpad.net/bugs/788307).
 
 
-0.9.0 (2011-04-25)
-------------------
+1.6.0 (2011-04-26)
+==================
+
+Final release for Natty
+
+- New umbrella project https://launchpad.net/schooltool.release
+- Add schooltool.commendation plugin that was split from schooltool.
+
+
+SchoolTool 1.6.0 (2011-04-25)
+-----------------------------
+
+- Move schooltool.commendation example plugin into its own project
+  https://launchpad.net/schooltool.commendation
+- Workaround tests failing if translations have been compiled (https://launchpad.net/bugs/79761).
+- Fixed crashes when term title is "First" or "Last" (https://launchpad.net/bugs/485639).
+
+
+SchoolTool Gradebook 0.9.0 (2011-04-25)
+---------------------------------------
 
 Improvements
 ++++++++++++
@@ -168,30 +104,95 @@ Bug fixes
 - Update translations.
 
 
-0.9.0a1 (2011-02-23)
---------------------
+1.6.0b1 (2011-04-20)
+====================
+
+Beta1 for Natty
+
+- Update to ZTK 1.0.2
+- Plugins now have optional optional inter-dependencies, include
+  meta.zcml that defines a feature before including plugin.zcml.
+
+
+SchoolTool 1.6.0b1 (2011-04-18)
+-------------------------------
+
+- Added report package (https://launchpad.net/bugs/429588)
+
+  + New Manage->Reports page listing all available reports.
+  + New reportLink directive for registering reports.
+  + Copied translations from gradebook.
+
+- Removed 'Report a bug on Launchpad' link from the footer
+- Include meta.zcml of plugins first to allow them have optional dependencies.
+- Updated translations.
+
+
+SchoolTool Lyceum Journal 0.7.2 (2011-04-18)
+--------------------------------------------
+
+- Add meta.zcml to support making this plugin optional.
+- Update translations.
+
+
+1.6.0a1 (2011-02-23)
+====================
+
+Alpha1 for Natty
+
+- Update to ZTK 1.0.1
+- Update external dependencies versions to match Natty:
+
+  + PIL 1.1.7
+  + Reportlab 2.5
+  + lxml 2.3
+
+- Add ttf-liberation external dependency.
+- Removed deprecated Zope dependencies:
+
+  + zope.app.catalog
+  + zope.app.intid
+  + zope.app.session
+  + zope.app.zptpage
+
+- Remove schooltool.stapp2008fall from package set.
+
+
+SchoolTool 1.6.0a1 (2011-02-23)
+-------------------------------
+
+New features
+++++++++++++
+
+- Added boolean demographic fields.
+- Added customizable fields for resources.
+- Added limit keys property to demographic fields.
+- Created group-aware (teacher, student, administrator) person add views.
+- Use Liberation fonts instead of non-free Microsoft fonts (https://launchpad.net/bugs/371655).
+  You have to edit schooltool.conf and change msttcorefonts to ttf-liberation to
+  re-enable PDF generation.
+- Update included jQuery to 1.5 (https://launchpad.net/bugs/588645).
+- Developer documentation can be generated from source.
+
+Cleanup
++++++++
+
+- Removed obsolete dependencies, support upgrading from schooltool >= 1.0 only.
+- Removed obsolete config keys.
+- Renamed the default schooltool application to schooltool.standard.
+
+
+SchoolTool Gradebook 0.9.0a1 (2011-02-23)
+-----------------------------------------
 
 - Fixed default category selection for new activity form (https://launchpad.net/bugs/562875)
 - Sort student names in the gradebook according to locale.
 - Split and improve functional tests.
 
 
-SchoolTool Lyceum Journal
-=========================
-
-0.7.2 (2011-04-18)
-------------------
-
-- Add meta.zcml to support making this plugin optional.
-- Update translations.
 
 
-SchoolTool Intervention
-=======================
 
-0.4.3 (2011-09-16)
-------------------
 
-- Fixed single-digit user id crash bug (https://launchpad.net/bugs/716455)
-- Fix crash in student search with non-ascii characters (https://launchpad.net/bugs/738351) 
-- Added (sr) and updated (es_SV, pt_BR, ru) translations
+
+

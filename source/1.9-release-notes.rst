@@ -1,40 +1,25 @@
 1.9 Release Notes
 ~~~~~~~~~~~~~~~~~
 
-SchoolTool Release
-==================
+1.9, better known as flourish_ series, features a redesigned user interface with
+much improved navigation, new branding and colors, rewritten timetables, new
+tables for journal and gradebook, and other new features. This work is now in
+its final stages and will become the `schooltool 2.0`_ release.
+
+.. _flourish: https://launchpad.net/schooltool/flourish
+.. _schooltool 2.0: https://launchpad.net/schooltool/+milestone/2.0
+
 
 1.9.2 (2011-11-04)
-------------------
+==================
 
 Flourish bugfixes.
 
 - Make sandbox with virtualenv. Fixes bootstrap with Python 2.7.
 
 
-1.9.1 (2011-10-06)
-------------------
-
-Flourish beta.
-
-- Fully translatable.
-- Selenium tests support.
-
-
-1.9.0 (2011-09-25)
-------------------
-
-Flourish alpha.
-
-First release of "flourish" summer sprint work, featuring a totally new user
-interface.
-
-
-SchoolTool
-==========
-
-1.9.2 (2011-11-04)
-------------------
+SchoolTool 1.9.2 (2011-11-04)
+-----------------------------
 
 - Group sections by term in calendar (https://launchpad.net/bugs/872289)
 - Terms are listed upside down (https://launchpad.net/bugs/872240)
@@ -52,8 +37,49 @@ Export
 - XLS import of boolean or required demo fields (https://launchpad.net/bugs/859424)
 
 
-1.9.1 (2011-10-07)
-------------------
+SchoolTool Gradebook 1.9.2 (2011-11-02)
+---------------------------------------
+
+- Fixed the overzealous security checks to improve performance (https://lauchpad.net/bugs/561217)
+- Add a link from Section to Gradebook (https://lauchpad.net/bugs/868426)
+- Fix Gradebook breadcrumb (https://lauchpad.net/bugs/868431)
+- Updated translations
+
+
+SchoolTool Lyceum Journal 1.9.2 (2011-10-28)
+--------------------------------------------
+
+- Fix saving attendance/grades for months other than first (https://launchpad.net/bugs/879425)
+- Fix upgrading from versions earlier than 1.9 (https://launchpad.net/bugs/859708)
+- Minimize amount of permission checks for performance reasons (https://launchpad.net/bugs/879402)
+- Section stays the same when switching between Gradebook and Journal (https://launchpad.net/bugs/661240)
+- Selenium testing support
+- Update translations
+
+
+SchoolTool Intervention 1.9.2 (2011-10-28)
+------------------------------------------
+
+- Updated translations
+
+
+SchoolTool Devtools 0.6.3 (2011-10-12)
+--------------------------------------
+
+- Fix import errors left in previous release.
+
+
+1.9.1 (2011-10-06)
+==================
+
+Flourish beta.
+
+- Fully translatable.
+- Selenium tests support.
+
+
+SchoolTool 1.9.1 (2011-10-07)
+-----------------------------
 
 - Fully translatable.
 - Experimental implementation of Selenium testing API.
@@ -69,8 +95,76 @@ Export
 - Fixed export of booleans bug (https://bugs.launchpad.net/bugs/796791)
 
 
-1.9.0 (2011-09-21)
-------------------
+SchoolTool Gradebook 1.9.1 (2011-10-06)
+---------------------------------------
+
+- Fully translatable
+- Updated translations
+
+
+SchoolTool Intervention 1.9.1 (2011-10-06)
+------------------------------------------
+
+- Created student interventions PDF (https://launchpad.net/bugs/541498)
+- Fully translatable
+- Updated translations (es_SV, lt, nl and pt_BR already translated)
+
+
+SchoolTool Lyceum Journal 1.9.1 (2011-10-06)
+--------------------------------------------
+
+- Fully translatable
+- Update translations
+
+
+SchoolTool Devtools 0.6.1 (2011-10-06)
+--------------------------------------
+
+- Restore support for python << 2.6, move selenium dependent code to
+  webdriver.py
+
+
+SchoolTool Devtools 0.6 (2011-10-05)
+------------------------------------
+
+- Selenium test runner recipe
+- Create a http://launchpad.net/schooltool.devtools project
+
+
+1.9.0 (2011-09-25)
+==================
+
+Flourish alpha.
+
+First release of "flourish" summer sprint work, featuring a totally new user
+interface.
+
+
+SchoolTool Lyceum Journal 1.9.0 (2011-09-25)
+--------------------------------------------
+
+New skin for SchoolTool 1.9 (flourish) and many other changes.
+
+
+SchoolTool Intervention 1.9.0 (2011-09-23)
+------------------------------------------
+
+New skin for SchoolTool 1.9 (flourish) and many other changes.
+
+
+SchoolTool Gradebook 1.9.0 (2011-09-22)
+---------------------------------------
+
+New skin for SchoolTool 1.9 (flourish) and many other changes.
+
+Cleanup
++++++++
+
+- Move categories from z3c.optionstorage to a simple container.
+
+
+SchoolTool 1.9.0 (2011-09-21)
+-----------------------------
 
 This is a first release from "flourish" branch that was being worked on
 tirelessly since June. 
@@ -91,102 +185,3 @@ API changes
 - Pluggable traverser refactoring, traversers lost redundant request parameter
 - New `flourish` content, viewlet, page, breadcrumbs, resourceLibrary and
   ZCML directives for them.
-
-
-SchoolTool Gradebook
-====================
-
-1.9.2 (2011-11-02)
-------------------
-
-- Fixed the overzealous security checks to improve performance (https://lauchpad.net/bugs/561217)
-- Add a link from Section to Gradebook (https://lauchpad.net/bugs/868426)
-- Fix Gradebook breadcrumb (https://lauchpad.net/bugs/868431)
-- Updated translations
-
-
-1.9.1 (2011-10-06)
-------------------
-
-- Fully translatable
-- Updated translations
-
-
-1.9.0 (2011-09-22)
-------------------
-
-New skin for SchoolTool 1.9 (flourish) and many other changes.
-
-Cleanup
-+++++++
-
-- Move categories from z3c.optionstorage to a simple container.
-
-
-
-SchoolTool Intervention
-=======================
-
-1.9.2 (2011-10-28)
-------------------
-
-- Updated translations
-
-
-1.9.1 (2011-10-06)
-------------------
-
-- Created student interventions PDF (https://launchpad.net/bugs/541498)
-- Fully translatable
-- Updated translations (es_SV, lt, nl and pt_BR already translated)
-
-
-1.9.0 (2011-09-23)
-------------------
-
-New skin for SchoolTool 1.9 (flourish) and many other changes.
-
-
-SchoolTool Lyceum Journal
-=========================
-
-1.9.2 (2011-10-28)
-------------------
-
-- Fix saving attendance/grades for months other than first (https://launchpad.net/bugs/879425)
-- Fix upgrading from versions earlier than 1.9 (https://launchpad.net/bugs/859708)
-- Minimize amount of permission checks for performance reasons (https://launchpad.net/bugs/879402)
-- Section stays the same when switching between Gradebook and Journal (https://launchpad.net/bugs/661240)
-- Selenium testing support
-- Update translations
-
-
-1.9.1 (2011-10-06)
-------------------
-
-- Fully translatable
-- Update translations
-
-
-1.9.0 (2011-09-25)
-------------------
-
-New skin for SchoolTool 1.9 (flourish) and many other changes.
-
-
-SchoolTool development tools
-============================
-
-0.6.1 (2011-10-06)
-------------------
-
-- Restore support for python << 2.6, move selenium dependent code to
-  webdriver.py
-
-
-0.6 (2011-10-05)
-----------------
-
-- Selenium test runner recipe
-- Create a http://launchpad.net/schooltool.devtools project
-
