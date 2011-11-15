@@ -1,4 +1,5 @@
 {% extends 'default/layout.html' %}
+{%- set script_files = script_files + [pathto('_static/jquery.colorbox-min.js',1), pathto('_static/flourish.js', 1)] %}
 {%- block relbar1 %}{% endblock %}
 {%- block relbar2 %}{% endblock %}
 {%- block header %}

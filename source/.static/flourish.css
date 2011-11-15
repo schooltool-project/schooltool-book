@@ -1,6 +1,6 @@
 @import url("reset.css");
 @import url("default.css");
-
+@import url("colorbox.css");
 
 body {
     background: none;
@@ -205,6 +205,11 @@ div.body h3, div.body h4, div.body h5, div.body h6 {
 
 div.body li {
     margin-bottom: 4px;
+}
+
+div.body img.cboxElement {
+    width: 448px;
+    cursor: pointer;
 }
 
 a, a:visited, a:link, a:active {
