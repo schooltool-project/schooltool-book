@@ -7,9 +7,11 @@ Hardware
 School Level Deployments or Greater
 -----------------------------------
 
-For production deployment in a school or district, dedicated server hardware is recommended.  If SchoolTool is not the only service provided on the server, we recommend running SchoolTool by itself on a virtual server. 
+For production deployment in a school or district, dedicated server hardware is recommended.  If SchoolTool is not the only service provided on the server, we recommend running SchoolTool by itself on a virtual server.  
 
-We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubuntu.com>`_ version 10.04, "Lucid Lynx" or later.  Note, however, that in most cases the packages for the most recent version of SchoolTool will only be available for the most recent version of Ubuntu.  
+SchoolTool can be hosted in "the cloud" on any server (physical or virtual) that provides root access to the server OS or the equivalent.  You will need to have rights on the server to install software and add SchoolTool as a system service.  A simple "web hosting" service that allows you to add HTML and PHP pages is not sufficient.
+
+We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubuntu.com>`_ version 10.04, "Lucid Lynx" or later.  Community-provided packages for Fedora Linux are also available.
 
 Personal
 --------
@@ -19,18 +21,18 @@ For personal use, SchoolTool can be installed and used on a personal desktop or 
 Technical Specifications
 ------------------------
 
-The primary bottleneck in SchoolTool's performance is usually memory.  The bare minimum RAM requirement is estimated to be 256 megabytes.  At least 512 megabytes is recommended and if you are setting up for a production server, adding more than 1 gigabyte of RAM is worth it if you can afford it.  More memory equals faster database performance.
+The primary bottleneck in SchoolTool's performance is usually memory.  The bare minimum RAM requirement for testing is estimated to be 256 megabytes.  At least 512 megabytes is recommended and if you are setting up for a production server, adding more than 1 gigabyte of RAM is worth it if you can afford it.  More memory equals faster database performance.
 
 Faster processors will make SchoolTool run faster.  Over 1 gHz is recommended.  SchoolTool is multi-threaded but due to the Python programming language's implementation only one thread will run at one time, so SchoolTool's performance does not directly benefit from multiple processors or multi-core processors.  
 
-Note that as of SchoolTool 1.6, Ubuntu SchoolTool packages are available for low-power ARM architecture processors, as well as i386 and AMD64 PC and server processors.
+Ubuntu SchoolTool packages are available for low-power ARM architecture processors, as well as i386 and AMD64 PC and server processors.
 
 By the scale of modern storage technology, SchoolTool doesn't require significant disk space.  One gigabyte should handle it for quite a while.  Disk speed is more important than volume.
 
 Sample Data
 -----------
 
-Note that importing the full set of sample data included in the spreadsheet that accompanies SchoolTool is probably the most demanding task you will ever ask of your SchoolTool instance.  The spreadsheet covers two full years of data for a school of 1000 students, and it tends to swamp computers at the lower limit of the memory requirements.  To make this more manageable, you can edit the sample data worksheet and delete some parts -- cutting down to section enrolments for only one semester, for example.
+Note that importing the larger spreadsheet of sample data included in the spreadsheet included with SchoolTool is probably the most demanding task you will ever ask of your SchoolTool instance.  The large spreadsheet covers two full years of data for a school of 1000 students, and it tends to swamp computers at the lower limit of the memory requirements.  A smaller set of sample data is also provided.  
 
 Operating System
 ++++++++++++++++

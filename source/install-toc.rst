@@ -10,6 +10,4 @@ Contents:
    install
    install-pre-natty
    upgrade-lucid
-   setup_initial
-   email
-   translations
+

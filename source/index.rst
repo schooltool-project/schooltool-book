@@ -26,6 +26,7 @@ Contents:
    features
    release-notes
    install-toc
+   initial-configuration-toc
    setup-toc
    spreadsheet
    populating

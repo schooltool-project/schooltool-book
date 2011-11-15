@@ -45,9 +45,9 @@ copyright = '2011, the Shuttleworth Foundation'
 # other places throughout the built documents.
 #
 # The short X.Y version.
-version = '1.5'
+version = '2.0'
 # The full version, including alpha/beta/rc tags.
-release = '1.5.2'
+release = '2.0 alpha'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -102,7 +102,7 @@ html_title = "The SchoolTool Book"
 
 # The name of an image file (within the static path) to place at the top of
 # the sidebar.
-#html_logo = "zonki.png"
+html_logo = "st-logo.jpg"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
