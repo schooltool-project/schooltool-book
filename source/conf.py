@@ -91,8 +91,9 @@ html_theme_options = {
     'sidebarbgcolor': '#EAE8E3',
     'sidebartextcolor': '#000000',
     'sidebarlinkcolor': '#000000',
-    'relbarbgcolor': '#990000',
+    'relbarbgcolor': 'transparent',
     'headbgcolor': '#EAE8E3',
+    'rightsidebar': True,
 }
 
 # The name for this set of Sphinx documents.  If None, it defaults to
@@ -101,12 +102,15 @@ html_title = "The SchoolTool Book"
 
 # The name of an image file (within the static path) to place at the top of
 # the sidebar.
-html_logo = "zonki.png"
+#html_logo = "zonki.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['.static']
+
+html_style = 'flourish.css'
+html_favicon = 'favicon.ico'
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -117,7 +121,10 @@ html_last_updated_fmt = '%b %d, %Y'
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {
+    '**': ['localtoc.html', 'relations.html'],
+    'search': [],
+}
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
