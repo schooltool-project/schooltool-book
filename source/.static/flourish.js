@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('div.body img.cboxElement').colorbox({
+    $('div.body img').colorbox({
 	href: function () {
 	    return $(this).attr('src'); 
 	}
