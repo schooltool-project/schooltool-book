@@ -29,6 +29,15 @@ p {
     margin: 16px 0px;
 }
 
+a, a:visited, a:link, a:active {
+    color: #005C61;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 div.documentwrapper {
     padding-top: 24px;
 }
@@ -212,39 +221,52 @@ div.body img {
     cursor: pointer;
 }
 
-a, a:visited, a:link, a:active {
-    color: #005C61;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a.headerlink {
-}
-
 a.headerlink:hover {
     background-color: #008C93;
 }
 
-div.body p, div.body dd, div.body li {
+#searchbox {
+    background-color: #c7cbd2;
+    float: right;
+    margin-right: 16px;
+    padding: 2px;
+    width: 214px;
 }
 
-div.note {
+#searchbox input[type="text"] {
+    background-color: #ffffff;
+    border: 1px solid #CCC1C1;
+    color: #333333;
+    font-family: Ubuntu, sans-serif;
+    font-size: 12px;
+    height: 20px;
+    width: 166px;
 }
 
-div.seealso {
+#searchbox input[type="text"]:focus {
+    border: 2px solid #00ABB3;
+    height: 18px;
+    width: 164px;
 }
 
-div.topic {
+#searchbox input[type="submit"] {
+    background-color: #009499;
+    border-radius: 4px 4px 4px 4px;
+    border: 2px outset #009499;
+    color: #ffffff;
+    font-family: Ubuntu, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    width: 40px;
 }
 
-div.warning {
+#searchbox input[type="submit"]:hover {
+    background-color: #026B6E;
+    border: 2px outset #026B6E;
 }
 
-pre {
-}
-
-tt {
+#searchbox input[type="submit"]:active {
+    background-color: #056163;
+    border: 2px outset #056163;
+    color: #AEA79F;
 }
