@@ -5,7 +5,7 @@
 body {
     background: none;
     color: #333333;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 blockquote {
@@ -52,6 +52,8 @@ div.footer {
 
 div.header {
     background-color: #dedede;
+    -moz-box-shadow: 0px -3px 4px #bbbbbb;
+    -webkit-box-shadow: 0px -3px 4px #bbbbbb;
     box-shadow: 0 -3px 4px #BBBBBB;
     position: relative;
     z-index: 2;
@@ -82,8 +84,11 @@ h1.brand img {
 
 ul.navigation {
     background-color: #008C93;
+    -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
     height: 64px;
+    -moz-box-shadow: 0px 1px 6px #bbbbbb;
+    -webkit-box-shadow: 0px 1px 6px #bbbbbb;
     box-shadow: 0 1px 6px #BBBBBB;
     margin: 0px;
 }
@@ -92,10 +97,13 @@ ul.navigation {
 
 div.related ul {
     margin: 0 16px;
+    -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
     background-color: #485454;
+    -moz-box-shadow: 0px 1px 6px #bbbbbb;
+    -webkit-box-shadow: 0px 1px 6px #bbbbbb;
     box-shadow: 0 1px 6px #BBBBBB;
-    height: 24px;
+    height: 26px;
     line-height: 16px;
 }
 
@@ -107,14 +115,14 @@ div.related ul li a {
     display: inline-block;
     padding: 4px 2px;
     line-height: 16px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 div.sphinxsidebar {
     padding-top: 24px;
     padding-right: 16px;
     width: 214px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
 }
 
@@ -124,6 +132,7 @@ div.sphinxsidebar a {
 
 div.sphinxsidebarwrapper {
     padding: 32px 16px;
+    -moz-border-radius: 8px 8px 8px 8px;
     border-radius: 8px 8px 8px 8px;
     background-color: #ffffff;
 }
@@ -131,7 +140,7 @@ div.sphinxsidebarwrapper {
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
     color: #333333;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 16px;
     border-bottom: 1px dotted #00ABB3;
     margin-bottom: 8px;
@@ -144,13 +153,13 @@ div.sphinxsidebar h4 a {
     color: #005C61;
 }
 
-div.sphinxsidebar ul {
-}
-
 div.document {
     background-color: #dedede;
+    -moz-box-shadow: 0px 1px 4px #bbbbbb;
+    -webkit-box-shadow: 0px 1px 4px #bbbbbb;
     box-shadow: 0 1px 4px #BBBBBB;
     z-index: 1;
+    -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
     margin-top: -4px;
     padding-top: 4px;
@@ -165,6 +174,7 @@ div.bodywrapper {
 div.body {
     background-color: #ffffff;
     color: #333333;
+    -moz-border-radius: 8px 8px 8px 8px;
     border-radius: 8px 8px 8px 8px;
     padding: 16px;
 }
@@ -231,26 +241,29 @@ a.headerlink:hover {
     margin-right: 16px;
     padding: 2px;
     width: 214px;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
 }
 
-#searchbox input[type="text"] {
+input[type="text"].query {
     background-color: #ffffff;
     border: 1px solid #CCC1C1;
     color: #333333;
     font-family: Ubuntu, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     height: 20px;
     width: 166px;
 }
 
-#searchbox input[type="text"]:focus {
+input[type="text"].query:focus {
     border: 2px solid #00ABB3;
     height: 18px;
     width: 164px;
 }
 
-#searchbox input[type="submit"] {
+input[type="submit"] {
     background-color: #009499;
+    -moz-border-radius: 4px 4px 4px 4px;
     border-radius: 4px 4px 4px 4px;
     border: 2px outset #009499;
     color: #ffffff;
@@ -260,12 +273,12 @@ a.headerlink:hover {
     width: 40px;
 }
 
-#searchbox input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #026B6E;
     border: 2px outset #026B6E;
 }
 
-#searchbox input[type="submit"]:active {
+input[type="submit"]:active {
     background-color: #056163;
     border: 2px outset #056163;
     color: #AEA79F;
