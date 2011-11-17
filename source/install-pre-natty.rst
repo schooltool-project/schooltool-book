@@ -1,7 +1,7 @@
 .. _install-pre-natty:
 
-Installing SchoolTool on Ubuntu Versions Earlier than 11.04
-===========================================================
+Installing SchoolTool 1.x on Ubuntu Versions Earlier than 11.04
+=========================++++==================================
 
 Start by installing the server or desktop edition of `Ubuntu Linux <http://ubuntu.com>`_ version 10.10, "Maverick Meerkat," or 10.04, "Lucid Lynx."  With Lucid you will get SchoolTool 1.4; with Maverick you will get SchoolTool 1.5.  
 

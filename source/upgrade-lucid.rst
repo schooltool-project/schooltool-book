@@ -1,11 +1,13 @@
-Upgrading SchoolTool After Lucid
-================================
+Upgrading SchoolTool
+====================
 
 After `SchoolTool 1.4 <1.4-release-notes.html>`_, released for Ubuntu 10.4,
 "Lucid Lynx," new stable point versions of SchoolTool will be released only for
 the new/current version of Ubuntu.  For example, `SchoolTool 1.5
 <1.5-release-notes.html>`_ will be available only for Ubuntu 10.10, "Maverick
 Meerkat."  
+
+An exception to this is SchoolTool 2.0, for which packages will be released to our Launchpad PPA.
 
 Security updates and necessary maintenance releases will continue to be made for
 earlier supported SchoolTool versions.
@@ -26,7 +28,7 @@ for more info on upgrading your system (and thus SchoolTool).
 
 
 Upgrading from Ubuntu 8.04 LTS (Hardy) to 10.04 LTS (Lucid)
-===========================================================
+-----------------------------------------------------------
 
 Before the dist-upgrade (distribution upgrade) from Hardy to Lucid all
 third-party repositories are disabled, therefore SchoolTool is not upgraded at
