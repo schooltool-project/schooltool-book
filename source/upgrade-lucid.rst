@@ -38,7 +38,9 @@ upgrade those libraries so that SchoolTool is not removed.
 Edit ``/etc/apt/sources.list`` and change schooltool-owners line from "hardy" to
 "jaunty". Then upgrade several Zope-related packages::
 
-    sudo apt-get install python-paste python-zodb python-zope.app.component python-zope.app.container python-zope.hookable python-zope.i18nmessageid python-zope.interface python-zope.proxy python-zope.security python-zope.ucol
+    sudo apt-get install python-paste python-zodb python-zope.app.component \
+        python-zope.app.container python-zope.hookable python-zope.i18nmessageid \
+        python-zope.interface python-zope.proxy python-zope.security python-zope.ucol
 
 You can then `upgrade Ubuntu <https://help.ubuntu.com/10.04/serverguide/C/installing-upgrading.html>`_
 normally.

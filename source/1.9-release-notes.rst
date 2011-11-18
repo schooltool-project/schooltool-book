@@ -10,6 +10,78 @@ its final stages and will become the `schooltool 2.0`_ release.
 .. _schooltool 2.0: https://launchpad.net/schooltool/+milestone/2.0
 
 
+1.9.3 (2011-11-18)
+==================
+
+Flourish release candidate.
+
+- Include Makefile in all releases.
+
+
+SchoolTool 1.9.3 (2011-11-18)
+-----------------------------
+
+- Improved style of date pickers, buttons, calendars, errors, gradebook etc.
+- Fixed all tests.
+- Updated translations.
+
+Calendar
+++++++++
+
+- More informative calendar titles.
+- Multi term sections should show only once in calendar view. (https://launchpad.net/bugs/872289)
+- Classes show up twice in student/teacher calendars (https://launchpad.net/bugs/882285)
+- Name order reversed in calendar (https://launchpad.net/bugs/891341)
+- Calendar showing wrong day (https://launchpad.net/bugs/877815)
+- Only restore last visited calendar days if date user last looked at it is today.
+- In calendar overlay legend, display only sections that are in terms that are visible in the view.
+
+Export
+++++++
+
+- XLS importer crashes on reimport in timetable code (https://launchpad.net/bugs/878209)
+- Import of Contact Relationships fails with DuplicateRelationship error (https://launchpad.net/bugs/882482)
+- Reimporting sections using CSV does not work anymore (https://launchpad.net/bugs/251866)
+- XLS importer needs to handle integer data (https://launchpad.net/bugs/362014)
+- Allow import of Equipment resources
+- Ensure XLS import works with existing objects in database (https://launchpad.net/bugs/585119)
+
+Other bugfixes
+++++++++++++++
+
+- Server error when opening demographic container (https://launchpad.net/bugs/887662)
+- Need to sort groups in filter widget (https://launchpad.net/bugs/884230)
+
+
+SchoolTool Gradebook 1.9.3 (2011-11-18)
+---------------------------------------
+
+New features
+++++++++++++
+
+- Hide/Unhide deployed Report Sheets
+- Set title before deploying a report sheet.
+- Too easy to deploy duplicate report sheets (https://launchpad.net/bugs/836732)
+- "Report" in student pop up menu that brings up the same view as student sees
+  (https://lauchpad.net/bugs/887122)
+
+
+Bugfixes
+++++++++
+
+- Selecting score system for average column does nothing (https://lauchpad.net/bugs/882061)
+- Gradebook menuitem fails when person teaches and attends sections (https://launchpad.net/bugs/885823)
+- All tests fixed
+
+
+SchoolTool Lyceum Journal 1.9.3 (2011-11-18)
+--------------------------------------------
+
+- Fix saving attendance/grades for months other than first (https://launchpad.net/bugs/879425)
+- Fix displaying journal for sections that are not scheduled (https://launchpad.net/bugs/868421)
+- Link to journal from section views
+
+
 1.9.2 (2011-11-04)
 ==================
 
@@ -49,7 +121,6 @@ SchoolTool Gradebook 1.9.2 (2011-11-02)
 SchoolTool Lyceum Journal 1.9.2 (2011-10-28)
 --------------------------------------------
 
-- Fix saving attendance/grades for months other than first (https://launchpad.net/bugs/879425)
 - Fix upgrading from versions earlier than 1.9 (https://launchpad.net/bugs/859708)
 - Minimize amount of permission checks for performance reasons (https://launchpad.net/bugs/879402)
 - Section stays the same when switching between Gradebook and Journal (https://launchpad.net/bugs/661240)
