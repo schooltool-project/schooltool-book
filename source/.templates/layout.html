@@ -1,0 +1,42 @@
+{% extends 'default/layout.html' %}
+{%- set script_files = script_files + [pathto('_static/jquery.colorbox-min.js',1), pathto('_static/flourish.js', 1)] %}
+{%- block relbar1 %}{% endblock %}
+{%- block relbar2 %}{% endblock %}
+{%- block header %}
+<div class="schooltool">
+  <div class="header">
+    <h1 class="brand">
+      <span class="school">school</span><span class="tool">tool</span>
+      <img alt="Logo" src="{{ pathto('_static/logo-small.png', 1) }}" />
+    </h1>
+    <ul class="navigation"></ul>
+    {{ relbar() }}
+    {%- include "searchbox.html" %}
+  </div>
+{% endblock %}
+{%- block footer %}
+  <div class="footer">
+    {%- if show_copyright %}
+    <p class="copyright">
+      {%- if hasdoc('copyright') %}
+        {% trans path=pathto('copyright'), copyright=copyright|e %}&copy; <a href="{{ path }}">Copyright</a> {{ copyright }}.{% endtrans %}
+      {%- else %}
+        {% trans copyright=copyright|e %}&copy; Copyright {{ copyright }}.{% endtrans %}
+      {%- endif %}
+    </p>
+    {%- endif %}
+    <p>
+    {%- if last_updated %}
+      {% trans last_updated=last_updated|e %}Last updated on {{ last_updated }}.{% endtrans %}
+    {%- endif %}
+    {%- if show_sphinx %}
+      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+    {%- endif %}
+    {%- if show_source and has_source and sourcename %}
+    <a href="{{ pathto('_sources/' + sourcename, true)|e }}"
+             rel="nofollow">{{ _('Show Source') }}</a>
+    {%- endif %}
+    </p>
+  </div>
+</div>
+{%- endblock %}

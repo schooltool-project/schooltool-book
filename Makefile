@@ -32,7 +32,7 @@ clean:
 
 python:
 	rm -rf python
-	virtualenv python
+	virtualenv --no-site-packages python
 
 bootstrap bin/buildout: python
 	python/bin/python bootstrap.py
