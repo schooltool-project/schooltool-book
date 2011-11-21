@@ -7,13 +7,15 @@ Terms are periods of time within school years that correspond to the duration of
 
 For example, if you work with the same group of students on the same schedule for a full year, you only need one big term.  If you switch schedules and/or student groupings at the end of semesters or trimesters, define those as your terms.
 
+Report cards and assessments are not tightly bound to terms in SchoolTool.  You can produce multiple reports and grades in a term or none. 
+
 Because there is no hierarchy of terms, define your terms by the *shortest* unit that a class section might meet.  For example if some sections meet all year, some by semester, and some by quarter, use quarters as your terms.
 
-In almost every case, you end up needing terms in SchoolTool.  This is easiest to do through the web interface.
+In almost every case, you end up needing terms in SchoolTool, even if there is only one term matching the span of the school year.  This is easiest to do through the web interface.
 
-In this example, we will create one semester.
+In this example, we will create two semesters.
 
-Logged in as "manager," click the active school year.  The active school year will be in red in the top menu.  Next click the **Add a new term** link, above **Groups**:
+From the School tab as "manager, click the **Terms** link:
 
    .. image:: images/terms-0.png
 

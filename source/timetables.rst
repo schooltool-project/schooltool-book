@@ -3,25 +3,25 @@
 Modeling Your School's Timetable
 ================================
 
-Creating a school timetable is necessary to designate when sections meet.  SchoolTool is designed to understand a wide variety of school timetables.  This, unfortunately, makes set up somewhat complex, so if you can avoid it, you probably want to.
+Creating a school timetable is necessary to designate when sections meet.  SchoolTool is designed to understand a wide variety of school timetables.  This, unfortunately, makes set up somewhat complex. 
 
-If you are using SchoolTool for attendance, you need a timetable.  You can use the calendaring and resource booking without a timetable, but you'll be missing out on the school-specific features of our calendar.  If you are using SchoolTool only as a personal gradebook, you don't need a calendar.  Some add-on components of SchoolTool, like CanDo, don't require a calendar.
+If you are using SchoolTool for attendance, you need a timetable.  You can use the calendaring and resource booking without a timetable, but you'll be missing out on the school-specific features of our calendar.  If you are using SchoolTool only as a personal gradebook or only using Interventions, you don't need a calendar.  Some add-on components of SchoolTool, like CanDo, don't require a calendar.
 
-Set up timetables through the web interface.
+Set up timetables through the web interface.  They can be exported and imported via spreadsheets, but we don't support users trying to type timetables directly into the spreadsheet.
 
 In this section we will walk you through one common example.  The most important thing in getting through this process is this: if you are asked to choose between something that seems obvious and something that makes no sense to you, take the obvious choice.
 
 In this case, each section meets either at a specific time on Monday, Wednesday or Friday, or at a specific time on Tuesday and Thursday.  There are three one hour periods on Mon./Wed./Fri. and two hour and a half long periods Tue./Thurs, as shown:
 
-   .. image:: images/timetables-8.png
+   .. image:: images/timetables-7.png
 
-To start creating a timetable, logged in as "manager," select the active school year (in red at the top of the screen) and then **School Timetables**:
+To start creating a timetable, logged in as "manager," from the **School** tab click **Timetables**:
 
    .. image:: images/timetables-0.png
 
-Click the **New Timetable** button.
+Click the **Add: Timetable** button.
 
-Give the timetable a name.  We'll just leave it at default.
+Give the timetable a name.  We'll call it 3x2.
 
    .. image:: images/timetables-1.png
 
@@ -49,6 +49,3 @@ If everything has worked you should see this:
 
    .. image:: images/timetables-7.png
 
-And when you click on the **default** link (that is, the title of the timetable you created) you should see a simple representation of it:
-
-   .. image:: images/timetables-8.png

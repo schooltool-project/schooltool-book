@@ -9,6 +9,8 @@ Currently the three primary methods are:
 * importing via a set of spreadsheets;
 * importing data through comma separated value (CSV) files.
 
+All these methods are accessed via the **School** tab, visible at the top of SchoolTool's screens to administrative users.
+
 Where you are pulling data from outside sources, spreadsheet and CSV import is likely to be most efficient.  When you're entering data not available in another digital format, or setting up the basic components of the system like years and timetables, the web interface is usually the friendliest route.  The web forms do a better job of guiding you step by step and validating input.
 
 Of the two import methods, the spreadsheet import is most complete and actively maintained.  It is also the best method for exporting the configuration of the school and re-importing later or on a different instance.
