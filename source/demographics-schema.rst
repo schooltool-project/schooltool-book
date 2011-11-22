@@ -3,58 +3,52 @@ Customizing Demographics
 
 SchoolTool allows you to modify the demographic information stored about each person.  If you are using SchoolTool as the primary student information system for a school, you will probably need to customize the demographics fields to meet your local government's reporting requirements.
 
-Contact information -- parents names, address, phone, email, etc. -- is stored separately.
-
-Note that currently the same information is stored about both students and teachers.  You do not need to enter values in optional fields when it is not relevant to the individual's role in the school.
-
-To see the default demographics fields, as "manager," click the **Home** and then the **Edit** button.  
-
-   .. image:: images/demo-fields.png
-
-**Prefix, First name, Middle name, Suffix and Preferred name** are not customizable.  Preferred name is the name which a student prefers to be used by teachers, or for teachers the name they prefer to use in correspondence with parents and students.
+Note that **Prefix, First name, Middle name, Suffix and Preferred name** are not customizable.  Preferred name is the name which a student prefers to be used by teachers, or for teachers the name they prefer to have used in correspondence with parents and students.
 
 **Gender** and **Birthdate** also cannot be changed.  
 
+You can limit fields to specific groups: Students, Teachers or Administrators.  For example, this would allow you to have a "Certification" field for teachers that did not appear when you edited any other people.
+
+Contact information -- parents names, address, phone, email, etc. -- is stored separately.
+
+To see the default demographics fields, as "manager," click the **School** and then the **Customize: Demographics** link in the sidebar.  
+
+   .. image:: images/demographics-schema-0.png
+
 In the default settings, **ID, Ethnicity, Language, Place of birth, and Citizenship** can be edited or removed.  In this case **ID** is just a generic text field which you can use for whatever student ID or number you might need to keep track of.
-
-To customize the demographics fields for your school, click **Manage** and then **Demographics**:
-
-   .. image:: images/demo-container.png
 
 You can delete, edit, and re-order the existing fields and add your own.  There are three types of fields: text, dates, and selection lists.
 
 In this example we will:
 
   * delete citizenship;
-  * change the values in the ethnicity list;
-  * add enrollment date;
-  * add grade level;
   * reorder fields.
+  * change the values in the ethnicity list;
+  * add enrollment date.
 
-First, we'll simply click the checkbox next to **citizenship** and click **Delete** to remove it.
+To delete a field, click **Actions: Reorder or Delete Fields** in the sidebar, and then click the red minus icon next to the field you'd like to delete.  You can also reorder the fields here by changing the numbers in the first row of the table.  In both cases the changes are applied immediately.
 
-   .. image:: images/delete-citizenship.png
+   .. image:: images/demographics-schema-1.png
 
-To change the values in a selection list, like **citizenship**, click on the name of the list, or example **ethnicity**.
+To edit the values in a selection list, from the main **Demographics and Personal Information** click on the title of field, for example ethnicity:
 
-   .. image:: images/ethnicity-view.png
+   .. image:: images/demographics-schema-2.png
 
-To change the list values, hit the **Edit** button and change the values in the **List of values** box.  Each value on a separate line.  I'll change it to a more British list of ethnicities, and hit apply.
+To change the list values, simply edit the values in the **Selection List** text box.  Each line defines one value.  You can also specify whether the field is required, and if it should be limited to Students, Teachers and/or Administrators.
 
-   .. image:: images/ethnicity-edit.png
+You can add five different types of fields:
 
-Note that navigation here is currently broken and you have to route back through **Manage** and **Demographics** to move to the next step.
+  * Text Field: for a single line of text;
+  * Description Field: for longer text entered through a textbox;
+  * Date Field: entered through a calendar widget;
+  * Yes/No Field: for a true/false boolean value;
+  * Selection List: a list of string selected through a drop-down menu;
 
-Enrollment date is a date field, which means that a calendar selection widget will be displayed on forms using this field.  Click the **New Date Field** button and enter a title and ID.  The title designates the text that will be displayed on forms using this field.  
+For our example we will add an Enrollment Date for students.  Click on **Add: Date Field**:
 
-   .. image:: images/new-date-field.png
+   .. image:: images/demographics-schema-3.png
 
-Hit **Apply** and routing back to the **Demographics Container**.  Now we'll add a text field to designate the grade levels of students.  SchoolTool currently does not have a dedicated system for managing grade levels.  It is high on the TODO list.
+And thus:
 
-Grade level will be stored as a text value (SchoolTool does not support integer fields at this time).  Hit **New Text Field** and enter an appropriate title and ID, and hit **Apply**:
+   .. image:: images/demographics-schema-4.png
 
-   .. image:: images/new-text-field.png
-
-Finally, by changing the numbers at left in the list of fields, you can reorder the fields as they will appear on entry forms, import/export files and basic reports.  They'll rearrange themselves dynamically; hit **Apply** when you're done.
-
-   .. image:: images/reorder-demographics.png

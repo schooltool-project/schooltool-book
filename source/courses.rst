@@ -43,6 +43,8 @@ The format, as described on the form, is simply::
 
 We'll just type some in for now.  Clicking the **Enter CSV text** reveals a text box:
 
-When you're ready, press **Submit**, and if the import is successful you'll see a "CSV text imported successfully." message.  You can click **View** to get back to the index:
-
    .. image:: images/courses-4.png
+
+When you're ready, press **Submit**, and if the import is successful you'll be sent back to the course index:
+
+   .. image:: images/courses-5.png

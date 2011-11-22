@@ -3,16 +3,26 @@
 Importing and Exporting from Spreadsheet
 ========================================
 
-Logged in as "manager," select **Manage** and then the **XLS Import** button:
+Logged in as "manager," select **School** and then the **Import XLS** link in the sidebar:
 
-   .. image:: images/xls-import.png
+   .. image:: images/spreadsheet-0.png
 
-The upload form explains how it works and contains links to both an empty spreadsheet and one populated with sample data.  The empty spreadsheet also has complete tooltips -- hover the mouse pointer over a row or column header for further explanation of its function.
+The "What is this?" sidebar contains links to both an empty spreadsheet and two populated with sample data.  The empty spreadsheet is documented by a complete set of tooltips -- hover the mouse pointer over a row or column header for further explanation of its function.
 
-Note that importing sample data create a database file of approximately 230 megabytes, and a temporary file the same size, so you'll need a free half gigabyte of disk space if you want to generate everything at once.  This is also much more memory intensive than routine use of SchoolTool.   
+Note that importing ``large_sample_data.xls`` creates a database file of approximately 230 megabytes, and a temporary file the same size, so you'll need a free half gigabyte of disk space if you want to generate everything at once.  This is also much more memory intensive than routine use of SchoolTool.  A server with less than 512 MB of RAM will go heavily into virtual memory and if there is little or no swap partition may cause the memory-starved server to start killing processes to free memory. 
 
-After you click **Submit** to upload the data, keep the browser window open until the page reloads.  This view isn't very sophisticated  -- it doesn't update you on its progress or give you any feedback until it completes.  Just wait for it.  A full set of sample data could take fifteen minutes or more.  
+While data is being imported from the spreadsheet you'll see a little notifier on the page:
 
-If your computer seems to grind to a halt during this process, or doesn't complete after an hour, you have probably completely run out of memory and swap space.  This shouldn't happen on most systems.  It is possible that SchoolTool would run adequately in a small deployment on a system that can't handle the full sample data set.
+   .. image:: images/spreadsheet-1.png
 
-Sample data creates a school of 1000 students and two years of section enrollments.  Users are either "student" or "teacher" followed by a three digit number, for example, "**student001**" or "**teacher001**".  Teacher001 through Teacher005 have passwords that are the same as their ID's, as do the first five students.
+After a successful import, you will be sent back to the main **School** page:
+
+   .. image:: images/spreadsheet-2.png
+
+``large_sample_data.xls`` creates a full school of 1000 students and two years of section enrollments.  ``sample_data.xls`` has six teachers and 473 students but only six teachers and a handful of sections (budget cuts).  Users are either "student" or "teacher" followed by a three digit number, for example, "**student001**" or "**teacher001**".  Teacher001 through Teacher005 have passwords that are the same as their ID's, as do the first five students.
+
+To export data to a spreadsheet click **Reports: Export as XLS** from the sidebar in the **School** tab, and select **Download** in the dialog:
+
+   .. image:: images/spreadsheet-3.png
+
+Your browser will download an Excel format file -- readable by LibreOffice and most other current spreadsheets applications, named export.xls.

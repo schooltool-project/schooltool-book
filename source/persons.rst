@@ -6,23 +6,12 @@ Adding People
 Passwords and Logins
 --------------------
 
-If you do not set a password for a person, they will not be able to log in.  SchoolTool is designed to allow students to log in and use SchoolTool to manage their calendar, view grades, etc.  
-
-Development has focused primarily on teacher use of SchoolTool, and in most cases, we recommend new users also focus first on teacher use.  The student-facing functionality is still a bit rough, but will receive more attention in upcoming releases, depending on the number of people expressing a need for it.
-
-Thus, at this point we recommend giving passwords to teachers, administrators and site managers, but not to students.  But if you test out the existing student functionality and find it useful, go ahead and give students passwords.
-
-Default Groups
---------------
-
-**Group** allows you to add a person directly to one group without requiring an additional step.  Usually this will be "Students," "Teachers" or "Administrators."  
-
-Note that there is currently no separate "Add Student" or "Add Teacher" method.  They're both considered persons by SchoolTool and designated as "Students" or "Teachers" through group membership.
+If you do not set a password for a person, they will not be able to log in.  SchoolTool is designed to allow students to log in and use SchoolTool to manage their calendar, view grades, etc.  Whether or not students are given passwords determines if they can log into your SchoolTool instance.
 
 Advisor
 -------
 
-This allows you to designate a teacher as an advisor for another person.  Currently this is primarily used in some unreleased extensions of SchoolTool.
+This allows you to designate a teacher as an advisor for another person.  This may give the Advisor more access to information about this student and is used in the Intervention component.
 
 Methods of Adding People
 ------------------------
@@ -30,22 +19,30 @@ Methods of Adding People
 Web Forms
 +++++++++
 
-You can add one person at a time via the web interface using the same procedure covered in :ref:`user`.
+You can add one person at a time via the web interface using the same procedure covered in :ref:`user`.  In this case we'll use the **Add: Student** link:
 
-    .. image:: images/add-charlie.png
+    .. image:: images/persons-0.png
+
+    .. image:: images/persons-1.png
+
+Note that the **Submit and Add** button takes you directly to another Add form of the same type.  Use this when you're adding many people to the system at once.  **Submit** will take you to the new person's page:
+
+    .. image:: images/persons-2.png
+
+The main content area for a person is an "accordion" with different sections that slide open vertically.  We'll cover each section in turn as we continue through more aspects of SchoolTool.
 
 CSV Import
 ++++++++++
 
 This is a simple way to import person usernames, first names, last names and passwords.  It does not add any other demographic data.
 
-As "manager," Go to **Manage** and **Persons**.  Click the **Import Persons** button.  As explained on this form, you can either upload a CSV file or use the textbox to directly type or paste your data:
+As "manager," Go to **School** and **People**.  Click the **Import: Import CSV** link.  As explained on this form, you can either upload a CSV file or use the textbox to directly type or paste your data:
 
-    .. image:: images/import-persons.png
+    .. image:: images/persons-3.png
 
 **Submit** and return to the persons index:
 
-    .. image:: images/longer-index.png
+    .. image:: images/persons-4.png
 
 XLS Import
 ++++++++++
