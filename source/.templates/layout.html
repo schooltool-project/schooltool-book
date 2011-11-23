@@ -10,6 +10,20 @@
       <img alt="Logo" src="{{ pathto('_static/logo-small.png', 1) }}" />
     </h1>
     <ul class="navigation"></ul>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(window).scroll(function() {
+          var scrollTop = $(window).scrollTop();
+          if (scrollTop > 64) {
+            $('div.related').css('position', 'fixed');
+            $('div.related').css('top', '0');
+          } else {
+            $('div.related').css('position', 'absolute');
+            $('div.related').css('top', '64px');
+          }
+        });
+      });
+    </script>
     {{ relbar() }}
     {%- include "searchbox.html" %}
   </div>
