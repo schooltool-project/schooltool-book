@@ -1,6 +1,37 @@
 System Requirements
 ===================
 
+Where can I download SchoolTool?
+++++++++++++++++++++++++++++++++
+
+SchoolTool is a full stack web application.  That is, it comes with its own web server and database.  To make sure all the necessary components are installed correctly, we distribute SchoolTool to users as packages, primarily through Ubuntu Linux.
+
+Operating System
+++++++++++++++++
+
+Ubuntu
+------
+
+The core SchoolTool development team recommends installation of SchoolTool on the most recent released version of Ubuntu.
+
+Fedora Linux & OLPC Server
+--------------------------
+
+`OLE Nepal <http://www.olenepal.org>`_ has created a set of RPM packages for `Fedora Linux <http://fedoralinux.org>`_ versions 9 (used by the OLPC server) and 13 for use in local pilots in Nepal as part of their `OLPC <http://laptop.org>`_ deployments.
+
+We have actively collaborated with OLE Nepal's developers to create these packages and keep them up to date.
+
+See :ref:`Fedora` for instructions on installing SchoolTool on Fedora Linux.
+
+Why Ubuntu?
+-----------
+
+SchoolTool is written in Python, a highly portable open source programming language.  SchoolTool can be ported to Mac OS, Windows, or other Linux or Unix versions with a moderate amount of work.  We've done this in the past.
+
+We have created packages for multiple OS's, but the core development team could not *support* them.  The Mac OS version ran slowly and occasionally hung for no discernible reason.  We could copy/paste some code to make SchoolTool run as a Windows service, but we didn't understand how it worked or fix it if it didn't.  A student information system is *mission critical* for a school; we don't want schools running systems that nobody is responsible for fixing.
+
+We welcome additional ports and packages; the core development team just does not have the capacity to provide and support them ourselves.
+
 Hardware
 ++++++++
 
@@ -34,28 +65,3 @@ Sample Data
 
 Note that importing the larger spreadsheet of sample data included in the spreadsheet included with SchoolTool is probably the most demanding task you will ever ask of your SchoolTool instance.  The large spreadsheet covers two full years of data for a school of 1000 students, and it tends to swamp computers at the lower limit of the memory requirements.  A smaller set of sample data is also provided.  
 
-Operating System
-++++++++++++++++
-
-Ubuntu
-------
-
-The core SchoolTool development team recommends installation of SchoolTool on the most recent released version of Ubuntu.
-
-Fedora Linux & OLPC Server
---------------------------
-
-`OLE Nepal <http://www.olenepal.org>`_ has created a set of RPM packages for `Fedora Linux <http://fedoralinux.org>`_ versions 9 (used by the OLPC server) and 13 for use in local pilots in Nepal as part of their `OLPC <http://laptop.org>`_ deployments.
-
-We have actively collaborated with OLE Nepal's developers to create these packages and keep them up to date.
-
-See :ref:`Fedora` for instructions on installing SchoolTool on Fedora Linux.
-
-Why Ubuntu?
------------
-
-SchoolTool is written in Python, a highly portable open source programming language.  SchoolTool can be ported to Mac OS, Windows, or other Linux or Unix versions with a moderate amount of work.  We've done this in the past.
-
-We have created packages for multiple OS's, but the core development team could not *support* them.  The Mac OS version ran slowly and occasionally hung for no discernible reason.  We could copy/paste some code to make SchoolTool run as a Windows service, but we didn't understand how it worked or fix it if it didn't.  A student information system is *mission critical* for a school; we don't want schools running systems that nobody is responsible for fixing.
-
-We welcome additional ports and packages; the core development team just does not have the capacity to provide and support them ourselves.

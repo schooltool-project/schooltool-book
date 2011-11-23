@@ -2,7 +2,12 @@
 The SchoolTool Book
 ===================
 
-SchoolTool is free administrative software for schools around the world. The goals of the project are to create a simple turnkey student information system, including demographics, gradebook, attendance, calendaring and reporting for primary and secondary schools, as well as a framework for building customized applications and configurations for individual schools or states.
+SchoolTool: the Global Student Information System
+-------------------------------------------------
+
+SchoolTool is a free, open source, web-based student information system for a single school, including student enrollment and demographics, grading and grade reporting, attendance, calendars and intervention tracking.  It is also a framework for building customized applications and configurations for individual schools or states.
+
+SchoolTool has strong support for translation, localization and automated deployment and updates via the Ubuntu Linux installer and package management system.
 
 SchoolTool is built on a 100% open source software stack, written in `Python <http://python.org>`_ using the `Zope 3 <http://zope.org/>`_ framework.
 
@@ -24,6 +29,7 @@ Contents:
    :maxdepth: 1
 
    features
+   screenshots
    release-notes
    install-toc
    initial-configuration-toc
