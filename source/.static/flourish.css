@@ -95,6 +95,12 @@ ul.navigation {
 
 /* default theme */
 
+div.related {
+    z-index: 1;
+    position: absolute;
+    top: 64px;
+}
+
 div.related ul {
     margin: 0 16px;
     -moz-border-radius: 0 0 4px 4px;
@@ -162,7 +168,7 @@ div.document {
     -moz-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
     margin-top: -4px;
-    padding-top: 4px;
+    padding-top: 58px;
     padding-bottom: 16px;
 }
 
@@ -237,12 +243,14 @@ a.headerlink:hover {
 
 #searchbox {
     background-color: #c7cbd2;
-    float: right;
     margin-right: 16px;
     padding: 2px;
     width: 214px;
     -moz-border-radius: 0 0 2px 2px;
     border-radius: 0 0 2px 2px;
+    position: absolute;
+    top: 90px;
+    right: 0;
 }
 
 input[type="text"].query {
