@@ -15,9 +15,15 @@
     containing fewer words won't appear in the result list.{% endtrans %}
   </p>
   <form action="" method="get" id="searchform">
-    <input type="text" name="q" value="" class="query" />
-    <input type="submit" value="{{ _('Go') }}" />
-    <span id="search-progress" style="padding-left: 10px"></span>
+    <input type="text" class="form-text"
+           onfocus="if(this.value=='Type to search'){this.value=''}"
+           onblur="if(this.value==''){this.value='Type to search';}"
+           value="Type to search" size="20" id="edit-keys" name="q"
+           maxlength="255" />
+     <img src="{{ pathto('_static/arrow.png', 1) }}"
+          onclick="$(this).closest('form').submit()"
+          style="cursor: pointer;" />
+     <span id="search-progress" style="padding-left: 10px"></span>
   </form>
   {% if search_performed %}
     <h2>{{ _('Search Results') }}</h2>
