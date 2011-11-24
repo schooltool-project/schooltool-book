@@ -1,9 +1,11 @@
 Release Notes
 =============
 
-Development happens in `flourish <1.9-release-notes.html>`_ series.
+Latest release is 2.0_.
 
-Current stable release is `1.7 <1.7-release-notes.html>`_.
+Previous stable release is `1.7 <1.7-release-notes.html>`_.
+
+.. _2.0: 2.0-release-notes.html
 
 .. toctree::
    :maxdepth: 1

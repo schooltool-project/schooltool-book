@@ -1,16 +1,19 @@
+:tocdepth: 2
+
 1.9 Release Notes
 ~~~~~~~~~~~~~~~~~
 
-1.9, better known as flourish_ series, features a redesigned user interface with
-much improved navigation, new branding and colors, rewritten timetables, new
-tables for journal and gradebook, and other new features.
+1.9, better known as flourish_, is a development series focusing on redesign of
+the user interface, that has now become the SchoolTool 2.0_ release.
 
-SchoolTool 2.0 has now been released.
+.. _flourish: https://launchpad.net/schooltool.release/flourish
+.. _2.0: 2.0-release-notes.html
+
 
 2.0.0 (2011-11-23)
 ==================
 
-2.0 release!
+2.0_ release!
 
 - Final touches to the new look.
 
@@ -143,7 +146,7 @@ SchoolTool Lyceum Journal 1.9.3 (2011-11-18)
 1.9.2 (2011-11-04)
 ==================
 
-Flourish bugfixes.
+Flourish beta 2.
 
 - Make sandbox with virtualenv. Fixes bootstrap with Python 2.7.
 
