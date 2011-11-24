@@ -1,13 +1,69 @@
+:tocdepth: 2
+
 1.9 Release Notes
 ~~~~~~~~~~~~~~~~~
 
-1.9, better known as flourish_ series, features a redesigned user interface with
-much improved navigation, new branding and colors, rewritten timetables, new
-tables for journal and gradebook, and other new features. This work is now in
-its final stages and will become the `schooltool 2.0`_ release.
+1.9, better known as flourish_, is a development series focusing on redesign of
+the user interface, that has now become the SchoolTool 2.0_ release.
 
-.. _flourish: https://launchpad.net/schooltool/flourish
-.. _schooltool 2.0: https://launchpad.net/schooltool/+milestone/2.0
+.. _flourish: https://launchpad.net/schooltool.release/flourish
+.. _2.0: 2.0-release-notes.html
+
+
+2.0.0 (2011-11-23)
+==================
+
+2.0_ release!
+
+- Final touches to the new look.
+
+
+SchoolTool 2.0.0 (2011-11-23)
+-----------------------------
+
+- Many CSS fixes (https://launchpad.net/bugs/885807)
+
+Bugfixes
+++++++++
+
+- Deal with the 's in the sidebar (https://launchpad.net/bugs/873045)
+- Terms index still has inconsistent style (https://launchpad.net/bugs/892923)
+- Move pack database action to server page (https://launchpad.net/bugs/886310)
+- Done's to get back to /school (https://launchpad.net/bugs/892926)
+- Credits hint still asks for integer (https://launchpad.net/bugs/892946)
+- Courses import should have cancel (https://launchpad.net/bugs/892952)
+- Courses import instructions doesn't reflect new field names (https://launchpad.net/bugs/892949)
+- Translate default demographics fields.
+
+Cleanup
++++++++
+
+- Remove ancient demographics implementation.
+- Remove obsolete images and docs.
+- Remove duplicate jQuery(ui).
+
+
+SchoolTool Lyceum Journal 2.0.0 (2011-11-22)
+--------------------------------------------
+
+- Allow administrators see the journal, add a setting to allow them enter attendance
+  (https://launchpad.net/bugs/892362)
+
+
+SchoolTool Gradebook 2.0.0 (2011-11-22)
+---------------------------------------
+
+- Column header in the Detailed Student Report spans beyond column borders.
+  (https://launchpad.net/bugs/837156)
+- Absences by day report dialog should have a proper date widget (https://launchpad.net/bugs/876800)
+- PDF file names should include student username (https://launchpad.net/bugs/893019)
+- Flourish request failing report modal submits too soon (https://launchpad.net/bugs/893240)
+
+
+SchoolTool Intervention 2.0.0 (2011-11-22)
+------------------------------------------
+
+- Updated translations
 
 
 1.9.3 (2011-11-18)
@@ -52,6 +108,11 @@ Other bugfixes
 - Server error when opening demographic container (https://launchpad.net/bugs/887662)
 - Need to sort groups in filter widget (https://launchpad.net/bugs/884230)
 
+Devmode
++++++++
+
+- Instead of redirecting to log-in page, show security check log (https://launchpad.net/bugs/716340)
+
 
 SchoolTool Gradebook 1.9.3 (2011-11-18)
 ---------------------------------------
@@ -63,13 +124,13 @@ New features
 - Set title before deploying a report sheet.
 - Too easy to deploy duplicate report sheets (https://launchpad.net/bugs/836732)
 - "Report" in student pop up menu that brings up the same view as student sees
-  (https://lauchpad.net/bugs/887122)
+  (https://launchpad.net/bugs/887122)
 
 
 Bugfixes
 ++++++++
 
-- Selecting score system for average column does nothing (https://lauchpad.net/bugs/882061)
+- Selecting score system for average column does nothing (https://launchpad.net/bugs/882061)
 - Gradebook menuitem fails when person teaches and attends sections (https://launchpad.net/bugs/885823)
 - All tests fixed
 
@@ -85,7 +146,7 @@ SchoolTool Lyceum Journal 1.9.3 (2011-11-18)
 1.9.2 (2011-11-04)
 ==================
 
-Flourish bugfixes.
+Flourish beta 2.
 
 - Make sandbox with virtualenv. Fixes bootstrap with Python 2.7.
 
@@ -95,7 +156,7 @@ SchoolTool 1.9.2 (2011-11-04)
 
 - Group sections by term in calendar (https://launchpad.net/bugs/872289)
 - Terms are listed upside down (https://launchpad.net/bugs/872240)
-- Moved Demographics into General Information accordion
+- Moved Demographics into General Information accordion (https://launchpad.net/bugs/882073)
 - Added two "Other" contact fields (https://launchpad.net/bugs/874568)
 - User information doesn't show username (https://launchpad.net/bugs/545767)
 - Username in login bar should go to user home (https://launchpad.net/bugs/868394)
@@ -112,9 +173,9 @@ Export
 SchoolTool Gradebook 1.9.2 (2011-11-02)
 ---------------------------------------
 
-- Fixed the overzealous security checks to improve performance (https://lauchpad.net/bugs/561217)
-- Add a link from Section to Gradebook (https://lauchpad.net/bugs/868426)
-- Fix Gradebook breadcrumb (https://lauchpad.net/bugs/868431)
+- Fixed the overzealous security checks to improve performance (https://launchpad.net/bugs/561217)
+- Add a link from Section to Gradebook (https://launchpad.net/bugs/868426)
+- Fix Gradebook breadcrumb (https://launchpad.net/bugs/868431)
 - Updated translations
 
 
@@ -163,7 +224,7 @@ Export
 
 - Added small sample data xls.
 - Added boolean and date demo field support to xls import.
-- Fixed export of booleans bug (https://bugs.launchpad.net/bugs/796791)
+- Fixed export of booleans bug (https://launchpad.net/bugs/796791)
 
 
 SchoolTool Gradebook 1.9.1 (2011-10-06)

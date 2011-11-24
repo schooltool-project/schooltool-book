@@ -1,8 +1,12 @@
+:tocdepth: 2
+
 1.5 Release Notes
 ~~~~~~~~~~~~~~~~~
 
 SchoolTool for Ubuntu 10.10 (Maverick).
 
+1.5 updates
+===========
 
 SchoolTool Intervention 0.4.3 (2011-09-16)
 ------------------------------------------
@@ -38,6 +42,12 @@ SchoolTool Lyceum Journal 0.7.1 (2010-10-20)
 - Update translations
 
 
+1.5.2 (2010-10-04)
+==================
+
+Maverick release.
+
+
 SchoolTool 1.5.2 (2010-10-04)
 -----------------------------
 
@@ -69,6 +79,12 @@ SchoolTool Intervention 0.4.1 (2010-10-04)
 - Change style of some buttons to neutral (https://launchpad.net/bugs/613571)
 - Changed recipients to email addresses for both messages and goals csv
 - Do not crash if persons are removed or don't have email
+
+
+1.5.1 (2010-09-16)
+==================
+
+Maverick beta.
 
 
 SchoolTool Gradebook 0.8.0 (2010-09-16)
@@ -104,6 +120,9 @@ This is a development release that requires SchoolTool 1.5.0
 
 - Section journal removes consecutive periods if timetable is so configured.
 
+
+1.5.0 (2010-07-13)
+==================
 
 SchoolTool 1.5.0 (2010-07-13)
 -----------------------------

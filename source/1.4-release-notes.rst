@@ -1,3 +1,5 @@
+:tocdepth: 2
+
 1.4 Release Notes
 ~~~~~~~~~~~~~~~~~
 
