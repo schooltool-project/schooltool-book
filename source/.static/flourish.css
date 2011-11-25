@@ -93,6 +93,29 @@ ul.navigation {
     margin: 0px;
 }
 
+ul.navigation li {
+    display: block;
+    float: left;
+    padding: 0 1px;
+}
+
+ul.navigation li a {
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 24px 8px;
+    text-decoration: none;
+}
+
+ul.navigation li a:hover {
+    background: #026b6e;
+}
+
+h1.brand a {
+    text-decoration: none;
+}
+
 /* default theme */
 
 div.related {
