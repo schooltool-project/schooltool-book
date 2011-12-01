@@ -49,7 +49,7 @@ Schoolwide Assessment Data Collection and Report Card Generation
 
 * Grades, comments and other teacher-generated data can be collected schoolwide and aggregated using the SchoolTool gradebook interface.
 
-* A standard report cards can be generated as PDF documents for individual students, groups or the whole school.
+* Standard report cards can be generated as PDF documents for individual students, groups or the whole school.
 
 * Customized report cards can be designed using a HTML-like markup language.
 
@@ -92,7 +92,7 @@ Technical Features
   
   * ReportLab PDF generation.
 
-* **Importing and Exporting Data:**  SchoolTool provides a variety of ways to import data into the system, in addition to its web interface.  The all the major components of the school, including people, timetables, courses and section enrollment, can be imported from and exported to .xls spreadsheets.  People, groups, section enrollments and other objects can also be imported from comma separated value (CSV) files.  For testing and evaluation, a spreadsheet for a school of 1000 students is provided. 
+* **Importing and Exporting Data:**  SchoolTool provides a variety of ways to import data into the system, in addition to its web interface.  All the major components of the school, including people, timetables, courses and section enrollment, can be imported from and exported to .xls spreadsheets.  People, groups, section enrollments and other objects can also be imported from comma separated value (CSV) files.  For testing and evaluation, a spreadsheet for a school of 1000 students is provided. 
 
 * **Security:** Our custom security model manages permissions based both on role (e.g., teacher, school adminitrator) and relationships (e.g., between a specific teacher and student).  A detailed view of permissions on specific objects in SchoolTool's core model is available through the web interface.  Basic customization of some key aspects of the security policy can be done through the web by the site manager.  Complete customization is possible through XML configuration files.
 
