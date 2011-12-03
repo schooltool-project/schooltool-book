@@ -63,5 +63,5 @@ By the scale of modern storage technology, SchoolTool doesn't require significan
 Sample Data
 -----------
 
-Note that importing the larger spreadsheet of sample data included in the spreadsheet included with SchoolTool is probably the most demanding task you will ever ask of your SchoolTool instance.  The large spreadsheet covers two full years of data for a school of 1000 students, and it tends to swamp computers at the lower limit of the memory requirements.  A smaller set of sample data is also provided.  
+Note that importing the larger spreadsheet of sample data included with SchoolTool is probably the most demanding task you will ever ask of your SchoolTool instance.  The large spreadsheet covers two full years of data for a school of 1000 students, and it tends to swamp computers at the lower limit of the memory requirements.  A smaller set of sample data is also provided.  
 
