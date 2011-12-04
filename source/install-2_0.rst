@@ -7,7 +7,7 @@ Packages for earlier releases (maverick and lucid) will be built soon.
 Using Ubuntu Software Center
 ----------------------------
 
-Open the **Ubuntu Software Center**.  Choose **Edit > Software Sources...**  Click **Add...**, enter as the **APT line**::
+Open the **Ubuntu Software Center**.  Choose **Edit > Software Sources...**  Click **Other Software > Add...**, enter as the **APT line**::
 
  ppa:schooltool-owners/dev
 
@@ -21,14 +21,14 @@ Then search for "SchoolTool" in the searchbox at upper right in the Software Cen
 Using the Command Line
 ----------------------
 
-You have to add `SchoolTool flourish PPA
+You have to add the `SchoolTool flourish PPA
 <https://launchpad.net/~schooltool-owners/+archive/dev/>`_
 to your software sources::
 
  $ sudo add-apt-repository ppa:schooltool-owners/dev
  $ sudo apt-get update
 
-Then install ``schooltool`` package::
+Then install the ``schooltool`` package::
 
  $ sudo apt-get install schooltool
 
