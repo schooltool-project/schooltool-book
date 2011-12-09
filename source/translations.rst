@@ -42,7 +42,7 @@ Translations submitted to Launchpad will be included in subsequent updates of Sc
 
 If you would like to install a translation that has been entered into Launchpad but not yet included in a SchoolTool release: 
 
- * Go to the relevant translation download page, for example, the Russian translation at https://translations.launchpad.net/schooltool/trunk/+pots/schooltool/ru/+export
+ * Go to the relevant translation download page, for example, the Russian translation at https://translations.launchpad.net/schooltool/flourish/+pots/schooltool/ru/+export
 
  * Select "MO export" and request download.
 
