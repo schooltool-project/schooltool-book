@@ -44,7 +44,7 @@ To see if it is working, click **Send Test Email** under **Actions** in the side
 
    .. image:: images/server-settings-3.png
 
-After you hit **Send**, you'll find yourself on the **Email Queue** page, and hopefully it is telling you that the server is enabled and the queue is clear (not that your message is stuck):
+After you hit **Send**, you'll find yourself on the **Email Queue** page, and hopefully it is telling you that the queue is clear (not that your message is stuck):
 
    .. image:: images/server-settings-4.png
 
