@@ -19,7 +19,7 @@ After a successful import, you will be sent back to the main **School** page:
 
    .. image:: images/spreadsheet-2.png
 
-``large_sample_data.xls`` creates a full school of 1000 students and two years of section enrollments.  ``sample_data.xls`` has six teachers and 473 students but only six teachers and a handful of sections (budget cuts).  Users are either "student" or "teacher" followed by a three digit number, for example, "**student001**" or "**teacher001**".  Teacher001 through Teacher005 have passwords that are the same as their ID's, as do the first five students.
+``large_sample_data.xls`` creates a full school of 1000 students and two years of section enrollments.  ``sample_data.xls`` has 466 students but only six teachers and a handful of sections (budget cuts).  Users are either "student" or "teacher" followed by a three digit number, for example, "**student000**" or "**teacher001**" and their passwords are the same as their ID's.
 
 To export data to a spreadsheet click **Reports: Export as XLS** from the sidebar in the **School** tab, and select **Download** in the dialog:
 

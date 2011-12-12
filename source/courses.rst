@@ -20,7 +20,7 @@ To create courses, logged in as "manager," click **School** tab and then **Cours
 
    .. image:: images/courses-0.png
 
-Then, click the **Add: Course** button and fill out the form.  A title is required.  Description, the extra ID's and credits are optional:
+Then, click the **Add: Course** link and fill out the form.  A title is required.  Description, the extra ID's and credits are optional:
 
    .. image:: images/courses-1.png
 

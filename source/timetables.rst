@@ -19,7 +19,7 @@ To start creating a timetable, logged in as "manager," from the **School** tab c
 
    .. image:: images/timetables-0.png
 
-Click the **Add: Timetable** button.
+Click the **Add: Timetable** link.
 
 Give the timetable a name.  We'll call it 3x2.
 
