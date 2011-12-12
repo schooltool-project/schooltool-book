@@ -23,7 +23,7 @@ When setting up the start and end dates, remember that years cannot overlap.
 
    .. image:: images/years-1.png
 
-Your new year.  If you click on the yellow pencil icon nect to the title, you can edit the information for the year:
+Your new year.  If you click on the yellow pencil icon next to the title, you can edit the information for the year:
 
    .. image:: images/years-2.png
 
