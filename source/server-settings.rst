@@ -68,11 +68,6 @@ Sidebar Settings
 
 Further server settings and information are available in the sidebar at left.
 
-Database
-++++++++
-
-This link in the sidebar gives you access to... maybe we'll change this.
-
 Security
 ++++++++
 
@@ -104,3 +99,23 @@ Clicking on the exception object takes you to a full description of the error, i
 Clicking on the edit pencil allows some customization of this display:
 
    .. image:: images/server-settings-12.png
+
+Sidebar Actions
+----------------
+
+Pack Database
++++++++++++++
+
+SchoolTool's database engine supports certain undo capabilities which are not implemented in SchoolTool.  As a result, SchoolTool's database file grows in size over time.  "Packing" the database strips out the old changes and shrinks the file back down to its minimum size.  
+
+Packing the database periodically will help optimize performance, particularly after many changes have been made to the database, for example, from large data imports.  This can be a resource intensive action on large databases, so it is best to do it during off-peak times.  
+
+To pack the database, click **Pack Database** under **Actions** in the sidebar.  You should see a little confirmation spinner while this is in progress:
+
+   .. image:: images/server-settings-13.png
+   
+And a dialog when it completes:
+
+   .. image:: images/server-settings-14.png
+
+Note that if you don't stay on the page while the packing is underway, it *will* still complete.  You just will not receive any confirmation.
