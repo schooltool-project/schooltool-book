@@ -47,4 +47,4 @@ As "manager," Go to **School** and **People**.  Click the **Import: Import CSV**
 XLS Import
 ++++++++++
 
-:ref:`spreadsheet` is another method of importing people.  The one trick here is that if you have changed the demographic schema, you should first do an **XLS Export** to get a worksheet that has your new fields in the correct sequence.  Add your people and re-import the form.
+:ref:`spreadsheet` is another method of importing people.  The one trick here is that if you have changed the demographic schema, you should first do an **XLS Export** to get a worksheet that has your new fields in the correct sequence.  Add your people and re-import the worksheet.

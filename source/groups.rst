@@ -36,7 +36,7 @@ Check the green + icon next to "Sally Brown":
 
 Then **Done** to get back to the main page for the group.
 
-Next we will import a list of group members.  Click **Import:  Members CSV**.  This form accepts a simple list of person ID's to be *added* to the group.  That is, people not in the list are not *removed* from the existing group membership.  You may create a text file and upload it, or simply type or copy/paste the ID's into the textbox provided:
+Next we will import a list of group members.  Click **Import:  Import Members CSV**.  This form accepts a simple list of person ID's to be *added* to the group.  That is, people not in the list are not *removed* from the existing group membership.  You may create a text file and upload it, or simply type or copy/paste the ID's into the textbox provided:
 
    .. image:: images/groups-4.png
 

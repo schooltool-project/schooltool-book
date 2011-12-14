@@ -17,7 +17,7 @@ To see the default demographics fields, as "manager," click the **School** and t
 
 In the default settings, **ID, Ethnicity, Language, Place of birth, and Citizenship** can be edited or removed.  In this case **ID** is just a generic text field which you can use for whatever student ID or number you might need to keep track of.
 
-You can delete, edit, and re-order the existing fields and add your own.  There are three types of fields: text, dates, and selection lists.
+You can delete, edit, and re-order the existing fields and add your own.
 
 In this example we will:
 
@@ -26,7 +26,7 @@ In this example we will:
   * change the values in the ethnicity list;
   * add enrollment date.
 
-To delete a field, click **Actions: Reorder or Delete Fields** in the sidebar, and then click the red minus icon next to the field you'd like to delete.  You can also reorder the fields here by changing the numbers in the first row of the table.  In both cases the changes are applied immediately.
+To delete a field, click **Actions: Reorder or Delete Fields** in the sidebar, and then click the red minus icon next to the field you'd like to delete.  You can also reorder the fields here by changing the numbers in the first column of the table.  In both cases the changes are applied immediately.
 
    .. image:: images/demographics-schema-1.png
 
