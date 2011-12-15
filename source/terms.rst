@@ -31,9 +31,9 @@ You must choose dates within the current year which *do not* overlap with other 
 
 After selecting both dates and clicking **Next** you will see a calendar view which allows you to toggle specific days and dates on and off by clicking on them.  
 
-If a date is **bold** with a darker it means classes are in session; dates not in bold with a lighter background mean no classes.  Any day that student attendance will be taken should be in bold.  A teacher training day with no classes would be regular weight.  
+If a date is **bold** with a darker background it means classes are in session; dates not in bold with a lighter background mean no classes.  Any day that student attendance will be taken should be in bold.  A teacher training day with no classes would be regular weight.  
 
-Clicking the date buttons at the top of the form changes the value of that day throughout the calendar.  Clicking directly on a date toggles its value.
+Clicking the day buttons at the top of the form changes the value of that day throughout the calendar.  Clicking directly on a date toggles its value.
 
 For example, I've set the standard school week from Monday to Friday and added Thanksgiving vacation the week of November 26th:
 
