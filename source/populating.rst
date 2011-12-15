@@ -11,5 +11,4 @@ Contents:
    persons
    groups
    contacts
-   search-widget
    sections
