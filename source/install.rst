@@ -38,4 +38,4 @@ Or, if you are more used to init.d scripts you can still use::
 
 **Note:** If you want to use SchoolTool over a network or the internet go to :ref:`remote`.
 
-You can now undertake the :ref:`setup_initial`.
+You can now undertake the :ref:`initial-config`.

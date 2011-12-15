@@ -1,3 +1,5 @@
+.. _initial-config:
+
 Initial Configuration Steps
 ===========================
 
