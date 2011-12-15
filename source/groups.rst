@@ -5,6 +5,12 @@ Groups
 
 In SchoolTool groups are used to model some default roles in a school as well as allowing a wide variety of custom groups to be created to suit local needs.
 
+In particular:
+
+  * groups have their own calendars;
+  * you can run reports for all members of a group;
+  * groups are useful for adding a set of students to multiple class sections.
+
 The default roles as defined by the **School Administrators, Site Managers, Students,** **Teachers**, and **Clerks** groups affect the permissions access privileges of their members.  See :ref:`security` for further explanation.
 
 Groups are stored by year.  That is, each school year has its own set of groups.  For example, you have "Students" for year "2008-2009" and a separate "Students" group for "2009-2010."
@@ -47,4 +53,17 @@ Hit **Submit** and your completed group should look like:
 If you click on one of the students' names and then their **Groups** slider, you'll see their memberships listed:
 
    .. image:: images/groups-6.png
+
+Creating a New Group
+--------------------
+
+From the main **Groups** view, click **Add: Group**.  Add a relevant title and description:
+
+   .. image:: images/groups-7.png
+
+Add members as above:
+
+   .. image:: images/groups-8.png
+
+You can also assign "Responsible Parties," who will have permission to modify the group, add members, and edit the calendar.
 
