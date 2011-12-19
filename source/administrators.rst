@@ -7,5 +7,5 @@ Contents:
    :maxdepth: 2
 
    remote
-   security
+   multiple-schooltools
    database
