@@ -7,5 +7,6 @@ Contents:
    :maxdepth: 2
 
    remote
+   apache
    multiple-schooltools
    database

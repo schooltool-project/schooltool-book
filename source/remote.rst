@@ -1,27 +1,36 @@
 .. _remote:
 
-Making SchoolTool's Web Interface Accessible to Other Computers (or not)
-========================================================================
+Accessing SchoolTool from Other Computers
+=========================================
 
-In SchoolTool 2008.4, a newly installed SchoolTool server is not accessible over the network by default.  Additional steps to make it accessible from other computers are listed below.  We will probably change this behavior in future releases to be more consistent with people's expectations.
+A newly installed SchoolTool server is not accessible over the network by
+default.
 
-To allow all other computers to access SchoolTool's web interface
------------------------------------------------------------------
+To allow access to SchoolTool from other computers
+--------------------------------------------------
 
-Edit ``/etc/schooltool/schooltool-2008/paste.ini`` as root.  For example::
+Edit ``/etc/schooltool/standard/paste.ini`` as root.  For example::
 
-    sudo nano /etc/schooltool/schooltool-2008/paste.ini
+    sudo vim /etc/schooltool/standard/paste.ini
 
-Change the ``host =``  line to read::
+Change the ``host`` to ``0.0.0.0``::
 
     host = 0.0.0.0
 
-You will then need to restart SchoolTool following the instructions in :ref:`setup_initial`
+And restart SchoolTool (following the instructions in :ref:`setup_initial`).
 
-To make SchoolTool's web interface only accessible from the server
-------------------------------------------------------------------
+Lookup the server's IP or hostname, and try to connect to it from another
+computer.  Don't forget the port number. E.g. http://192.168.1.1:7080
 
-This is primarily useful while configuring and testing a server before going live, or when SchoolTool is being run on a laptop or desktop PC and only accessed on that machine.
+You will most likely want to make SchoolTool available on port 80. But this port
+is reserved for the web the server. You will have to configure a virtual host or
+a path in web server configuration. See :ref:`apache`.
+
+To close SchoolTool's port
+--------------------------
+
+If SchoolTool is not intended to be used by others, or is configured to run via
+apache, you can close the port schooltool server listens to.
 
 Edit the ``paste.ini`` file as described above, setting it to read::
 
