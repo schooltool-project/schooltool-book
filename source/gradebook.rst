@@ -5,6 +5,66 @@ Getting Started with the Gradebook
 
 SchoolTool's standard gradebook allows teachers to track point scores for assigned activities.  That is, the teacher creates activities, assigns a numeric point range for the activity, and then assigns each student a score for that activity.  Activities can also be assigned to categories, which can be weighted for the purpose of calculating an overall average.  "Score systems" or grading scales allow percentage scores to be associated with other types of grades, such as A-F, Pass/Fail, etc.
 
+Contextual Menus & Zoom
+-----------------------
+
+Unlike the parts of SchoolTool we've encountered thus far, the gradebook and journal use contextual, "pop-up" menus in several places to keep the interface clean and simple.
+
+These menus come up when you click the left mouse button on certain links, such as the name of a student in the gradebook:
+
+   .. image:: images/gradebook-1.png
+
+Note that clicking the right mouse button will bring up the standard contextual for your browser ("Open Link in New Tab..." etc.).
+
+The gray buttons at the lower right allow the user to change the font size in the gradebook or journal grid.  The **+** button at right make the font bigger, the **-** at left makes it smaller, and the middle button returns to the default value.
+
+Creating an Activity
+--------------------
+
+**Log In** as a teacher, if you're following along, as the teacher acting as instructor for the section you made in :ref:`sections`.  
+
+Click on **Gradebook** at the top of the page:
+
+   .. image:: images/gradebook-2.png
+
+The gradebook is organized by term, section, and, within each section, into worksheets, much like the worksheets in a spreadsheet application.  In the working example, we've only got one section, but the **Term** and **Section** menus in the left sidebar allow the teacher to navigate between sections.  
+
+By default, each section has a single worksheet, named **Sheet1**.
+
+Let's add an activity.  Click **Add: Activity** in the sidebar:
+
+   .. image:: images/gradebook-3.png
+
+The main content area has three tabs, **Activity**, **Linked Column**, which allows you to embed columns from other worksheets, and **External Score**, which can import scores from other SchoolTool components, or potentially from external sources.
+
+The fields should be self explanatory, with the exception of Category, which will be explained shortly.  The example is a 20 point vocabulary quiz.  Note that scores in exceeding the "maximum" value are permissible and will be calculated as extra credit.
+
+Click **Submit**.  The worksheet with our new activity:
+
+   .. image:: images/gradebook-4.png
+
+Scoring an Activity
+-------------------
+
+Fill in scores by clicking on the relevant cells and entering numbers.  *Unsaved* scores within the proper range show up as green, invalid scores are red, and scores above the maximum (extra credit) show as yellow.  
+
+   .. image:: images/gradebook-5.png
+
+*Scores are not saved until you click **Save**.
+
+If you accidentally try to navigate away from a worksheet with unsaved changes you *should* be prompted to save them.
+
+Once saved, the cells return to grey and averages and totals are calculated:
+
+   .. image:: images/gradebook-6.png
+
+Sorting by Column
+-----------------
+
+To sort by column, click on the abbreviated activity title in the column header to bring up the contextual menu and select **Sort**.  Selecting **Sort** repeatedly toggles between descending and ascending.
+
+   .. image:: images/gradebook-7.png
+
 Activity Categories
 -------------------
 
@@ -12,66 +72,20 @@ Activity categories define different types of activities or assignments used in 
 
 Activity categories are configurable by the site manager at the school level.  Currently, individual teachers cannot create or delete activity categories.
 
-To add or remove activity categories, as "manager" go to **Manage** and **Activity Categories**:
-
-   .. image:: images/gradebook-1.png
-
-Say the "Journal" activity is not relevant to our school.  To delete it, highlight it in the upper list and click **Delete**:
-
-   .. image:: images/gradebook-2.png
-
-To add a category, simply enter the name of the category next to **New Category** and hit **Add**:
-
-   .. image:: images/gradebook-4.png
-
-To change the default category for all activities, select an activity from the list next to **Default Category** and click **Change**.
-
-Creating an Activity
---------------------
-
-**Log Out** as "manager" and **Log In** as a teacher, if you're following along, as the teacher acting as instructor for the section you made in :ref:`sections`.  
-
-Click on **Gradebook** at the top of the page:
-
-   .. image:: images/gradebook-5.png
-
-The gradebook is organized by term, section, and, within each section, into worksheets, much like the worksheets in a spreadsheet application.  In the working example, we've only got one term and section, but the **Term** and **Section** menus above the worksheets allow the teacher to navigate between sections.  
-
-By default, each section has a single worksheet, named **Sheet1**.
-
-Let's add an activity.  Click **New Activity**:
-
-   .. image:: images/gradebook-6.png
-
-The fields should be self explanatory.  The example is a 20 point vocabulary quiz.  Note that scores in exceeding the "maximum" value are permissible and will be calculated as extra credit.
-
-The worksheet with our new activity:
-
-   .. image:: images/gradebook-7.png
-
-Scoring an Activity
--------------------
-
-Fill in scores by clicking on the relevant cells and entering numbers.  *Unsaved* scores within the proper range show up as green, invalid scores are red, and scores above the maximum (extra credit) show as yellow.  
-
-Note that there is currently a bug that causes the up and down arrows to move in the wrong order, which will be fixed in a future release.
-
-Note that the full title of the activity in the active column appears at the top of the worksheet, in this case, "Vocab Quiz #1."
-
-*Scores are not saved until you click **Save**.*
-
-   .. image:: images/gradebook-8.png
-
-If you accidentally try to navigate away from a worksheet with unsaved changes you *should* be prompted to save them.
-
-Once saved, the cells return to grey and averages and totals are calculated:
+To add or remove activity categories, as "manager" go to **School** and click **Customize: Activity Categories** in the sidebar:
 
    .. image:: images/gradebook-9.png
 
-Sorting by Column
------------------
+To delete a category, click the red **-** in the row next to it
 
-To sort by column, click on **(sort)** at the top of that column.  Clicking again toggles between ascending and descending.
+To add a category, click **Add: New Category** in the sidebar enter the name of the category next to **New Category** and hit **Add**:
 
-   .. image:: images/gradebook-sort.png
+   .. image:: images/gradebook-10.png
 
+To change the default category for all activities, click the yellow edit icon next to the category you'd like to make default, then click the **Make Default** button.  You can also change the title of the category from this screen.
+
+   .. image:: images/gradebook-11.png
+
+The teacher can now select **Edit** from the activity's contextual menu in the gradebook and switch our existing activity to the new **Quiz** category:
+
+   .. image:: images/gradebook-11.png

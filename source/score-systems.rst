@@ -1,21 +1,29 @@
 .. _score-systems:
 
-Managing Score Systems and Total Columns
-========================================
+Score Systems
+=============
 
-The **Total** or **Average** columns next to student names on the gradebook may not be useful to you in their default setting:
+Displaying Score Systems in the Gradebook
+-----------------------------------------
+
+Scores are converted to grades using what SchoolTool calls "Score Systems."
+
+A score system is a sequence of scores in descending value.  Each score has a label, a numeric value used to calculate grade averages when that is relevant, and a low cut off for percentage values associated with this score.  The cutoff is used to automatically assign a score to a given percentage value.
+
+SchoolTool ships with a few default score systems.  The site manager can add new score systems and hide the existing ones.
+
+If you click on the **Ave.** column header, you can see the current score systems installed:
 
    .. image:: images/score-system-1.png
 
-To change them, click **Column Preferences**.  To hide either column, check the box under **Hide**.  If you want the average to be converted to a grade or score, select the relevant score system from the drop down under **Score System**:
-
-   .. image:: images/score-system-2.png
-
-Hit **Update** to save and see your changes:
+If you select a score system in this menu, it will display the average converted to a grade based on the score system.  For example, with the default "Extended Letter Grade:"
 
    .. image:: images/score-system-3.png
 
-SchoolTool ships with a few default score systems.  The site manager can add new score systems and hide the existing ones..  As "manager," go to **Manage** then **Score Systems**:
+Managing Score Systems
+----------------------
+
+The site manager can add new score systems and hide the existing ones..  As "manager," go to **School** then **Customize: Score Systems**:
 
    .. image:: images/score-system-4.png
 
@@ -23,18 +31,16 @@ If you click on the title of a score system you see a detailed view:
 
    .. image:: images/score-system-5.png
 
-A score system is a sequence of scores in descending value.  Each score has a label, a numeric value used to calculate grade averages when that is relevant, and a low cut off for percentage values associated with this score.  The cutoff is used to automatically assign a score to a given percentage value.
+If you would like to hide a score system (you can't delete them completely to keep older data using them consistent) click **Actions: Hide**.  This will keep users from adding them in the future but retain their current use.
 
-To create a new score system, press **Add Score System**.  In this case, I'm creating a score system that uses numbers as labels instead of the more traditional letters:
+To create a new score system, press **Add: Score System** from the main score system page.  In this case, I'm creating a score system that uses numbers as labels instead of the more traditional letters:
 
    .. image:: images/score-system-6.png
 
-Start with the highest score and then **Add a lower score** until you get to a score that has a low bound of 0 percent.  
+Start with the highest score and click **Add** in the table until you get to a score that has a low percentage of 0 percent.
 
 Please note that if neither the point value or minimum percentage score is relevant for your grading system, you still need to add some values there, even if they aren't used in subsequent calculations or reporting.
 
 Hit **Save** when you are done.
-
-You can subsequently go back to the gradebook as a teacher and select your new score system to display in the **Ave.** column:
 
    .. image:: images/score-system-7.png

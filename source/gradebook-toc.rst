@@ -1,9 +1,13 @@
 Gradebook, Attendance and Report Cards
 ======================================
 
-Schools around the world use many types of grading and assessment, and it is unlikely that any one gradebook could suit everyone's needs and desires.  SchoolTool is designed to be modular and allow customized gradebooks for specific needs.  One example of this is the CanDo competency tracking gradebook, which is not currently included in the standard distribution of SchoolTool.
+Schools around the world use many types of grading and assessment, and it is unlikely that any one gradebook could suit everyone's needs and desires.  
 
-These tutorials cover the standard gradebook, attendance journal and report card functionality that are provided with the standard SchoolTool packages.
+The standard packages distributed with SchoolTool contain a gradebook organized around numeric point values assigned to activities and assessments and also an attendance journal which allows scores to be attributed to participation on a specific day.
+
+SchoolTool is designed to be modular and allow customized gradebooks for specific needs.  One example of this is the CanDo competency tracking gradebook, which is not currently included in the standard distribution of SchoolTool.
+
+These tutorials cover functionality provided by the standard gradebook and attendance journal.
 
 Contents:
 

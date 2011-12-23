@@ -6,23 +6,15 @@ Multiple Activities
 
 Now we will make a second activity:
 
-   .. image:: images/gradebook-10.png
+   .. image:: images/gradebook2-1.png
 
-If you want to fill-down the same score for all students (admittedly, you generally wouldn't do this for an exam, but for homework, for example) enter a score in the top row marked **Apply a grade for all students** and then click the white **Apply** button:
-
-   .. image:: images/gradebook-11.png
+And score it.
 
 As you can see, after you **Update** the changes, the **Total** and **Average** columns are also updated.
 
-   .. image:: images/gradebook-12.png
+   .. image:: images/gradebook2-2.png
 
-If you want to change the order of the columns, click **Manage Activities** and use the drop down number menus to re-order the activities.
-
-   .. image:: images/gradebook-13.png
-
-If you want to make other changes to the activities, click on their titles on this page.  Click **Return to Gradebook** when you are done.  The re-ordered columns:
-
-   .. image:: images/gradebook-14.png
+If you want to change the order of the columns, you can select **Move Left** or **Move Right** from each activity's contextual menu.
 
 Weighting Categories
 --------------------
@@ -35,47 +27,48 @@ If you don't need or want to weight categories, you can skip the rest of this se
 
 Categories are weighted *by worksheet*.  So this must be defined on each worksheet.
 
-While viewing the relevant worksheet, click **Weight Categories**.  Simply enter the weight of each category by typing numbers in the available fields.  The sum of the weights must total 100.
+While viewing the relevant worksheet, click **Settings: Category Weights** in the sidebar.  Enter the weight of each category by typing numbers in the available fields.  The sum of the weights must total 100.
 
-   .. image:: images/gradebook-15.png
+   .. image:: images/gradebook2-3.png
 
-So in the above case, exams are 75% of the calculated average, quizzes are 25%.  Hit **Update** and the scores will reflect the new weights:
+So in the above case, exams are 75% of the calculated average, quizzes are 25%.  Hit **Submit** and the scores will reflect the new weights:
 
-   .. image:: images/gradebook-16.png
+   .. image:: images/gradebook2-4.png
 
 Multiple Worksheets
 -------------------
 
 You can create multiple worksheets to organize your work in various ways.  One straightforward use is if the section is defined by a semester which is divided into two grading quarters, each quarter might be assigned its own worksheet.
 
-To add a worksheet, click **Worksheets** from the gradebook view:
+First we'll change the name of the default "Sheet1."  Click on the **Settings: Worksheets** link:
 
-   .. image:: images/gradebook-17.png
+   .. image:: images/gradebook2-5.png
 
-First we'll change the name of the default "Sheet1."  Click on the **Sheet1** link and the **Edit**:
+Then click the edit pencil next to to "Sheet1" and switch it to something more descriptive:
 
-   .. image:: images/gradebook-18.png
+   .. image:: images/gradebook2-6.png
 
-We'll switch it to something more descriptive:
+And hit **Submit**:
 
-   .. image:: images/gradebook-19.png
+   .. image:: images/gradebook2-7.png
 
-And hit **Apply**:
+Now we'll add a second worksheet.  Click Done, and from the main gradebook view click **Add: Worksheet":
 
-   .. image:: images/gradebook-20.png
+   .. image:: images/gradebook2-8.png
 
-Now we'll add a second worksheet.  Hit **New Worksheet** and give the new worksheet a title:
+Hit **Submit**.  Now you've got two tabs, with the new (empty) worksheet active:
 
-   .. image:: images/gradebook-21.png
+   .. image:: images/gradebook2-9.png
 
-Hit **Add**, and then **Return to Gradebook**.  Now you've got two tabs:
+Add a new activity as we did above and score it:
 
-   .. image:: images/gradebook-22.png
+   .. image:: images/gradebook2-10.png
 
-We'll click on the Second Quarter tab and add a new activity as we did above:
+You can add a summary worksheet to each of your gradebooks that automatically includes a column for the average of all existing worksheets.  From the main Gradebook page, go back to **Settings: Worksheets** and click **Create summary worksheet**:
 
-   .. image:: images/gradebook-23.png
+   .. image:: images/gradebook2-11.png
 
-The **Summary** link takes you to an overview of the averages from each worksheet for the section:
+The summary sheet:
 
-   .. image:: images/gradebook-24.png
+   .. image:: images/gradebook2-12.png
+
