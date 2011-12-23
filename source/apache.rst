@@ -33,9 +33,10 @@ Then enable the site and restart apache::
   $ sudo a2ensite school1.example.org
   $ sudo service apache reload
 
-If you cannot set up, or don't want to, setup a subdomain for schooltool, you
-can make it available at a custom path on another site, e.g.
-``example.org/schooltool``. Place the path before the last ``++`` in the URL::
+If you cannot, or don't want to, setup a subdomain for schooltool, you can make
+it available at a custom path on another site, e.g. ``example.org/schooltool``.
+Place the path before the last ``++`` in the URL, and put it somewhere in
+the configuration of that site::
 
     ProxyPass /schooltool http://127.0.0.1:7080/++vh++http:example.org:80/schooltool/++/
 
