@@ -4,7 +4,11 @@ System Requirements
 Where can I download SchoolTool?
 ++++++++++++++++++++++++++++++++
 
-SchoolTool is a full stack web application.  That is, it comes with its own web server and database.  To make sure all the necessary components are installed correctly, we distribute SchoolTool to users as packages, primarily through Ubuntu Linux.
+You won't find a simple download link for users to install SchoolTool.  
+
+SchoolTool is a full stack web application.  That is, it comes with its own web server and database.  To make sure all the necessary components are installed correctly, we distribute SchoolTool to users as packages, primarily through Ubuntu Linux.  This gives users a simple "app store" one click installation experience.
+
+What follows is an explanation of this choice, hardware recommendations and in subsequent pages instructions for installing various versions of SchoolTool on various versions of Ubuntu.
 
 Operating System
 ++++++++++++++++
@@ -19,7 +23,7 @@ Fedora Linux & OLPC Server
 
 `OLE Nepal <http://www.olenepal.org>`_ has created a set of RPM packages for `Fedora Linux <http://fedoralinux.org>`_ versions 9 (used by the OLPC server) and 13 for use in local pilots in Nepal as part of their `OLPC <http://laptop.org>`_ deployments.
 
-We have actively collaborated with OLE Nepal's developers to create these packages and keep them up to date.
+We actively collaborate with OLE Nepal's developers to keep these packages up to date, but the freshest SchoolTool packages will usually be the Ubuntu ones.
 
 See :ref:`Fedora` for instructions on installing SchoolTool on Fedora Linux.
 
