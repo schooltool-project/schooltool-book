@@ -37,6 +37,7 @@ Contents:
    spreadsheet
    populating
    gradebook-toc
+   intervention
    administrators
    developers
    editing-this-book
