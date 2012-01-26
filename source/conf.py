@@ -39,7 +39,7 @@ master_doc = 'index'
 
 # General substitutions.
 project = "The SchoolTool Book"
-copyright = '2011, the Shuttleworth Foundation'
+copyright = '2012, the Shuttleworth Foundation'
 
 # The default replacements for |version| and |release|, also used in various
 # other places throughout the built documents.
