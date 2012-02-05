@@ -25,7 +25,7 @@ For all other platforms see `Bazaar downloads <http://bazaar-vcs.org/Download>`_
 
 Then, to fetch the source::
 
-    bzr branch lp:~schooltool-owners/schooltool/st-book
+    bzr branch lp:schooltool-book/flourish
 
 This will create a directory called **st-book**, which contains a **source** directory with all the marked up text files and images which make up the book, a **selenium** directory which contains a test suite which will reproduce the tutorials in the book, and a Makefile and associated files which automate the process of turning the sources into a publishable document.
 
