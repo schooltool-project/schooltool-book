@@ -36,7 +36,7 @@ The set of scripts which turn the sources into a finished product is called `Sph
 
 You'll need some basic software development tools, if you don't have them already::
 
-  sudo apt-get build-essential python-dev
+  sudo apt-get install build-essential python-dev python-virtualenv
 
 Within the **st-book** directory, do::
 
