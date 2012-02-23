@@ -39,6 +39,53 @@ Below are changes since the release of SchoolTool 2.0.0_ (2011-11-23).
 CHANGES
 =======
 
+2.0.2 (2012-02-15)
+==================
+
+- Sync versions with Precise Alpha 2.
+- Transition to zope.testbrowser 4.
+- Transition `z3c.*` libraries to versions that can use Chameleon 2.
+
+
+SchoolTool 2.0.2 (2012-02-14)
+-----------------------------
+
+- Added integer demographic fields.
+
+Bugfixes
+++++++++
+
+- Fixed the password edit view (https://launchpad.net/bugs/868411)
+- Allow optional Selection List demographics fields to remain unset (https://launchpad.net/bugs/898219)
+- Fixed person edit view to show limited demographics fields (https://launchpad.net/bugs/914609)
+- Sorted section list in person accordion (https://launchpad.net/bugs/921373)
+- Move 'School name' to the bottom of Customize menu (https://launchpad.net/bugs/876797)
+- Updated translations.
+
+
+SchoolTool Gradebook 2.0.2 (2012-02-02)
+---------------------------------------
+
+New features
+++++++++++++
+
+- Course leaders may deploy course worksheets (https://launchpad.net/bugs/916678)
+
+Bugfixes
+++++++++
+
+- Error editing Activity category with unicode characters (https://launchpad.net/bugs/913581)
+- Crash viewing a Section, when all sheets are hidden
+  (https://launchpad.net/bugs/913055)
+- Missing XLS and PDF export (https://launchpad.net/bugs/916674)
+- Different style for deployed worksheet tabs (https://launchpad.net/bugs/916674)
+- Min/max should show while editing report sheet template
+  (https://launchpad.net/bugs/916675)
+- Unhiding personal sheet unhides deployed sheets (https://launchpad.net/bugs/917294)
+- In sorts, no value should be less than zero (https://launchpad.net/bugs/907895)
+- Updated translations (de, fr)
+
+
 2.0.1 (2011-12-22)
 ==================
 
