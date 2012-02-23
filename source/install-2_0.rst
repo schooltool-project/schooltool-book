@@ -1,8 +1,16 @@
-Installing SchoolTool 2.0 on Ubuntu 11.04 or 11.10
-==================================================
+Installing SchoolTool 2.0
+=========================
 
-You need to be running Ubuntu 11.10 (oneiric) or 11.04 (natty).
-Packages for earlier releases (maverick and lucid) will be built soon.
+`SchoolTool 2.0 <2.0-release-notes.html>`_ is available in upcoming Ubuntu 12.04 LTS, to be released in
+April, see :ref:`install-ubuntu`.
+
+On older Ubuntu releases (10.04 LTS through 11.10) you can install it from the
+`SchoolTool flourish PPA <https://launchpad.net/~schooltool-owners/+archive/dev/>`_,
+using instructions below.
+
+NOTE: For 10.04 and 10.10 you also need the main `SchoolTool PPA
+<install-pre-natty.html>`_. But do not install ``schooltool-2009`` or
+``msttcorefonts`` packages unless you have them already.
 
 Using Ubuntu Software Center
 ----------------------------
@@ -15,15 +23,12 @@ And click **Add Source**.
 
    .. image:: images/inst2-0.png
 
-
 Then search for "SchoolTool" in the searchbox at upper right in the Software Center and click **Install** next to the SchoolTool entry.
 
 Using the Command Line
 ----------------------
 
-You have to add the `SchoolTool flourish PPA
-<https://launchpad.net/~schooltool-owners/+archive/dev/>`_
-to your software sources::
+Add the PPA::
 
  $ sudo add-apt-repository ppa:schooltool-owners/dev
  $ sudo apt-get update
@@ -34,5 +39,3 @@ Then install the ``schooltool`` package::
 
 After installation, the schooltool server will be started at
 http://localhost:7080 .
-
-

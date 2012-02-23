@@ -1,7 +1,9 @@
-Installing SchoolTool 1.x on Ubuntu 11.04 or Later
-==================================================
+.. _install-ubuntu:
 
-Start by installing the server or desktop edition of `Ubuntu Linux <http://ubuntu.com>`_.  
+Installing SchoolTool on Ubuntu 11.04 or Later
+==============================================
+
+Start by installing the server or desktop edition of `Ubuntu <http://ubuntu.com>`_.  
 
 SchoolTool is included in the `"Universe" software repository <https://help.ubuntu.com/community/Repositories/Ubuntu>`_, which is enabled by default on installation.  
 
