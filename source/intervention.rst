@@ -54,3 +54,5 @@ To create a message click the green **+** next to **Messages** and fill out the 
 Thus:
 
    .. image:: images/intervention-10.png
+
+
