@@ -18,7 +18,7 @@ IRC Channel: `#schooltool on freenode.net <http://webchat.freenode.net/?channels
 About
 -----
 
-SchoolTool is free administrative software for schools around the world.  SchoolTool is an open source, web based student information system designed for schools in the developing world, with strong support for translation, localization and automated deployment and updates via the Ubuntu Linux installer and package management system.
+SchoolTool is an open source, web based student information system designed for schools in the developing world, with strong support for translation, localization and automated deployment and updates via the Ubuntu Linux installer and package management system.
 
 SchoolTool is also a framework for building customized applications and configurations for individual schools or states.
 
