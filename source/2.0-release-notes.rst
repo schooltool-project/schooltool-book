@@ -31,13 +31,13 @@ Installation on Active Production Servers
 
 Because of the extent of the user interface changes in SchoolTool 2.0, we recommend this **not** be applied to an active deployment during the school year.  While these changes should not require significant re-training, some testing and advance warning will be necessary before making this change.
 
-Below are changes since the release of SchoolTool 2.0.0_ (2011-11-23).
-
-.. _2.0.0: 1.9-release-notes.html#id2
+Below are changes since the release of SchoolTool :ref:`2.0.0`.
 
 
 CHANGES
 =======
+
+.. _2.0.3:
 
 2.0.3 (2012-03-20)
 ==================
@@ -77,8 +77,8 @@ Development tools
 - Selenium browser extensions
 
 
-SchoolTool Lyceum Journal 2.0.3 (2012-03-20)
---------------------------------------------
+SchoolTool Journal 2.0.3 (2012-03-20)
+-------------------------------------
 
 - Tab hiding (https://launchpad.net/bugs/938810)
 - Update translations
@@ -103,6 +103,8 @@ SchoolTool Intervention 2.0.3 (2012-03-15)
 - Tab hiding (https://launchpad.net/bugs/938810)
 - Updated translations, added ast, de, fr translations.
 
+
+.. _2.0.2:
 
 2.0.2 (2012-02-15)
 ==================
@@ -151,6 +153,8 @@ Bugfixes
 - Updated translations (de, fr)
 
 
+.. _2.0.1:
+
 2.0.1 (2011-12-22)
 ==================
 
@@ -179,8 +183,8 @@ SchoolTool 2.0.1 (2011-12-22)
 - Updated translations.
 
 
-SchoolTool Lyceum Journal 2.0.1 (2011-12-22)
---------------------------------------------
+SchoolTool Journal 2.0.1 (2011-12-22)
+-------------------------------------
 
 - Fixed css for cells in section journal
 - Update translations

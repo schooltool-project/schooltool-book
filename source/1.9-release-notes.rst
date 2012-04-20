@@ -10,6 +10,8 @@ the user interface, that has now become the SchoolTool 2.0_ release.
 .. _2.0: 2.0-release-notes.html
 
 
+.. _2.0.0:
+
 2.0.0 (2011-11-23)
 ==================
 
