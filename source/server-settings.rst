@@ -4,7 +4,7 @@ Server Settings
 Server Information
 ------------------
 
-When logged in as a site manager, school administrator or clerk, you should see a "Server" tab in the top bar.  This takes you to a variety of settings and information relevant to the server itself, as opposed to your school.  
+When logged in as a site manager, school administrator or clerk, you should see a "Server" tab in the top bar.  This takes you to a variety of settings and information relevant to the server itself, as opposed to your school.
 
    .. image:: images/server-settings-0.png
 
@@ -13,24 +13,24 @@ In the main content area, the Server Information section provides some technical
 Outgoing Email
 --------------
 
-SchoolTool can send emails through your school email server or another SMTP server.  That is, SchoolTool is not an email server, it sends mail as an email *client*, like a desktop application such as Evolution or Outlook.  
+SchoolTool can send emails through your school email server or another SMTP server.  That is, SchoolTool is not an email server, it sends mail as an email *client*, like a desktop application such as Evolution or Outlook.
 
-To enable SchoolTool to send emails, you will need the instructions from your school's server, your ISP, or your webmail provider to configure a mail client to send mail via the provider's SMTP service.  
+To enable SchoolTool to send emails, you will need the instructions from your school's server, your ISP, or your webmail provider to configure a mail client to send mail via the provider's SMTP service.
 
 You can also install and use a free mail server using the Ubuntu package manager, such as ``postfix`` or ``sendmail``.  Instructions for doing so are outside the scope of this document.  Running a mail server requires a knowledgeable systems administrator.
 
 As an example of an external email service, here's the relevant data for enabling GMail:
 
     .. image:: images/email-gmail.png
-    
+
 
 To send email through an external mail service, from the **Server** page, click on the **Outgoing Email** link:
 
    .. image:: images/server-settings-1.png
 
-To edit the settings, click the yellow pencil icon next to **Server status: Disabled** and enter the appropriate data for your server.  Note that the the username and password in question in this form are the username and password of a user *on the mail server*, not on SchoolTool. 
+To edit the settings, click the yellow pencil icon next to **Server status: Disabled** and enter the appropriate data for your server.  Note that the the username and password in question in this form are the username and password of a user *on the mail server*, not on SchoolTool.
 
-**Note:** Outgoing emails from SchoolTool will use this email address, not the email address of a specific user within SchoolTool; e.g., in the example below, all notifications coming from SchoolTool will appear to be from schooltool.mgr@gmail.com. 
+**Note:** Outgoing emails from SchoolTool will use this email address, not the email address of a specific user within SchoolTool; e.g., in the example below, all notifications coming from SchoolTool will appear to be from schooltool.mgr@gmail.com.
 
 A TLS connection is a type of secure connection between SchoolTool and the mail server.
 
@@ -55,13 +55,100 @@ Check your mail, and you should see the message:
 Calendar
 --------
 
-SchoolTool is designed to be usable in many different countries, and different parts of the world handle calendars and dates differently, so you may have to change some settings here to suit your local needs.  Click on the **Calendar** link to do so.  
+SchoolTool is designed to be usable in many different countries, and different parts of the world handle calendars and dates differently, so you may have to change some settings here to suit your local needs.  Click on the **Calendar** link to do so.
 
    .. image:: images/server-settings-5.png
 
-SchoolTool's calendar uses a more or less European configuration by default.  I've changed it above to suit my American tastes.  
+SchoolTool's calendar uses a more or less European configuration by default.  I've changed it above to suit my American tastes.
 
 Hit **Apply** to save your new settings.
+
+LDAP Single Sign On
+-------------------
+
+To enable LDAP support you will need to install schooltool.ldap
+package (via command line or **Ubuntu Software Center**).  Once
+installed, it will appear in the Server page.
+
+If you have installed **Zentyal** (http://www.zentyal.com/) on the same server and
+configured Users / Groups modules, SchoolTool should be able to pick
+up LDAP settings automatically.  Autodetection works on server start
+up, so SchoolTool needs to be rebooted after server LDAP config
+changes.
+
+   .. image:: images/ldap-config-1.png
+
+LDAP settings can be changed in browser, unless this option is
+specifically disabled in schooltool.conf.
+
+   .. image:: images/ldap-config-2.png
+
+**Bind DN** and **Bind password** used when connecting to LDAP to retrieve the
+user list.  Leave empty if anonymous LDAP connections are allowed to
+query for users.
+
+**User DN queries** are used to obtain the list of LDAP users.  We
+also require to specify the "login attribute", which in almost all
+cases is "uid" and should look like this::
+
+ uid ou=Users,dc=example,dc=com?one?(objectClass=inetOrgPerson)
+
+If you need to fine-tune your queries it's best to install an interactive
+LDAP browser like http://jxplorer.org
+
+**Group DN queries** and **POSIX group counterparts** allow automatic
+adding of users to desired SchoolTool groups.  To enable mapping, you
+will need to enter one or more queries that retreive the list of LDAP
+groups.  You will also have to find out "gidNumber" of each LDAP group
+you want to map.  Again, using tools like jXplorer helps a lot.
+
+   .. image:: images/ldap-config-3.png
+
+**POSIX group counterparts** allow you to bind groups to a specific
+school year or to the active one.  Users will be assigned to their
+groups when they log into SchoolTool::
+
+  2012-2013, students, 2001
+  , teachers, 2003
+
+
+Example schooltool.conf
++++++++++++++++++++++++
+
+You can also configure LDAP by adding a section like this to schooltool.conf::
+
+  <ldap_authentication>
+
+    allow_web_config no
+    autodetect_from /etc/ldap.conf
+    uri ldap://127.0.0.1:389
+
+    default_login_attr uid
+    default_login_filter objectclass=inetOrgPerson
+
+    query_users uid dc=localhost?sub?(objectClass=inetOrgPerson)
+
+    query_groups dc=localhost?sub?(objectClass=posixGroup)
+    bind_group teachers 7001
+    bind_group 2011-2012 students 6024
+
+    bind_dn ldapmanager
+    bind_password thepassword
+
+  </ldap_authentication>
+
+**allow_web_config** lets you disable through-the-web overriding of
+these settings.
+
+**autodetect_from** should point to the .conf file to infer LDAP
+configuration from.
+
+It's worth to note that **query_users**, **query_groups** and
+**bind_group** can have multiple entries.
+
+**default_login_attr** and **default_login_filter** should be seldom
+useful, mostly when you want to influence LDAP settings auto-detection.
+
 
 Sidebar Settings
 ----------------
@@ -81,7 +168,7 @@ Clicking the edit pencil next to Access Rights takes you to a form that has a li
 
    .. image:: images/server-settings-9.png
 
-Click **Apply** to save whatever changes you might make; **Cancel** to leave without saving changes.  
+Click **Apply** to save whatever changes you might make; **Cancel** to leave without saving changes.
 
 Note that all the access control settings within the system can be modified from configuration files within SchoolTool's source code.  This is not a trivial matter, but extensive customization for specific sites is possible.
 
@@ -106,14 +193,14 @@ Sidebar Actions
 Pack Database
 +++++++++++++
 
-SchoolTool's database engine supports certain undo capabilities which are not implemented in SchoolTool.  As a result, SchoolTool's database file grows in size over time.  "Packing" the database strips out the old changes and shrinks the file back down to its minimum size.  
+SchoolTool's database engine supports certain undo capabilities which are not implemented in SchoolTool.  As a result, SchoolTool's database file grows in size over time.  "Packing" the database strips out the old changes and shrinks the file back down to its minimum size.
 
-Packing the database periodically will help optimize performance, particularly after many changes have been made to the database, for example, from large data imports.  This can be a resource intensive action on large databases, so it is best to do it during off-peak times.  
+Packing the database periodically will help optimize performance, particularly after many changes have been made to the database, for example, from large data imports.  This can be a resource intensive action on large databases, so it is best to do it during off-peak times.
 
 To pack the database, click **Pack Database** under **Actions** in the sidebar.  You should see a little confirmation spinner while this is in progress:
 
    .. image:: images/server-settings-13.png
-   
+
 And a dialog when it completes:
 
    .. image:: images/server-settings-14.png
