@@ -66,35 +66,71 @@ Hit **Apply** to save your new settings.
 LDAP Single Sign On
 -------------------
 
+LDAP integration allows users to sign into SchoolTool with their
+existing LDAP accounts.
+
 To enable LDAP support you will need to install schooltool.ldap
 package (via command line or **Ubuntu Software Center**).  Once
 installed, it will appear in the Server page.
 
-If you have installed **Zentyal** (http://www.zentyal.com/) on the same server and
-configured Users / Groups modules, SchoolTool should be able to pick
-up LDAP settings automatically.  Autodetection works on server start
-up, so SchoolTool needs to be rebooted after server LDAP config
-changes.
+   .. image:: images/ldap-config-1.png
+
+Users will not be automatically "pulled" from LDAP server.
+Instead, they will be created (if missing) when they log in for
+the first time.  Here, student001 just logged in on a fresh
+SchoolTool installation with LDAP support:
+
+   .. image:: images/ldap-newperson-1.png
+
+SchoolTool will pull some of the user's contact information and update it
+each time user logs in.
+
+   .. image:: images/ldap-newperson-2.png
+
+   .. image:: images/ldap-newperson-4.png
+
+If configured, users can also be automatically assigned to desired
+SchoolTool groups.  Here, two users have been assigned to "students":
+
+   .. image:: images/ldap-newperson-3.png
+
+Configuring LDAP
+++++++++++++++++
+
+By default, SchoolTool will look for /etc/ldap.conf and try to figure
+out current setup.  If your server has that entry, there's a good
+chance that LDAP integration will work out-of-the-box.
 
    .. image:: images/ldap-config-1.png
 
+If you have installed **Zentyal** (http://www.zentyal.com/) on the
+same server and configured Users / Groups modules, SchoolTool should
+be able to pick up LDAP settings automatically.
+
+It's important to note autodetection works on server start up, so
+SchoolTool needs to be restarted after server's LDAP config changes.
+
 LDAP settings can be changed in browser, unless this option is
-specifically disabled in schooltool.conf.
+explicitly disabled in schooltool.conf.
 
    .. image:: images/ldap-config-2.png
 
-**Bind DN** and **Bind password** used when connecting to LDAP to retrieve the
-user list.  Leave empty if anonymous LDAP connections are allowed to
-query for users.
+To enable LDAP integration you must specify **LDAP server URI** and at
+least one **user DN query**.
 
 **User DN queries** are used to obtain the list of LDAP users.  We
 also require to specify the "login attribute", which in almost all
 cases is "uid" and should look like this::
 
- uid ou=Users,dc=example,dc=com?one?(objectClass=inetOrgPerson)
+  uid ou=Users,dc=example,dc=com?one?(objectClass=inetOrgPerson)
 
 If you need to fine-tune your queries it's best to install an interactive
-LDAP browser like http://jxplorer.org
+LDAP browser (like http://jxplorer.org) and test what queries return
+proper list of users.
+
+**Bind DN** and **Bind password** used when connecting to LDAP to retrieve the
+user list.  Leave empty if anonymous LDAP connections are allowed to
+query for users.
 
 **Group DN queries** and **POSIX group counterparts** allow automatic
 adding of users to desired SchoolTool groups.  To enable mapping, you
@@ -112,8 +148,8 @@ groups when they log into SchoolTool::
   , teachers, 2003
 
 
-Example schooltool.conf
-+++++++++++++++++++++++
+Advanced configuration
+++++++++++++++++++++++
 
 You can also configure LDAP by adding a section like this to schooltool.conf::
 
