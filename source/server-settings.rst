@@ -151,7 +151,7 @@ groups when they log into SchoolTool::
 Advanced configuration
 ++++++++++++++++++++++
 
-You can also configure LDAP by adding a section like this to schooltool.conf::
+You can configure LDAP by adding a section like this to schooltool.conf::
 
   <ldap_authentication>
 
@@ -173,6 +173,9 @@ You can also configure LDAP by adding a section like this to schooltool.conf::
 
   </ldap_authentication>
 
+**Important**: through-the-web configuration takes precedence over
+schooltool.conf, unless allow_web_config is set to no.
+
 **allow_web_config** lets you disable through-the-web overriding of
 these settings.
 
@@ -184,6 +187,7 @@ It's worth to note that **query_users**, **query_groups** and
 
 **default_login_attr** and **default_login_filter** should be seldom
 useful, mostly when you want to influence LDAP settings auto-detection.
+
 
 
 Sidebar Settings
