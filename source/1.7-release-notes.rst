@@ -12,6 +12,23 @@ new features made before, or in parallel to, the flourish_ sprint.
 .. _flourish: 1.9-release-notes.html
 
 
+SchoolTool 1.7.1 (2012-09-03)
+-----------------------------
+
+- Update translations.
+- Make sandbox with virtualenv. Fixes bootstrap with Python 2.7.
+- Hide demographics fieldset if it is empty in person add views (https://launchpad.net/bugs/752051)
+- Updated README.txt (https://launchpad.net/bugs/590781)
+- Document running on port 80 (https://launchpad.net/bugs/259415)
+- Translate default demographics fields.
+
+Cleanup
++++++++
+
+- Remove ancient demographics implementation.
+- Remove obsolete images and docs.
+
+
 1.7.0 (2011-09-25)
 ==================
 
