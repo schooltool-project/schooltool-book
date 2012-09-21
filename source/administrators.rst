@@ -9,6 +9,7 @@ Contents:
    remote
    apache
    nginx
+   ldap
    cas
    multiple-schooltools
    database
