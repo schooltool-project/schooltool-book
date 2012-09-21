@@ -11,13 +11,15 @@ To allow access to SchoolTool from other computers
 
 Edit ``/etc/schooltool/standard/paste.ini`` as root.  For example::
 
-    sudo vim /etc/schooltool/standard/paste.ini
+    $ sudo vim /etc/schooltool/standard/paste.ini
 
 Change the ``host`` to ``0.0.0.0``::
 
     host = 0.0.0.0
 
-And restart SchoolTool (following the instructions in :ref:`setup_initial`).
+And restart SchoolTool::
+
+    $ sudo service schooltool restart
 
 Lookup the server's IP or hostname, and try to connect to it from another
 computer.  Don't forget the port number. E.g. http://192.168.1.1:7080

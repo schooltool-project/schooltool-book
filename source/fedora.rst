@@ -31,4 +31,4 @@ fedoraproject.org.  The packaging sources (spec files and patches) are available
 from `this git repository
 <http://gitorious.org/schooltool-rpm/schooltool-rpm/>`_. 
 
-Continue setup at :ref:`setup_initial`
+Continue setup at :ref:`initial-config`
