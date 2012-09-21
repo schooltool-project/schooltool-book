@@ -10,7 +10,6 @@ Contents:
 
    dev_sandbox
    dev_devmode
-   cas
    introspector
    style-guide
    translation-toc

@@ -8,5 +8,6 @@ Contents:
 
    remote
    apache
+   cas
    multiple-schooltools
    database
