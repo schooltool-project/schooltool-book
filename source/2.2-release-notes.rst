@@ -1,0 +1,177 @@
+:tocdepth: 2
+
+SchoolTool 2.2 Release Notes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SchoolTool 2.2 features a new gradebook/journal grid that is faster and supports large
+number of sheets, improved XLS import/export, and many fixes.
+
+
+2.2.4 (2012-10-09)
+==================
+
+SchoolTool 2.2.4 (2012-10-09)
+-----------------------------
+
+New features
+++++++++++++
+
+- School logo (https://launchpad.net/bugs/314151)
+- Photos for contacts (https://launchpad.net/bugs/970201)
+- Highlight today in calendars (https://launchpad.net/bugs/79865)
+- Done links now look like buttons
+- New script, schooltool-server, to enable --pack and --restore-password
+  commands (https://launchpad.net/bugs/505824)
+
+Bugfixes
+++++++++
+
+- SectionTimetables sheet doesn't add calendar events (https://launchpad.net/bugs/1061385)
+- Log In button should remember where you came from (https://launchpad.net/bugs/1039194)
+- Permission fixes
+- Updated translations.
+
+
+SchoolTool Gradebook 2.2.1 (2012-10-09)
+---------------------------------------
+
+- Cross linked sections break gradebook (https://launchpad.net/bugs/1052931)
+- Fixed Edit Activity submit
+- Total and Average calculation shouldn't use the minimum score of the activity
+  (https://launchpad.net/bugs/966426)
+- Updated translations
+
+
+SchoolTool Journal 2.2.1 (2012-10-08)
+-------------------------------------
+
+- Journal for students (https://launchpad.net/bugs/882663)
+- Update Dutch translation
+
+
+2.2.3 (2012-09-13)
+==================
+
+SchoolTool 2.2.3 (2012-09-13)
+-----------------------------
+
+- Section add form needs title and location (https://launchpad.net/bugs/1042267)
+- Person links in group view return to group
+
+
+SchoolTool 2.2.2 (2012-08-31)
+-----------------------------
+
+- We need person filters on the group page (https://launchpad.net/bugs/1038845)
+- Ignore trailing space in ID cells (https://launchpad.net/bugs/1042773)
+- Unrecognized day id error on localized XLS import (https://launchpad.net/bugs/901267)
+- Updated translations
+
+
+SchoolTool 2.2.1 (2012-08-15)
+-----------------------------
+
+XLS
++++
+
+- We need to allow id cells to be numeric again on import (https://launchpad.net/bugs/1035036)
+- Handle empty Weekends table (https://launchpad.net/bugs/1035969)
+- Skip empty rows if there is only one table in the sheet (https://launchpad.net/bugs/1035088)
+
+Bugfixes
+++++++++
+
+- Users cannot see their own photo (https://launchpad.net/bugs/1007145)
+
+
+2.2.0 (2012-08-08)
+==================
+
+First releases of rewritten gradebook/journal grid and other work done over the
+last three months.
+
+SchoolTool Gradebook 2.2.0 (2012-08-08)
+---------------------------------------
+
+Features
+++++++++
+
+- Gradebook refactoring
+- New style for worksheet tabs that allows for many sheets and long titles
+- Hide sidebar button
+- Score history
+- Updated translations
+
+Bugfixes
+++++++++
+
+- Text area smaller than cell (https://launchpad.net/bugs/921750)
+- Red cells don't revert to green (https://launchpad.net/bugs/921694)
+- Fix a rare failure when upgrading from gradebook <= 0.9.0 (https://launchpad.net/bugs/995615)
+- Report Layout displays a server error (https://launchpad.net/bugs/1008176)
+- Set short spreadsheet names in Gradebook Export xls (https://launchpad.net/bugs/1024814)
+
+Developer tools
++++++++++++++++
+
+- Selenium tests and testing extensions
+
+
+SchoolTool Journal 2.2.0 (2012-08-08)
+-------------------------------------
+
+- Refactored month navigation to match new-style gradebook
+- Hide sidebar button
+- Update translations
+
+
+SchoolTool 2.2.0 (2012-08-07)
+-----------------------------
+
+New features
+++++++++++++
+
+- Refactored gradebook/journal javascript and style
+- Add teachers column sections list
+- Add filter by course and term to sections list
+- Show term details in term view
+
+Old features
+++++++++++++
+
+- Show sections and groups of a person in a tree, grouped by term, like in old skin.
+- List sections in course view (https://launchpad.net/bugs/868396)
+
+XLS
++++
+
+- Added course_id, government_id and credits to Courses sheet import/export.
+- New sections sheets to replace section sheets per term (https://launchpad.net/bugs/1020836)
+- Remove the old Sections exporter and tests (https://launchpad.net/bugs/1020837).
+  Old section import still supported.
+- New LinkedSectionImport sheet for import only (https://launchpad.net/bugs/1020838)
+- Import errors grouped by sheet and error type, displayed in a textarea
+  (https://launchpad.net/bugs/1020839)
+- ResourceImporter needs to process description cells (https://launchpad.net/bugs/1020840)
+- Exporters must skip sections with no courses (https://launchpad.net/bugs/1020842)
+
+Bugfixes
+++++++++
+
+- Timetables evolution fails on exception days (https://launchpad.net/bugs/1003834)
+- Advisory accordion doesn't show advisees (https://launchpad.net/bugs/1005989)
+- Fix upgrade from schooltool < 1.5 crashing on missing levels (https://launchpad.net/bugs/1007361)
+- Allow teachers to see attributes of all sections and resources.
+- Remove demographics when person is deleted.
+
+Translations
+++++++++++++
+
+- Updated translations
+- Added Bosnian, Croatian, Slovenian translations
+
+Development tools
++++++++++++++++++
+
+- Selenium screenshots and downloads
+- XLS file testing helpers
