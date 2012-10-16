@@ -1,19 +1,19 @@
 Release Notes
 =============
 
-Latest release is 2.2_.
+Latest release is 2.3_.
 
 Long term support release is 2.1_.
 
 Old stable release is `1.7 <1.7-release-notes.html>`_.
 
-.. _2.2: 2.2-release-notes.html
+.. _2.3: 2.3-release-notes.html
 .. _2.1: 2.1-release-notes.html
 
 .. toctree::
    :maxdepth: 1
 
-   2.2 (quantal)  <2.2-release-notes>
+   2.3 (quantal)  <2.3-release-notes>
    2.1 (precise)  <2.1-release-notes>
    2.0            <2.0-release-notes>
    1.9 (flourish) <1.9-release-notes>

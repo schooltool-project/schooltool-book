@@ -1,13 +1,43 @@
 :tocdepth: 2
 
-SchoolTool 2.2 Release Notes
+SchoolTool 2.3 Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SchoolTool 2.2 features a new gradebook/journal grid that is faster and supports large
+SchoolTool 2.3 features a new gradebook/journal grid that is faster and supports large
 number of sheets, improved XLS import/export, and many fixes.
 
+New plugins
+===========
 
-2.2.4 (2012-10-09)
+CanDo
+-----
+
+Competency and skills tracking system.
+
+https://launchpad.net/schooltool.cando
+
+
+Virginia
+--------
+
+CanDo extensions for schools in Virginia state.
+
+https://launchpad.net/schooltool.virginia
+
+
+LDAP
+----
+
+LDAP authentication plugin for SchoolTool.
+
+https://launchpad.net/schooltool.ldap
+
+
+2.3 (unreleased)
+================
+
+
+2.3rc (2012-10-09)
 ==================
 
 SchoolTool 2.2.4 (2012-10-09)
@@ -49,8 +79,8 @@ SchoolTool Journal 2.2.1 (2012-10-08)
 - Update Dutch translation
 
 
-2.2.3 (2012-09-13)
-==================
+2.3b (2012-09-13)
+=================
 
 SchoolTool 2.2.3 (2012-09-13)
 -----------------------------
@@ -84,8 +114,8 @@ Bugfixes
 - Users cannot see their own photo (https://launchpad.net/bugs/1007145)
 
 
-2.2.0 (2012-08-08)
-==================
+2.3a (2012-08-08)
+=================
 
 First releases of rewritten gradebook/journal grid and other work done over the
 last three months.
