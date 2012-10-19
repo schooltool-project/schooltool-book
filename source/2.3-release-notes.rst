@@ -9,32 +9,57 @@ number of sheets, improved XLS import/export, and many fixes.
 New plugins
 ===========
 
-CanDo
------
+SchoolTool CanDo 0.3 (2012-10-19)
+---------------------------------
 
-Competency and skills tracking system.
+Competency and skills tracking system
 
 https://launchpad.net/schooltool.cando
 
+Included in default install.
 
-Virginia
---------
+
+SchoolTool Virginia 0.3 (2012-10-19)
+------------------------------------
 
 CanDo extensions for schools in Virginia state.
 
 https://launchpad.net/schooltool.virginia
 
 
-LDAP
-----
+SchoolTool LDAP 1.0 (2012-09-21)
+--------------------------------
 
 LDAP authentication plugin for SchoolTool.
 
 https://launchpad.net/schooltool.ldap
 
 
-2.3 (unreleased)
+2.3 (2012-10-19)
 ================
+
+Final release to go with Ubuntu 12.10.
+
+SchoolTool 2.3.0 (2012-10-19)
+-----------------------------
+
+Bugfixes
+++++++++
+
+- Update scheduled calendar event titles on section title change (https://launchpad.net/bugs/899368)
+- Allow student's instructors edit his contact's data (https://launchpad.net/bugs/479336)
+- Schedule for all terms at once (https://launchpad.net/bugs/1047266)
+
+
+SchoolTool Gradebook 2.3.0 (2012-10-19)
+---------------------------------------
+
+- Fix score history when first grade is unscored
+
+SchoolTool Journal 2.3.0 (2012-10-19)
+-------------------------------------
+
+- Fix exception in student journal when grade is not a number (https://launchpad.net/bugs/1065474)
 
 
 2.3rc (2012-10-09)
