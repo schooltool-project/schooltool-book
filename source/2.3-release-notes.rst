@@ -61,6 +61,11 @@ SchoolTool Journal 2.3.0 (2012-10-19)
 
 - Fix exception in student journal when grade is not a number (https://launchpad.net/bugs/1065474)
 
+SchoolTool Intervention 2.3.0 (2012-10-19)
+------------------------------------------
+
+- Update style of Done links
+
 
 2.3rc (2012-10-09)
 ==================
