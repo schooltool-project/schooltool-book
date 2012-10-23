@@ -352,3 +352,7 @@ input[type="submit"]:active {
     border: 2px outset #056163;
     color: #AEA79F;
 }
+
+th {
+    background-color: #dedede;
+}
