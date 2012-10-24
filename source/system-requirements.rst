@@ -16,7 +16,7 @@ Operating System
 Ubuntu
 ------
 
-The core SchoolTool development team recommends installation of SchoolTool on the most recent released version of Ubuntu.
+The core SchoolTool development team recommends installation of SchoolTool on Ubuntu 12.04 LTS or later.
 
 Fedora Linux & OLPC Server
 --------------------------

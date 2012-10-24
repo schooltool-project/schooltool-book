@@ -8,7 +8,5 @@ Contents:
 
    system-requirements
    install-2_0
-   install
-   install-pre-natty
    upgrade-lucid
 

@@ -1,23 +1,33 @@
-Installing SchoolTool 2.0
-=========================
+Installing SchoolTool
+=====================
 
-`SchoolTool 2.0 <2.0-release-notes.html>`_ is available in upcoming Ubuntu 12.04 LTS, to be released in
-April, see :ref:`install-ubuntu`.
+SchoolTool 2.1
+--------------
 
-On older Ubuntu releases (10.04 LTS through 11.10) you can install it from the
-`SchoolTool flourish PPA <https://launchpad.net/~schooltool-owners/+archive/dev/>`_,
-using instructions below.
+SchoolTool 2.1 is available in the Ubuntu Universe repository for Ubuntu 12.04 (Precise) and 12.10 (Quantal).
 
-NOTE: For 10.04 and 10.10 you also need the main `SchoolTool PPA
-<install-pre-natty.html>`_. But do not install ``schooltool-2009`` or
-``msttcorefonts`` packages unless you have them already.
+Simply search for "SchoolTool" in the Ubuntu Software Center and click **Install** next to the SchoolTool entry.
 
-Using Ubuntu Software Center
-----------------------------
+Or enter at the command line::
 
-Open the **Ubuntu Software Center**.  Choose **Edit > Software Sources...**  Click **Other Software > Add...**, enter as the **APT line**::
+ $ sudo apt-get install schooltool
+
+After installation, the schooltool server can be accessed from the server at http://localhost:7080.  See :ref:`remote`.
+
+SchoolTool 2.3
+--------------
+
+SchoolTool 2.3 is available for Ubuntu 12.04 (Precise) and 12.10 (Quantal) through the `SchoolTool repository on Launchpad <https://launchpad.net/~schooltool-owners/+archive/ppa>`_.
+
+Open the **Ubuntu Software Center**.  Choose **Edit > Software Sources...**  Click **Other Software > Add...**, enter as the **APT line**:
+
+for Ubuntu 12.04::  
 
  ppa:schooltool-owners/dev
+
+for Ubuntu 12.10:: 
+
+ ppa:schooltool-owners/ppa
 
 And click **Add Source**.
 
@@ -25,12 +35,16 @@ And click **Add Source**.
 
 Then search for "SchoolTool" in the searchbox at upper right in the Software Center and click **Install** next to the SchoolTool entry.
 
-Using the Command Line
-----------------------
+Or, using the command line:
 
-Add the PPA::
+for Ubuntu 12.04::
 
  $ sudo add-apt-repository ppa:schooltool-owners/dev
+ $ sudo apt-get update
+
+for Ubuntu 12.10:: 
+
+ $ sudo add-apt-repository ppa:schooltool-owners/ppa
  $ sudo apt-get update
 
 Then install the ``schooltool`` package::
@@ -38,4 +52,4 @@ Then install the ``schooltool`` package::
  $ sudo apt-get install schooltool
 
 After installation, the schooltool server will be started at
-http://localhost:7080 .
+http://localhost:7080. See :ref:`remote`.

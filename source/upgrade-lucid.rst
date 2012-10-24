@@ -7,8 +7,6 @@ the new/current version of Ubuntu.  For example, `SchoolTool 1.5
 <1.5-release-notes.html>`_ will be available only for Ubuntu 10.10, "Maverick
 Meerkat."  
 
-An exception to this is SchoolTool 2.0, for which packages will be released to our Launchpad PPA.
-
 Security updates and necessary maintenance releases will continue to be made for
 earlier supported SchoolTool versions.
 

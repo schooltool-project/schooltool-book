@@ -44,6 +44,23 @@ Teacher Gradebooks
 
 * Scores can be exported to .xls spreadsheet format.
 
+CanDo -- Skill and Outcome Based Assessment (in SchoolTool 2.3 and later)
+-------------------------------------------------------------------------
+
+* Create documents specifying student skills, standards or outcomes via spreadsheet import or through the web interface.
+
+* Associate groups of skills with courses automatically or manually.
+
+* Create projects with unique combinations of skills.
+
+* Assess student skills through a familiar gradebook-style interface.
+
+* Track the history of student skill achievement across multiple sections and school years.
+
+* Teachers and administators can generate graphical reports by student, section or teacher.
+
+* Skill scores can be integrated into SchoolTool's point based gradebook.
+
 Schoolwide Assessment Data Collection and Report Card Generation
 ----------------------------------------------------------------
 
@@ -107,5 +124,7 @@ Technical Features
 * **Virtual servers:** For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution. 
 
 * **Consistent programming style:** For readibility and easier modification, SchoolTool conforms to the official PEP 8 Style Guide for Python Code.
+
+* **LDAP Integration:** Authenticate against an LDAP server, including one step setup with `Zentyal <http://www.zentyal.org/>`_ server.
 
 * **Single sign-on:** SchoolTool supports using `Central Authentication Service (CAS) <cas.html>`_ for single sign-on with other enterprise applications such as Moodle and Drupal.  CAS requires a separate authentication server; we have been using RubyCAS in this role at a test site.  The CAS server can be easily configured to authenticate against your LDAP server or another external database.  If you are interested in using CAS or LDAP authentication, contact the SchoolTool team via Launchpad, email or IRC.

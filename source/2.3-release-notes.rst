@@ -12,7 +12,21 @@ New plugins
 SchoolTool CanDo 0.3 (2012-10-19)
 ---------------------------------
 
-Competency and skills tracking system
+CanDo is a complete system for tracking skills, competencies, standards, or any similar set of student outcomes.  
+
+* Create documents specifying student skills, standards or outcomes via spreadsheet import or through the web interface.
+
+* Associate groups of skills with courses automatically or manually.
+
+* Create projects with unique combinations of skills.
+
+* Assess student skills through a familiar gradebook-style interface.
+
+* Track the history of student skill achievement across multiple sections and school years.
+
+* Teachers and administators can generate graphical reports by student, section or teacher.
+
+* Skill scores can be integrated into SchoolTool's point based gradebook.
 
 https://launchpad.net/schooltool.cando
 

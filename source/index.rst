@@ -30,7 +30,6 @@ Contents:
 
    features
    screenshots
-   release-notes
    install-toc
    initial-configuration-toc
    setup-toc
@@ -39,6 +38,7 @@ Contents:
    gradebook-toc
    intervention
    administrators
+   release-notes
    developers
    editing-this-book
    glossary
