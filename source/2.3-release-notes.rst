@@ -49,6 +49,39 @@ LDAP authentication plugin for SchoolTool.
 https://launchpad.net/schooltool.ldap
 
 
+2.3.1
+=====
+
+SchoolTool 2.3.1 (2012-11-27)
+-----------------------------
+
+- Indexed table improvements for cando.
+- Automatically include plugin overrides.zcml
+- Updated translations.
+
+
+SchoolTool CanDo 0.4 (2012-11-27)
+---------------------------------
+
+- Search skills, skillsets, or nodes.
+- Sorted components (skills, skill sets, layers, etc) by label and title
+
+
+SchoolTool CanDo 0.3.2 (2012-11-09)
+-----------------------------------
+
+- Fix for the missing scores fix
+
+
+SchoolTool CanDo 0.3.1 (2012-11-08)
+-----------------------------------
+
+- Sorted skills by label in the skills gradebook
+- Fixed validation in score student view
+- Removed subscriber that prevented section deleting
+- Restore scores that disappeared after upgrade to 0.3
+
+
 2.3 (2012-10-19)
 ================
 
