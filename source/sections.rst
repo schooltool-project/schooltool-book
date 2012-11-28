@@ -20,7 +20,7 @@ Click **Add: Section**.  Select a course the section should be associated with a
 
    .. image:: images/sections-2.png
 
-Hit **Add**:
+Click **Add**:
 
    .. image:: images/sections-3.png
 
@@ -33,7 +33,7 @@ To add an instructor or instructors for the class click the pencil icon next to 
 
 Note that instructors gain elevated privileges in a section (for example, to create and score activities or take attendance) whether or not they are members of the Teacher group.
 
-Likewise, click the pencil icon next to **Students** to add pupils to the section.  Note that he list of people you may add is not limited to members of the Student group.  Any people in the system can be students in a section.  
+Likewise, click the pencil icon next to **Students** to add pupils to the section.  Note that the list of people you may add is not limited to members of the Student group.  Any people in the system can be students in a section.  
 
 Add the students one at a time:
 
