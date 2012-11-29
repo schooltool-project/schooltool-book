@@ -9,8 +9,8 @@ number of sheets, improved XLS import/export, and many fixes.
 New plugins
 ===========
 
-SchoolTool CanDo 0.3 (2012-10-19)
----------------------------------
+SchoolTool CanDo
+----------------
 
 CanDo is a complete system for tracking skills, competencies, standards, or any similar set of student outcomes.  
 
@@ -33,31 +33,37 @@ https://launchpad.net/schooltool.cando
 Included in default install.
 
 
-SchoolTool Virginia 0.3 (2012-10-19)
-------------------------------------
+SchoolTool Virginia
+-------------------
 
 CanDo extensions for schools in Virginia state.
 
 https://launchpad.net/schooltool.virginia
 
 
-SchoolTool LDAP 1.0 (2012-09-21)
---------------------------------
+SchoolTool LDAP
+---------------
 
 LDAP authentication plugin for SchoolTool.
 
 https://launchpad.net/schooltool.ldap
 
 
-2.3.1
-=====
+2.3 updates
+===========
 
-SchoolTool 2.3.1 (2012-11-27)
------------------------------
+SchoolTool CanDo 0.4.1 (2012-11-29)
+-----------------------------------
 
-- Indexed table improvements for cando.
-- Automatically include plugin overrides.zcml
-- Updated translations.
+- Fixed skills sorting in more teacher and student views.
+- Update section worksheets on global skill or skillset change (https://launchpad.net/bugs/1066940)
+
+
+SchoolTool Gradebook 2.3.1 (2012-11-29)
+---------------------------------------
+
+- Set default point value of external score to 100, the same as of activity.
+- Refactor student's gradebook view for CanDo.
 
 
 SchoolTool CanDo 0.4 (2012-11-27)
@@ -65,6 +71,14 @@ SchoolTool CanDo 0.4 (2012-11-27)
 
 - Search skills, skillsets, or nodes.
 - Sorted components (skills, skill sets, layers, etc) by label and title
+
+
+SchoolTool 2.3.1 (2012-11-27)
+-----------------------------
+
+- Indexed table improvements for CanDo.
+- Automatically include plugin overrides.zcml
+- Updated translations.
 
 
 SchoolTool CanDo 0.3.2 (2012-11-09)
