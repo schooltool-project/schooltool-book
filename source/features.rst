@@ -4,11 +4,11 @@ Overview of Features
 The standard installation of SchoolTool includes:
 
 * Customizable student and teacher demographics and other personal data;
-* Contact management for teachers, students and their guardians;
+* Contact management for teachers, students, and their guardians;
 * Teacher gradebooks;
 * Schoolwide assessment data collection and report card generation;
 * Class attendance and daily participation grades;
-* Calendars for the school, groups, individuals and resource booking;
+* Calendars for the school, groups, individuals, and resource booking;
 * Tracking and management of student interventions.
 
 Demographics and Personal Data
@@ -16,14 +16,14 @@ Demographics and Personal Data
 
 * A school can customize the fields of demographic and other data stored for each person.  
 
-* Each field can store textual, date, boolean (yes/no) data or a selection from a list of defined choices.
+* Each field can store textual, date, boolean (yes/no) data, or a selection from a list of defined choices.
 
-* Fields can be assigned specifically to teachers, students, administrators or all people.
+* Fields can be assigned specifically to teachers, students, administrators, or all people.
 
 Contact Management
 ------------------
 
-* Personal contact information includes address, phone, email and contact language.
+* Personal contact information includes address, phone, email, and contact language.
 
 * Each student can be associated with one or more adult contacts; multiple students can be associated with a single contact.
 
@@ -38,7 +38,7 @@ Teacher Gradebooks
 
 * Assignments and activities can be organized and weighted by categories, such as "Exam" or "Lab," which can be customized for each site.
 
-* Point-based scores can be converted to grades using flexible, customizable "score systems.'
+* Point-based scores can be converted to grades using flexible, customizable "score systems."
 
 * Scores are viewable by students, if they are given permission to log into SchoolTool.
 
@@ -47,7 +47,7 @@ Teacher Gradebooks
 CanDo -- Skill and Outcome Based Assessment (in SchoolTool 2.3 and later)
 -------------------------------------------------------------------------
 
-* Create documents specifying student skills, standards or outcomes via spreadsheet import or through the web interface.
+* Create documents specifying student skills, standards, or outcomes via spreadsheet import or through the web interface.
 
 * Associate groups of skills with courses automatically or manually.
 
@@ -57,23 +57,23 @@ CanDo -- Skill and Outcome Based Assessment (in SchoolTool 2.3 and later)
 
 * Track the history of student skill achievement across multiple sections and school years.
 
-* Teachers and administators can generate graphical reports by student, section or teacher.
+* Teachers and administators can generate graphical reports by student, section, or teacher.
 
 * Skill scores can be integrated into SchoolTool's point based gradebook.
 
 Schoolwide Assessment Data Collection and Report Card Generation
 ----------------------------------------------------------------
 
-* Grades, comments and other teacher-generated data can be collected schoolwide and aggregated using the SchoolTool gradebook interface.
+* Grades, comments, and other teacher-generated data can be collected schoolwide and aggregated using the SchoolTool gradebook interface.
 
-* Standard report cards can be generated as PDF documents for individual students, groups or the whole school.
+* Standard report cards can be generated as PDF documents for individual students, groups, or the whole school.
 
-* Customized report cards can be designed using a HTML-like markup language.
+* Customized report cards can be designed using an HTML-like markup language.
 
 Class Attendance and Daily Participation Journal
 ------------------------------------------------
 
-* For each meeting of a class section, teachers can mark students absent, tardy or assign a numeric participation score.
+* For each meeting of a class section, teachers can mark students absent, tardy, or assign a numeric participation score.
 
 * The average participation score can be included in Gradebook calculations.
 
@@ -90,12 +90,12 @@ Calendars for the School, Groups, and Individuals
 
 * Calendars are aware of the school timetable; by default new events will start and end at the beginning and end of class periods.
 
-* Users can create single or repeating events. Teachers can edit section events to note tests, assignment and other class information.
+* Users can create single or repeating events. Teachers can edit section events to note tests, assignments, and other class information.
 
 Tracking and Management of Student Interventions
 ------------------------------------------------
 
-* Use the Intervention system to create goals and track progress collaboratively between students, teachers, parents and other stakeholders. 
+* Use the Intervention system to create goals and track progress collaboratively between students, teachers, parents, and other stakeholders. 
 
 Technical Features
 ==================
@@ -109,7 +109,7 @@ Technical Features
   
   * ReportLab PDF generation.
 
-* **Importing and Exporting Data:**  SchoolTool provides a variety of ways to import data into the system, in addition to its web interface.  All the major components of the school, including people, timetables, courses and section enrollment, can be imported from and exported to .xls spreadsheets.  People, groups, section enrollments and other objects can also be imported from comma separated value (CSV) files.  For testing and evaluation, a spreadsheet for a school of 1000 students is provided. 
+* **Importing and Exporting Data:**  SchoolTool provides a variety of ways to import data into the system, in addition to its web interface.  All the major components of the school, including people, timetables, courses, and section enrollment, can be imported from and exported to .xls spreadsheets.  People, groups, section enrollments, and other objects can also be imported from comma separated value (CSV) files.  For testing and evaluation, a spreadsheet for a school of 1000 students is provided. 
 
 * **Security:** Our custom security model manages permissions based both on role (e.g., teacher, school adminitrator) and relationships (e.g., between a specific teacher and student).  A detailed view of permissions on specific objects in SchoolTool's core model is available through the web interface.  Basic customization of some key aspects of the security policy can be done through the web by the site manager.  Complete customization is possible through XML configuration files.
 
@@ -123,7 +123,7 @@ Technical Features
 
 * **Virtual servers:** For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution. 
 
-* **Consistent programming style:** For readibility and easier modification, SchoolTool conforms to the official PEP 8 Style Guide for Python Code.
+* **Consistent programming style:** For readability and easier modification, SchoolTool conforms to the official PEP 8 Style Guide for Python Code.
 
 * **LDAP Integration:** Authenticate against an LDAP server, including one step setup with `Zentyal <http://www.zentyal.org/>`_ server.
 
