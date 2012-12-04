@@ -3,7 +3,7 @@
 Installing SchoolTool on Fedora Linux
 -------------------------------------
 
-Currently RPM packages, developed and used by `OLE Nepal <http://www.olenepal.org>`_
+Currently, the SchoolTool RPM packages developed and used by `OLE Nepal <http://www.olenepal.org>`_
 for Fedora 9, 14, and 15 are mirrored on `ftp.schooltool.org <http://ftp.schooltool.org/rpms/>`_.
 
 To install the standard SchoolTool distribution on Fedora, excecute the
