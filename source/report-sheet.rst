@@ -5,9 +5,9 @@ You can use SchoolTool to generate report cards using traditional grades, scores
 
 SchoolTool provides a mechanism called "report sheets" for collecting data about each student in each section in a school.  Most commonly, this is one or more grades for a section, which will subsequently be published as a report card (and stored for other use, of course).  
 
-However, the system is designed to be very flexible.  It leverages the features of the SchoolTool gradebook.  You can use it for any data you'd like to collect regularly about student performance or behavior in all classes.  You can use SchoolTool's customizable score systems to gather non-traditional grading or assessment data.  Support for comments in the report sheet system is partially implemented -- currently you can save comments but not include them in the default printed report cards.
+However, the system is designed to be very flexible.  It leverages the features of the SchoolTool gradebook.  You can use it for any data you'd like to collect regularly about student performance or behavior in all classes.  You can use SchoolTool's customizable score systems to gather non-traditional grading or assessment data, including comments.
 
-The printed report cards are currently *very* simple.  The intention is to develop them further based on feedback, so `please let us know what you'd like to see <http://bugs.launchpad.net/schooltool>`_ on report cards and how they ought to look.  We *will* respond to feedback.  Also, we are transitioning to a system where the report cards will be laid out using an HTML-like markup, which in the medium term will allow schools to design custom printed reports.
+The printed report cards are currently *very* simple.  The intention is to develop them further based on feedback, so `please let us know what you'd like to see <http://bugs.launchpad.net/schooltool>`_ on report cards and how they ought to look.  We *will* respond to feedback.  
 
 Also, based on user feedback we shall develop other web and printed reports.  `Let us know what you need. <http://bugs.launchpad.net/schooltool>`_
 
@@ -60,6 +60,8 @@ We'll repeat the process for the second quarter and final grades:
 
    .. image:: images/report-sheet-7.png
 
+If you would like to add a comment field, use the "Comment" score system.
+
 Deploying a Report Sheet
 ------------------------
 
@@ -88,7 +90,9 @@ While we're here and logged in as "manager," we might as well lay out the final 
 
    .. image:: images/report-sheet-11.png
 
-The basic report card layout is a grid.  Each row in the grid corresponds to a section the student attends, each column to an activity from a report sheet.  So for a traditional report card containing our 1st and 2nd marking period grades we will **Add: Grid Column**:
+The basic report card layout is a grid above an outline.
+
+Each row in the grid corresponds to a section the student attends, each column to an activity from a report sheet.  So for a traditional report card containing our 1st and 2nd marking period grades we will **Add: Grid Column**:
 
    .. image:: images/report-sheet-12.png
 
@@ -100,6 +104,8 @@ Repeating for all three grades, both terms:
 
    .. image:: images/report-sheet-14.png
 
+If you would like the results formatted as an outline list, you can follow the above process using **Add: Outline Item**.  If you have comments, you can only add them to this section (they would not fit in the grid).  You might also select this option if your score system uses long descriptive titles.
+
 Entering Scores into a Report Sheet
 -----------------------------------
 
@@ -109,7 +115,9 @@ Enter the grades as you would in a regular gradebook and hit **Save**.
 
    .. image:: images/report-sheet-15.png
 
-That's it.  Repeat for each of the teacher's sections in the term.  In real life, if this was the end of the first quarter, only the first quarter grades would be entered.
+Currently, if you want to add a comment score, you must click on a student name and select **Score** from the pop-up menu.  This will allow you to enter all the scores for the student, including a full comment field.  After a comment is entered for a student, you will see a "..." ellipsis in the relevant gradebook cell.
+
+Repeat for each of the teacher's sections in the term.  In real life, if this was the end of the first quarter, only the first quarter grades would be entered.
 
 Printing Report Cards
 ---------------------
