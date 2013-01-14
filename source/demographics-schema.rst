@@ -9,13 +9,13 @@ Note that **Prefix, First name, Middle name, Suffix and Preferred name** are not
 
 You can limit fields to specific groups: Students, Teachers or Administrators.  For example, this would allow you to have a "Certification" field for teachers that did not appear when you edited any other people.
 
-Contact information -- parents names, address, phone, email, etc. -- is stored separately.
+Contact information -- parents' names, address, phone, email, etc. -- is stored separately.
 
-To see the default demographics fields, as "manager," click the **School** and then the **Customize: Demographics** link in the sidebar.  
+To edit the default demographics fields, you must be logged in as "manager." Select the **School** tab, and then click on the **Customize: Demographics** link in the sidebar.  
 
    .. image:: images/demographics-schema-0.png
 
-In the default settings, **ID, Ethnicity, Language, Place of birth, and Citizenship** can be edited or removed.  In this case **ID** is just a generic text field which you can use for whatever student ID or number you might need to keep track of.
+In the default settings, **ID, Ethnicity, Language, Place of birth, and Citizenship** can be edited or removed.  In this case, **ID** is just a generic text field which you can use for any student ID or number you might need to keep track of.
 
 You can delete, edit, and re-order the existing fields and add your own.
 
@@ -30,7 +30,7 @@ To delete a field, click **Actions: Reorder or Delete Fields** in the sidebar, a
 
    .. image:: images/demographics-schema-1.png
 
-To edit the values in a selection list, from the main **Demographics and Personal Information** click on the title of field, for example ethnicity:
+To edit the values in a selection list from the main **Demographics and Personal Information** screen, click on the title of field -- for example, **Ethnicity**:
 
    .. image:: images/demographics-schema-2.png
 
