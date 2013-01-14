@@ -11,7 +11,7 @@ If you do not set a password for a person, they will not be able to log in.  Sch
 Advisor
 -------
 
-This allows you to designate a teacher as an advisor for another person.  This may give the Advisor more access to information about this student and is used in the Intervention component.
+This allows you to designate a teacher as an advisor for another person.  This may give the Advisor more access to information about this student, and is used in the Intervention component.
 
 Methods of Adding People
 ------------------------
@@ -36,11 +36,11 @@ CSV Import
 
 This is a simple way to import person usernames, first names, last names and passwords.  It does not add any other demographic data.
 
-As "manager," Go to **School** and **People**.  Click the **Import: Import CSV** link.  As explained on this form, you can either upload a CSV file or use the textbox to directly type or paste your data:
+To import user data from a CSV, you must be logged in as "manager." Select the **School** tab and click on **People**.  Then click the **Import: Import CSV** link.  As explained on this form, you can either upload a CSV file or use the textbox to directly type or paste your data:
 
     .. image:: images/persons-3.png
 
-**Submit** and return to the persons index:
+**Submit** and return to the person's index:
 
     .. image:: images/persons-4.png
 
