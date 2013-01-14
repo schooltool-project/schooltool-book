@@ -26,7 +26,7 @@ In this example we will:
   * change the values in the ethnicity list;
   * add enrollment date.
 
-To delete a field, click **Actions: Reorder or Delete Fields** in the sidebar, and then click the red minus icon next to the field you'd like to delete.  You can also reorder the fields here by changing the numbers in the first column of the table.  In both cases the changes are applied immediately.
+To delete a field, click **Actions: Reorder or Delete Fields** in the sidebar, and then click the red minus (-) icon next to the field you'd like to delete.  You can also reorder the fields here by changing the numbers in the first column of the table.  In both cases the changes are applied immediately.
 
    .. image:: images/demographics-schema-1.png
 

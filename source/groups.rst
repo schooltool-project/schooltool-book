@@ -3,7 +3,7 @@
 Groups
 ======
 
-In SchoolTool groups are used to model some default roles in a school as well as allowing a wide variety of custom groups to be created to suit local needs.
+In SchoolTool, groups are used to model some default roles in a school, as well as allowing a wide variety of custom groups to be created to suit local needs.
 
 In particular:
 
@@ -11,9 +11,9 @@ In particular:
   * you can run reports for all members of a group;
   * groups are useful for adding a set of students to multiple class sections.
 
-The default roles as defined by the **School Administrators, Site Managers, Students,** **Teachers**, and **Clerks** groups affect the permissions access privileges of their members.  See :ref:`security` for further explanation.
+The default roles as defined by the **School Administrators, Site Managers, Students,** **Teachers**, and **Clerks** groups affect the permissions and access privileges of their members.  See :ref:`security` for further explanation.
 
-Groups are stored by year.  That is, each school year has its own set of groups.  For example, you have "Students" for year "2008-2009" and a separate "Students" group for "2009-2010."
+Groups are stored by year.  That is, each school year has its own set of groups.  For example, you may have "Students" for year "2008-2009" and a separate "Students" group for "2009-2010."
 
 **Note that you must create years before you can do anything with groups.**  See :ref:`years`.
 
@@ -24,11 +24,11 @@ Adding People to Existing Groups
 
 In :ref:`persons`, we imported some people via CSV who have not been assigned to groups.  We're going to add all of them to the "Students" group.
 
-As manager, navigate to **School** and click the **Groups** link:
+In order to add people to a group, you must be logged in as "manager." Navigate to the **School** tab, and click on the **Groups** link:
 
    .. image:: images/groups-0.png
 
-And select **Students**:
+From here, select **Students**:
 
    .. image:: images/groups-1.png
 
@@ -36,13 +36,13 @@ First we will "manually" add a member.  Click the yellow pencil icon next to **M
 
    .. image:: images/groups-2.png
 
-Check the green + icon next to "Sally Brown":
+Click on the green plus (+) icon next to "Sally Brown":
 
    .. image:: images/groups-3.png
 
-Then **Done** to get back to the main page for the group.
+Then click **Done** to get back to the main page for the group.
 
-Next we will import a list of group members.  Click **Import:  Import Members CSV**.  This form accepts a simple list of person ID's to be *added* to the group.  That is, people not in the list are not *removed* from the existing group membership.  You may create a text file and upload it, or simply type or copy/paste the ID's into the textbox provided:
+Next we will import a list of group members.  Click **Import:  Import Members CSV**.  This form accepts a simple list of person ID's to be *added* to the group.  That is, current group members who are not in the list are not *removed* from the existing group membership.  You may create a text file and upload it, or simply type or copy/paste the ID's into the textbox provided:
 
    .. image:: images/groups-4.png
 
