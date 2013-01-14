@@ -1,24 +1,24 @@
 Contacts
 ========
 
-In the case of primary and secondary students -- the main focus for SchoolTool -- the most important out-of-school contact is with parents, guardians and other adults responsible for the child.  SchoolTool's contact system is designed with this case in mind.  You can also attach a full or partial set of contact information directly to a person in SchoolTool, for example, to store full contact information for a teacher or adult student, or to add an email address for a student.
+In the case of primary and secondary students -- the main focus for SchoolTool -- the most important out-of-school contact is with parents, guardians, and other adults responsible for the child.  SchoolTool's contact system is designed with this case in mind.  You can also attach a full or partial set of contact information directly to a person in SchoolTool, for example, to store full contact information for a teacher or adult student, or to add an email address for a student.
 
 Each person can be linked to one or more contacts, for example a parent, step-parent or other guardian, and each contact can be linked to one or more people in SchoolTool, so siblings can both reference the same parent contact.
 
 Creating and managing contacts
 ------------------------------
 
-Usually you will create a contact in reference to a person.  So, as "manager," go to **School** and **People**, and select a person:
+Usually you will create a contact in reference to a person.  To do so, you must be logged in as "manager." Go to the **School** tab, click on **People**, and select a person:
 
     .. image:: images/contacts-1.png
 
-In the **Contacts** slider click the **Manage Contacts** link:
+In the **Contacts** slider, click the **Manage Contacts** link:
 
     .. image:: images/contacts-2.png
 
-This form presents a list of contacts for the person (there are none in the beginning) and lets you add a new contact or search for and link an existing contact.  
+This form presents a list of contacts for the person. At first, there are no contacts in the list. You may add a new contact, or search for and link to an existing contact.  
 
-Go to **Add: New Contact** in the sidebar.  If we wanted to add contact information for Charlie himself, we'd select **Add: Charles Brown as Contact**.
+Click on **Add: New Contact** in the sidebar.  If we wanted to add contact information for Charlie himself, we'd select **Add: Charles Brown as Contact**.
 
 This form should be straightforward:
 
