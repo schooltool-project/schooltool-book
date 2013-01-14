@@ -34,7 +34,7 @@ To edit the settings, click the yellow pencil icon next to **Server status: Disa
 
 A TLS connection is a type of secure connection between SchoolTool and the mail server.
 
-As the label suggests, the outgoing email service won't do anything until you select  the **Enable** button and hit **Apply**.  Do the opposite to turn it off.
+As the label suggests, the outgoing email service won't do anything until you select the **Enable** -- **Yes** button and hit **Apply**.  Select **Enable** -- **No** to turn it off.
 
    .. image:: images/server-settings-2.png
 
@@ -44,7 +44,7 @@ To see if it is working, click **Send Test Email** under **Actions** in the side
 
    .. image:: images/server-settings-3.png
 
-After you hit **Send**, you'll find yourself on the **Email Queue** page, and hopefully it is telling you that the queue is clear (not that your message is stuck):
+After you hit **Send**, you'll find yourself on the **Email Queue** page, and hopefully will tell you that the queue is clear (not that your message is stuck):
 
    .. image:: images/server-settings-4.png
 
