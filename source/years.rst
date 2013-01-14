@@ -7,7 +7,7 @@ School years are central to organizing data in SchoolTool.  Before you start set
 
 A school year encompasses the annual cycle of a school.  For example, most students are promoted at the end of a year.  Most new teachers start work at the beginning of the year.  Terms *must* be contained within years.
 
-The school year does not have to correspond to calendar year.  Whatever suits the processes of your school.  It is best to set this up so that every date is part of one school year or another.  School years *cannot* overlap.
+The school year does not have to correspond to a calendar year, and may be defined to suit the processes of your school.  It is best to set this up so that every date is part of one school year or another.  School years *cannot* overlap.
 
 If this does not fit the structure of your school, you can simply create a single year that spans three or more calendar years.  It is likely that by the time that year expires, we'll have come up with a revised model for schools that don't work within individual years.
 
@@ -17,7 +17,7 @@ As "manager," click the **School** tab at top.  On a new installation, the page 
 
    .. image:: images/years-0.png
 
-Click the **Add: School Year** link in the sidebar and enter the Title for the year and the start and end dates and hit **Submit**.  Keep the title as short as possible, because it is used as a link frequently.  When you click on the date field, a calendar widget will appear to help you chose the day.
+Click the **Add: School Year** link in the sidebar, enter the Title for the year and the start and end dates, and hit **Submit**.  Keep the title as short as possible, because it is used as a link frequently.  When you click on the date field, a calendar widget will appear to help you choose the day.
 
 When setting up the start and end dates, remember that years cannot overlap.
 
