@@ -3,13 +3,17 @@
 Creating a User Account
 =======================
 
-If you are also a teacher in the school, you should not use the "manager" account for your day-to-day SchoolTool tasks, such as grading and taking attendance.  You need to make a second account for yourself in the role of a teacher.
+If you are also a teacher in the school, you should never use the "manager" account for your day-to-day SchoolTool tasks, such as grading and taking attendance.  You need to make a second account for yourself in the role of a teacher.
 
-To create a new user account, you must be logged in as "manager." Select the **School** tab at the top of the page, then click on **People** to end up here:
+All user accounts in the SchoolTool system are referred to as People.  User roles, along with associated permissions and access privileges, may be provisioned by adding a Person to a Group.  We will explain People and Groups in more detail later.
+
+For now, it's important to note that the "manager" account should only be used for managing SchoolTool.  Doing otherwise will expose the entire system to unnecessary risk.  To maintain security, we need to create a Person in the "Teachers" Group.
+
+To create a new Person account, you must be logged in as "manager." Select the **School** tab at the top of the page, then click on **People** to end up here:
 
    .. image:: images/user-0.png
 
-Under **Add** in the sidebar, you have shortcuts for some common groups: **Administrator, Student, and Teacher**. Selecting **Person** lets you choose a different primary group, or no group, for the new user account.  We'll just use the basic **Add: Person** form this time:
+Under **Add** in the sidebar, you have shortcuts for some common Groups, such as **School Administrators, Students,** and **Teachers**. Selecting the generic user role, **Person**, allows you to choose a different primary Group, or no Group, for the new user account.  We'll just use the basic **Add: Person** form this time:
 
    .. image:: images/user-1.png
 
@@ -24,5 +28,4 @@ Click **Submit** and you should see:
 You should now be able to **Log Out** as "manager" by following the link at the upper right, and **Log In** as your new user, at which point you should see the user's calendar:
 
     .. image:: images/user-4.png
-
 
