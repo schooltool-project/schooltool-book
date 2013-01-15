@@ -35,7 +35,7 @@ If a date is **bold** with a darker background it means classes are in session; 
 
 Clicking the day buttons at the top of the form changes the value of that day throughout the calendar.  Clicking directly on a date toggles its value.
 
-For example, I've set the standard school week from Monday to Friday and added Thanksgiving vacation the week of November 26th:
+For example, I've set the standard school week from Monday to Friday and added Thanksgiving vacation the week of November 22nd:
 
    .. image:: images/terms-3.png
 
