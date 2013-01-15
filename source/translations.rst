@@ -3,14 +3,14 @@
 SchoolTool In Languages Other Than English
 ==========================================
 
-SchoolTool and Zope 3, its underlying framework, were designed from the ground up for full translation and internationalization.  
+SchoolTool, and its underlying framework Zope 3, were designed from the ground up for full translation and internationalization.  
 
 Selecting SchoolTool's Language
 -------------------------------
 
 By default, the language displayed is selected from browser's preferences.  For example, in Firefox go to **Edit > Preferences > Content** to choose preferred languages.
 
-You can force SchoolTool pages to be always displayed in a desired language.
+You can force SchoolTool pages to always display in a desired language.
 
 Edit schooltool.conf with your favorite editor::
 
