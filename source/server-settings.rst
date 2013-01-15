@@ -24,7 +24,7 @@ As an example of an external email service, here's the relevant data for enablin
     .. image:: images/email-gmail.png
 
 
-To send email through an external mail service, from the **Server** page, click on the **Outgoing Email** link:
+To send email through an external mail service, you will need to be logged on as "manager." Navigate to the **Server** tab, then click on the **Outgoing Email** link:
 
    .. image:: images/server-settings-1.png
 
