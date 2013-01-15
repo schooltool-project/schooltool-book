@@ -4,7 +4,7 @@ SchoolTool 2.3 Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SchoolTool 2.3 features a new gradebook/journal grid that is faster and supports large
-number of sheets, improved XLS import/export, and many fixes.
+number of sheets, improved XLS import/export, and many bugfixes.
 
 New plugins
 ===========
@@ -79,7 +79,7 @@ SchoolTool CanDo 0.3.1 (2012-11-08)
 - Sorted skills by label in the skills gradebook
 - Fixed validation in score student view
 - Removed subscriber that prevented section deleting
-- Restore scores that disappeared after upgrade to 0.3
+- Restored scores that disappeared after upgrade to 0.3
 
 
 2.3 (2012-10-19)
