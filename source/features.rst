@@ -119,7 +119,7 @@ Technical Features
 
 * **Internationalization:** SchoolTool is completely translatable.  New translations can be contributed via the Rosetta system on Launchpad.net.
 
-* **Web server:** SchoolTool contains its own server for easy testing and simple deployments.  For sites requiring a encrypted (SSL) connection, we recommend using Apache as a secure proxy.
+* **Web server:** SchoolTool contains its own server for easy testing and simple deployments.  For sites requiring a encrypted (SSL) connection, we recommend using Apache as a secure proxy.  See :ref:`apache`.
 
 * **Virtual servers:** For schools in a predominantly Windows or other non-Ubuntu environment, we recommend running SchoolTool on a dedicated virtual server, running Ubuntu Server Edition.  Regardless of the host operating system, running SchoolTool on its own virtual server isolated from other services is a good security precaution. 
 

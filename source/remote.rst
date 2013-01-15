@@ -38,4 +38,3 @@ Edit the ``paste.ini`` file as described above, setting it to read::
 
   host = 127.0.0.1
 
-
