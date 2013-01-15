@@ -11,7 +11,7 @@ Set up Timetables through the web interface.  They can be exported and imported 
 
 In this section we will walk you through one common example.  The most important thing in getting through this process is this: if you are asked to choose between something that seems obvious and something that makes no sense to you, take the obvious choice.
 
-In this case, each Section meets either at a specific time on Monday, Wednesday or Friday, or at a specific time on Tuesday and Thursday.  There are three one-hour periods on Mon./Wed./Fri. and two hour-and-a-half long periods on Tue./Thurs, as shown:
+In this case, each class section meets either at a specific time on Monday, Wednesday or Friday, or at a specific time on Tuesday and Thursday.  There are three one-hour periods on Mon./Wed./Fri. and two hour-and-a-half long periods on Tue./Thurs, as shown:
 
    .. image:: images/timetables-7.png
 
