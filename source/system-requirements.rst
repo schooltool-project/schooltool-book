@@ -21,7 +21,7 @@ The core SchoolTool development team recommends installation of SchoolTool on Ub
 Fedora Linux & OLPC Server
 --------------------------
 
-`OLE Nepal <http://www.olenepal.org>`_ has created a set of RPM packages for `Fedora Linux <http://fedoralinux.org>`_ versions 9 (used by the OLPC server) and 13 for use in local pilots in Nepal as part of their `OLPC <http://laptop.org>`_ deployments.
+`OLE Nepal <http://www.olenepal.org>`_ has created a set of RPM packages for `Fedora Linux <http://fedoralinux.org>`_ versions 9 (used by the OLPC server), 13, 14 and 15 for use in local pilots in Nepal as part of their `OLPC <http://laptop.org>`_ deployments.
 
 We actively collaborate with OLE Nepal's developers to keep these packages up to date, but the freshest SchoolTool packages will usually be the Ubuntu ones.
 
