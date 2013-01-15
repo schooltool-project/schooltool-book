@@ -21,7 +21,7 @@ After a successful import, you will be sent back to the main **School** page:
 
 ``large_sample_data.xls`` creates a full school of 1000 students and two years of section enrollments.  ``sample_data.xls`` has 466 students but only six teachers and a handful of sections (budget cuts).  Users are either "student" or "teacher" followed by a three digit number (for example, "**student000**" or "**teacher001**"), and their passwords are the same as their ID's.
 
-To export data to a spreadsheet, click **Reports: Export as XLS** from the sidebar in the **School** tab, and select **Download** in the dialog:
+To export data to a spreadsheet, navigate to the **School** tab, select **Reports: School Export** in the sidebar menu, and click on the **Download** button to confirm the dialog:
 
    .. image:: images/spreadsheet-3.png
 
