@@ -5,13 +5,14 @@ Central Authentication Service (CAS) Support
 
 `SchoolTool CAS <https://launchpad.net/schooltool.cas>`_ plugin provides support
 for single sign-on with other applications on a school intranet.  If you're
-already using CAS at your school, this is a no-brainer.  Otherwise, you probably
-need to do some research on `the CAS website first <http://www.jasig.org/cas>`_.
+already using CAS at your school, this is a no-brainer.  Otherwise, you'll probably
+need to do some research on `the CAS website <http://www.jasig.org/cas>`_ first .
 Note that using CAS authentication requires the installation and maintenance of
 a CAS authentication server.  There are CAS modules for Moodle and other web
 applications popular in schools.
 
-To enable CAS in SchoolTool...
+Enabling CAS in SchoolTool
+++++++++++++++++++++++++++
 
 Install python-schooltool.cas from `SchoolTool PPA <install-pre-natty.html>`_::
 
