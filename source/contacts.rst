@@ -38,6 +38,6 @@ And in the student's slider:
 
     .. image:: images/contacts-7.png
 
-To view, edit or add to all the Contacts in the system, you can go to **School** and **Contacts**.
+To view, edit or add to all the Contacts in the system, navigate to the **School** tab and click on **Contacts**.
 
     .. image:: images/contacts-8.png
