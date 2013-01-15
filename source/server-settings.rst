@@ -13,7 +13,7 @@ In the main content area, the Server Information section provides some technical
 Outgoing Email
 --------------
 
-SchoolTool can send emails through your school email server or another SMTP server.  That is, SchoolTool is not an email server, it sends mail as an email *client*, like a desktop application such as Evolution or Outlook.
+SchoolTool can send emails through your school email server or another SMTP server.  That is, SchoolTool is not an email server; it sends mail as an email *client*, like a desktop application such as Evolution or Outlook.
 
 To enable SchoolTool to send emails, you will need the instructions from your school's server, your ISP, or your webmail provider to configure a mail client to send mail via the provider's SMTP service.
 
@@ -34,11 +34,11 @@ To edit the settings, click the yellow pencil icon next to **Server status: Disa
 
 A TLS connection is a type of secure connection between SchoolTool and the mail server.
 
-As the label suggests, the outgoing email service won't do anything until you select the **Enable** -- **Yes** button and hit **Apply**.  Select **Enable** -- **No** to turn it off.
+As the label suggests, the outgoing email service won't do anything until you select the **Enable** -- **Yes** radio button and click **Apply**.  Select **Enable** -- **No** to turn it off.
 
    .. image:: images/server-settings-2.png
 
-Hit **Apply** when you're done.
+Click **Apply** when you're done.
 
 To see if it is working, click **Send Test Email** under **Actions** in the sidebar and enter some relevant data, including one of your email addresses as recipient so you can make sure the message arrives safely:
 
@@ -102,7 +102,7 @@ Clicking on the exception object takes you to a full description of the error, i
 
    .. image:: images/server-settings-11.png
 
-Clicking on the edit pencil allows some customization of this display:
+Clicking on the yellow pencil icon allows some customization of this display:
 
    .. image:: images/server-settings-12.png
 
@@ -114,7 +114,7 @@ Pack Database
 
 SchoolTool's database engine supports certain undo capabilities which are not implemented in SchoolTool.  As a result, SchoolTool's database file grows in size over time.  "Packing" the database strips out the old changes and shrinks the file back down to its minimum size.
 
-Packing the database periodically will help optimize performance, particularly after many changes have been made to the database, for example, from large data imports.  This can be a resource intensive action on large databases, so it is best to do it during off-peak times.
+Packing the database periodically will help optimize performance, particularly after many changes have been made to the database, for example, from large data imports.  This can be a resource-intensive action on large databases, so it is best to do it during off-peak times.
 
 To pack the database, click **Pack Database** under **Actions** in the sidebar.  You should see a little confirmation spinner while this is in progress:
 
