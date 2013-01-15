@@ -30,7 +30,7 @@ Contact Management
 Teacher Gradebooks
 ------------------
 
-* Use SchoolTool's gradebook for calculating point or percentage based grades.
+* Use SchoolTool's gradebook for calculating point-based or percentage-based grades.
 
 * SchoolTool provides a spreadsheet-style gradebook for each class section.
 
@@ -59,7 +59,7 @@ CanDo -- Skill and Outcome Based Assessment (in SchoolTool 2.3 and later)
 
 * Teachers and administators can generate graphical reports by student, section, or teacher.
 
-* Skill scores can be integrated into SchoolTool's point based gradebook.
+* Skill scores can be integrated into SchoolTool's point-based gradebook.
 
 Schoolwide Assessment Data Collection and Report Card Generation
 ----------------------------------------------------------------
@@ -75,9 +75,9 @@ Class Attendance and Daily Participation Journal
 
 * For each meeting of a class section, teachers can mark students absent, tardy, or assign a numeric participation score.
 
-* The average participation score can be included in Gradebook calculations.
+* The average participation score can be included in gradebook calculations.
 
-* Absence and tardy data can be included in report cards and other provided school attendance reports.
+* Absence and tardiness data can be included in report cards and other provided school attendance reports.
 
 Calendars for the School, Groups, and Individuals
 -------------------------------------------------

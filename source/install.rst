@@ -13,7 +13,7 @@ In the terminal type::
 
 Or access the **Ubuntu Software Center** from the **Applications** menu.  Search for "schooltool", and then click **Install** and enter your password. 
 
-.. image:: images/uss-natty.png
+.. image:: images/uss-precise.png
 
 If all goes well, many, many small Zope components will be installed and you'll have a SchoolTool server running on http://localhost:7080 or http://127.0.0.1:7080.  The server may take a minute or two to actually start up.
    
