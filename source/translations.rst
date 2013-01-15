@@ -17,7 +17,7 @@ Edit schooltool.conf with your favorite editor::
   # Ubuntu Natty or later
   $ sudo gedit /etc/schooltool/standard/schooltool.conf
 
-And append a line "lang LANG_CODE" at the end, where LANG_CODE is the desired language code.  Several examples::
+Append a line "lang LANG_CODE" at the end, where LANG_CODE is the desired language code.  Several examples::
 
   lang ru
   lang en-gb
