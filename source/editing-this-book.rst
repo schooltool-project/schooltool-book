@@ -51,7 +51,7 @@ Building a PDF Version
 
 The PDF output from this process is usable.  Because there are a lot of large screengrab images in the book, and we can't (or don't know how to) control the page breaks, the layout isn't that great.  Hopefully we'll be able to improve that in the future.
 
-Also, as of May 2009 there was a unicode bug that bombed out near the end of the book, but most of the content made it into the pdf. We have not confirmed that this pdf rendering bug is fixed, so your mileage may vary. If you manage to make a beautiful PDF by following the instructions below, feel free to let us know how you accomplished it!
+Also, as of May 2009 there was a unicode bug that bombed out near the end of the book, but most of the content made it into the PDF. We have not confirmed that this PDF rendering bug is fixed, so your mileage may vary. If you manage to make a beautiful PDF by following the instructions below, feel free to let us know how you accomplished it!
 
 Grab the TeX libraries::
 
