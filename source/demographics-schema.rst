@@ -3,7 +3,7 @@ Customizing Demographics
 
 SchoolTool allows you to modify the demographic information stored about each Person.  If you are using SchoolTool as the primary student information system for a school, you will probably need to customize the demographics fields to meet your local government's reporting requirements.
 
-Note that **Prefix, First name, Middle name, Suffix and Preferred name** are not customizable.  "Preferred name" is the name which a student prefers to be used by teachers, or for teachers the name they prefer to have used in correspondence with parents and students.
+Note that **Prefix, First name, Middle name, Suffix** and **Preferred name** are not customizable.  "Preferred name" is the name which a student prefers to be used by teachers, or for teachers the name they prefer to have used in correspondence with parents and students.
 
 **Gender** and **Birthdate** also cannot be changed.  
 
