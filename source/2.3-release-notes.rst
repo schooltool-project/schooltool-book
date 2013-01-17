@@ -49,8 +49,12 @@ LDAP authentication plugin for SchoolTool.
 https://launchpad.net/schooltool.ldap
 
 
-2.3 updates
-===========
+2.3.1 (2012-12-05)
+==================
+
+- Update to Zope Toolkit 1.1.5 (or more)
+- Sync versions with Raring Alpha 1.
+
 
 SchoolTool CanDo 0.4.1 (2012-11-29)
 -----------------------------------
