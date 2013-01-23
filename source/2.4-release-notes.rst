@@ -3,7 +3,7 @@
 SchoolTool 2.4 Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SchoolTool 2.4 is currently in development and scheduled for April 2013 release
+SchoolTool 2.4 is currently in development and scheduled for April release
 of Ubuntu 13.04.
 
 New features
@@ -27,6 +27,58 @@ results.
 
 https://launchpad.net/schooltool.quiz
 
-2.4a1 (unreleased)
-==================
 
+2.4a1
+=====
+
+SchoolTool 2.4a1 (2013-01-23)
+-----------------------------
+
+- Javascript for entering comments in gradebook cells.
+- Support table grouping by column.
+- Updated translations.
+
+Reports
++++++++
+
+- New PDF page design and implementation.
+- Render forms, tables, and grids to RML (PDF).
+- Add section roster, person profile, and resources reports.
+
+Development tools
++++++++++++++++++
+
+- Removed API Docs and Introspector
+
+
+SchoolTool Gradebook 2.4a1 (2013-01-23)
+---------------------------------------
+
+- Remake "Printable Worksheet" as a new style PDF
+- Report sheet templates now have category weights
+- Display total/average in deployed report sheets
+- Added category to report sheet template activity add/edit views
+- Added report sheet average to report card layout, pdf view
+- Removed hidden deployed worksheets from dropdown in layout activity add views
+- Do not give extra credit with discrete scoresystems
+- Case-insensitive score entry
+- Modal for entering scores in gradebook cells of comment activities
+- Updated translations
+
+
+SchoolTool CanDo 0.5 (2013-01-23)
+---------------------------------
+
+- Skills now have their own scoresystem. Old skills that had no scoresystem
+  set, system default is used.
+- Add IEP (Individualized Educational Plan) functionality.
+- Added Dutch and Spanish (El Salvador) translations.
+
+
+SchoolTool Virginia 0.5 (2013-01-23)
+------------------------------------
+
+- Updated VA reports and their descriptions
+- build_xls now gets verso_skills.xls from the web, creates new_verso_skills.xls
+  by matching matching skillset and skill external ids, making sure labels
+  sort in same order as the web api
