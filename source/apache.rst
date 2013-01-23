@@ -74,7 +74,7 @@ OpenSSL_ about creating one.
 
 .. _OpenSSL: https://help.ubuntu.com/community/OpenSSL#SSL_Certificates
 
-The ``mod_ssl`` module has to be enabled.
+The ``mod_ssl`` module has to be enabled.::
 
   $ sudo a2enmod ssl
 
