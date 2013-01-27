@@ -4,11 +4,9 @@ Managing Multiple Activities, Categories, Worksheets
 Multiple Activities
 -------------------
 
-Now we will make a second activity:
+Now, we will make a second activity and score it:
 
    .. image:: images/gradebook2-1.png
-
-And score it.
 
 As you can see, after you **Update** the changes, the **Total** and **Average** columns are also updated.
 
@@ -31,7 +29,9 @@ While viewing the relevant worksheet, click **Settings: Category Weights** in th
 
    .. image:: images/gradebook2-3.png
 
-So in the above case, exams are 75% of the calculated average, quizzes are 25%.  Hit **Submit** and the scores will reflect the new weights:
+In the above case, exams are 75% of the calculated average, quizzes are 25%.
+
+Click on **Submit** and the scores will reflect the new weights:
 
    .. image:: images/gradebook2-4.png
 
@@ -44,19 +44,19 @@ First we'll change the name of the default "Sheet1."  Click on the **Settings: W
 
    .. image:: images/gradebook2-5.png
 
-Then click the edit pencil next to to "Sheet1" and switch it to something more descriptive:
+Then, click on the yellow pencil icon next to to "Sheet1" and switch the name to something more descriptive:
 
    .. image:: images/gradebook2-6.png
 
-And hit **Submit**:
+Click on **Submit** to finalize your edit:
 
    .. image:: images/gradebook2-7.png
 
-Now we'll add a second worksheet.  Click Done, and from the main gradebook view click **Add: Worksheet":
+Now we'll add a second worksheet.  Click on **Done**, and from the main gradebook view click **Add: Worksheet**:
 
    .. image:: images/gradebook2-8.png
 
-Hit **Submit**.  Now you've got two tabs, with the new (empty) worksheet active:
+Click on **Submit**.  Now you've got two tabs, with the new (empty) worksheet active:
 
    .. image:: images/gradebook2-9.png
 
@@ -64,11 +64,11 @@ Add a new activity as we did above and score it:
 
    .. image:: images/gradebook2-10.png
 
-You can add a summary worksheet to each of your gradebooks that automatically includes a column for the average of all existing worksheets.  From the main Gradebook page, go back to **Settings: Worksheets** and click **Create summary worksheet**:
+You can add a summary worksheet to each of your Gradebooks that automatically includes a column for the average of all existing worksheets.  From the main Gradebook page, go back to **Settings: Worksheets** and click on **Create summary worksheet**:
 
    .. image:: images/gradebook2-11.png
 
-The summary sheet:
+The summary sheet should look like this:
 
    .. image:: images/gradebook2-12.png
 

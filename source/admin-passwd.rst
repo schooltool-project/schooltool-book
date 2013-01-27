@@ -17,9 +17,13 @@ Then click on **Password** under settings in the left sidebar:
 
    .. image:: images/admin-passwd-3.png
 
-Enter the current password ("schooltool") enter a new one (twice) and click **Apply**:
+Enter the current password ("schooltool"), enter a new one (twice), and click **Apply**:
 
    .. image:: images/admin-passwd-4.png
 
-Even if you don't plan to make your SchoolTool server's web pages accessible from another computer, but you should set manager and user passwords to prevent another person with physical access to your computer from accessing your SchoolTool data with the default password.
+If all goes well, you should be greeted with a dialog confirming that the password change was successful:
+
+   .. image:: images/admin-passwd-5.png
+
+Even if you don't plan to make your SchoolTool server's web pages accessible from another computer, you should set manager and user passwords to prevent another person with physical access to your computer from accessing your SchoolTool data with the default password.
 

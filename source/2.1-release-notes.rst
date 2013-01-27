@@ -124,6 +124,6 @@ SchoolTool Intervention 2.1.0 (2012-04-18)
 ------------------------------------------
 
 - Make Intervention tab highlighted (https://launchpad.net/bugs/868435)
-- List releationships with all responsible parties (https://launchpad.net/bugs/922271)
+- List relationships with all responsible parties (https://launchpad.net/bugs/922271)
 - Contacts may include people other than parents (https://launchpad.net/bugs/973679)
 - Added (da) and updated translations.

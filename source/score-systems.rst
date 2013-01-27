@@ -8,7 +8,7 @@ Displaying Score Systems in the Gradebook
 
 Scores are converted to grades using what SchoolTool calls "Score Systems."
 
-A score system is a sequence of scores in descending value.  Each score has a label, a numeric value used to calculate grade averages when that is relevant, and a low cut off for percentage values associated with this score.  The cutoff is used to automatically assign a score to a given percentage value.
+A score system is a sequence of scores in descending value.  Each score has a label, a numeric value used to calculate grade averages when that is relevant, and a low cutoff for percentage values associated with this score.  The cutoff is used to automatically assign a score to a given percentage value.
 
 SchoolTool ships with a few default score systems.  The site manager can add new score systems and hide the existing ones.
 
@@ -27,11 +27,11 @@ The site manager can add new score systems and hide the existing ones..  As "man
 
    .. image:: images/score-system-4.png
 
-If you click on the title of a score system you see a detailed view:
+If you click on the title of a score system, you'll see a detailed view:
 
    .. image:: images/score-system-5.png
 
-If you would like to hide a score system (you can't delete them completely to keep older data using them consistent) click **Actions: Hide**.  This will keep users from adding them in the future but retain their current use.
+If you would like to hide a score system (you can't delete them completely to keep older data using them consistent) click **Actions: Hide**.  This will keep users from adding them in the future, but retain their current use.
 
 To create a new score system, press **Add: Score System** from the main score system page.  In this case, I'm creating a score system that uses numbers as labels instead of the more traditional letters:
 

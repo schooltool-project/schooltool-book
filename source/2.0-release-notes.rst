@@ -10,9 +10,9 @@ SchoolTool 2.0 represents a complete rethinking of SchoolTool's web interface fr
 
 The staring point for the redesign was the Ubuntu Web Design Guidelines and the free Ubuntu font, both created by Canonical Design.  We developed a new color scheme and logo with Schwadesign.  This gave us a clear, attractive and consistent foundation for all our web assets across our homepage, documentation, and the SchoolTool application itself.
 
-We standardized the design of forms used throughout the application, including an attractive grid design used in both the gradebook and attendance journal.  The judicious use of Javascript in dynamic dialogs, sliders and menus has streamlined the user experience at key points.  Explanatory text has been added to many rarely-used pages.
+We standardized the design of forms used throughout the application, including an attractive grid design used in both the gradebook and the attendance journal.  The judicious use of Javascript in dynamic dialogs, sliders and menus has streamlined the user experience at key points.  Explanatory text has been added to many rarely-used pages.
 
-Administrative views were a particular focus.  They have been divided into technical/server and school oriented tasks and re-organized for clarity and efficiency.
+Administrative views were a particular focus.  They have been divided into technical/server and school-oriented tasks and re-organized for clarity and efficiency.
 
 Thanks to a clean separation of model and view in SchoolTool, we were able to make these changes with minimal changes to the underlying database and application logic.
 

@@ -6,18 +6,18 @@ LDAP Single Sign-on
 LDAP integration allows users to sign into SchoolTool with their
 existing LDAP accounts.
 
-To enable LDAP support you need to install `SchoolTool LDAP
+To enable LDAP support, you will need to install the `SchoolTool LDAP
 <https://launchpad.net/schooltool.ldap>`_ plugin from the
 `SchoolTool PPA <install-pre-natty.html>`_ using **Ubuntu Software Center**,
-or command line:: 
+or the command line:: 
 
     sudo apt-get install python-schooltool.ldap
 
-Once installed, it will appear in the Server page.
+Once you have installed the plugin, LDAP configuration will appear on the Server page.
 
    .. image:: images/ldap-config-1.png
 
-Users will not be automatically "pulled" from LDAP server.
+Users will not be automatically "pulled" from the LDAP server.
 Instead, they will be created (if missing) when they log in for
 the first time.  Here, student001 just logged in on a fresh
 SchoolTool installation with LDAP support:
@@ -40,7 +40,7 @@ Configuring LDAP
 ++++++++++++++++
 
 By default, SchoolTool will look for /etc/ldap.conf and try to figure
-out current setup.  If your server has that entry, there's a good
+out your current setup.  If your server has that entry, there's a good
 chance that LDAP integration will work out-of-the-box.
 
    .. image:: images/ldap-config-1.png
@@ -50,9 +50,9 @@ same server and configured Users / Groups modules, SchoolTool should
 be able to pick up LDAP settings automatically.
 
 It's important to note autodetection works on server start up, so
-SchoolTool needs to be restarted after server's LDAP config changes.
+SchoolTool needs to be restarted after the server's LDAP config changes. See :ref:`install-2_0`.
 
-LDAP settings can be changed in browser, unless this option is
+SchoolTool's LDAP settings can be edited with a web browser, unless this option is
 explicitly disabled in schooltool.conf.
 
    .. image:: images/ldap-config-2.png
@@ -68,10 +68,10 @@ cases is "uid" and should look like this::
 
 If you need to fine-tune your queries it's best to install an interactive
 LDAP browser (like http://jxplorer.org) and test what queries return
-proper list of users.
+proper lists of users.
 
-**Bind DN** and **Bind password** used when connecting to LDAP to retrieve the
-user list.  Leave empty if anonymous LDAP connections are allowed to
+**Bind DN** and **Bind password** are used when connecting to LDAP to retrieve the
+user list.  Leave these fields empty if anonymous LDAP connections are allowed to
 query for users.
 
 **Group DN queries** and **POSIX group counterparts** allow automatic
@@ -121,11 +121,11 @@ schooltool.conf, unless allow_web_config is set to no.
 **allow_web_config** lets you disable through-the-web overriding of
 these settings.
 
-**autodetect_from** should point to the .conf file to infer LDAP
-configuration from.
+**autodetect_from** should point to the .conf file that SchoolTool 
+will use to infer its LDAP configuration.
 
-It's worth to note that **query_users**, **query_groups** and
+It's worth noting that **query_users**, **query_groups** and
 **bind_group** can have multiple entries.
 
-**default_login_attr** and **default_login_filter** should be seldom
-useful, mostly when you want to influence LDAP settings auto-detection.
+**default_login_attr** and **default_login_filter** are rarely-used settings,
+useful primarily when you want to influence auto-detection of LDAP settings.
