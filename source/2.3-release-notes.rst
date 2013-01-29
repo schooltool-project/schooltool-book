@@ -49,6 +49,27 @@ LDAP authentication plugin for SchoolTool.
 https://launchpad.net/schooltool.ldap
 
 
+2.3.2
+=====
+
+SchoolTool CanDo 0.4.2 (2013-01-29)
+-----------------------------------
+
+- Skills now have their own scoresystem. Old skills that had no scoresystem
+  set, system default is used.
+- Add IEP (Individualized Educational Plan) functionality.
+- Added Dutch and Spanish (El Salvador) translations.
+
+
+SchoolTool Virginia 0.4 (2013-01-29)
+------------------------------------
+
+- Updated VA reports and their descriptions
+- build_xls now gets verso_skills.xls from the web, creates new_verso_skills.xls
+  by matching matching skillset and skill external ids, making sure labels
+  sort in same order as the web api
+
+
 2.3.1 (2012-12-05)
 ==================
 

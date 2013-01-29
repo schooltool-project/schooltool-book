@@ -36,6 +36,7 @@ SchoolTool 2.4a1 (2013-01-23)
 
 - Javascript for entering comments in gradebook cells.
 - Support table grouping by column.
+- Refactor out makeFormatter from table render methods.
 - Updated translations.
 
 Reports
@@ -69,16 +70,10 @@ SchoolTool Gradebook 2.4a1 (2013-01-23)
 SchoolTool CanDo 0.5 (2013-01-23)
 ---------------------------------
 
-- Skills now have their own scoresystem. Old skills that had no scoresystem
-  set, system default is used.
-- Add IEP (Individualized Educational Plan) functionality.
-- Added Dutch and Spanish (El Salvador) translations.
+- Updated tables to use new table formatters.
 
 
 SchoolTool Virginia 0.5 (2013-01-23)
 ------------------------------------
 
-- Updated VA reports and their descriptions
-- build_xls now gets verso_skills.xls from the web, creates new_verso_skills.xls
-  by matching matching skillset and skill external ids, making sure labels
-  sort in same order as the web api
+- Updated tables to use new table formatters.
