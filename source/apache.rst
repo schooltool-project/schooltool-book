@@ -1,4 +1,5 @@
 .. _apache:
+.. highlight:: apache
 
 Apache configuration
 ====================
@@ -15,7 +16,7 @@ forward these requests to SchoolTool on port 7080. In this scenario, the web
 server listening on port 80 is known as a *proxy server*.
 
 This approach has several benefits. By using a well-known web server such as 
-`Apache <http://apache.org>`_ , we can protect the SchoolTool server from 
+`Apache HTTP Server <http://httpd.apache.org>`_ , we can protect the SchoolTool server from 
 direct exposure to web traffic, thereby improving security and reliability -- 
 and by accepting incoming browser requests on the widely-used port 80, we 
 can avoid the necessity of explaining to students, teachers, and staff that 

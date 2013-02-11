@@ -1,4 +1,5 @@
 .. _nginx:
+.. highlight:: nginx
 
 Nginx configuration
 ===================

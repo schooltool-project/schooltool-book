@@ -1,3 +1,5 @@
+.. _install-2_0:
+
 Installing SchoolTool
 =====================
 

@@ -50,10 +50,12 @@ same server and configured Users / Groups modules, SchoolTool should
 be able to pick up LDAP settings automatically.
 
 It's important to note autodetection works on server start up, so
-SchoolTool needs to be restarted after the server's LDAP config changes. See :ref:`install-2_0`.
+SchoolTool needs to be restarted after the server's LDAP config changes::
+
+    $ sudo service schooltool restart
 
 SchoolTool's LDAP settings can be edited with a web browser, unless this option is
-explicitly disabled in schooltool.conf.
+explicitly disabled in ``schooltool.conf``.
 
    .. image:: images/ldap-config-2.png
 
@@ -93,7 +95,7 @@ groups when they log into SchoolTool::
 Advanced configuration
 ++++++++++++++++++++++
 
-You can configure LDAP by adding a section like this to schooltool.conf::
+You can configure LDAP by adding a section like this to ``schooltool.conf``::
 
   <ldap_authentication>
 
@@ -116,12 +118,12 @@ You can configure LDAP by adding a section like this to schooltool.conf::
   </ldap_authentication>
 
 **Important**: through-the-web configuration takes precedence over
-schooltool.conf, unless allow_web_config is set to no.
+``schooltool.conf``, unless ``allow_web_config`` is set to ``no``.
 
 **allow_web_config** lets you disable through-the-web overriding of
 these settings.
 
-**autodetect_from** should point to the .conf file that SchoolTool 
+**autodetect_from** should point to the ``ldap.conf`` file that SchoolTool 
 will use to infer its LDAP configuration.
 
 It's worth noting that **query_users**, **query_groups** and
