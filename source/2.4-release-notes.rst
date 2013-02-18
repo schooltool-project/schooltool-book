@@ -13,6 +13,7 @@ New features
 - Ability to render forms and tables to PDF
 - IN PROGRESS: asynchronous imports and reports
 
+
 New plugins
 ===========
 
@@ -28,8 +29,34 @@ results.
 https://launchpad.net/schooltool.quiz
 
 
-2.4a1
-=====
+2.4a2 (2013-02-19)
+==================
+
+SchoolTool 2.4a2 (2013-02-18)
+-----------------------------
+
+- Move User fieldset up in Add person page (https://launchpad.net/bugs/896848)
+- Removed unsupported translations: af, bn, fo, et, hu, te.
+- Updated translations.
+
+
+SchoolTool Gradebook 2.4a2 (2013-02-19)
+---------------------------------------
+
+- Remove Download Gradebook CSV
+- Updated Printable Gradebook style
+
+
+SchoolTool CanDo 0.5.1 (2013-02-18)
+-----------------------------------
+
+- New-style CanDo Gradebook report.
+- Added student's Section Competencies report.
+- Added student's Certificate of Competency report.
+
+
+2.4a1 (2013-01-23)
+==================
 
 SchoolTool 2.4a1 (2013-01-23)
 -----------------------------
