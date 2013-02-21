@@ -36,6 +36,7 @@ Contents:
    spreadsheet
    populating
    gradebook-toc
+   cando-toc
    intervention
    administrators
    release-notes
@@ -43,4 +44,3 @@ Contents:
    editing-this-book
    glossary
    about
-   cando
