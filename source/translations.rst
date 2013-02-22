@@ -3,24 +3,21 @@
 SchoolTool In Languages Other Than English
 ==========================================
 
-SchoolTool and Zope 3, its underlying framework, were designed from the ground up for full translation and internationalization.  
+SchoolTool, and its underlying framework Zope 3, were designed from the ground up for full translation and internationalization.  
 
 Selecting SchoolTool's Language
 -------------------------------
 
 By default, the language displayed is selected from browser's preferences.  For example, in Firefox go to **Edit > Preferences > Content** to choose preferred languages.
 
-You can force SchoolTool pages to be always displayed in a desired language.
+You can force SchoolTool pages to always display in a desired language.
 
-Edit conf file with your favorite editor::
+Edit schooltool.conf with your favorite editor::
 
   # Ubuntu Natty or later
   $ sudo gedit /etc/schooltool/standard/schooltool.conf
 
-  # Or, for earlier versions
-  $ sudo gedit /etc/schooltool/schooltool-2009/main.conf
-
-And append a line "lang LANG_CODE" at the end, where LANG_CODE is the desired language code.  Several examples::
+Append a line "lang LANG_CODE" at the end, where LANG_CODE is the desired language code.  Several examples::
 
   lang ru
   lang en-gb
@@ -52,6 +49,6 @@ If you would like to install a translation that has been entered into Launchpad 
  
      sudo mv ru_LC_MESSAGES_schooltool.mo /usr/share/pyshared/schooltool/locales/ru/LC_MESSAGES/schooltool.mo
 
- * Restart the SchoolTool service, your translation should be applied.
+ * Restart the SchoolTool service. Your translation should be applied.
 
 Of course, for languages other than Russian, the "ru" above should be replaced with the relevant prefix.

@@ -1,10 +1,10 @@
 The SchoolTool Book
 ===================
 
-This is the source tree for the SchoolTool documentation.  The docs are 
-written in ReStructured Text, which is the standard markup for Python 
-documentation, and managed using Sphinx, which handles turning the markup 
-into HTML, PDF, etc.
+This is the source for the SchoolTool documentation.  The book is written in
+reStructured Text, which is the standard markup for Python documentation, and
+managed using Sphinx (http://sphinx.pocoo.org/), which handles turning the
+markup into HTML, PDF, etc.
 
 To download this source, you'll need the bzr version control system.  On 
 Ubuntu, you need to do::
@@ -13,11 +13,10 @@ Ubuntu, you need to do::
 
 Then, to fetch the source::
 
-    bzr branch lp:~schooltool-owners/schooltool/st-book
+    bzr branch lp:schooltool-book
 
-To grab the rest of the Python dependencies and put them in a nice sandbox 
-away from your system Python, ``cd`` into the ``st-book/`` directory 
-and do::
+To grab the rest of the Python dependencies and put them in a nice sandbox away
+from your system Python, ``cd`` into the ``schooltool-book`` directory and do::
 
     make html
 
@@ -25,4 +24,5 @@ The files will appear under ``build/html/``.
 
 That should be enough to get you started.
 
-
+This project is licensed under the CC-BY-3.0, the full text of which can be
+found in COPYING.

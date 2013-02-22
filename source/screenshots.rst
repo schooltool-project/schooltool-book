@@ -56,7 +56,7 @@ A school timetable
 
    .. image:: images/timetables-7.png
 
-Customizable demographics fields
-++++++++++++++++++++++++++++++++
+Customizable demographic fields
++++++++++++++++++++++++++++++++
 
    .. image:: images/demographics-schema-2.png

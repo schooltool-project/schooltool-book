@@ -13,3 +13,4 @@ Contents:
    cas
    multiple-schooltools
    database
+   performance

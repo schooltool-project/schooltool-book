@@ -4,7 +4,7 @@ SchoolTool 2.3 Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SchoolTool 2.3 features a new gradebook/journal grid that is faster and supports large
-number of sheets, improved XLS import/export, and many fixes.
+number of sheets, improved XLS import/export, and many bugfixes.
 
 New plugins
 ===========
@@ -49,8 +49,62 @@ LDAP authentication plugin for SchoolTool.
 https://launchpad.net/schooltool.ldap
 
 
-2.3 updates
-===========
+2.3.2
+=====
+
+SchoolTool Journal 2.3.1 (2013-02-19)
+-------------------------------------
+
+- Update translations
+
+
+SchoolTool CanDo 0.4.4 (2013-02-18)
+-----------------------------------
+
+- Fixed error when current skillset for the user has been removed.
+- Sorted tables for adding/removing nodes by label and title.
+
+
+SchoolTool CanDo 0.4.3 (2013-02-11)
+-----------------------------------
+
+- Fixed submit of Set Required/Visible course skills page.
+
+
+SchoolTool CanDo 0.4.2 (2013-01-29)
+-----------------------------------
+
+- Skills now have their own scoresystem. Old skills that had no scoresystem
+  set, system default is used.
+- Add IEP (Individualized Educational Plan) functionality.
+- Added Dutch and Spanish (El Salvador) translations.
+
+
+SchoolTool Virginia 0.4 (2013-01-29)
+------------------------------------
+
+- Updated VA reports and their descriptions
+- build_xls now gets verso_skills.xls from the web, creates new_verso_skills.xls
+  by matching matching skillset and skill external ids, making sure labels
+  sort in same order as the web api
+
+
+SchoolTool Intervention 2.3.1 (2013-01-24)
+------------------------------------------
+
+- Added hint for "Persons responsible" in goal form (https://launchpad.net/bugs/922211)
+- Made some of the less essential goal fields optional (https://launchpad.net/bugs/922209)
+- Added a student interventions link to message and goal views
+- Added optional subject line to messages (https://launchpad.net/bugs/922226)
+- Updated translations
+
+
+2.3.1 (2012-12-05)
+==================
+
+- Update to Zope Toolkit 1.1.5 (or more)
+- Sync versions with Raring Alpha 1.
+
 
 SchoolTool CanDo 0.4.1 (2012-11-29)
 -----------------------------------
@@ -93,7 +147,7 @@ SchoolTool CanDo 0.3.1 (2012-11-08)
 - Sorted skills by label in the skills gradebook
 - Fixed validation in score student view
 - Removed subscriber that prevented section deleting
-- Restore scores that disappeared after upgrade to 0.3
+- Restored scores that disappeared after upgrade to 0.3
 
 
 2.3 (2012-10-19)

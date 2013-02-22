@@ -1,3 +1,5 @@
+.. _install-2_0:
+
 Installing SchoolTool
 =====================
 
@@ -31,9 +33,11 @@ for Ubuntu 12.10::
 
 And click **Add Source**.
 
-   .. image:: images/inst2-0.png
+   .. image:: images/usc-precise.png
 
 Then search for "SchoolTool" in the searchbox at upper right in the Software Center and click **Install** next to the SchoolTool entry.
+
+   .. image:: images/usc-schooltool.png
 
 Or, using the command line:
 

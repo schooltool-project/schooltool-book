@@ -10,8 +10,9 @@ Last release with old skin: 1.7_
 ========= ======== ======= ========= ==== ====
 ubuntu    codename release universe_ ppa_ dev_
 ========= ======== ======= ========= ==== ====
-12.10     quantal  2.3_    2.1_      2.3_     
-12.04 LTS precise  2.1_    2.1_      2.1_ 2.3_
+13.04     raring   2.4_    2.3_      2.4_     
+12.10     quantal  2.3_    2.1_      2.3_ 2.4_    
+12.04 LTS precise  2.1_    2.1_      2.1_ 2.4_
 *11.11*   flourish 2.0_                       
 11.10     oneiric  1.7_    1.7_      1.7_ 2.1_
 11.04     natty    1.6_    1.6_      1.6_ 2.1_
@@ -21,6 +22,7 @@ ubuntu    codename release universe_ ppa_ dev_
  9.04     jaunty   1.0_                       
 ========= ======== ======= ========= ==== ====
 
+.. _2.4: 2.4-release-notes.html
 .. _2.3: 2.3-release-notes.html
 .. _2.1: 2.1-release-notes.html
 .. _2.0: 2.0-release-notes.html
@@ -39,6 +41,7 @@ ubuntu    codename release universe_ ppa_ dev_
    :maxdepth: 1
    :hidden:
 
+   2.4-release-notes
    2.3-release-notes
    2.1-release-notes
    2.0-release-notes

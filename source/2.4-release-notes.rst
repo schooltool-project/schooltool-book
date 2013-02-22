@@ -1,0 +1,106 @@
+:tocdepth: 2
+
+SchoolTool 2.4 Release Notes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SchoolTool 2.4 is currently in development and scheduled for April release
+of Ubuntu 13.04.
+
+New features
+============
+
+- New design of PDF reports
+- Ability to render forms and tables to PDF
+- IN PROGRESS: asynchronous imports and reports
+
+
+New plugins
+===========
+
+SchoolTool Quiz
+---------------
+
+Jeff Elkner has been funding (personally!) Douglas Cerna to create a system
+attached to CanDo that allows teachers to create online quizzes for their
+students.  Individual questions can be tagged with skills in CanDo to
+automatically update a student's skill rating in the gradebook based on quiz
+results.
+
+https://launchpad.net/schooltool.quiz
+
+
+2.4a2 (2013-02-19)
+==================
+
+SchoolTool 2.4a2 (2013-02-18)
+-----------------------------
+
+- Move User fieldset up in Add person page (https://launchpad.net/bugs/896848)
+- Removed unsupported translations: af, bn, fo, et, hu, te.
+- Updated translations.
+
+
+SchoolTool Gradebook 2.4a2 (2013-02-19)
+---------------------------------------
+
+- Remove Download Gradebook CSV
+- Updated Printable Gradebook style
+
+
+SchoolTool CanDo 0.5.1 (2013-02-18)
+-----------------------------------
+
+- New-style CanDo Gradebook report.
+- Added student's Section Competencies report.
+- Added student's Certificate of Competency report.
+
+
+2.4a1 (2013-01-23)
+==================
+
+SchoolTool 2.4a1 (2013-01-23)
+-----------------------------
+
+- Javascript for entering comments in gradebook cells.
+- Support table grouping by column.
+- Refactor out makeFormatter from table render methods.
+- Updated translations.
+
+Reports
++++++++
+
+- New PDF page design and implementation.
+- Render forms, tables, and grids to RML (PDF).
+- Add section roster, person profile, and resources reports.
+
+Development tools
++++++++++++++++++
+
+- Removed API Docs and Introspector
+
+
+SchoolTool Gradebook 2.4a1 (2013-01-23)
+---------------------------------------
+
+- Remake "Printable Worksheet" as a new style PDF
+- Report sheet templates now have category weights
+- Display total/average in deployed report sheets
+- Added category to report sheet template activity add/edit views
+- Added report sheet average to report card layout, pdf view
+- Removed hidden deployed worksheets from dropdown in layout activity add views
+- Do not give extra credit with discrete scoresystems
+- Case-insensitive score entry
+- Modal for entering scores in gradebook cells of comment activities
+- Updated translations
+
+
+SchoolTool CanDo 0.5 (2013-01-23)
+---------------------------------
+
+- Updated tables to use new table formatters.
+
+
+SchoolTool Virginia 0.5 (2013-01-23)
+------------------------------------
+
+- Updated tables to use new table formatters.

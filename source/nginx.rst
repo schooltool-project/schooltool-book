@@ -1,4 +1,5 @@
 .. _nginx:
+.. highlight:: nginx
 
 Nginx configuration
 ===================
@@ -6,7 +7,7 @@ Nginx configuration
 Virtual hosting
 ---------------
 
-To provide web access to schooltool using Nginx web server, add this to
+To provide web access to schooltool using the Nginx web server as a proxy, add this to
 ``nginx.conf``::
 
     http {
