@@ -40,7 +40,20 @@ CanDo requires skills be organized into skillsets, although "Skill" and "SkillSe
 
 The organizing nodes above this level are optional.  In this case we just have "Course."
 
+Organizing your Skills to Work with CanDo
+-----------------------------------------
 
+There are a few things to keep in mind in considering how to organize your skills for use in CanDo.
+
+In CanDo, "skills" are the things that are directly evaluated.  Teachers can score a skill, not a SkillSet or anything else above that in the hierarchy.  Reports could generate aggregate scores based on the skill scores.
+
+If you had a local system where you had, say, "standards" and "criteria" where "criteria" were the things that teachers actually scored, then you would map "standard" (in your system) to "SkillSet" and "criteria" to "Skill."
+
+A second consideration is that the CanDo gradebook is organized like a spreadsheet with a set of worksheets.  In a given section, each SkillSet corresponds to a worksheet.  From the user's point of view, it is best if each worksheet, and thus SkillSet, has 8 - 10 skills, to minimize the amount of time the teacher spends switching between sheets or scrolling from side to side within a worksheet, so you may want to either combine your groups of skills or split them up if they tend to be much smaller or larger than 8 - 10.
+
+Finally, a little planning is necessary if you want to automatically map your skills to courses.  You can use the layers created *above* SkillSets to automatically match one or more SkillSets to courses.  We will cover exactly how this works later, but you need to match one attribute of the courses (title, description, course ID, alternate ID) with an attribute of the "node" in your skills hierarchy (title, description, label).
+
+In our example, we have a "Course" layer, and the single course in the skills hierarchy has the title "Hands-On Math."  If there was also a Course in SchoolTool's Course database that had the same title (or a match in another attribute), they could be automatically matched.
 
 Entering Skills and Skillsets Through the Web
 ---------------------------------------------
