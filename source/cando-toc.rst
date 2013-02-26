@@ -8,3 +8,4 @@ Contents:
 
    cando
    cando-import
+   cando-assign
