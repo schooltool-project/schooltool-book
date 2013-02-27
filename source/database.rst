@@ -6,7 +6,9 @@ Unlike most web applications, SchoolTool does not use a relational database such
 Where is the data?
 ------------------
 
-All the data in a given SchoolTool instance is stored in a file named ``Data.fs``.  On an Ubuntu system this file can be found in the ``/var/lib/schooltool/`` directory.  The additional files in that directory ending with ``.index``, ``.lock``, and ``.tmp`` are all used by the application in various ways, but they `do not` contain any data about your school which is not also included in the main ``Data.fs`` file.  Photos, reports, and other files are stored outside the ``Data.fs`` database in a ``blobs`` directory.
+All the data in a given SchoolTool instance is stored in a file named ``Data.fs``.  On an Ubuntu system this file can be found in the ``/var/lib/schooltool/`` directory.  The additional files in that directory ending with ``.index``, ``.lock``, and ``.tmp`` are all used by the application in various ways, but they `do not` contain any data about your school which is not also included in the main ``Data.fs`` file.  
+
+Photos, reports, and other binary files are stored outside the ``Data.fs`` database in a ``blobs`` directory.
 
 Automatic backups
 -----------------
@@ -43,6 +45,8 @@ If you need to try an even older backup, ungzip it::
 
 The procedure for restoring from a previous manual backup is the same, that is, copy the file to the ``Data.fs`` position, except only you know where it is coming from.
 
+You will also need to backup and restore the files in the blobs directory using standard archiving tools (zip, tar, etc.).
+
 What if My Database is Empty After an Upgrade?
 ----------------------------------------------
 
@@ -53,7 +57,7 @@ If something goes awry during the backup process, it is possible that your curre
 How can I erase the entire database?
 ------------------------------------
 
-Delete the ``Data.fs`` file and the ``blobs`` directory.  This is, of course, permanent.  If there is the slightest chance you'll ever want that data, moving rather than deleting the file is advisable.
+Delete the ``Data.fs`` file and the ``blobs`` directory.  This is, of course, permanent.  If there is the slightest chance you'll ever want that data, moving rather than deleting the files is advisable.
 
 Packing the database.
 ---------------------
