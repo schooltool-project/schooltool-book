@@ -1,5 +1,5 @@
-.. _apache:
 .. highlight:: apache
+.. _apache:
 
 Apache configuration
 ====================

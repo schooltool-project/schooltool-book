@@ -56,7 +56,7 @@ Finally, a little planning is necessary if you want to automatically map your sk
 In our example, we have a "Cluster" layer, and the single Cluster in the skills hierarchy has the title "B2T Hands-On Math."  If there was also a Course in SchoolTool that had the same title (or a match in another attribute), they could be automatically matched.
 
 Entering Skills and Skill Sets Through the Web
----------------------------------------------
+----------------------------------------------
 
 Logged in as "manager," go to **School** and click **Skills** from the sidebar:
 

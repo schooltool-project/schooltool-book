@@ -1,5 +1,5 @@
 Assigning Skills to Courses in CanDo
-=========================
+====================================
 
 There are several methods of assigning skills to courses and sections.  
 
