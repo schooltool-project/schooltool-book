@@ -11,7 +11,7 @@ New features
 
 - New design of PDF reports
 - Ability to render forms and tables to PDF
-- IN PROGRESS: asynchronous imports and reports
+- Average, total and category weights in report sheets
 
 
 New plugins
@@ -27,6 +27,26 @@ automatically update a student's skill rating in the gradebook based on quiz
 results.
 
 https://launchpad.net/schooltool.quiz
+
+
+2.4b1 (unreleased)
+==================
+
+SchoolTool Virginia 0.5.1 (2013-02-26)
+--------------------------------------
+
+- Fixed reports for strange section/person ids.
+
+
+SchoolTool CanDo 0.6 (2013-02-25)
+---------------------------------
+
+- Fix section skills with no equivalent course skill
+- Sorted by label and title in add skill view for projects
+- Moved "Skills Export" option from School to Documents view (https://launchpad.net/bugs/1126577)
+- Moved "Import Skill Data" option from School to Documents view (https://launchpad.net/bugs/1131436)
+- Changed string "skillset" to "skill set" (https://launchpad.net/bugs/1131376)
+- Removed title from tables in index views for document and node (https://launchpad.net/bugs/1049966)
 
 
 2.4a2 (2013-02-19)
