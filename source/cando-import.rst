@@ -3,7 +3,7 @@ Importing Skills
 
 We recommend beginning this process by first manually creating a document structure and at least one example of the items in your heirarchy down to skills as described in :ref:`cando`.
 
-Following that, return to the **School** page and select **Reports > Skills Export**.
+Following that, return to the **Skills Documents** page (via the **Skills** link in the **School** page if necessary) and select **Reports > Skills Export**.
 
    .. image:: images/cando-import-1.png
    
@@ -15,15 +15,15 @@ The **Documents** worksheet contains a row for each document in the system, incl
 
    .. image:: images/cando-import-3.png
 
-The **Layers** worksheet defines the layers in the document hierarchies.  In this case, the "Course" layer we previously created, plus the default SkillSet and Skill.
+The **Layers** worksheet defines the layers in the document hierarchies.  In this case, the "Cluster" layer we previously created, plus the default Skill Set and Skill.
 
    .. image:: images/cando-import-4.png
 
-Data for any additional layers above SkillSets and Skills are in the **Nodes** worksheet, in this case our example Course.  
+Data for any additional layers above Skill Sets and Skills are in the **Nodes** worksheet, in this case our example Cluster.  
 
    .. image:: images/cando-import-5.png
 
-The **Skillsets** worksheet contains the skillsets, including our single example.  Note that the External ID column should be considered deprecated for skillsets.
+The **SkillSets** worksheet contains the Skill Sets, including our single example.  Note that the External ID column should be considered deprecated for Skill Sets.
 
    .. image:: images/cando-import-6.png
 
