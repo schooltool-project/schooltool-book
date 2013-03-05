@@ -1,0 +1,9 @@
+Document: schooltool-book
+Title: SchoolTool Book
+Author: SchoolTool Developers 
+Abstract: The SchoolTool Book is user documentation for SchoolTool.
+Section: Text
+
+Format: HTML
+Index: /usr/share/doc/schooltool-book/html/index.html
+Files: /usr/share/doc/schooltool-book/html/*.html

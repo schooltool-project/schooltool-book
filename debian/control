@@ -1,0 +1,16 @@
+Source: schooltool-book
+Priority: optional
+Section: doc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), python-sphinx (>= 1.0~), doc-base
+Standards-Version: 3.9.4
+
+Package: schooltool-book
+Depends: ${misc:Depends}
+Architecture: all
+Description: SchoolTool Book
+ SchoolTool is an open source, web based student information system designed for
+ schools in the developing world, with strong support for translation,
+ localization and customization.
+ .
+ This package contains user documentation for SchoolTool.
