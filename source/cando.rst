@@ -16,7 +16,7 @@ Below is a mindmap showing the hierarchy of "Hands-On Math" skills covered in th
 
    .. image:: images/cando-skills-setup-0.png
 
-Each leaf in this tree is a skill, for example:
+Each leaf in this tree is a "Skill," for example:
 
   * Understand Place Value Chart and the necessity to operate in "like units."
 
@@ -24,7 +24,7 @@ Each leaf in this tree is a skill, for example:
 
   * Add and subtract, whole numbers.
 
-These are grouped in branches called skillsets, e.g.:
+These are grouped in branches called "Skill Sets," e.g.:
 
   * Basic Mathematics
 
@@ -32,31 +32,31 @@ These are grouped in branches called skillsets, e.g.:
   
   * Decimals
 
-The trunk of the tree is a node representing the Hands-On Math course.  This is the only course in the program (for the purposes of this demo, at least).
+The trunk of the tree is a node representing the Hands-On Math course, for clarity, we will refer to this as a "Cluster."  This is the only Cluster in the program (for this demo, at least).
 
 The root node is the entire Building to Teach program.
 
-CanDo requires skills be organized into skillsets, although "Skill" and "SkillSet" can be renamed to map to local terminology.  
+CanDo requires skills be organized into Skill Sets, although "Skill" and "Skill Set" can be renamed to map to local terminology.  
 
-The organizing nodes above this level are optional.  In this case we just have "Course."
+The organizing nodes above this level are optional.  In this case we just have "Cluster."
 
 Organizing your Skills to Work with CanDo
 -----------------------------------------
 
 There are a few things to keep in mind in considering how to organize your skills for use in CanDo.
 
-In CanDo, "skills" are the things that are directly evaluated.  Teachers can score a skill, not a SkillSet or anything else above that in the hierarchy.  Reports could generate aggregate scores based on the skill scores.
+In CanDo, "skills" are the things that are directly evaluated.  Teachers can score a skill, not a Skill Set or anything else above that in the hierarchy.  Reports could generate aggregate scores based on the skill scores.
 
-If you had a local system where you had, say, "standards" and "criteria" where "criteria" were the things that teachers actually scored, then you would map "standard" (in your system) to "SkillSet" and "criteria" to "Skill."
+If you had a local system where you had, say, "standards" and "criteria" where "criteria" were the things that teachers actually scored, then you would map "standard" (in your system) to "Skill Set" and "criteria" to "Skill."
 
-A second consideration is that the CanDo gradebook is organized like a spreadsheet with a set of worksheets.  In a given section, each SkillSet corresponds to a worksheet.  From the user's point of view, it is best if each worksheet, and thus SkillSet, has 8 - 10 skills, to minimize the amount of time the teacher spends switching between sheets or scrolling from side to side within a worksheet, so you may want to either combine your groups of skills or split them up if they tend to be much smaller or larger than 8 - 10.
+A second consideration is that the CanDo gradebook is organized like a spreadsheet with a set of worksheets.  In a given section, each Skill Set corresponds to a worksheet.  From the user's point of view, it is best if each worksheet, and thus Skill Set, has 8 - 10 skills, to minimize the amount of time the teacher spends switching between sheets or scrolling from side to side within a worksheet, so you may want to either combine your groups of skills or split them up if they tend to be much smaller or larger than 8 - 10.
 
 Finally, a little planning is necessary if you want to automatically map your skills to courses.  We will cover exactly how this works later, but you need to match one attribute of the courses (title, description, course ID, alternate ID) with an attribute of the "node" in your skills hierarchy (title, description, label).
 
-In our example, we have a "Course" layer, and the single course in the skills hierarchy has the title "Hands-On Math."  If there was also a Course in SchoolTool's Course database that had the same title (or a match in another attribute), they could be automatically matched.
+In our example, we have a "Cluster" layer, and the single Cluster in the skills hierarchy has the title "B2T Hands-On Math."  If there was also a Course in SchoolTool that had the same title (or a match in another attribute), they could be automatically matched.
 
-Entering Skills and Skillsets Through the Web
----------------------------------------------
+Entering Skills and Skill Sets Through the Web
+----------------------------------------------
 
 Logged in as "manager," go to **School** and click **Skills** from the sidebar:
 
@@ -66,13 +66,13 @@ We'll start with a document representing the Building to Teach program.  Click *
 
    .. image:: images/cando-skills-setup-2.png
 
-Give the document a title and an optional description.  Under **Layer Hierarchy**, in this case, as defined above, we have "Course," "SkillSet" and "Skill".  Click on **Add layer** and add "Course" above "SkillSet."  We could also rename "SkillSet" and "Skill" to suit the names used in our particular document (e.g., "cluster" and "standard"). 
+Give the document a title and an optional description.  Under **Layer Hierarchy**, in this case, as defined above, we have "Cluster," "Skill Set" and "Skill".  Click on **Add layer** and add "Cluster" above "Skill Set."  We could also rename "Skill Set" and "Skill" to suit the names used in our particular document (e.g., "strand" and "standard"). 
 
 Click **Submit**:
 
    .. image:: images/cando-skills-setup-3.png
    
-To add a Course, click **Add: course**:
+To add a Cluster, click **Add: Cluster**:
 
    .. image:: images/cando-skills-setup-3_5.png
 
@@ -80,19 +80,19 @@ Click **Submit**:
 
    .. image:: images/cando-skills-setup-3_6.png
 
-Since we are done entering Courses, to add the skillsets to **Hands On Math** click that link in the Course list:
+Since we are done entering Clusters, to add the Skill Sets to **Hands On Math** click that link in the Cluster list:
 
    .. image:: images/cando-skills-setup-3_7.png
 
-To add a SkillSet we click **Add: SkillSet**:
+To add a Skill Set click **Add: Skill Set**:
 
    .. image:: images/cando-skills-setup-4.png
 
-The label attribute is important because you need a short representation of the SkillSet that will appear within a tab in the CanDo gradebook.
+The label attribute is important because you need a short representation of the Skill Set that will appear within a tab in the CanDo gradebook.
 
    .. image:: images/cando-skills-setup-5.png
 
-Similarly, to add a Skill to the SkillSet, click **Add: Skill** from the SkillSet view:
+Similarly, to add a Skill to the Skill Set, click **Add: Skill** from the Skill Set view:
 
    .. image:: images/cando-skills-setup-6.png
 
@@ -116,7 +116,7 @@ Otherwise, **Submit** results in:
 
    .. image:: images/cando-skills-setup-8.png
 
-Clicking **Done** takes you back up to the containing skillset and up through subsequent layers.
+Clicking **Done** takes you back up to the containing Skill Set and up through subsequent layers.
 
-This outlines the basic procedure for manually creating a skills document.  There will necessarily be a lot of repetition in manually entering all the skillsets, skills, and other required layers of hierarchy.  If you have a large set of standards of standards, and you have them in machine-readable form, such as csv tables, a spreadsheet, or XML, you will probably want to import them in bulk, which we will explain in the next page.  However, the easiest way to start the process, even if you want to import, is to follow the above procedure for at least one skill as shown above.
+This outlines the basic procedure for manually creating a skills document.  There will necessarily be a lot of repetition in manually entering all the Skill Sets, skills, and other required layers of hierarchy.  If you have a large set of standards of standards, and you have them in machine-readable form, such as csv tables, a spreadsheet, or XML, you will probably want to import them in bulk, which we will explain in the next page.  However, the easiest way to start the process, even if you want to import, is to follow the above procedure for at least one skill as shown above.
 

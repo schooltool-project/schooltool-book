@@ -34,7 +34,7 @@ python:
 	rm -rf python
 	virtualenv --no-site-packages python
 
-bootstrap bin/buildout: python
+bootstrap bin/buildout: | python
 	python/bin/python bootstrap.py
 
 bin/sphinx-build: bin/buildout

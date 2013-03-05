@@ -11,7 +11,7 @@ In particular:
   * you can run reports for all members of a Group;
   * Groups are useful for adding a set of students to multiple class sections.
 
-The default roles as defined by the **School Administrators, Site Managers, Students,** **Teachers**, and **Clerks** Groups affect the permissions and access privileges of their members.  See :ref:`security` for further explanation.
+The default roles as defined by the **School Administrators, Site Managers, Students,** **Teachers**, and **Clerks** Groups affect the permissions and access privileges of their members.
 
 Groups are stored by Year.  That is, each school year has its own set of Groups.  For example, you may have one "Students" Group for Year "2008-2009" and a separate "Students" group for Year "2009-2010."
 
