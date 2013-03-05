@@ -29,7 +29,7 @@ results.
 https://launchpad.net/schooltool.quiz
 
 
-2.4b1 (unreleased)
+2.4a3 (2013-02-26)
 ==================
 
 SchoolTool Virginia 0.5.1 (2013-02-26)
