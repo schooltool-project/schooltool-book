@@ -2,11 +2,11 @@ Source: schooltool-book
 Priority: optional
 Section: doc
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Build-Depends: debhelper (>= 7.0.50~), python-sphinx (>= 1.0~), doc-base
+Build-Depends: debhelper (>= 7.0.50~), python-sphinx (>= 1.0.7+dfsg), doc-base
 Standards-Version: 3.9.4
 
 Package: schooltool-book
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ${sphinxdoc:Depends}
 Architecture: all
 Description: SchoolTool Book
  SchoolTool is an open source, web based student information system designed for
