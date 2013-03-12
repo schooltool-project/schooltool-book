@@ -6,13 +6,13 @@ CanDo: Introduction and Setup
 Background
 ----------
 
-CanDo helps a school manage what is often called outcome-based assessment.  It is also called competency, skill or standard based assessment.  The basic principal is the same.  You have a body of outcomes, which we will generically call "skills" in the rest of this document, and you track student achievement of those skills directly, rather than through assigning points to activities or participation and assigning an aggregate grade.
+CanDo helps a school manage what is often called outcome-based assessment.  It is also called competency, skill or standard based assessment.  The basic principal is the same.  You have a body of outcomes, which we will generically call "Skills" in the rest of this document, and you track student achievement of those Skills directly, rather than through assigning points to activities or participation and assigning an aggregate grade.
 
 Note: CanDo was developed in collaboration with the Arlington Career Center (of the Arlington (Virginia, USA) Public Schools and Virginia Career and Technical Education Resource Center.  CTE users in Virginia should refer to the `VA CTE site <http://cando.cteresource.org/>`_ for specific documentation concerning your competencies and other details.
 
 Getting to a specific example as quickly as possible will help.
 
-Below is a mindmap showing the hierarchy of "Hands-On Math" skills covered in the `Building to Teach <http://www.buildingtoteach.com/>`_ program (click on image to expand).
+Below is a mindmap showing the hierarchy of "Hands-On Math" Skills covered in the `Building to Teach <http://www.buildingtoteach.com/>`_ program (click on image to expand).
 
    .. image:: images/cando-skills-setup-0.png
 
@@ -45,11 +45,11 @@ Organizing your Skills to Work with CanDo
 
 There are a few things to keep in mind in considering how to organize your skills for use in CanDo.
 
-In CanDo, "skills" are the things that are directly evaluated.  Teachers can score a skill, not a Skill Set or anything else above that in the hierarchy.  Reports could generate aggregate scores based on the skill scores.
+In CanDo, "Skills" are the things that are directly evaluated.  Teachers can score a Skill, not a Skill Set or anything else above that in the hierarchy.  Reports could generate aggregate scores based on the Skill scores.
 
 If you had a local system where you had, say, "standards" and "criteria" where "criteria" were the things that teachers actually scored, then you would map "standard" (in your system) to "Skill Set" and "criteria" to "Skill."
 
-A second consideration is that the CanDo gradebook is organized like a spreadsheet with a set of worksheets.  In a given section, each Skill Set corresponds to a worksheet.  From the user's point of view, it is best if each worksheet, and thus Skill Set, has 8 - 10 skills, to minimize the amount of time the teacher spends switching between sheets or scrolling from side to side within a worksheet, so you may want to either combine your groups of skills or split them up if they tend to be much smaller or larger than 8 - 10.
+A second consideration is that the CanDo gradebook is organized like a spreadsheet with a set of worksheets.  In a given section, each Skill Set corresponds to a worksheet.  From the user's point of view, it is best if each worksheet, and thus Skill Set, has 8 - 10 skills, to minimize the amount of time the teacher spends switching between sheets or scrolling from side to side within a worksheet, so you may want to either combine your groups of Skills or split them up if they tend to be much smaller or larger than 8 - 10.
 
 Finally, a little planning is necessary if you want to automatically map your skills to courses.  We will cover exactly how this works later, but you need to match one attribute of the courses (title, description, course ID, alternate ID) with an attribute of the "node" in your skills hierarchy (title, description, label).
 

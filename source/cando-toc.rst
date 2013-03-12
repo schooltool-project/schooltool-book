@@ -9,3 +9,4 @@ Contents:
    cando
    cando-import
    cando-assign
+   cando-entry
