@@ -102,7 +102,7 @@ Each skill is assigned a score system, that is, the grading scale on which stude
 
 As you add more skills, the form will use your previous score system selection as the default.  In practice, a given set of skills will usually use one score system, but if you are including different types of skills (academic, technical, social, etc) within your system, they may require different score systems as well.
 
-See the main :ref:`score-systems` page for more about creating a custom score system. 
+See the main :ref:`score-systems` page for more about creating a custom Score System.  Note that it is much easier to enter scores in CanDo if the Score System labels or titles are single characters.
 
 A meaningful label is particularly important for skills as it will be what the teacher sees at the top of the column in their gradebook view.
 

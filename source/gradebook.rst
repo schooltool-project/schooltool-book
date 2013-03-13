@@ -5,6 +5,13 @@ Getting Started with the Gradebook
 
 SchoolTool's standard Gradebook allows teachers to track point scores for assigned Activities.  That is, the teacher creates an Activity, assigns a numeric point range for the Activity, and then assigns each student a score for that Activity.  Activities can also be assigned to categories, which can be weighted for the purpose of calculating an overall average.  "Score systems" or grading scales allow percentage scores to be associated with other types of grades, such as A-F, Pass/Fail, etc.
 
+Changing Sections
+-----------------
+
+Use the **Section**, **Term** and **Year** menus to navigate to the relevant section.  The **Section** menu displays the teacher's sections in the selected Term.  The **Term** menu displays the Terms in the selected School Year.
+
+   .. image:: images/gradebook-0.png
+
 Contextual Menus & Zoom
 -----------------------
 
