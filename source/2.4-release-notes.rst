@@ -29,6 +29,30 @@ results.
 https://launchpad.net/schooltool.quiz
 
 
+2.4b1 (unreleased)
+------------------
+
+SchoolTool Virginia 0.6 (2013-03-20)
+------------------------------------
+
+- Updated completion reports:
+
+  + Added number of required skills
+  + Removed average percentages
+  + Render only when submit button is pressed, to allow changing filters first
+  + Added course filter
+  + Added totals column
+
+- Download required skills completion report as PDF
+
+
+SchoolTool CanDo 0.6.1 (2013-03-20)
+-----------------------------------
+
+- Fixed permissions of popup menus and competency report
+- Updated translations, added Thai
+
+
 2.4a3 (2013-02-26)
 ==================
 
@@ -51,6 +75,8 @@ SchoolTool CanDo 0.6 (2013-02-25)
 
 2.4a2 (2013-02-19)
 ==================
+
+- Sync versions with Raring Alpha 2.
 
 SchoolTool 2.4a2 (2013-02-18)
 -----------------------------
@@ -77,6 +103,18 @@ SchoolTool CanDo 0.5.1 (2013-02-18)
 
 2.4a1 (2013-01-23)
 ==================
+
+- Removed dependency on zope.app.content
+
+- Removed optional dependencies:
+
+  + zope.app.apidoc
+  + zope.app.file
+  + zope.app.onlinehelp
+  + zope.app.preference
+  + zope.app.tree
+  + zope.preference
+
 
 SchoolTool 2.4a1 (2013-01-23)
 -----------------------------
