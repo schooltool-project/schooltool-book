@@ -6,6 +6,14 @@ LDAP Single Sign-on
 LDAP integration allows users to sign into SchoolTool with their
 existing LDAP accounts.
 
+.. WARNING::
+   
+   We cannot test our LDAP support against all the existing LDAP implementations and configurations, so we cannot guarantee it will "just work" for you.  
+   
+   Before you make any promises about SchoolTool working with your LDAP, test it against your LDAP server.
+   
+   In particular, there seems to be a problem currently with LDAP servers trying to assign non-ASCII characters in usernames, which is not supported by Zope (and thus SchoolTool).  We are looking into a fix for this issue.
+
 To enable LDAP support, you will need to install the `SchoolTool LDAP
 <https://launchpad.net/schooltool.ldap>`_ plugin from the
 `SchoolTool PPA <install-pre-natty.html>`_ using **Ubuntu Software Center**,
