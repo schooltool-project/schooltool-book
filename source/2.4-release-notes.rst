@@ -32,6 +32,21 @@ https://launchpad.net/schooltool.quiz
 2.4b1 (unreleased)
 ------------------
 
+SchoolTool CanDo 0.6.2 (2013-03-25)
+-----------------------------------
+
+- Added section student competency report
+- Fixed skills sorting in Set Required/Visible view
+- Fixed permissions of project view
+
+
+SchoolTool Virginia 0.6.1 (2013-03-25)
+--------------------------------------
+
+- Added frozen table headers to the VA completion reports
+- Fixed VA section report attainment calculation
+
+
 SchoolTool Virginia 0.6 (2013-03-20)
 ------------------------------------
 
