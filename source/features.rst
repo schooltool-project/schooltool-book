@@ -125,6 +125,6 @@ Technical Features
 
 * **Consistent programming style:** For readability and easier modification, SchoolTool conforms to the official PEP 8 Style Guide for Python Code.
 
-* **LDAP Integration:** Authenticate against an LDAP server, including one-step setup with `Zentyal <http://www.zentyal.org/>`_ server.
+* **LDAP Integration:** Authenticate against an `LDAP <ldap.html>`_ server, including one-step setup with `Zentyal <http://www.zentyal.org/>`_ server.
 
 * **Single sign-on:** SchoolTool supports using `Central Authentication Service (CAS) <cas.html>`_ for single sign-on with other enterprise applications such as Moodle and Drupal.  CAS requires a separate authentication server; we have been using RubyCAS in this role at a test site.  The CAS server can be easily configured to authenticate against your LDAP server or another external database.  If you are interested in using CAS or LDAP authentication, contact the SchoolTool team via Launchpad, email or IRC.

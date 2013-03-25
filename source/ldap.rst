@@ -16,7 +16,7 @@ existing LDAP accounts.
 
 To enable LDAP support, you will need to install the `SchoolTool LDAP
 <https://launchpad.net/schooltool.ldap>`_ plugin from the
-`SchoolTool PPA <install-pre-natty.html>`_ using **Ubuntu Software Center**,
+:ref:`ppa` using **Ubuntu Software Center**,
 or the command line:: 
 
     sudo apt-get install python-schooltool.ldap

@@ -3,8 +3,8 @@
 Installing SchoolTool
 =====================
 
-SchoolTool 2.1
---------------
+SchoolTool in Ubuntu
+--------------------
 
 SchoolTool 2.1 is available in the Ubuntu Universe repository for Ubuntu 12.04 (Precise) and 12.10 (Quantal).
 
@@ -16,18 +16,14 @@ Or enter at the command line::
 
 After installation, the schooltool server can be accessed from the server at http://localhost:7080.  See :ref:`remote`.
 
-SchoolTool 2.3
+.. _ppa:
+
+SchoolTool PPA
 --------------
 
-SchoolTool 2.3 is available for Ubuntu 12.04 (Precise) and 12.10 (Quantal) through the `SchoolTool repository on Launchpad <https://launchpad.net/~schooltool-owners/+archive/ppa>`_.
+Updates for supported Ubuntu releases, and the latest SchoolTool 2.3_ release for Ubuntu 12.10 (Quantal) are distributed through the `SchoolTool PPA <https://launchpad.net/~schooltool-owners/+archive/ppa>`_.
 
-Open the **Ubuntu Software Center**.  Choose **Edit > Software Sources...**  Click **Other Software > Add...**, enter as the **APT line**:
-
-for Ubuntu 12.04::  
-
- ppa:schooltool-owners/dev
-
-for Ubuntu 12.10:: 
+Open the **Ubuntu Software Center**.  Choose **Edit > Software Sources...**  Click **Other Software > Add...**, enter as the **APT line**::
 
  ppa:schooltool-owners/ppa
 
@@ -39,14 +35,7 @@ Then search for "SchoolTool" in the searchbox at upper right in the Software Cen
 
    .. image:: images/usc-schooltool.png
 
-Or, using the command line:
-
-for Ubuntu 12.04::
-
- $ sudo add-apt-repository ppa:schooltool-owners/dev
- $ sudo apt-get update
-
-for Ubuntu 12.10:: 
+Or, using the command line::
 
  $ sudo add-apt-repository ppa:schooltool-owners/ppa
  $ sudo apt-get update
@@ -57,3 +46,5 @@ Then install the ``schooltool`` package::
 
 After installation, the schooltool server will be started at
 http://localhost:7080. See :ref:`remote`.
+
+.. _2.3: 2.3-release-notes.html

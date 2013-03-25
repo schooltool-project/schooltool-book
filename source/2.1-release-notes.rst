@@ -4,8 +4,8 @@ SchoolTool 2.1 Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SchoolTool 2.1 builds upon the the redesigned 2.0 and is included in Ubuntu 12.04 LTS.
-That means it will be supported for several years to come.
-
+That means it will be supported for several years to come. Please add
+:ref:`ppa` to your Software Sources to get bugfix releases since 2.1.0_
 
 2.1.2
 =====

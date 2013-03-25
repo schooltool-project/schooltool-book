@@ -1,18 +1,22 @@
+.. _release-notes:
+
 Release Notes
 =============
 
-Latest release: 2.3_
+Development: 2.4_
 
-Long term support release: 2.1_
+Stable: 2.3_
 
-Last release with old skin: 1.7_
+Long term support: 2.1_
 
 ========= ======== ======= ========= ==== ====
 ubuntu    codename release universe_ ppa_ dev_
 ========= ======== ======= ========= ==== ====
 13.04     raring   2.4_    2.3_      2.4_     
+--------- -------- ------- --------- ---- ----
 12.10     quantal  2.3_    2.1_      2.3_ 2.4_    
 12.04 LTS precise  2.1_    2.1_      2.1_ 2.4_
+--------- -------- ------- --------- ---- ----
 *11.11*   flourish 2.0_                       
 11.10     oneiric  1.7_    1.7_      1.7_ 2.1_
 11.04     natty    1.6_    1.6_      1.6_ 2.1_
@@ -33,9 +37,9 @@ ubuntu    codename release universe_ ppa_ dev_
 .. _1.4: 1.4-release-notes.html
 .. _1.2: 1.2-release-notes.html
 .. _1.0: 1.0-release-notes.html
-.. _universe: install.html
-.. _ppa: install-pre-natty.html
-.. _dev: install-2_0.html
+.. _universe: install-2_0.html
+.. _ppa: install-2_0.html#ppa
+.. _dev: install-dev.html
 
 .. toctree::
    :maxdepth: 1
