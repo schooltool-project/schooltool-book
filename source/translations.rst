@@ -37,7 +37,9 @@ Translations can be contributed, edited, checked, improved, through the web via 
 
 Translations submitted to Launchpad will be included in subsequent updates of SchoolTool.
 
-If you would like to install a translation that has been entered into Launchpad but not yet included in a SchoolTool release: 
+To install a translation that has been entered into Launchpad but not yet included in a SchoolTool release, follow the steps below. 
+
+For languages other than Russian, the "ru" below should be replaced with the relevant prefix. 
 
  * Go to the relevant translation download page, for example, the Russian translation at https://translations.launchpad.net/schooltool/flourish/+pots/schooltool/ru/+export
 
@@ -45,10 +47,10 @@ If you would like to install a translation that has been entered into Launchpad 
 
  * You will get an email in a few minutes. Save the file to disk.
 
- * Replace current translations with the exported file::
+ * Replace current translations with the exported file.  A user with superuser (root) privileges needs to move the file to where SchoolTool will find it::
  
-     sudo mv ru_LC_MESSAGES_schooltool.mo /usr/share/pyshared/schooltool/locales/ru/LC_MESSAGES/schooltool.mo
+     sudo mkdir /usr/lib/python2.7/dist-packages/schooltool/locales/ru/
+     sudo mv ru_LC_MESSAGES_schooltool.mo /usr/lib/python2.7/dist-packages/schooltool/locales/ru/LC_MESSAGES
 
  * Restart the SchoolTool service. Your translation should be applied.
 
-Of course, for languages other than Russian, the "ru" above should be replaced with the relevant prefix.
