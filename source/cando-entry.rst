@@ -70,3 +70,5 @@ Similarly, clicking a student name brings up another pop-up menu:
 **Score history** shows the student's scores including past revisions:
 
    .. image:: images/cando-entry-15.png
+
+Note that the **Skills** view is the definitive view for **Score History** in the section.  In **Projects** mode, the score history for *that project* will be displayed.

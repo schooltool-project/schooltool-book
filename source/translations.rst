@@ -41,11 +41,15 @@ To install a translation that has been entered into Launchpad but not yet includ
 
 For languages other than Russian, the "ru" below should be replaced with the relevant prefix. 
 
+You must repeat these steps for each translated component of SchoolTool.
+
  * Go to the relevant translation download page, for example, the Russian translation at https://translations.launchpad.net/schooltool/flourish/+pots/schooltool/ru/+export
 
  * Select "MO export" and request download.
 
  * You will get an email in a few minutes. Save the file to disk.
+ 
+ * Transfer the file(s) to the server if downloaded from another computer.
 
  * Replace current translations with the exported file.  A user with superuser (root) privileges needs to move the file to where SchoolTool will find it::
  

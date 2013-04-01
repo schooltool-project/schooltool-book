@@ -10,3 +10,4 @@ Contents:
    cando-import
    cando-assign
    cando-entry
+   cando-project
