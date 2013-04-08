@@ -37,7 +37,7 @@ We will cover the **CourseSkills** worksheet when we begin associating skills wi
 
 The next step is to get your skills data into this spreadsheet, following the example data you entered through the web interface.  
 
-Depending on what format your exising data is in, you might be able to simply cut and paste into the spreadsheet cells.  Depending on your skills (or access to people with skills) you might be able to write a script that will parse your skills document and either directly insert the data into the spreadsheet, for example, using `Python <http://python.org>`_ and `python-excel <http://www.python-excel.org/>`_.
+Depending on what format your existing data is in, you might be able to simply cut and paste into the spreadsheet cells.  Depending on your skills (or access to people with skills) you might be able to write a script that will parse your skills document and either directly insert the data into the spreadsheet, for example, using `Python <http://python.org>`_ and `python-excel <http://www.python-excel.org/>`_.
 
 The end result will look something like this:
 
