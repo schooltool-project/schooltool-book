@@ -12,6 +12,13 @@ new features made before, or in parallel to, the flourish_ sprint.
 .. _flourish: 1.9-release-notes.html
 
 
+1.7.1 (2012-09-03)
+==================
+
+- Make sandbox with virtualenv. Fixes bootstrap with Python 2.7.
+- Upgrade to zc.buildout 1.5
+
+
 SchoolTool 1.7.1 (2012-09-03)
 -----------------------------
 

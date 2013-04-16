@@ -18,6 +18,14 @@ New features
 2.4b1 (unreleased)
 ==================
 
+SchoolTool Intervention 2.4b1 (2013-04-15)
+------------------------------------------
+
+- Added message subject to student's view
+- Updated translations, added Thai
+- Requires Python 2.6
+
+
 SchoolTool CanDo 0.6.2 (2013-03-25)
 -----------------------------------
 
