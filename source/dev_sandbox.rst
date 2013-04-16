@@ -1,9 +1,15 @@
 Developing SchoolTool
 =====================
 
-SchoolTool uses bazaar VCS.  Be sure to install it first::
+SchoolTool uses Bazaar_ VCS.  Be sure to install it first::
 
   ~$ sudo apt-get install bzr
+
+Install `build dependencies`_ like compilers, development libraries and fonts::
+
+  ~$ sudo make ubuntu-environment
+
+.. _Bazaar: http://bazaar-vcs.org/
 
 
 Quickstart
@@ -20,11 +26,11 @@ The **schooltool** package just contains the "core" functionality of SchoolTool:
 
 To *use* SchoolTool for anything (beyond calendaring) you need plugins.
 
-Enable plugins (optional).  Note, that we currently **do not support** disabling the plugins.  That is, you can't enable the gradebook, use it a while, and then remove the gradebook module.
-So, you'll need to delete your instance (along with all the data, sadly) to run again without a plugin.
+Enable plugins (optional).
 
 To enable plugins, edit buildout.cfg to contain::
 
+  [package]
   eggs += schooltool
           schooltool.gradebook
           schooltool.lyceum.journal
@@ -32,18 +38,12 @@ To enable plugins, edit buildout.cfg to contain::
 
 Build and run schooltool::
 
-  ~/schooltool$ sudo make ubuntu-environment
   ~/schooltool$ make run
 
 Open http://localhost:7080/ in your browser.
 
-If you want to change enabled plugins, delete your instance (be careful with this rm command):
+If you want to change enabled plugins, edit buildout.cfg, and run SchoolTool again::
 
-  ~/schooltool$ rm -rf instance/
-
-Edit buildout.cfg, re-build and run SchoolTool again::
-
-  ~/schooltool$ make update
   ~/schooltool$ make run
 
 
@@ -65,16 +65,13 @@ path.
 
 Create the cache directories::
 
-  ~$ mkdir ~/.buildout/cache
-  ~$ mkdir ~/.buildout/extends
+  ~$ mkdir -p ~/.buildout/eggs
+  ~$ mkdir -p ~/.buildout/cache
+  ~$ mkdir -p ~/.buildout/extends
 
 
 Create the shared repository
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If possible get the newest version of bzr, at least 1.6 is required.
-
-(http://bazaar-vcs.org/DistroDownloads)
 
 Create the bzr shared repository::
 
@@ -184,7 +181,7 @@ Let's assume you want to work on both SchoolTool core and the Gradebook plugin.
 
 First, check out branches (lp:schooltool and lp:schooltool.gradebook) to your sandbox::
 
-  ~/schooltool_sandbox$ bzr branch lp:schooltool schooltool.gradebook_dev
+  ~/schooltool_sandbox$ bzr branch lp:schooltool schooltool_dev
   ~/schooltool_sandbox$ bzr branch lp:schooltool.gradebook schooltool.gradebook_dev
 
 Edit ``buildout.cfg`` in the directory you run the server from (say, schooltool.gradebook_dev).
@@ -204,3 +201,29 @@ Push both directories to separate branches in Launchpad, request merges on both 
 same time.  I believe it's obvious that dealing with multiple branch merging increases
 chances of human error.
 
+
+.. _build dependencies:
+
+Build dependencies
+------------------
+
+On Ubuntu you can simply ``sudo make ubuntu-environment``. On other systems,
+below is what you need::
+
+Build essentials::
+
+  $ apt-get install build-essential gettext
+
+Contains gcc, make and other tools needed to build software.
+
+Python 2.6 or 2.7 with development headers::
+
+  $ apt-get install python-dev
+
+Development libraries::
+
+  $ apt-get install libicu-dev libxslt1-dev libfreetype6-dev libjpeg-dev enscript
+
+You also need virtualenv and both Ubuntu and Liberation fonts::
+
+  $ apt-get install python-virtualenv ttf-ubuntu-font-family ttf-liberation
