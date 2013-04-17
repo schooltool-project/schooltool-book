@@ -13,10 +13,34 @@ New features
 - New design of PDF reports
 - Ability to render forms and tables to PDF
 - Average, total and category weights in report sheets
+- Section roster, person profile, and resources reports
+- Three new reports for CanDo
 
 
-2.4b1 (unreleased)
+2.4b1 (2013-04-17)
 ==================
+
+- Local buildout.cfg.  Your changes to buildout.cfg will not be committed.
+- Update to zc.buildout 1.7.1
+- Remove hurry.query dependency
+
+
+SchoolTool 2.4b1 (2013-04-17)
+-----------------------------
+
+Bugfixes
+++++++++
+
+- Fixed setting up section schedules for multiple terms
+- Home and Calendar tabs work incorrectly when looking at other persons (https://launchpad.net/bugs/1166926)
+- Prevented XLS importer from crashing with non-xls files (https://launchpad.net/bugs/904968)
+
+Translations
+++++++++++++
+
+- Updated translations, added Thai. Special thanks to Vitali Oleshkevich, who
+  has completed both Russian and Ukrainian translations!
+
 
 SchoolTool Intervention 2.4b1 (2013-04-15)
 ------------------------------------------
@@ -24,6 +48,22 @@ SchoolTool Intervention 2.4b1 (2013-04-15)
 - Added message subject to student's view
 - Updated translations, added Thai
 - Requires Python 2.6
+
+
+SchoolTool Journal 2.4b1 (2013-04-04)
+-------------------------------------
+
+- Fix journals when section out-of-term-bounds schedules overlap (https://launchpad.net/bugs/1104190)
+- Journals now display all scheduled dates for selected section
+- Tab redirects to a section only if current user can access it (https://launchpad.net/bugs/1155226)
+- Added Thai translation
+
+
+SchoolTool Gradebook 2.4b1 (2013-04-04)
+---------------------------------------
+
+- Tab redirects to a section only if current user can access it (https://launchpad.net/bugs/1155226)
+- Added Thai translation
 
 
 SchoolTool CanDo 0.6.2 (2013-03-25)
