@@ -14,7 +14,6 @@ You can force SchoolTool pages to always display in a desired language.
 
 Edit schooltool.conf with your favorite editor::
 
-  # Ubuntu Natty or later
   $ sudo gedit /etc/schooltool/standard/schooltool.conf
 
 Append a line "lang LANG_CODE" at the end, where LANG_CODE is the desired language code.  Several examples::
@@ -53,8 +52,8 @@ You must repeat these steps for each translated component of SchoolTool.
 
  * Replace current translations with the exported file.  A user with superuser (root) privileges needs to move the file to where SchoolTool will find it::
  
-     sudo mkdir /usr/lib/python2.7/dist-packages/schooltool/locales/ru/
-     sudo mv ru_LC_MESSAGES_schooltool.mo /usr/lib/python2.7/dist-packages/schooltool/locales/ru/LC_MESSAGES
+     sudo mkdir -p /usr/lib/python2.7/dist-packages/schooltool/locales/ru/LC_MESSAGES
+     sudo cp ru_LC_MESSAGES_schooltool.mo /usr/lib/python2.7/dist-packages/schooltool/locales/ru/LC_MESSAGES/schooltool.mo
 
  * Restart the SchoolTool service. Your translation should be applied.
 
