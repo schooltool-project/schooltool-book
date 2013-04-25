@@ -8,6 +8,5 @@ Contents:
 
    system-requirements
    install-2_0
-   install-dev
-   upgrade-lucid
+
 
