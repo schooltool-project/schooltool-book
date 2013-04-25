@@ -3,13 +3,20 @@
 SchoolTool 2.5 Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SchoolTool 2.5 is being developed since February 2013.
+SchoolTool 2.5 is being developed since February 2013, continuing the work done
+in 2012. You can see it in various `celery` branches on
+https://code.launchpad.net/schooltool-project/
 
 
 New features
 ============
 
 - Background XLS import
+- Background report generation
+- Message notifications about finished background tasks
+- The rest of reports converted to the new style
+- SVG-based filtered/chart reports
+- Per Student Skills and Skills Completion report moved to CanDo from Virginia
 
 
 New plugins
@@ -25,5 +32,4 @@ automatically update a student's skill rating in the gradebook based on quiz
 results.
 
 https://launchpad.net/schooltool.quiz
-
 

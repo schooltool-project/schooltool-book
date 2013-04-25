@@ -5,6 +5,7 @@ Release Notes
 
 Series:
 
+- Development: 2.5_
 - Stable: 2.4_, 2.3_
 - Long term support: 2.1_
 
@@ -13,6 +14,7 @@ ubuntu    codename release universe_ ppa_ dev_
 ========= ======== ======= ========= ==== ====
 *Development*
 ------------------ ------- --------- ---- ----
+*13.05*   celery   2.5_
 *Stable*
 ------------------ ------- --------- ---- ----
 13.04     raring   2.4_    2.4_      2.4_     
@@ -39,6 +41,7 @@ of life on May 9, 2013, *SchoolTool 1.x series are no longer supported since
 The oldest supported release is SchoolTool 2.1 for precise, with the SchoolTool
 ppa_.
 
+.. _2.5: 2.5-release-notes.html
 .. _2.4: 2.4-release-notes.html
 .. _2.3: 2.3-release-notes.html
 .. _2.1: 2.1-release-notes.html
@@ -58,6 +61,7 @@ ppa_.
    :maxdepth: 1
    :hidden:
 
+   2.5-release-notes
    2.4-release-notes
    2.3-release-notes
    2.1-release-notes
