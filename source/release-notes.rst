@@ -14,7 +14,7 @@ ubuntu    codename release universe_ ppa_ dev_
 ========= ======== ======= ========= ==== ====
 *Development*
 ------------------ ------- --------- ---- ----
-*13.05*   celery   2.5_
+13.10     saucy    2.5_    2.4_
 *Stable*
 ------------------ ------- --------- ---- ----
 13.04     raring   2.4_    2.4_      2.4_     
@@ -23,7 +23,7 @@ ubuntu    codename release universe_ ppa_ dev_
 *Obsolete*
 ------------------ ------- --------- ---- ----
 *11.11*   flourish 2.0_                       
-11.10     oneiric  1.7_    1.7_      1.7_ 2.1_
+11.10     oneiric  1.7_    1.7_
 11.04     natty    1.6_    1.6_
 10.10     maverick 1.5_                       
 10.04 LTS lucid    1.4_                   2.1_
