@@ -17,6 +17,51 @@ New features
 - Three new reports for CanDo
 
 
+2.4.1 (2013-05-30)
+==================
+
+Bugfixes for 13.04 release
+
+- Supports import of .xlsx spreadsheets
+
+
+SchoolTool 2.4.1 (2013-05-30)
+-----------------------------
+
+Reports
++++++++
+
+- Fixed report generation to not do network requests (https://launchpad.net/bugs/1185418).
+- Fixed ratio of school logo.
+- Fixed rendering of "&" in headers.
+
+Bugfixes
+++++++++
+
+- Warn about unsaved changes when leaving gradebook (https://launchpad.net/bugs/907999)
+
+Language
+++++++++
+
+- Replaced Filter by... labels
+- Updated Italian, Greek, Portuguese, and other translations.
+
+
+SchoolTool Gradebook 2.4.1 (2013-05-30)
+---------------------------------------
+
+- Made comment cells to submit the gradebook form
+- Warn about unsaved changes when leaving gradebook (https://launchpad.net/bugs/907999)
+- Updated translations, added Sinhalese.
+
+
+SchoolTool CanDo 0.7.1 (2013-05-29)
+-----------------------------------
+
+- Renamed Section Competencies reports to Student Skill Reports
+- Fixed Add Skill exception when z3c.form >= 2.9 is used (https://launchpad.net/bugs/1185433)
+
+
 2.4.0 (2013-04-19)
 ==================
 
