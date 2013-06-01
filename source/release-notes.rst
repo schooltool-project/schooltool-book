@@ -14,7 +14,7 @@ ubuntu    codename release universe_ ppa_ dev_
 ========= ======== ======= ========= ==== ====
 *Development*
 ------------------ ------- --------- ---- ----
-13.10     saucy    2.5_    2.4_
+13.10     saucy    2.5_    2.4_      2.4_
 *Stable*
 ------------------ ------- --------- ---- ----
 13.04     raring   2.4_    2.4_      2.4_     
@@ -26,7 +26,7 @@ ubuntu    codename release universe_ ppa_ dev_
 11.10     oneiric  1.7_    1.7_
 11.04     natty    1.6_    1.6_
 10.10     maverick 1.5_                       
-10.04 LTS lucid    1.4_                   2.1_
+10.04 LTS lucid    1.4_
  9.10     karmic   1.2_                       
  9.04     jaunty   1.0_                       
 ========= ======== ======= ========= ==== ====
