@@ -24,6 +24,8 @@ SchoolTool is also a framework for building customized applications and configur
 
 SchoolTool is built on a 100% open source software stack, written in `Python <http://python.org>`_ using the `Zope 3 framework <http://zope.org>`_.  It is licensed under the `GNU General Public License <http://www.gnu.org/licenses/gpl-2.0.html>`_, Version 2.
 
+All SchoolTool documentation is licensed under the `Creative Commons Attribution 3.0 Unported License <http://creativecommons.org/licenses/by/3.0/>`_.
+
 Credits
 -------
 
@@ -31,9 +33,7 @@ Credits
 
 **Project Manager:** Tom Hoffman
 
-**Lead Developer:** Justas Sadzevičius
-
-**Core Developers:** Douglas Cerna, Alan Elkner
+**Core Developers:** Justas Sadzevičius, Douglas Cerna
 
 **Release Manager:** Gediminas Paulauskas
 
@@ -44,11 +44,13 @@ Contributors
  * Steve Alexander
  * Paul Carduner
  * Chris Carey
+ * Alan Elkner
  * Martijn Faassen
  * Marius Gedminas
  * William Johnston
  * Ignas Mikalajūnas
  * Gintautas Miliauskas
+ * Matt Obert
  * Eldar Omuraliev
  * Stephan Richter
  * Jean-François Roche
@@ -57,4 +59,4 @@ Contributors
  * Filip Sufitchi
  * Brian Sutherland
  * Tom von Schwerdtner
- * Matt Obert
+
