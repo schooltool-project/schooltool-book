@@ -17,6 +17,38 @@ New features
 - Three new reports for CanDo
 
 
+2.4.2 (2013-07-03)
+==================
+
+Second round of bugfixes.
+
+
+2.4.1 (2013-07-03)
+------------------
+
+- Update translations
+
+
+SchoolTool 2.4.2 (2013-07-01)
+-----------------------------
+
+- Small fixes for other plugins.
+- Updated translations
+
+
+SchoolTool Gradebook 2.4.2 (2013-07-01)
+---------------------------------------
+
+- Fix clicking on comment cells to bring up the editor.
+- Updated Sinhalese translation
+
+
+SchoolTool Virginia 0.7.1 (2013-07-01)
+--------------------------------------
+
+- Fixed sorting of completion reports
+
+
 2.4.1 (2013-05-30)
 ==================
 
