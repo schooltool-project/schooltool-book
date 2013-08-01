@@ -27,6 +27,17 @@ We have created packages for multiple operating systems, but the core developmen
 
 We welcome additional ports and packages; the core development team just does not have the capacity to provide and support them ourselves.
 
+Software
+++++++++
+
+Python
+------
+
+SchoolTool supports Python 2.6 and 2.7.
+
+Python 3 port is not in the plans yet.
+
+
 Hardware
 ++++++++
 
