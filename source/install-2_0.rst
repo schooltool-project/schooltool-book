@@ -21,39 +21,44 @@ After installation, the schooltool server can be accessed from the server at htt
 SchoolTool PPA
 --------------
 
-Newer releases and development releases of SchoolTool are available through separate package repositories on Launchpad.  Which SchoolTool versions are available for which Ubuntu releases through our "ppa" and "dev" repositories is described in a table at :ref:`release_notes`.
+Newer releases and development releases of SchoolTool are available through separate package repositories on Launchpad.  Which SchoolTool versions are available for which Ubuntu releases through our "ppa" and "dev" repositories is described in a table at :ref:`release-notes`.
 
-To switch to one of these releases, open the **Ubuntu Software Center**.  Choose **Edit > Software Sources...**  Click **Other Software > Add...**, enter as the **APT line**::
+To switch to one of these releases, open the **Ubuntu Software Center**.  Choose
+**Edit > Software Sources**.  Click **Other Software > Add**, enter as the **APT line**::
 
- ppa:schooltool-owners/ppa
+    ppa:schooltool-owners/ppa
 
 or::
 
- ppa:schooltool-owners/dev
+    ppa:schooltool-owners/dev
 
 And click **Add Source**.
 
-   .. image:: images/usc-precise.png
+    .. image:: images/usc-precise.png
 
 Then search for "SchoolTool" in the searchbox at upper right in the Software Center and click **Install** next to the SchoolTool entry.
 
-   .. image:: images/usc-schooltool.png
+    .. image:: images/usc-schooltool.png
 
 Or, using the command line::
 
- $ sudo add-apt-repository ppa:schooltool-owners/ppa
+    $ sudo add-apt-repository ppa:schooltool-owners/ppa
 
 or::
 
- $ sudo add-apt-repository ppa:schooltool-owners/dev
+    $ sudo add-apt-repository ppa:schooltool-owners/dev
 
-and::
+If you get an "add-apt-repository not found" error, install it::
 
- $ sudo apt-get update
+    $ sudo apt-get install software-properties-common
 
-Then install the ``schooltool`` package::
+Then::
 
- $ sudo apt-get install schooltool
+    $ sudo apt-get update
+
+Install the ``schooltool`` package::
+
+    $ sudo apt-get install schooltool
 
 After installation, the schooltool server will be started at
 http://localhost:7080. See :ref:`remote`.
