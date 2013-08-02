@@ -100,6 +100,35 @@ Reports
 - Removed Person XML reports
 
 
+SchoolTool Gradebook 2.5.0 (2013-07-03)
+---------------------------------------
+
+- Background PDF reports
+- Background XLS export
+- Removed one hundred total constraint on category weights
+
+
+SchoolTool Journal 2.5.0 (2013-07-03)
+-------------------------------------
+
+- Background XLS export
+
+
+SchoolTool CanDo 0.8.0 (2013-08-01)
+-----------------------------------
+
+- Background PDF reports
+- Moved in Per Student Skills Report and Skills Completion Report from schooltool.virginia
+- Added Student skill completion (by section) pdf archive report.
+
+
+SchoolTool Virginia 0.8.0 (2013-08-01)
+--------------------------------------
+
+- Background completion reports
+- Fixed sorting of completion reports
+- Moved out Per Student Skills Report and Skills Completion Report
+- Added section report links
 New plugins
 ===========
 

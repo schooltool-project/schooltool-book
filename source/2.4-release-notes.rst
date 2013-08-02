@@ -23,8 +23,8 @@ New features
 Second round of bugfixes.
 
 
-2.4.1 (2013-07-03)
-------------------
+Journal 2.4.1 (2013-07-03)
+--------------------------
 
 - Update translations
 
