@@ -41,6 +41,7 @@ Contents:
    administrators
    release-notes
    developers
+   translation-toc
    editing-this-book
    glossary
    about

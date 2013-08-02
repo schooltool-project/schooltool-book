@@ -11,5 +11,4 @@ Contents:
    dev_sandbox
    dev_devmode
    style-guide
-   translation-toc
 
