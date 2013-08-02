@@ -60,6 +60,18 @@ recommended to upgrade it in the terminal::
     $ sudo apt-get install schooltool
 
 
+Ubuntu
+======
+
+SchoolTool 2.5 is available for
+
+- 13.10 (saucy) from the universe_
+- 13.04 (raring) from the dev_ PPA
+
+Additionally, there are daily builds from ``trunk`` branches of actively developed
+projects in the trunk_ PPA.
+
+
 New features
 ============
 
@@ -68,6 +80,24 @@ New features
 - Message about finished background tasks, with download links
 - The rest of reports converted to the new style
 - SVG-based filtered/chart reports
+
+
+Changelog
+=========
+
+SchoolTool 2.5.0 (2013-06-03)
+-----------------------------
+
+Reports
++++++++
+
+- Background XLS import (disabled)
+- Background XLS export
+- Background report generation
+- Multiple reports in a .zip archive
+- Messages about finished background tasks
+- Added resource library for filtered/chart reports
+- Removed Person XML reports
 
 
 New plugins
@@ -84,3 +114,7 @@ results.
 
 https://launchpad.net/schooltool.quiz
 
+.. _universe: install-2_0.html
+.. _ppa: install-2_0.html#ppa
+.. _dev: install-dev.html
+.. _trunk: install-dev.html#daily

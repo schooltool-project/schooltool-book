@@ -33,10 +33,14 @@ After installation, the schooltool server will be started at
 http://localhost:7080. See :ref:`remote`.
 
 
+.. _daily:
+
 Daily builds
 ============
 
 Packages are built daily from the trunk series of the actively developed
-projects. They are available for testing from the ``trunk`` PPA::
+projects. They are available for testing from the `SchoolTool trunk PPA
+<https://launchpad.net/~schooltool-owners/+archive/trunk>`_::
 
     $ sudo add-apt-repository ppa:schooltool-owners/trunk
+
