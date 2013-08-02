@@ -12,7 +12,7 @@ generated. Downloads were timing out in as little as 10 seconds. Such tasks
 should be done asynchronously to allow users do something else, or wait for them
 to be completed if they wish so.
 
-`Celery` is an asynchronous task queue that executes long running tasks.
+``Celery`` is an asynchronous task queue that executes long running tasks.
 SchoolTool and its plugins now use it to do the following tasks in background:
 
 - PDF reports
@@ -30,20 +30,20 @@ Server
 
 There are now 4 processes, controlled by a ``supervisor`` daemon:
 
-  + `schooltool`    - schooltool web application
-  + `zeo` - ``ZEO`` server allows many clients to use the same ``ZODB`` storage
-  + `celery_report` - a ``celery`` task queue that generates reports
-  + `redis`         - a simple key-value database for ``celery``
+  + ``schooltool``    - schooltool web application
+  + ``zeo``           - ``ZEO`` server allows many clients to use the same ``ZODB`` storage
+  + ``celery_report`` - a ``celery`` task queue that generates reports
+  + ``redis``         - a simple key-value database for ``celery``
 
 New ``make`` targets:
 
   + start       - start all processes as daemons
   + stop        - stop all processes
-  + restart     - restart `schooltool` and `celery` processes
-  + rerun       - stop `schooltool` and run again in the foreground. restarts `celery`
+  + restart     - restart ``schooltool`` and ``celery`` processes
+  + rerun       - stop ``schooltool`` and run again in the foreground. restarts ``celery``
   + status      - status of all processes
 
-`Redis` server is written in C and needs to be installed separately. On Ubuntu
+``Redis`` server is written in C and needs to be installed separately. On Ubuntu
 or Debian::
 
     $ sudo apt-get install redis-server
