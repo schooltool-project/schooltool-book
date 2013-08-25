@@ -75,15 +75,80 @@ projects in the trunk_ PPA.
 New features
 ============
 
-- Background XLS import
+- Background XLS export
 - Background report generation
 - Message about finished background tasks, with download links
 - The rest of reports converted to the new style
 - SVG-based filtered/chart reports
+- Differentiate permissions of administrators, clerks, and managers
+- Read-only views for gradebook and parts of the school
+
+
+2.5.2 (2013-08-23)
+==================
+
+Saucy Beta
+
+- Update GPL license and file headers from gnu.org (https://launchpad.net/bugs/1211145)
+
+
+SchoolTool 2.5.2 (2013-08-23)
+-----------------------------
+
+- Autocompletion in gradebook for discrete score systems.
+- TAB key in gradebook moves to the next cell.
+- Further updates to permissions.
+- Clerks and administrators now have appropriate access to parts of the School.
+- Rotating Schedules With Different Schedules Per Day Stop a 5 Days Edit (https://launchpad.net/bugs/1214131)
+- Updated translations
+
+
+SchoolTool Journal 2.5.2 (2013-08-23)
+-------------------------------------
+
+- Fix student's journal tab and view.
+- Used jQuery UI autocomplete widget for discrete score systems
+- Update Portuguese translation.
+
+
+SchoolTool Gradebook 2.5.2 (2013-08-23)
+---------------------------------------
+
+- Read-only gradebook and term reports access for clerks and administrators
+- Used jQuery UI autocomplete widget for discrete score systems
+- Updated Portuguese translation
+
+
+SchoolTool Intervention 2.5.2 (2013-08-25)
+------------------------------------------
+
+- Added Portuguese and Sinhalese translations
+
+
+SchoolTool CanDo 0.8.1 (2013-08-23)
+-----------------------------------
+
+- Nodes and skill sets can now be deprecated.
+- Allow clerks and managers to access skills and reports.
+
+
+SchoolTool Virginia 0.8.1 (2013-08-23)
+--------------------------------------
+
+- Clerk, manager and administrator access to reports
+- Added option for setting a year suffix for document ID and title
+
+
+SchoolTool Devtools 0.8.0 (2013-08-23)
+--------------------------------------
+
+- Add ``debugdb``, an interactive database debug tool.
 
 
 2.5.1 (2013-08-02)
 ==================
+
+Saucy alpha
 
 SchoolTool Journal 2.5.1 (2013-08-02)
 -------------------------------------

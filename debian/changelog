@@ -1,3 +1,9 @@
+schooltool-book (2.5.2) saucy; urgency=low
+
+  * New upstream release.
+
+ -- Gediminas Paulauskas <menesis@pov.lt>  Sun, 25 Aug 2013 18:35:00 +0300
+
 schooltool-book (2.5.1) saucy; urgency=low
 
   * New upstream release.
