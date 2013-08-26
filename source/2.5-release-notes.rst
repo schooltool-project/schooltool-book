@@ -89,6 +89,7 @@ New features
 
 Saucy Beta
 
+- Fix access to parts of the school for clerks, managers and administrators.
 - Update GPL license and file headers from gnu.org (https://launchpad.net/bugs/1211145)
 
 
