@@ -84,6 +84,64 @@ New features
 - Read-only views for gradebook and parts of the school
 
 
+2.5.3 (2013-09-14)
+==================
+
+Saucy Beta 2
+
+
+SchoolTool 2.5.3 (2013-09-12)
+-----------------------------
+
+Bugfixes
+++++++++
+
+- Fix integer demographic fields handling in importer (https://launchpad.net/bugs/1211613)
+- Add Activate school year link in School tab under Customize (https://launchpad.net/bugs/1216992 )
+- Fix links and Done buttons inside School tab when a different school year is selected
+- Manager needs to be in Site Managers and Clerks by default (https://launchpad.net/bugs/1216915)
+- Access setting: allow instructor to add students to their section (https://launchpad.net/bugs/637759)
+- Access setting: allow instructor to modify section
+- Updated translations
+
+Internals
++++++++++
+
+- Add ability to disable views in customized packages (https://launchpad.net/bugs/716346)
+
+
+SchoolTool Gradebook 2.5.3 (2013-09-13)
+---------------------------------------
+
+- Fix report sheet links when a different school year is selected
+- Updated translations
+
+
+SchoolTool Journal 2.5.3 (2013-09-13)
+-------------------------------------
+
+- Fix Journal tab clerk attendance view (https://launchpad.net/bugs/1216942)
+- Spell 'score systems' as two words.
+- Update Dutch translation.
+
+
+SchoolTool CanDo 0.8.2 (2013-09-14)
+-----------------------------------
+
+- Add a view to batch-deprecate skills, skill sets and nodes.
+- Added field to node search table to filter by common text
+- Fixed Save button in deprecate skills view when there's only one result
+- Changed wording and functionality of Visible/Active/Retired to Deprecated
+- Changed wording attribute to field in batch assign view
+- Fixed score student view for projects
+
+
+SchoolTool Virginia 0.8.2 (2013-09-14)
+--------------------------------------
+
+- Fix access to report with newer schooltool.
+
+
 2.5.2 (2013-08-23)
 ==================
 
@@ -100,7 +158,7 @@ SchoolTool 2.5.2 (2013-08-23)
 - TAB key in gradebook moves to the next cell.
 - Further updates to permissions.
 - Clerks and administrators now have appropriate access to parts of the School.
-- Rotating Schedules With Different Schedules Per Day Stop a 5 Days Edit (https://launchpad.net/bugs/1214131)
+- Fix failures when creating timetables with rotating periods and weekly time slots (https://launchpad.net/bugs/1214131)
 - Updated translations
 
 

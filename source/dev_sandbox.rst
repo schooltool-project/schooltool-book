@@ -208,7 +208,7 @@ Build dependencies
 ------------------
 
 On Ubuntu you can simply ``sudo make ubuntu-environment``. On other systems,
-below is what you need::
+below is what you need:
 
 Build essentials::
 
