@@ -15,20 +15,20 @@ release codename ubuntu    universe_ ppa_ dev_
 *Development*
 ---------------- --------- --------- ---- ----
 2.5_    saucy    13.10     2.5_      2.5_
-*Stable*  
+*Stable*
 ---------------- --------- --------- ---- ----
 2.4_    raring   13.04     2.4_      2.4_ 2.5_
-2.3_    quantal  12.10     2.1_      2.3_ 2.4_    
-2.1_    precise  12.04 LTS 2.1_      2.1_ 2.4_
+2.3_    quantal  12.10     2.1_      2.3_ 2.4_
+2.1_    precise  12.04 LTS 2.1_      2.1_ 2.5_
 *Obsolete*
 ---------------- --------- --------- ---- ----
 2.0_    flourish
 1.7_    oneiric  11.10     1.7_
 1.6_    natty    11.04     1.6_
-1.5_    maverick 10.10                        
-1.4_    lucid    10.04 LTS 
-1.2_    karmic    9.10                        
-1.0_    jaunty    9.04                        
+1.5_    maverick 10.10
+1.4_    lucid    10.04 LTS
+1.2_    karmic    9.10
+1.0_    jaunty    9.04
 ======= ======== ========= ========= ==== ====
 
 See `Ubuntu Releases <https://wiki.ubuntu.com/Releases>`_ page for release

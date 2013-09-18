@@ -67,6 +67,7 @@ SchoolTool 2.5 is available for
 
 - 13.10 (saucy) from the universe_
 - 13.04 (raring) from the dev_ PPA
+- 12.04 (precise) from the dev_ PPA
 
 Additionally, there are daily builds from ``trunk`` branches of actively developed
 projects in the trunk_ PPA.
