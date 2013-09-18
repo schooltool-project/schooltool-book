@@ -92,13 +92,13 @@ New features
 - Read-only views for gradebook and parts of the school
 
 
-2.5.3 (2013-09-14)
+2.5.3 (2013-09-17)
 ==================
 
 Saucy Beta 2
 
 
-SchoolTool 2.5.3 (2013-09-12)
+SchoolTool 2.5.3 (2013-09-17)
 -----------------------------
 
 Bugfixes
@@ -107,9 +107,10 @@ Bugfixes
 - Fix integer demographic fields handling in importer (https://launchpad.net/bugs/1211613)
 - Add Activate school year link in School tab under Customize (https://launchpad.net/bugs/1216992 )
 - Fix links and Done buttons inside School tab when a different school year is selected
-- Manager needs to be in Site Managers and Clerks by default (https://launchpad.net/bugs/1216915)
+- Add manager to Site Managers and Clerks groups (https://launchpad.net/bugs/1216915)
 - Access setting: allow instructor to add students to their section (https://launchpad.net/bugs/637759)
 - Access setting: allow instructor to modify section
+- Display contact information of a person in profile.
 - Updated translations
 
 Internals
