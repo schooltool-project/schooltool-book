@@ -59,6 +59,13 @@ recommended to upgrade it in the terminal::
     $ sudo apt-get update
     $ sudo apt-get install schooltool
 
+Answer ``Y`` (install package maintainer's version) to all questions to get
+the new files. A backup of modified files is made with a suffix ``.dpkg-old``,
+compare them and make the same changes in the new files::
+
+    $ cd /etc/schooltool/standard
+    $ diff -u paste.ini.dpkg-old paste.ini 
+
 
 Ubuntu
 ======
@@ -287,6 +294,8 @@ SchoolTool Virginia 0.8.0 (2013-08-01)
 - Fixed sorting of completion reports
 - Moved out Per Student Skills Report and Skills Completion Report
 - Added section report links
+
+
 New plugins
 ===========
 
