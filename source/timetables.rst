@@ -15,7 +15,7 @@ In this case, each class section meets either at a specific time on Monday, Wedn
 
    .. image:: images/timetables-7.png
 
-To start creating a Timetable, you must be logged in as "manager." Select the **School** tab, and click on **Timetables**:
+To start creating a Timetable, you must be logged in as a member of **Site Managers**. Select the **School** tab, and click on **Timetables**:
 
    .. image:: images/timetables-0.png
 
@@ -41,9 +41,11 @@ At our school, periods don't **Have names** (for example "A," B," etc.), but are
 
    .. image:: images/timetables-5.png
 
-The homeroom functionality is not really implemented in SchoolTool yet, so you can just say **No** to this question:
+If you designate a homeroom period, attendance taken in that period will be noted as presence or absence for the student for the day.  We'll select **Yes** to demonstrate.:
 
    .. image:: images/timetables-6.png
+
+   .. image:: images/timetables-6_5.png
 
 If everything has worked, you should see this:
 

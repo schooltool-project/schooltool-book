@@ -4,9 +4,9 @@ System Requirements
 Where can I download SchoolTool?
 ++++++++++++++++++++++++++++++++
 
-You won't find a simple download link for users to install SchoolTool.  
+There is no "Download" link to install SchoolTool.  
 
-SchoolTool is a full stack web application.  That is, it comes with its own web server and database.  To make sure all the necessary components are installed correctly, we distribute SchoolTool to users as packages, primarily through Ubuntu Linux.  This gives users a simple "app store" one-click installation experience.
+SchoolTool is a full stack web application.  That is, it comes with its own web server and database.  To make sure all the necessary components are installed correctly, we distribute SchoolTool to users as packages, through Ubuntu Linux.  This gives users a simple "app store" one-click installation experience.
 
 What follows is an explanation of this choice, hardware recommendations, and in subsequent pages instructions for installing various versions of SchoolTool on various versions of Ubuntu.
 
@@ -27,28 +27,22 @@ We have created packages for multiple operating systems, but the core developmen
 
 We welcome additional ports and packages; the core development team just does not have the capacity to provide and support them ourselves.
 
-Software
-++++++++
-
-Python
-------
-
-SchoolTool supports Python 2.6 and 2.7.
-
-Python 3 port is not in the plans yet.
-
-
 Hardware
 ++++++++
+
+Compatibility
+-------------
+
+SchoolTool can be installed on any hardware or virtual server that is supported by Ubuntu.
 
 School Level Deployments or Greater
 -----------------------------------
 
-For production deployment in a school or district, dedicated server hardware is recommended.  If SchoolTool is not the only service provided on the server, we recommend running SchoolTool by itself on a virtual server.  
+For production deployment in a school or district, a real or virtual server dedicated to only running SchoolTool is recommended.  
 
 SchoolTool can be hosted in "the cloud" on any server (physical or virtual) that provides root access to the server OS or the equivalent.  You will need to have rights on the server to install software and add SchoolTool as a system service.  A simple "web hosting" service that allows you to add HTML and PHP pages is not sufficient.
 
-We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubuntu.com>`_ version 12.04 "Precise Pangolin" or later.  Community-provided packages for Fedora Linux are also available.
+We recommend and support installation of SchoolTool on `Ubuntu Linux <http://ubuntu.com>`_ version 12.04 "Precise Pangolin" or later.  
 
 Personal
 --------
@@ -58,7 +52,7 @@ For personal use, SchoolTool can be installed and used on a personal desktop or 
 Technical Specifications
 ------------------------
 
-The primary bottleneck in SchoolTool's performance is usually memory.  The bare minimum RAM requirement for testing is estimated to be 256 megabytes.  At least 512 megabytes is recommended and if you are setting up for a production server, adding more than 1 gigabyte of RAM is worth it if you can afford it.  More memory equals faster database performance.
+The primary bottleneck in SchoolTool's performance is usually memory.  The bare minimum RAM requirement for testing is estimated to be 256 megabytes.  At least 512 megabytes is recommended and if you are setting up for a small production server, adding more than 1 gigabyte of RAM is worth it if you can afford it.  More memory equals faster database performance.
 
 Faster processors will make SchoolTool run faster.  Over 1 gHz is recommended.  SchoolTool is multi-threaded, but due to the Python programming language's implementation only one thread will run at one time, so SchoolTool's performance does not directly benefit from multiple processors or multi-core processors.  
 

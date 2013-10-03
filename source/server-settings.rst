@@ -1,10 +1,12 @@
+.. _server-settings:
+
 Server Settings
 ===============
 
 Server Information
 ------------------
 
-When logged in as a site manager, school administrator or clerk, you should see a "Server" tab in the top bar.  This takes you to a variety of settings and information relevant to the server itself, as opposed to your school.
+When logged in as a *Site Manager*, you should see a "Server" tab in the top bar.  This takes you to a variety of settings and information relevant to the server itself, as opposed to your school.
 
    .. image:: images/server-settings-0.png
 
@@ -106,13 +108,35 @@ Clicking on the yellow pencil icon allows some customization of this display:
 
    .. image:: images/server-settings-12.png
 
+Tabs
+++++
+
+Schools that are not using all components of SchoolTool can reduce visual clutter by hiding unnecessary links in the top navigation bar.
+
+Note that these settings have no effects other than removing navigational links; they don't change the functionality, data, or security settings of SchoolTool in any way.
+
+Links can be changed from visible to hidden at any time.
+
+When users log in, they will usually be directed to the tab selected in the default column. The default tab must also be visible.
+
+To hide tabs, simply un-check the corresponding checkbox.  Select the default view in the third table column, click **Submit**
+
+   .. image:: images/server-settings-12_5.png
+
+Name Sorting
+++++++++++++
+
+Sets the default name sort behavior throughout the application, sorting by first or last names.  This also changes the order that names appear in most places so that the sort column is the leftmost in the table.
+
+   .. image:: images/server-settings-12_6.png
+
 Sidebar Actions
 ----------------
 
 Pack Database
 +++++++++++++
 
-SchoolTool's database engine supports certain undo capabilities which are not implemented in SchoolTool.  As a result, SchoolTool's database file grows in size over time.  "Packing" the database strips out the old changes and shrinks the file back down to its minimum size.
+SchoolTool's database engine supports certain undo capabilities which are not implemented in SchoolTool.  As a result, SchoolTool's database file grows in size over time.  "Packing" the database strips out the old changes and shrinks the file back down to its minimum size without otherwise affecting your SchoolTool data.
 
 Packing the database periodically will help optimize performance, particularly after many changes have been made to the database, for example, from large data imports.  This can be a resource-intensive action on large databases, so it is best to do it during off-peak times.
 
