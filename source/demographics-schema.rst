@@ -36,9 +36,10 @@ To edit the values in a selection list from the main **Demographics and Personal
 
 To change the list values, simply edit the values in the **Selection List** text box.  Each line defines one value.  You can also specify whether the field is required, and if it should be limited to Students, Teachers and/or Administrators.
 
-You can add five different types of fields:
+You can add six different types of fields:
 
   * Text Field: for a single line of text;
+  * Integer Field: for whole numbers;
   * Description Field: for longer text entered through a textbox;
   * Date Field: entered through a calendar widget;
   * Yes/No Field: for a true/false boolean value;

@@ -16,7 +16,7 @@ To create a new Section, you must be logged in as "manager." Navigate to the **S
 
    .. image:: images/sections-1.png
 
-Click **Add: Section**.  Select a Course the Section should be associated with, as well as a starting and ending Term.  Note that this Section spans two Terms. The "Description" form field is optional.
+Click **Add: Section**.  Select a Course the Section should be associated with, as well as a starting and ending Term.  Note that this Section spans two Terms. The "Title" and "Description" form fields are optional.  If locations have been created via **Resources** (documentation of this needed), they can be selected here.
 
    .. image:: images/sections-2.png
 
@@ -43,13 +43,13 @@ When you are ready, click **Done**.  The populated Section looks like this:
 
    .. image:: images/sections-8.png
 
+If the students are all part of a single group, you can use the **Group** menu under search to filter out only the group's members and then the **Add all displayed** button to add them to the section with one click.
+
 Note that the application actually stores Sections spanning multiple Terms as a sequence of linked single-term sections.  If you click on the edit pencil next to Terms you will see:
 
    .. image:: images/sections-4.png
 
-Each Term has its own enrollment data.  You can disassociate the Sections by clicking **Unlink**.
-
-Students that are added or removed from a Section are added and removed from all linked Sections in *later* terms.  That is, if a student is dropped from the fall semester of this Section, they are also dropped from the spring semester Section.  If a student is added in the spring semester, they are not also added in the fall.
+Each Term has its own enrollment data.  Students that are added or removed from a Section are added or removed from all linked Sections in *later* terms.  That is, if a student is dropped from the fall semester of this Section, they are also dropped from the spring semester Section.  If a student is added in the spring semester, they are not also added in the fall.  You can disassociate the Sections by clicking **Unlink**.
 
 Scheduling the Section into a Timetable
 ---------------------------------------

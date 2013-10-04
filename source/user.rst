@@ -3,13 +3,13 @@
 Creating a User Account
 =======================
 
-All user accounts in the SchoolTool system are referred to as People.  User roles, along with associated permissions and access privileges, may be provisioned by adding people to :ref:`groups`.  
+All user accounts in the SchoolTool system are referred to as People.  :ref:`roles`, along with associated permissions and access privileges, may be provisioned by adding people to :ref:`groups`.  
 
 To create a new Person account, you must be logged in as a member of **Clerks** or **Site Managers**. Select the **School** tab at the top of the page, then click on **People** to end up here:
 
    .. image:: images/user-0.png
 
-Under **Add** in the sidebar, you have shortcuts for some common Groups, such as **School Administrators, Students,** and **Teachers**. Selecting the generic user role, **Person**, allows you to choose a different primary Group, or no Group, for the new user account.  We'll just use the basic **Add: Person** form this time:
+Under **Add** in the sidebar, you have shortcuts for some common Groups, such as **School Administrators, Students,** and **Teachers**. Selecting the generic user role, **Person**, allows you to choose a different initial Group, or no Group, for the new user account.  We'll just use the basic **Add: Person** form this time:
 
    .. image:: images/user-1.png
 
