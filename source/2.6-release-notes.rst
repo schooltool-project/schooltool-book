@@ -1,6 +1,6 @@
 :tocdepth: 2
 
-SchoolTool 2.5 Release Notes
+SchoolTool 2.6 Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Long-running tasks
@@ -70,7 +70,7 @@ compare them and make the same changes in the new files::
 Ubuntu
 ======
 
-SchoolTool 2.5 is available for
+SchoolTool 2.6 is available for
 
 - 13.10 (saucy) from the universe_
 - 13.04 (raring) from the dev_ PPA
@@ -90,6 +90,80 @@ New features
 - SVG-based filtered/chart reports
 - Differentiate permissions of administrators, clerks, and managers
 - Read-only views for gradebook and parts of the school
+
+
+2.6.0 (2013-10-10)
+==================
+
+Final release for Saucy
+
+- Name order setting and column split.
+- Navigation inside School tab when non-active school year is selected.
+- Tracebacks can now be submitted to the correct project in Launchpad.
+
+
+SchoolTool 2.6.0 (2013-10-10)
+-----------------------------
+
+- Don't reverse name order (https://launchpad.net/bugs/1201887)
+- Add "Name sorting" option to Server settings, display the selected name
+  column first in person tables.
+- Person search does not find by full name (https://launchpad.net/bugs/894798)
+- Change manager's full name to "Default Manager" (https://launchpad.net/bugs/1227220)
+- Fix timetable wizard for weekly timetables with different periods order.
+- Fix crash when displaying timetables with only one day (https://launchpad.net/bugs/1235150)
+- Fix navigation inside the School tab if a non-active school year is selected,
+  or school years title contains accented characters (https://launchpad.net/bugs/1234690)
+- Setting multiple languages in schooltool.conf breaks remote reports (https://launchpad.net/bugs/1229013)
+- Improvements to PDF grid and table style.
+- Extra info in traceback page and submit to launchpad button
+- Updated translations, removed unsupported ones (less than 25% translated).
+
+
+SchoolTool Gradebook 2.6.0 (2013-10-10)
+---------------------------------------
+
+- Flourish-style report card and student detail report.
+- Update for the new journal that uses an attendance score system.
+- Split Name column into First Name and Last Name, allow sorting by either.
+- Used name sorting setting in gradebook XLS export
+- Sections in the report card should be sorted (https://launchpad.net/bugs/1154209)
+- Fix navigation in report card layout views  if a non-active school year is selected,
+  or school years title contains accented characters (https://launchpad.net/bugs/1234690)
+- Make default score systems translatable.
+
+
+SchoolTool Journal 2.6.0 (2013-10-10)
+-------------------------------------
+
+- Respect name sorting setting to order columns, allow sorting by either name.
+- Initialize score systems container before adding new ones.
+- Order the scores in the '10 points' in descending order.
+- Translate score system titles and options.
+- Journal attendance / grade months should respect the configured time zone (https://launchpad.net/bugs/1233995)
+- Update translations, remove unsupported ones.
+
+
+SchoolTool CanDo 2.6.0 (2013-10-10)
+-----------------------------------
+
+- Add student's view for projects (https://launchpad.net/bugs/1070278)
+- Fix student and teacher sorting in some reports.
+- Allow sorting gradebook by first or last name (https://launchpad.net/bugs/1234284)
+- Fix navigation when schoolear has non-ascii chars (https://launchpad.net/bugs/1234690)
+- Fix forbidden attribute error on login after timeout (https://launchpad.net/bugs/1154662)
+
+
+SchoolTool Intervention 2.6.0 (2013-10-10)
+------------------------------------------
+
+- Register launchpad project for the error view.
+
+
+SchoolTool Virginia 2.6.0 (2013-10-10)
+--------------------------------------
+
+- Respect name order setting for sorting.
 
 
 2.5.3 (2013-09-17)
@@ -296,20 +370,6 @@ SchoolTool Virginia 0.8.0 (2013-08-01)
 - Moved out Per Student Skills Report and Skills Completion Report
 - Added section report links
 
-
-New plugins
-===========
-
-SchoolTool Quiz
----------------
-
-Jeff Elkner has been funding (personally!) Douglas Cerna to create a system
-attached to CanDo that allows teachers to create online quizzes for their
-students.  Individual questions can be tagged with skills in CanDo to
-automatically update a student's skill rating in the gradebook based on quiz
-results.
-
-https://launchpad.net/schooltool.quiz
 
 .. _universe: install-2_0.html
 .. _ppa: install-2_0.html#ppa

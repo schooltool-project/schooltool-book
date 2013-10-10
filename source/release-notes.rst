@@ -5,21 +5,18 @@ Release Notes
 
 Series:
 
-- Development: 2.5_
-- Stable: 2.4_, 2.3_
+- Stable: 2.6_, 2.4_
 - Long term support: 2.1_
 
 ======= ======== ========= ========= ==== ====
 release codename ubuntu    universe_ ppa_ dev_
 ======= ======== ========= ========= ==== ====
-*Development*
----------------- --------- --------- ---- ----
-2.5_    saucy    13.10     2.5_      2.5_
 *Stable*
 ---------------- --------- --------- ---- ----
-2.4_    raring   13.04     2.4_      2.4_ 2.5_
+2.6_    saucy    13.10     2.6_      2.6_
+2.4_    raring   13.04     2.4_      2.4_ 2.6_
 2.3_    quantal  12.10     2.1_      2.3_ 2.4_
-2.1_    precise  12.04 LTS 2.1_      2.1_ 2.5_
+2.1_    precise  12.04 LTS 2.1_      2.1_ 2.6_
 *Obsolete*
 ---------------- --------- --------- ---- ----
 2.0_    flourish
@@ -34,14 +31,10 @@ release codename ubuntu    universe_ ppa_ dev_
 See `Ubuntu Releases <https://wiki.ubuntu.com/Releases>`_ page for release
 schedule, dates, and support.
 
-Due to Ubuntu 11.10 (Oneiric Ocelot) and Ubuntu 10.04 LTS (Lucid Lynx) going end
-of life on May 9, 2013, *SchoolTool 1.x series are no longer supported since
-2013.* Say goodbye to Zonki and the red old skin.
-
 The oldest supported release is SchoolTool 2.1 for precise, with the SchoolTool
 ppa_.
 
-.. _2.5: 2.5-release-notes.html
+.. _2.6: 2.6-release-notes.html
 .. _2.4: 2.4-release-notes.html
 .. _2.3: 2.3-release-notes.html
 .. _2.1: 2.1-release-notes.html
@@ -61,7 +54,7 @@ ppa_.
    :maxdepth: 1
    :hidden:
 
-   2.5-release-notes
+   2.6-release-notes
    2.4-release-notes
    2.3-release-notes
    2.1-release-notes
