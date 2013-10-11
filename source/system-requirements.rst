@@ -54,7 +54,7 @@ Technical Specifications
 
 The primary bottleneck in SchoolTool's performance is usually memory.  The bare minimum RAM requirement for testing is estimated to be 256 megabytes.  At least 512 megabytes is recommended and if you are setting up for a small production server, adding more than 1 gigabyte of RAM is worth it if you can afford it.  More memory equals faster database performance.
 
-Faster processors will make SchoolTool run faster.  Over 1 gHz is recommended.  SchoolTool is multi-threaded, but due to the Python programming language's implementation only one thread will run at one time, so SchoolTool's performance does not directly benefit from multiple processors or multi-core processors.  
+Faster processors will make SchoolTool run faster.  Over 1 GHz is recommended.  SchoolTool is multi-threaded, but due to the Python programming language's implementation only one thread will run at one time, so SchoolTool's performance does not directly benefit from multiple processors or multi-core processors.  
 
 Ubuntu SchoolTool packages are available for low-power ARM architecture processors, as well as i386 and AMD64 PC and server processors.
 

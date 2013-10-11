@@ -30,7 +30,7 @@ To send email through an external mail service, you will need to be logged on as
 
    .. image:: images/server-settings-1.png
 
-To edit the settings, click the yellow pencil icon next to **Server status: Disabled** and enter the appropriate data for your server.  Note that the the username and password in question in this form are the username and password of a user *on the mail server*, not on SchoolTool.
+To edit the settings, click the yellow pencil icon next to **Server status: Disabled** and enter the appropriate data for your server.  Note that the username and password in question in this form are the username and password of a user *on the mail server*, not on SchoolTool.
 
 **Note:** Outgoing emails from SchoolTool will use this email address, not the email address of a specific user within SchoolTool; e.g., in the example below, all notifications coming from SchoolTool will appear to be from schooltool.mgr@gmail.com.
 
@@ -119,7 +119,7 @@ Links can be changed from visible to hidden at any time.
 
 When users log in, they will usually be directed to the tab selected in the default column. The default tab must also be visible.
 
-To hide tabs, simply un-check the corresponding checkbox.  Select the default view in the third table column, click **Submit**
+To hide tabs, simply uncheck the corresponding checkbox.  Select the default view in the third table column, click **Submit**
 
    .. image:: images/server-settings-12_5.png
 

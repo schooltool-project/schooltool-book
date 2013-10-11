@@ -6,13 +6,13 @@ SchoolTool Administrative Roles
 The "manager" user has sufficient permissions to configure SchoolTool, enter student data, 
 and completely set up and maintain the system.  
 
-Rights and permissions in SchoolTool related to administering the school as a whole are controlled through membership in several :ref:`groups`: **Site Managers**, **Clerks** and **School Administrators**.  These groups, as well as **Teachers** and Students, cannot be deleted and always exist within each school year.  
+Rights and permissions in SchoolTool related to administering the school as a whole are controlled through membership in several :ref:`groups`: **Site Managers**, **Clerks** and **School Administrators**.  These groups, as well as **Teachers** and **Students**, cannot be deleted and always exist within each school year.  
 
-By default the "manager" user is both a member of **Site Managers** and **Clerks**.  
+By default the "manager" user is a member of both **Site Managers** and **Clerks**.  
 
-* **Site Managers**- This group is responsible for setting up and technical maintenance of the SchoolTool instance.  It has no pedagogical role, but full permissions regarding server configuration.
+* **Site Managers** - This group is responsible for setting up and technical maintenance of the SchoolTool instance.  It has no pedagogical role, but full permissions regarding server configuration.
 
-* **Clerks** - This group is responsibe for day to day school-level data entry, data management and reporting.  **Clerks** are power users in SchoolTool, with most of the same permissions as Site Managers.  The main difference between **Clerks** and **Site Managers** is that **Clerks** have some additional administrative screens, for managing attendance school-wide, for example, and they cannot easily undertake some setup related actions that could cause wide-ranging data loss.
+* **Clerks** - This group is responsible for day to day school-level data entry, data management and reporting.  **Clerks** are power users in SchoolTool, with most of the same permissions as Site Managers.  The main difference between **Clerks** and **Site Managers** is that **Clerks** have some additional administrative screens, for managing attendance school-wide, for example, and they cannot easily undertake some setup related actions that could cause wide-ranging data loss.
 
 * **School Administrators** - Members of this group can *view* most data in the system, but have limited rights to edit it.  It is a "safe" role to prevent less technical **School Administrators** from accidentally messing up your SchoolTool instance while still viewing the records and reports they need.  **School Administrators** also have a role in certain processes and workflows, for example receiving notifications and messages regarding student interventions.  
 
