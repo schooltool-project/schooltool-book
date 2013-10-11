@@ -3,13 +3,9 @@
 Creating a User Account
 =======================
 
-If you are also a teacher in the school, you should never use the "manager" account for your day-to-day SchoolTool tasks, such as grading and taking attendance.  You need to make a second account for yourself in the role of a teacher.
+All user accounts in the SchoolTool system are referred to as People.  User roles, along with associated permissions and access privileges, may be provisioned by adding people to :ref:`groups`.  
 
-All user accounts in the SchoolTool system are referred to as People.  User roles, along with associated permissions and access privileges, may be provisioned by adding a Person to a Group.  We will explain People and Groups in more detail later.
-
-For now, it's important to note that the "manager" account should only be used for managing SchoolTool.  Doing otherwise will expose the entire system to unnecessary risk.  To maintain security, we need to create a Person in the "Teachers" Group -- a user with only those permissions and privileges which are necessary.
-
-To create a new Person account, you must be logged in as "manager." Select the **School** tab at the top of the page, then click on **People** to end up here:
+To create a new Person account, you must be logged in as a member of **Clerks** or **Site Managers**. Select the **School** tab at the top of the page, then click on **People** to end up here:
 
    .. image:: images/user-0.png
 
@@ -25,7 +21,7 @@ Click **Submit** and you should see:
 
    .. image:: images/user-3.png
 
-You should now be able to **Log Out** as "manager" by following the link at the upper right, and **Log In** as your new user, at which point you should see the Person's calendar:
+You should now be able to **Log Out** by following the link at the upper right, and **Log In** as your new user, at which point you should see the Person's calendar (if you haven't changed the default view under :ref:`server-settings`).
 
     .. image:: images/user-4.png
 

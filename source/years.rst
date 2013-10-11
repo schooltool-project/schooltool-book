@@ -3,7 +3,7 @@
 Creating Years
 ==============
 
-School years are central to organizing data in SchoolTool.  Before you start setting up the rest of the school, you need to start with a school year.  
+School years are central to organizing data in SchoolTool.  Before you start setting up the rest of the school, you must start with a school year.  
 
 A school year encompasses the annual cycle of a school.  For example, most students are promoted at the end of a year.  Most new teachers start work at the beginning of the year.  Terms *must* be contained within years.
 
@@ -13,7 +13,7 @@ If this does not fit the structure of your school, you can simply create a singl
 
 *Setting up a Year is necessary for just about any use of SchoolTool*, and it is easiest through the web interface.
 
-As "manager," click the **School** tab at top.  On a new installation, the page will look like this:
+As "manager" click the **School** tab at top.  On a new installation, the page will look like this:
 
    .. image:: images/years-0.png
 
@@ -34,3 +34,5 @@ Your new Year.  If you click on the yellow pencil icon next to the title, you ca
 The main **School** tab now shows your Year set up along with relevant links and statistics:
 
    .. image:: images/years-4.png
+
+Note that under Groups, both **Clerks** and **Site Managers** have one member -- the "Default Manager" user.

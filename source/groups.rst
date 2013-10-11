@@ -8,8 +8,8 @@ In SchoolTool, Groups are used to model some default roles in a school, as well 
 In particular:
 
   * Groups have their own calendars;
-  * you can run reports for all members of a Group;
-  * Groups are useful for adding a set of students to multiple class sections.
+  * you can run reports for the members of a Group;
+  * Groups are useful for adding a specific set of students to multiple class sections.
 
 The default roles as defined by the **School Administrators, Site Managers, Students,** **Teachers**, and **Clerks** Groups affect the permissions and access privileges of their members.
 

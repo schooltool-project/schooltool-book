@@ -3,7 +3,7 @@
 Importing and Exporting from Spreadsheet
 ========================================
 
-To import or export data from a spreadsheet, you must be logged in as "manager." Select the **School** tab, and click on the **Import XLS** link in the sidebar:
+To import or export data from a spreadsheet, you must be logged in as a member of **Clerks** or **Site Managers**. Select the **School** tab, and click on the **Import XLS** link in the sidebar:
 
    .. image:: images/spreadsheet-0.png
 

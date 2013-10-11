@@ -15,7 +15,7 @@ In almost every case, you will end up needing Terms in SchoolTool, even if there
 
 In this example, we will create two semesters.
 
-To create or modify Terms, you will need to be logged on as "manager." Navigate to the School tab, and click on the **Terms** link:
+To create or modify Terms, you will need to be logged on a member of **Site Managers**.  Navigate to the School tab, and click on the **Terms** link:
 
    .. image:: images/terms-0.png
 

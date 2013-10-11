@@ -11,7 +11,7 @@ You can limit fields to specific Groups, such as Students, Teachers or Administr
 
 Contact information -- parents' names, address, phone, email, etc. -- is stored separately.
 
-To edit the default demographics fields, you must be logged in as "manager." Select the **School** tab, and then click on the **Customize: Demographics** link in the sidebar.  
+To edit the default demographics fields, you must be logged in as a member of **Site Managers**. Select the **School** tab, and then click on the **Customize: Demographics** link in the sidebar.  
 
    .. image:: images/demographics-schema-0.png
 

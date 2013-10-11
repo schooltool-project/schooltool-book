@@ -16,7 +16,7 @@ Courses are organized by year, so that they can be updated from year to year wit
 Entering Courses Through the Web Interface
 ------------------------------------------
 
-To create Courses, you must be logged in as "manager." Select the **School** tab, and click on **Courses**:
+To create Courses, you must be logged in as a member of **Clerks** or **Site Managers**. Select the **School** tab, and click on **Courses**:
 
    .. image:: images/courses-0.png
 
@@ -28,10 +28,10 @@ After you click **Add**, you should see your new Course:
 
    .. image:: images/courses-2.png
 
-Entering Courses Using CSV Format
+Importing Courses
 ---------------------------------
 
-You can also import a simple text list of Course titles, descriptions and IDs.
+You can also import a text list of Course titles, descriptions and IDs.  This can be done by :ref:`spreadsheet`, or a simple comma-separated value text import, described below.
 
 From the Courses index, select **Import CSV** from the sidebar.  You can then either upload a text file from your local filesystem, or use a textbox to enter text directly by either copy/pasting from another document or typing the necessary information.  
 
