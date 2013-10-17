@@ -72,7 +72,7 @@ Ubuntu
 
 SchoolTool 2.6 is available for
 
-- 13.10 (saucy) from the universe_
+- 13.10 (saucy) from the universe_, add the ppa_ for bugfixes
 - 13.04 (raring) from the dev_ PPA
 - 12.04 (precise) from the dev_ PPA
 
@@ -90,6 +90,23 @@ New features
 - SVG-based filtered/chart reports
 - Differentiate permissions of administrators, clerks, and managers
 - Read-only views for gradebook and parts of the school
+
+
+2.6 Bugfixes
+============
+
+SchoolTool 2.6.0.1 (2013-10-17)
+-------------------------------
+
+- Synchronize timezone set in preferences with timetables and schedules (https://launchpad.net/bugs/1239468)
+- Set initial timezone from ``/etc/timezone`` (https://launchpad.net/bugs/1030211)
+- Update Spanish translation.
+
+
+SchoolTool Journal 2.6.0.1 (2013-10-17)
+---------------------------------------
+
+- Fix periods disappearing in exotic time zones (https://launchpad.net/bugs/1239468)
 
 
 2.6.0 (2013-10-10)
