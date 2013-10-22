@@ -3,12 +3,11 @@
 SchoolTool Administrative Roles
 -------------------------------
 
-The "manager" user has sufficient permissions to configure SchoolTool, enter student data, 
-and completely set up and maintain the system.  
+The "Default Manager" user has sufficient permissions to configure SchoolTool, enter student data, and completely set up and maintain the system.  
 
 Rights and permissions in SchoolTool related to administering the school as a whole are controlled through membership in several :ref:`groups`: **Site Managers**, **Clerks** and **School Administrators**.  These groups, as well as **Teachers** and **Students**, cannot be deleted and always exist within each school year.  
 
-By default the "manager" user is a member of both **Site Managers** and **Clerks**.  
+By default the "Default Manager" user is a member of both **Site Managers** and **Clerks**.  
 
 * **Site Managers** - This group is responsible for setting up and technical maintenance of the SchoolTool instance.  It has no pedagogical role, but full permissions regarding server configuration.
 
@@ -23,9 +22,9 @@ Both **Site Managers** and **Clerks** should be trusted users, because either ca
 Super User and Emergency Password Recovery
 ------------------------------------------
 
-The original "manager" user has some special rights which are independent of his or her group membership, so that SchoolTool administrators cannot completely lock themselves out of the system accidentally.
+The original "Default Manager" user has some special rights which are independent of his or her group membership, so that SchoolTool administrators cannot completely lock themselves out of the system accidentally.
 
-If you forget the password for "manager", you can reset the "manager" password from the server's terminal.
+If you forget the password for "Default Manager", you can reset the "Default Manager" password from the server's terminal.
 
 Where PASS is the desired password::
 

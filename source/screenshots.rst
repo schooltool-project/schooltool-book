@@ -31,6 +31,11 @@ A teacher's gradebook
 
     .. image:: images/sc-grade.png
 
+A student's report card
++++++++++++++++++++++++
+
+   .. image:: images/report-card.png
+
 A teacher's attendance journal
 ++++++++++++++++++++++++++++++
 

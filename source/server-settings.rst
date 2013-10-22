@@ -6,7 +6,7 @@ Server Settings
 Server Information
 ------------------
 
-When logged in as a *Site Manager*, you should see a "Server" tab in the top bar.  This takes you to a variety of settings and information relevant to the server itself, as opposed to your school.
+When logged in as a **Site Manager**, you should see a "Server" tab in the top bar.  This takes you to a variety of settings and information relevant to the server itself, as opposed to your school.
 
    .. image:: images/server-settings-0.png
 
