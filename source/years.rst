@@ -13,7 +13,7 @@ If this does not fit the structure of your school, you can simply create a singl
 
 *Setting up a Year is necessary for just about any use of SchoolTool*, and it is easiest through the web interface.
 
-As "manager" click the **School** tab at top.  On a new installation, the page will look like this:
+As a member of **Site Managers** click the **School** tab at top.  On a new installation, the page will look like this:
 
    .. image:: images/years-0.png
 

@@ -8,17 +8,17 @@ Each Person can be linked to one or more Contacts (for example, a parent, step-p
 Creating and managing Contacts
 ------------------------------
 
-Usually you will create a Contact in reference to a Person.  To do so, you must be logged in as "manager." Go to the **School** tab, click on **People**, and select a Person:
+Usually you will create a Contact in reference to a Person.  To do so, you must be logged in as a member of **Clerks**.  Go to the **School** tab, click on **People**, select a Person, and click on the **Contacts** header, under **General Information**:
 
     .. image:: images/contacts-1.png
 
-In the **Contacts** slider, click the **Manage Contacts** link:
+In the **Contacts** section, click the **Manage Contacts** link:
 
     .. image:: images/contacts-2.png
 
 This form presents a list of Contacts for the Person. At first, there are no Contacts in the list. You may add a new Contact, or search for and link to an existing Contact.  
 
-Click on **Add: New Contact** in the sidebar.  If we wanted to add contact information for Charlie himself, we'd select **Add: Charles Brown as Contact**.
+Click on **Add: New Contact** in the sidebar.  If we wanted to add contact information for Sally herself (if we wanted to contact her directly, rather than her parents), we'd select **Add: Sally Brown as Contact**.
 
 This form should be straightforward:
 
@@ -37,6 +37,22 @@ Click on the Contact name:
 And in the student's slider:
 
     .. image:: images/contacts-7.png
+
+To add an existing contact to Sally's record, for example her brother Charlie, we could search for him under **Available Contacts**:
+
+    .. image:: images/contacts-7_1.png
+
+Click the green (+) to add him as a contact for Sally:
+
+    .. image:: images/contacts-7_2.png
+
+Click on Charlie Brown's name, and then the edit pencil next to **Contact Information** to set their relationship to "Sibling":
+
+    .. image:: images/contacts-7_3.png
+
+Thus:
+
+    .. image:: images/contacts-7_4.png
 
 To view, edit or add to all the Contacts in the system, navigate to the **School** tab and click on **Contacts**.
 
