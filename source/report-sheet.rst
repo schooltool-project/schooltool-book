@@ -132,7 +132,7 @@ Click on **Reports: Student Report Card**:
 
    .. image:: images/report-sheet-17.png
 
-A .pdf file will be downloaded.  Open it and it looks like this:
+A .pdf file will be downloaded.  Open it and it looks like this (well, with a full set of courses and grades):
 
    .. image:: images/report-sheet-18.png
 

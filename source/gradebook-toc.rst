@@ -18,5 +18,6 @@ Contents:
    gradebook-2
    score-systems
    report-sheet
+   course-worksheets
    journal
 

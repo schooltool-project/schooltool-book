@@ -12,7 +12,7 @@ The total number of Sections in a given school quickly multiplies.  In a school 
 Making a New Section Via the Web Interface
 ------------------------------------------
 
-To create a new Section, you must be logged in as "manager." Navigate to the **School** tab, and click on **Sections**:
+To create a new Section, you must be logged in as a member of **Clerks**. Navigate to the **School** tab, and click on **Sections**:
 
    .. image:: images/sections-1.png
 

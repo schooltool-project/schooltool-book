@@ -24,7 +24,7 @@ Adding People to Existing Groups
 
 In :ref:`persons`, we imported some People via CSV who have not been assigned to Groups.  We're going to add all of them to the "Students" Group.
 
-In order to add People to a Group, you must be logged in as "manager." Navigate to the **School** tab, and click on the **Groups** link:
+In order to add People to a Group, you must be logged in as a member of **Site Managers** or **Clerks**. Navigate to the **School** tab, and click on the **Groups** link:
 
    .. image:: images/groups-0.png
 
