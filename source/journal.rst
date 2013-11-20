@@ -1,39 +1,57 @@
 Using the Attendance Journal
 ============================
 
-The Journal provides a method of tracking classroom attendance as well as other data attached to specific class meetings, such as class participation grades.  The current emphasis is on creating a fast and convenient method for teachers to enter this data during class.  More advanced attendance functionality, such as excuse workflows, will follow in subsequent releases.
+The Journal provides a method of tracking classroom attendance as well as other data attached to specific class meetings, such as class participation grades.
 
 Finding the Journal
 -------------------
 
-While logged in as a teacher, there are two ways to access your Journal.  On your calendar view, you can follow the "Journal" link on each section meeting event.  You can also follow the **Journal** link in the top bar:
+While logged in as a teacher, there are two ways to access your Journal.  You can follow the **Journal** link in the top bar.  On your calendar view, you can follow the "Journal" link on each section meeting event.  
 
    .. image:: images/journal-1.png
 
-Entering and Saving Data
-------------------------
+At left you will see two or three choices under **View**: **Attendance**, **Scores** and, if this section meets in a defined homeroom period (at least once per cycle), **Homeroom**.  Changing this selection switches the type of data shown and entered in the Journal.
 
-The tabs across the top of the grid allow you to switch between months, and the column headers correspond to days, with time or period name in a row below.  If the section meets multiple times within the same day, there will be multiple columns with the same date and different time/period listed.
+   .. image:: images/journal-1_5.png
 
-To navigate around the worksheet, you can use the mouse to click directly on a cell or use the arrow keys to move from cell to cell. 
+The **Attendance** and **Homeroom** views are for attendance data, **Scores** is for assigning a score to students for that meeting of the section, for example to record a participation grade.
 
-In each cell, you can either enter:
+Setting Up Attendance Codes and Journal Score System
+----------------------------------------------------
 
-  - an "a" for an absence;
-  - a "t" for a tardy (late) student;
-  - a number from 0 to 9, where "0" will register as "10."
+Attendance codes are handled as a special type of score system in SchoolTool.  As a member of **Site Managers**, navigate to **School** and then **Customize: Score Systems**:
 
-   .. image:: images/journal-2.png
+   .. image:: images/journal-1_6.png
 
-You must click **Save** to save your work.
+If you click on the **Attendance** Score System, you can see the details of the default:
 
-Journal Statistics
-------------------
+   .. image:: images/journal-1_7.png
 
-The **Absences** column totals the student's absences for the entire Term (not just the current month).  For example, viewing the **October** tab carries across the **September** statistics from above.
+You cannot edit or delete score systems (changing them after teachers had assigned scores would cause chaos), so if you want a different set of attendance codes, click **Add: Attendance System**:
 
-   .. image:: images/journal-7.png
+   .. image:: images/journal-1_8.png
 
-The **Average** column provides the average of the numeric scores for the term.  Note that if no score is entered for a given day, it is not included in the calculation.  That is, an empty cell does not equal "0" when the average is calculated.
+At the top of the form, give your score system a title.  Add rows to the table in the lower half of the form to define the attendance system.
+
+  * **Value** - is what the teacher will enter in the Journal, use lowercase so the teacher will not have to use the shift key.
+  * **Description** - this may be very simple, "Absent, Unexcused," or it may be used to differentiate describe different sub-types, like "Absent - Medical" or "Absent - School Activity." 
+ * **Report as** - these are the three basic attendance statuses, **Present**, **Absent** and **Tardy** (that is, arrived late).  
+ * **Excused** - select whether this code is considered a properly excused absence or tardy instance.
+
+Click **Add** to create an additional code.  Click **Save** when you are finished.
+
+   .. image:: images/journal-1_9.png
+
+   .. image:: images/journal-1_10.png
+
+Now click **Customize: Journal Score Systems**:
+
+   .. image:: images/journal-1_12.png
+
+This form sets the Score System used in the **Score** mode of Journals across the school.  By default, this is set to the "10 Points" system.  You can select a different system, either another default one or a custom one, in this form.
+
+You can also select the Attendance Score System used in the **Attendance** and **Homeroom** mode of Journals across the school.
+
+
 
 

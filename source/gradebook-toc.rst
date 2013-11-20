@@ -20,4 +20,5 @@ Contents:
    report-sheet
    course-worksheets
    journal
+   journal-scores
 
