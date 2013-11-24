@@ -101,21 +101,50 @@ New features
 - Read-only views for gradebook and parts of the school
 
 
-2.6 Bugfixes
-============
+2.6.1 (2013-11-24)
+==================
 
-SchoolTool 2.6.0.1 (2013-10-17)
--------------------------------
+SchoolTool 2.6.1 (2013-11-24)
+-----------------------------
 
 - Synchronize timezone set in preferences with timetables and schedules (https://launchpad.net/bugs/1239468)
 - Set initial timezone from ``/etc/timezone`` (https://launchpad.net/bugs/1030211)
-- Update Spanish translation.
+- Add SchoolTool versions to the Server page.
+- Person cannot see his own preferences (https://launchpad.net/bugs/1247825)
+- Do not escape extra spaces in comments (https://launchpad.net/bugs/1241022)
+- Fix error when trying to replace existing school logo (https://launchpad.net/bugs/1250733)
+- Restore the warning about unsaved changes in gradebook, broken after adding
+  autocompletion (https://launchpad.net/bugs/1253070)
+- Updated translations
 
 
-SchoolTool Journal 2.6.0.1 (2013-10-17)
+SchoolTool Journal 2.6.1 (2013-11-24)
+-------------------------------------
+
+- Display homeroom attendance hint in all periods (https://launchpad.net/bugs/1247853)
+- Journal tab should display a section in the active school year when first
+  opened (https://launchpad.net/bugs/1243781)
+- Fix periods disappearing in exotic time zones (https://launchpad.net/bugs/1239468)
+
+
+SchoolTool CanDo 2.6.1 (2013-11-24)
+-----------------------------------
+
+- Fixed equivalent lookup in the skills gradebook.
+- Fix Total points external activity to return a percentage of total possible
+  points.
+
+
+SchoolTool Gradebook 2.6.1 (2013-11-21)
 ---------------------------------------
 
-- Fix periods disappearing in exotic time zones (https://launchpad.net/bugs/1239468)
+- Prevented hidden report sheets to be deployed to new sections (https://launchpad.net/bugs/1220211)
+- Fixed error when deploying a course worksheet (https://launchpad.net/bugs/1186231)
+- Added What is This? sidebars to course worksheet views.
+- Fixed attendance calculation in XLS export and reports.
+- Fixed journal average calculation if alternative score system is used.
+- Gradebook tab should display a section in the active school year when first
+  opened (https://launchpad.net/bugs/1243781)
 
 
 2.6.0 (2013-10-10)
