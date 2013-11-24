@@ -1,3 +1,5 @@
+.. _report-sheet:
+
 Report Sheets and Report Cards
 ==============================
 

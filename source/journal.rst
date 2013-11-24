@@ -35,8 +35,8 @@ At the top of the form, give your score system a title.  Add rows to the table i
 
   * **Value** - is what the teacher will enter in the Journal, use lowercase so the teacher will not have to use the shift key.
   * **Description** - this may be very simple, "Absent, Unexcused," or it may be used to differentiate describe different sub-types, like "Absent - Medical" or "Absent - School Activity." 
- * **Report as** - these are the three basic attendance statuses, **Present**, **Absent** and **Tardy** (that is, arrived late).  
- * **Excused** - select whether this code is considered a properly excused absence or tardy instance.
+  * **Report as** - these are the three basic attendance statuses, **Present**, **Absent** and **Tardy** (that is, arrived late).  
+  * **Excused** - select whether this code is considered a properly excused absence or tardy instance.
 
 Click **Add** to create an additional code.  Click **Save** when you are finished.
 

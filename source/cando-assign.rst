@@ -26,7 +26,7 @@ Click **Assign Skills** in the left sidebar:
 
 The search functionality in the **Assign Skills** view is currently buggy.  It does not search Skills or Skill Sets, only higher layers in the hierarchy, in this case "Clusters."  
 
-In this case, we would like to add the "Basic Mathematics" Skill Set from the "B2T Hands-On Math" Cluster.  To do so, click the green **+** icon in the **B2T Hands-On Math table.  This gives you a pop-up form:
+In this case, we would like to add the "Basic Mathematics" Skill Set from the "B2T Hands-On Math" Cluster.  To do so, click the green **+** icon in the **B2T Hands-On Math** table.  This gives you a pop-up form:
 
    .. image:: images/cando-manual-4.png
 

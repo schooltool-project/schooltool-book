@@ -12,6 +12,8 @@ When logged in as a **Site Manager**, you should see a "Server" tab in the top b
 
 In the main content area, the Server Information section provides some technical details you may need for debugging, the **Server Information** link takes you to a more verbose version of this data.
 
+.. _email:
+
 Outgoing Email
 --------------
 
