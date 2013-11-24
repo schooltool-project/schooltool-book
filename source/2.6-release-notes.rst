@@ -35,6 +35,42 @@ There are now 4 processes, controlled by a ``supervisor`` daemon:
   + ``celery_report`` - a ``celery`` task queue that generates reports
   + ``redis``         - a simple key-value database for ``celery``
 
+
+Ubuntu
+======
+
+SchoolTool 2.6 is available for
+
+- 13.10 (saucy) from the universe_, add the ppa_ for bugfixes
+- 13.04 (raring) from the dev_ PPA
+- 12.04 (precise) from the dev_ PPA
+
+Additionally, there are daily builds from ``trunk`` branches of actively developed
+projects in the trunk_ PPA.
+
+Ubuntu package ``schooltool`` contains updated configuration files. If they have
+been modified, you may be asked how to handle the conflicts. So it is
+recommended to upgrade it in the terminal::
+
+    $ sudo apt-get update
+    $ sudo apt-get dist-upgrade
+
+Answer ``Y`` (install package maintainer's version) to all questions to get
+the new files. A backup of modified files is made with a suffix ``.dpkg-old``,
+compare them and make the same changes in the new files::
+
+    $ cd /etc/schooltool/standard
+    $ diff -u paste.ini.dpkg-old paste.ini 
+
+To see the status of all 4 processes, use the status command of the init
+script::
+
+    $ sudo service schooltool status
+
+
+Running from source
+===================
+
 New ``make`` targets:
 
   + start       - start all processes as daemons
@@ -51,33 +87,6 @@ or Debian::
 Instances have to be updated to run this version. If you run from a sandbox::
 
     $ bin/make-schooltool-instance instance
-
-Ubuntu package ``schooltool`` contains updated configuration files. If they have
-been modified, you may be asked how to handle the conflicts. So it is
-recommended to upgrade it in the terminal::
-
-    $ sudo apt-get update
-    $ sudo apt-get install schooltool
-
-Answer ``Y`` (install package maintainer's version) to all questions to get
-the new files. A backup of modified files is made with a suffix ``.dpkg-old``,
-compare them and make the same changes in the new files::
-
-    $ cd /etc/schooltool/standard
-    $ diff -u paste.ini.dpkg-old paste.ini 
-
-
-Ubuntu
-======
-
-SchoolTool 2.6 is available for
-
-- 13.10 (saucy) from the universe_, add the ppa_ for bugfixes
-- 13.04 (raring) from the dev_ PPA
-- 12.04 (precise) from the dev_ PPA
-
-Additionally, there are daily builds from ``trunk`` branches of actively developed
-projects in the trunk_ PPA.
 
 
 New features
