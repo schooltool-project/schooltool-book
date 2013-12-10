@@ -104,6 +104,17 @@ New features
 2.6.1 (2013-11-24)
 ==================
 
+SchoolTool Intervention 2.6.1 (2013-12-06)
+------------------------------------------
+
+- Let clerks edit goals
+- Hide add/edit links from users who cannot do that
+- Fixed error when student clicks on Interventions menu item in profile
+- Fixed Inbox when goals have no "Presenting concerns" set (https://launchpad.net/bugs/1231371)
+- Updated translations
+- Added Portuguese and Sinhalese translations
+
+
 SchoolTool 2.6.1 (2013-11-24)
 -----------------------------
 
