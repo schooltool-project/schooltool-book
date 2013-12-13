@@ -23,7 +23,7 @@ and after giving the server time to start -- at least a minute just to be sure, 
 
 It is useful to know if the server is working at all or one of the processes is intermittently quitting.
 
-If your server is memory constrained (under a gigabyte of RAM) and has little or no swap space, the operating system may unpredictably killing one of the SchoolTool processes to save memory.
+If your server is memory constrained (under a gigabyte of RAM) and has little or no swap space, the operating system may unpredictably kill one of the SchoolTool processes to save memory.
 
 The logs are stored in ``/var/log/schooltool`` with ``/var/log/schooltool/error.log`` most likely to be relevant if you are having a problem.  
 
