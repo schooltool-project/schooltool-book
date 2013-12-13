@@ -31,6 +31,7 @@ Contents:
    features
    screenshots
    install-toc
+   troubleshooting
    initial-configuration-toc
    setup-toc
    spreadsheet
