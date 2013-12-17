@@ -104,6 +104,13 @@ New features
 2.6.1 (2013-11-24)
 ==================
 
+SchoolTool LDAP 1.0.1 (2013-12-12)
+----------------------------------
+
+- Fix failure to start when example /etc/ldap.conf exists (https://launchpad.net/bugs/1251181)
+- Add Dutch and Sinhalese translations.
+
+
 SchoolTool Intervention 2.6.1 (2013-12-06)
 ------------------------------------------
 
