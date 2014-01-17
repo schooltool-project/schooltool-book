@@ -28,4 +28,30 @@ The **Absences** column totals the student's absences for the entire Term (not j
 
 The **Average** column provides the average of the numeric scores for the term.  Note that if no score is entered for a given day, it is not included in the calculation.  That is, an empty cell does not equal "0" when the average is calculated.
 
+Homeroom Attendance
+-------------------
 
+Homeroom attendance is used in systems where a student is marked as present/absent/tardy for the entire day, based primarily on their attendance a specific period.  This is set up as part of :ref:`timetables`.  This is commonly used in primary schools; many secondary schools and almost all post-secondary school do not use homeroom attendance.
+
+Exactly how homeroom attendance should interact with section attendance the rest of the day involves somewhat complex and context-specific logic.  To keep the system simple and transparent, homeroom attendance currently has no automatic effect on section attendance during the rest of the day.  What *does* happen is that whenever homeroom attendance is recorded, each cell in the section attendance views is split to display the child's homeroom attendance record for the relevant day above where the section attendance is entered.
+
+That is, the teacher in each section is notified of the student's status in homeroom, but the school may still want them to explicitly mark the absence in each section.  The system does not automatically mark students who are absent in homeroom as absent for all the day's sections.
+
+For example, here I have set Charlie Brown and Linus as absent in homeroom for February 2:
+
+   .. image:: images/journal-scores-4.png
+
+Switching to the section view, I now see the split cell view.  The "a" in the blue, upper part of the cells indicates that the student was marked absent in homeroom.
+
+   .. image:: images/journal-scores-5.png
+
+Note that even the section that is considered the homeroom period does *not* automatically apply the homeroom status to the section status.  To confirm the absence for the section meeting, you must enter the status again in the lower half of the cell.
+
+   .. image:: images/journal-scores-6.png
+
+Entering Scores in the Journal
+------------------------------
+
+Enter scores in the Journal by selecting the **Scores** view.  
+
+   .. image:: images/journal-scores-7.png
