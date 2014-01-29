@@ -38,7 +38,7 @@ Contents:
    populating
    gradebook-toc
    cando-toc
-   
+   multi-years
    administrators
    release-notes
    developers
