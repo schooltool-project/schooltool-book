@@ -99,6 +99,42 @@ New features
 - SVG-based filtered/chart reports
 - Differentiate permissions of administrators, clerks, and managers
 - Read-only views for gradebook and parts of the school
+- Split journal into three modes: attendance, scores, and homeroom.
+- Customizable journal score systems
+- Schoolwide attendance view
+
+
+2.6.2 (2014-02-15)
+==================
+
+SchoolTool 2.6.2 (2014-02-15)
+-----------------------------
+
+- Fix upgrade from a fresh install of version 2.6.0 (https://launchpad.net/bugs/1258529)
+- Fix delete year/term if it contains non-ascii chars.
+- Updated translations
+
+
+SchoolTool Gradebook 2.6.2 (2014-02-15)
+---------------------------------------
+
+- Deploy course worksheets on new sections.
+- Removed attendance score systems from Average column's menu (https://launchpad.net/bugs/1258939)
+- Fix exception in mygrades view after timeout.
+- Updated translations
+
+
+SchoolTool Journal 2.6.2 (2014-02-15)
+-------------------------------------
+
+- Allow uppercase values in attendance score system (https://launchpad.net/bugs/1253663)
+- Update translations
+
+
+SchoolTool LDAP 1.0.2 (2014-02-07)
+----------------------------------
+
+- Support non-ascii characters in data coming from LDAP (https://launchpad.net/bugs/1277518)
 
 
 2.6.1 (2013-11-24)

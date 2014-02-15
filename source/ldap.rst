@@ -47,7 +47,7 @@ SchoolTool groups.  Here, two users have been assigned to "students":
 Configuring LDAP
 ++++++++++++++++
 
-By default, SchoolTool will look for /etc/ldap.conf and try to figure
+By default, SchoolTool will look for ``/etc/ldap.conf`` and try to figure
 out your current setup.  If your server has that entry, there's a good
 chance that LDAP integration will work out-of-the-box.
 
