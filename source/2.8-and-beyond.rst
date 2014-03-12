@@ -40,7 +40,7 @@ We will be focusing on the current LTS Ubuntu release as the primary platform, w
 Funding, SIELibre and the Future
 --------------------------------
 
-Mark Shuttleworth has funded incarnations of the SchoolTool project for over a decade.  Mark's support has been generous, consistent, patient, and deeply appreciated but his support for the project will end with 2014, as has been planned for several years.
+Mark Shuttleworth has funded incarnations of the SchoolTool project for over a decade.  Mark's support has been generous, consistent, patient, and deeply appreciated, but his support for the project will end with 2014, as has been planned for several years.
 
 To continue the project and, in particular, to provide the assurance of ongoing paid support to SchoolTool users, Project Manager Tom Hoffman and Lead Developer Douglas Cerna have established `SIELibre, LLC <http://sielibre.com>`_.  For more information about SIELibre's services, please see `http://sielibre.com <http://sielibre.com>`_.
 
