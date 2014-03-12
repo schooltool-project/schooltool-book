@@ -44,4 +44,4 @@ Mark Shuttleworth has funded incarnations of the SchoolTool project for over a d
 
 To continue the project and, in particular, to provide the assurance of ongoing paid support to SchoolTool users, Project Manager Tom Hoffman and Lead Developer Douglas Cerna have established `SIELibre, LLC <http://sielibre.com>`_.  For more information about SIELibre's services, please see `http://sielibre.com <http://sielibre.com>`_.
 
-
+To be clear, the license to SchoolTool will not change, and it will continue to be free software.
