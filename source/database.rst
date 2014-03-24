@@ -3,6 +3,10 @@ Basic Database Administration
 
 Unlike most web applications, SchoolTool does not use a relational database such as MySQL or PostgreSQL.  Instead, it uses ZODB -- the Zope Object Database.  ZODB has some specific characteristics a SchoolTool site manager should be aware of.
 
+The main drawback to this, from the point of view of a school's systems administrator or programmer, is that you cannot simply directly access data in the form of raw tables.  It has to be done programmatically in Python, either from a module in the main server application, or an external Python script that imports much of SchoolTool's object model.  
+
+If you have specific needs for data reporting, don't hesitate to contact us. 
+
 Where is the data?
 ------------------
 
@@ -62,11 +66,11 @@ Delete the ``Data.fs`` file and the ``blobs`` directory.  This is, of course, pe
 Packing the database.
 ---------------------
 
-The ZODB is designed to keep a record of transactions, which can be used by an application to allow "undo" functionality.  One implication of this, however, is that the database file grows in size as it stores a longer and longer list of changes to each object.  To shrink the database back to a more efficient size, one can "pack" it.  
+The ZODB is designed to keep a record of transactions, which can be used by an application to allow "undo" functionality.  One implication of this, however, is that the database file grows in size as it stores a longer and longer list of changes to each object.  To shrink the database back to a more efficient size, one can "pack" it.  Because SchoolTool does not allow you to undo transactions, there is no practical reason not to pack the database.  
 
-Because SchoolTool does not allow you to undo transactions, you can pack the database at any time.  It does not have to be done very frequently -- certainly not daily.  Packing the database monthly or weekly should suffice, but your mileage may vary.  It may be something you do prior to high demand periods, such as before teachers submit grades.  Backing up your database prior to packing it should not be necessary, but nonetheless it is not a bad idea.
+Packing the database does not have to be done very frequently -- certainly not daily.  Monthly or weekly should suffice, but your mileage may vary depending on the intensity of usage.  It may be something you do prior to high demand periods, such as before teachers submit grades.  Backing up your database prior to packing it should not be necessary, but nonetheless it is not a bad idea.
 
-To pack the database via the web, you must be logged in as "manager." Navigate to the **Server** tab at the top of the page, then click on **Actions: Pack Database**:
+To pack the database via the web, you must be logged in as a member of "Site Managers." Navigate to the **Server** tab at the top of the page, then click on **Actions: Pack Database**.  You will see a spinner indicating that packing is in progress.  If you stay on the page, you will get a confirmation dialog:
 
    .. image:: images/packing.png
 
