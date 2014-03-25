@@ -49,6 +49,13 @@ Note that even the section that is considered the homeroom period does *not* aut
 
    .. image:: images/journal-scores-6.png
 
+Excusing Absences and Tardies
+-----------------------------
+
+If a teacher changes an unexcused absence or tardy to excused, it is recorded in the history, which can be viewed from the journal by clicking on the student's name and selecting **History**.  As you can see, the user changing the state and the date of the change is recorded.
+
+   .. image:: images/journal-scores-6_5.png
+
 Entering Scores in the Journal
 ------------------------------
 
