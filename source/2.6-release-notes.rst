@@ -107,6 +107,16 @@ New features
 2.6.2 (2014-02-15)
 ==================
 
+February bugfixes
+
+
+SchoolTool Intervention 2.6.2 (2014-04-09)
+------------------------------------------
+
+- Fix a crash on startup if used with z3c.form < 2.8
+- Latest translations from Launchpad
+
+
 SchoolTool 2.6.2 (2014-02-15)
 -----------------------------
 
