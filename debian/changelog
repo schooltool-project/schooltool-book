@@ -1,3 +1,9 @@
+schooltool-book (2.6.3) trusty; urgency=low
+
+  * New upstream release.
+
+ -- Gediminas Paulauskas <menesis@pov.lt>  Sat, 12 Apr 2014 02:31:32 +0300
+
 schooltool-book (2.6.2) trusty; urgency=low
 
   * New upstream bugfix release.

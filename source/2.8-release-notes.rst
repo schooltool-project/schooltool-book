@@ -40,4 +40,4 @@ New features
 - Background import
 - Added descriptions for demographic fields
 
-
+.. _trunk: install-dev.html#daily

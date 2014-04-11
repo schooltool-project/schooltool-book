@@ -101,12 +101,12 @@ New features
 - Schoolwide attendance view
 
 
-2.6.3 "trusty" (unreleased)
+2.6.3 "trusty" (2014-04-12)
 ===========================
 
 Final release for Ubuntu 14.04 LTS
 
-SchoolTool 2.6.3 (unreleased)
+SchoolTool 2.6.3 (2014-04-12)
 -----------------------------
 
 New features
@@ -120,8 +120,22 @@ Bugfixes
 ++++++++
 
 - Fixed exception dates format in calendar widget of recurring events (https://launchpad.net/bugs/372889)
+- Fixed export of deleted timetables (https://launchpad.net/bugs/1281335)
 - Updated copyright (https://launchpad.net/bugs/1289277)
 - Fixed term/section navigation in a different school year (https://launchpad.net/bugs/1281050)
+
+
+SchoolTool Gradebook 2.6.3 (2014-04-12)
+---------------------------------------
+
+- Switch to CKEditor (https://bugs.launchpad.net/bugs/485898)
+- Latest translations from Launchpad
+
+
+SchoolTool Journal 2.6.3 (2014-04-12)
+-------------------------------------
+
+- Latest translations from Launchpad
 
 
 SchoolTool CanDo 2.6.2 (2014-04-11)
@@ -130,17 +144,17 @@ SchoolTool CanDo 2.6.2 (2014-04-11)
 - Fixed report generation (https://launchpad.net/bugs/1306778)
 
 
-2.6.2 (2014-02-15)
-==================
-
-February bugfixes
-
-
 SchoolTool Intervention 2.6.2 (2014-04-09)
 ------------------------------------------
 
 - Fix a crash on startup if used with z3c.form < 2.8
 - Latest translations from Launchpad
+
+
+2.6.2 (2014-02-15)
+==================
+
+February bugfixes
 
 
 SchoolTool 2.6.2 (2014-02-15)
@@ -519,4 +533,3 @@ SchoolTool Virginia 0.8.0 (2013-08-01)
 .. _universe: install-2_0.html
 .. _ppa: install-2_0.html#ppa
 .. _dev: install-dev.html
-.. _trunk: install-dev.html#daily
