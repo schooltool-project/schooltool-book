@@ -1,0 +1,43 @@
+:tocdepth: 2
+
+SchoolTool 2.8 Release Notes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+SchoolTool 2.8 is a development series with a first release in April 2014.
+
+See :ref:`2.8-and-beyond` for plans regarding this and future releases.
+
+
+New features
+============
+
+- Temporal relationships
+- Enrollment modes
+- Basic parent access
+- Levels for courses and persons
+
+Availability
+============
+
+Currently there are only daily builds from ``trunk`` branches of actively developed
+projects, automatically landing in the trunk_ PPA.
+
+
+2.7.0 (unreleased)
+==================
+
+First release featuring the new relationships.
+
+SchoolTool 2.7.0 (unreleased)
+-----------------------------
+
+New features
+++++++++++++
+
+- Temporal relationships
+- Levels for courses and persons
+- Parent access
+- Background import
+- Added descriptions for demographic fields
+
+

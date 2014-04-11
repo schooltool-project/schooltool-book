@@ -41,12 +41,9 @@ Ubuntu
 
 SchoolTool 2.6 is available for
 
+- 14.04 (trusty) from the universe_, add the ppa_ for bugfixes
 - 13.10 (saucy) from the universe_, add the ppa_ for bugfixes
-- 13.04 (raring) from the dev_ PPA
 - 12.04 (precise) from the dev_ PPA
-
-Additionally, there are daily builds from ``trunk`` branches of actively developed
-projects in the trunk_ PPA.
 
 Ubuntu package ``schooltool`` contains updated configuration files. If they have
 been modified, you may be asked how to handle the conflicts. So it is
@@ -102,6 +99,35 @@ New features
 - Split journal into three modes: attendance, scores, and homeroom.
 - Customizable journal score systems
 - Schoolwide attendance view
+
+
+2.6.3 "trusty" (unreleased)
+===========================
+
+Final release for Ubuntu 14.04 LTS
+
+SchoolTool 2.6.3 (unreleased)
+-----------------------------
+
+New features
+++++++++++++
+
+- Switch to CKEditor (https://bugs.launchpad.net/bugs/485898)
+- Celery 3 support (https://bugs.launchpad.net/bugs/1276384)
+- Latest translations from Launchpad
+
+Bugfixes
+++++++++
+
+- Fixed exception dates format in calendar widget of recurring events (https://launchpad.net/bugs/372889)
+- Updated copyright (https://launchpad.net/bugs/1289277)
+- Fixed term/section navigation in a different school year (https://launchpad.net/bugs/1281050)
+
+
+SchoolTool CanDo 2.6.2 (2014-04-11)
+-----------------------------------
+
+- Fixed report generation (https://launchpad.net/bugs/1306778)
 
 
 2.6.2 (2014-02-15)
@@ -211,8 +237,8 @@ SchoolTool Gradebook 2.6.1 (2013-11-21)
   opened (https://launchpad.net/bugs/1243781)
 
 
-2.6.0 (2013-10-10)
-==================
+2.6.0 "saucy" (2013-10-10)
+==========================
 
 Final release for Saucy
 

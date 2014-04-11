@@ -5,20 +5,25 @@ Release Notes
 
 Series:
 
-- Stable: 2.6_, 2.4_
-- Long term support: 2.1_
+- Development: 2.8_
+- Stable: 2.6_
+- Previous LTS: 2.1_
 
 ======= ======== ========= ========= ==== ====
 release codename ubuntu    universe_ ppa_ dev_
 ======= ======== ========= ========= ==== ====
+*Development*
+---------------- --------- --------- ---- ----
+2.8_    temporal
+2.6_    trusty   14.04 LTS 2.6_      2.6_
 *Stable*
 ---------------- --------- --------- ---- ----
 2.6_    saucy    13.10     2.6_      2.6_
-2.4_    raring   13.04     2.4_      2.4_ 2.6_
-2.3_    quantal  12.10     2.1_      2.3_ 2.4_
 2.1_    precise  12.04 LTS 2.1_      2.1_ 2.6_
 *Obsolete*
 ---------------- --------- --------- ---- ----
+2.4_    raring   13.04     2.4_      2.4_ 2.6_
+2.3_    quantal  12.10     2.1_      2.3_ 2.4_
 2.0_    flourish
 1.7_    oneiric  11.10     1.7_
 1.6_    natty    11.04     1.6_
@@ -31,9 +36,9 @@ release codename ubuntu    universe_ ppa_ dev_
 See `Ubuntu Releases <https://wiki.ubuntu.com/Releases>`_ page for release
 schedule, dates, and support.
 
-The oldest supported release is SchoolTool 2.1 for precise, with the SchoolTool
-ppa_.
+Please enable the SchoolTool ppa_ to get bugfixes.
 
+.. _2.8: 2.8-release-notes.html
 .. _2.6: 2.6-release-notes.html
 .. _2.4: 2.4-release-notes.html
 .. _2.3: 2.3-release-notes.html
@@ -54,6 +59,8 @@ ppa_.
    :maxdepth: 1
    :hidden:
 
+   2.8-and-beyond
+   2.8-release-notes
    2.6-release-notes
    2.4-release-notes
    2.3-release-notes

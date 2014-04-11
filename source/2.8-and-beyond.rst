@@ -1,3 +1,5 @@
+.. _2.8-and-beyond:
+
 SchoolTool 2.8 And Beyond
 =========================
 
@@ -28,7 +30,7 @@ The 2.8 release will include several significant new features:
 
  * Group and section membership forms updated to include the additional statuses described above.  Form switched to a more straightforward checkbox style.
 
-A bugfix release of the current stable SchoolTool, the 2.6 series, will be included in Ubuntu 14.04 LTS.  SchoolTool 2.8 will be released to a new "2.8" PPA on Launchpad for Ubuntu 12.04 and 14.04.  Given that SchoolTool 2.8 includes some far-reaching internal changes, most users will not want to apply this update mid-year.
+A bugfix release of the current stable SchoolTool, the 2.6_ series, will be included in Ubuntu 14.04 LTS.  SchoolTool 2.8_ will be released to a new "2.8" PPA on Launchpad for Ubuntu 12.04 and 14.04.  Given that SchoolTool 2.8 includes some far-reaching internal changes, most users will not want to apply this update mid-year.
 
 Future Releases
 ---------------
@@ -45,3 +47,6 @@ Mark Shuttleworth has funded incarnations of the SchoolTool project for over a d
 To continue the project and, in particular, to provide the assurance of ongoing paid support to SchoolTool users, Project Manager Tom Hoffman and Lead Developer Douglas Cerna have established `SIELibre, LLC <http://sielibre.com>`_.  For more information about SIELibre's services, please see `http://sielibre.com <http://sielibre.com>`_.
 
 To be clear, the license to SchoolTool will not change, and it will continue to be free software.
+
+.. _2.6: 2.6-release-notes.html
+.. _2.8: 2.8-release-notes.html
