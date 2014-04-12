@@ -23,21 +23,48 @@ Currently there are only daily builds from ``trunk`` branches of actively develo
 projects, automatically landing in the trunk_ PPA.
 
 
-2.7.0 (unreleased)
+2.7.0 (2014-04-12)
 ==================
 
-First release featuring the new relationships.
+Preview of the new relationships
 
-SchoolTool 2.7.0 (unreleased)
+SchoolTool 2.7.0 (2014-04-12)
 -----------------------------
 
 New features
 ++++++++++++
 
 - Temporal relationships
+- Checkboxes in relationship views
 - Levels for courses and persons
 - Parent access
 - Background import
 - Added descriptions for demographic fields
+
+
+SchoolTool Gradebook 2.7.0 (2014-04-12)
+---------------------------------------
+
+- Added enrollment modes to gradebook
+- Added children gradebook for parents
+
+
+SchoolTool Journal 2.7.0 (2014-04-12)
+-------------------------------------
+
+- Added enrollment modes to journal
+
+
+SchoolTool CanDo 2.7.0 (2014-04-12)
+-----------------------------------
+
+- Temporal relationships support
+
+
+SchoolTool Intervention 2.7.0 (2014-04-12)
+------------------------------------------
+
+- Temporal relationships support
+
 
 .. _trunk: install-dev.html#daily
