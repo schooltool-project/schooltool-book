@@ -1,3 +1,5 @@
+.. _2.8-changes:
+
 Changes in SchoolTool 2.8
 =========================
 
@@ -12,11 +14,11 @@ contact relationship between a student and their guardian.
 There are two parts to the change:
 
     * the interface itself uses checkboxes so you can add/remove/edit multiple 
- people at a time;
+      people at a time;
  
     * when modifying the relationship you must indicate the type of change 
- taking place, for example, if a student has withdrawn as a student or 
- graduated.
+      taking place, for example, if a student has withdrawn as a student or 
+      graduated.
 
 For the generic example, we will look at adding a person to the **Students** 
 group.  A student's enrollment status within the school is indicated by their 

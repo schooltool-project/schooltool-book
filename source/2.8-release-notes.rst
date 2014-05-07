@@ -3,7 +3,8 @@
 SchoolTool 2.8 Release Notes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SchoolTool 2.8 is a development series with a first release in April 2014.
+SchoolTool 2.8 is a feature release for new deployments or those ready to
+upgrade their 2.6 installation.
 
 See :ref:`2.8-and-beyond` for plans regarding this and future releases.
 
@@ -11,16 +12,58 @@ See :ref:`2.8-and-beyond` for plans regarding this and future releases.
 New features
 ============
 
-- Temporal relationships
+- Relationships with a state in time period
 - Enrollment modes
 - Basic parent access
 - Levels for courses and persons
+- Transcript reports
+
+See :ref:`2.8-changes` for introduction to the new relationships.
+
 
 Availability
 ============
 
-Currently there are only daily builds from ``trunk`` branches of actively developed
-projects, automatically landing in the trunk_ PPA.
+It is available for all supported Ubuntu releases in a new `2.8 ppa
+<https://launchpad.net/~schooltool-owners/+archive/2.8>`_
+
+
+2.8.0 (2014-05-08)
+==================
+
+Public release with new relationships, transcript reports,
+and all the bugfixes included in 2.6.4 release.
+
+
+SchoolTool 2.8.0 (2014-05-08)
+-----------------------------
+
+- Added 'Added in error' state for temporal relationships
+- Added What is this info to membership state edit view (https://launchpad.net/bugs/1308944)
+
+
+SchoolTool Gradebook 2.8.0 (2014-05-08)
+---------------------------------------
+
+- Added scoresystem field to course worksheet activity add view
+- Added course worksheets report
+- Added transcript report
+- Added checkboxes for column preferences to the sidebar (https://launchpad.net/bugs/1288274)
+
+
+SchoolTool Journal 2.8.0 (2014-05-08)
+-------------------------------------
+
+- Fixed cell validation in school attendance view
+- Fixed highlighting of inactive students in the journal 
+- Fixed active tab in school attendance view
+
+
+SchoolTool CanDo 2.8.0 (2014-05-08)
+-----------------------------------
+
+- Hide preferences menu introduced with gradebook 2.8.0
+- Fix add/edit views broken in 2.7.0
 
 
 2.7.0 (2014-04-12)
