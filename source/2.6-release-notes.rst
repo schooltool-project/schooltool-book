@@ -101,6 +101,47 @@ New features
 - Schoolwide attendance view
 
 
+2.6.4 (2014-05-08)
+==================
+
+Trusty bugfixes
+
+
+SchoolTool Journal 2.6.4 (2014-05-05)
+-------------------------------------
+
+- Update translations
+
+
+SchoolTool Gradebook 2.6.4 (2014-05-01)
+---------------------------------------
+
+- Deploy hidden report sheets to new sections, fix hide/unhide report
+  sheets view for sections that don't have them (https://launchpad.net/bugs/1261992)
+- Fix report cards broken after deleting a term (https://launchpad.net/bugs/1065381)
+- Sort terms by date in course/report worksheet views (https://launchpad.net/bugs/1311818)
+- Fix deploying report sheet using a shortened template title (https://launchpad.net/bugs/1290167)
+- Translate "Ave." string in student's gradebook (https://launchpad.net/bugs/1307136)
+- Update Dutch translation
+
+
+SchoolTool 2.6.4 (2014-05-01)
+-----------------------------
+
+- Support CKEditor 4.x (https://launchpad.net/bugs/1309133)
+- Delete schedules that reference a deleted timetable (https://launchpad.net/bugs/1280528)
+- Improve tab style to make active tab more clear (https://launchpad.net/bugs/1023378)
+- Timetables copied from active year retain old start/end dates (https://launchpad.net/bugs/1005962)
+- Updated translations
+
+
+SchoolTool CanDo 2.6.3 (2014-05-02)
+-----------------------------------
+
+- Updated for CKEditor and celery migrations
+- Updated Dutch translation
+
+
 2.6.3 "trusty" (2014-04-12)
 ===========================
 
