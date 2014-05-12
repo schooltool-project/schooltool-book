@@ -20,14 +20,15 @@ Click **Add: Section**.  Select a Course the Section should be associated with, 
 
    .. image:: images/sections-2.png
 
-Click **Add**:
+Click **Submit**:
 
    .. image:: images/sections-3.png
 
 Adding and Editing Instructors and Pupils
 -----------------------------------------
 
-To add an instructor or instructors for the Section, click on the yellow pencil icon next to **Instructors**.  The subsequent form works like the add form for :ref:`groups`.  Click the green plus (**+**) icon to add an instructor, the red minus (**-**) icon to remove one.  Add the Person you created in :ref:`user`.
+To add an instructor or instructors for the Section, click on the yellow pencil icon next to **Instructors**.  The subsequent form works like the add form for :ref:`groups`.  Check the box next to the Person you created in :ref:`user`,
+and click **Add**:
 
    .. image:: images/sections-5.png
 
@@ -35,15 +36,13 @@ Note that instructors gain elevated privileges in a section (for example, to cre
 
 Click on the yellow pencil icon next to **Students** to add pupils to the Section.  Note that the list of People you may add is not limited to members of the "Student" Group.  Any People in the system can be students in a Section.  
 
-Add the students one at a time:
-
    .. image:: images/sections-6.png
 
-When you are ready, click **Done**.  The populated Section looks like this:
+The populated Section looks like this:
 
    .. image:: images/sections-8.png
 
-If the students are all part of a single group, you can use the **Group** menu under search to filter out only the group's members and then the **Add all displayed** button to add them to the section with one click.
+If the students are all part of a single group, you can use the **Group** menu under search to filter out only the group's members and then the **Select All** link to check all the boxes with one click.
 
 Note that the application actually stores Sections spanning multiple Terms as a sequence of linked single-term sections.  If you click on the edit pencil next to Terms you will see:
 

@@ -42,18 +42,49 @@ To add an existing contact to Sally's record, for example her brother Charlie, w
 
     .. image:: images/contacts-7_1.png
 
-Click the green (+) to add him as a contact for Sally:
+To add Charlie as Sally's sibling, check the box next to his name and select
+**Sibling** under **Set selected to**.  If you need to indicate the contact 
+relationship changes on a specific date, set it under **Effective date**.
 
     .. image:: images/contacts-7_2.png
-
-Click on Charlie Brown's name, and then the edit pencil next to **Contact Information** to set their relationship to "Sibling":
-
-    .. image:: images/contacts-7_3.png
 
 Thus:
 
     .. image:: images/contacts-7_4.png
 
+Contact Index
+-------------
+
 To view, edit or add to all the Contacts in the system, navigate to the **School** tab and click on **Contacts**.
 
     .. image:: images/contacts-8.png
+    
+Parent Access
+-------------
+
+SchoolTool 2.8 adds limited parent login access to SchoolTool.  Currently this 
+is enabled on a per contact basis. 
+
+To activate login access for a contact user, navigate to the individual contact.
+    
+Click **Actions > Activate Parent Access**:
+
+    .. image:: images/contacts-9.png
+
+You will then be prompted to create a Username and password for the Contact.
+
+    .. image:: images/contacts-11.png
+
+Click **Enable**:
+
+    .. image:: images/contacts-12.png
+
+You can now log in as the contact user, but there is not much to see as Sally 
+Brown is not enrolled in any sections yet.  Once a student is enrolled in 
+sections, the parent can access the student views of the gradebook, 
+attendance journal, and other SchoolTool functionality.
+
+We will be expanding the scope and utility of parent access in future releases.
+
+    .. image:: images/contacts-13.png
+

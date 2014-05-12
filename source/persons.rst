@@ -40,7 +40,7 @@ To import user data from a CSV, you must be logged in as "manager." Select the *
 
     .. image:: images/persons-3.png
 
-**Submit** and return to the Person's index:
+**Submit** and return to the People index:
 
     .. image:: images/persons-4.png
 

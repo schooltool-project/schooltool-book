@@ -10,4 +10,5 @@ Contents:
    years
    terms
    timetables
+   levels
    courses

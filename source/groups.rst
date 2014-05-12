@@ -32,27 +32,61 @@ From here, select **Students**:
 
    .. image:: images/groups-1.png
 
-First we will "manually" add a member.  Click on the yellow pencil icon next to **Members**:
+First we will "manually" add our small group of students.  Click on the yellow pencil icon next to **Members**:
 
    .. image:: images/groups-2.png
 
-Click on the green plus (**+**) icon next to "Sally Brown":
+We'll check the boxes next to our students.  We will leave **Set selected to**
+**Enrolled** for now to indicate they are enrolled as students as of the date
+selected under **Effective date** (the current date by default):
 
    .. image:: images/groups-3.png
-
-Then click **Done** to get back to the main page for the Group.
-
-Next we will import a list of group members.  Click **Import:  Import Members CSV**.  This form accepts a simple list of Person ID's to be *added* to the Group.  That is, current group members who are not in the list are not *removed* from the existing group membership.  You may create a text file and upload it, or simply type or copy/paste the ID's into the textbox provided:
+   
+Click **Add**:
 
    .. image:: images/groups-4.png
 
-Hit **Submit** and your completed Group should look like:
-
-   .. image:: images/groups-5.png
+Then click **Done** to get back to the main page for the Group.
 
 If you click on one of the students' names and then their **Groups** slider, you'll see their memberships listed:
 
    .. image:: images/groups-6.png
+
+Editing Group Membership
+------------------------
+
+Withdrawing or otherwise changing existing group memberships is done as above,
+but by selecting students from the list of Current Members and seting them to 
+a different state, such as **Withdrawn** or **Graduated/Inactive**.
+
+Customizing Membership Relationships
+------------------------------------
+
+On the **School** page, under **Customize**, you can select **Membership 
+States** to customize the states of different types of relationships.
+
+   .. image:: images/2.8-changes-5.png
+
+For example, click **Student Enrollment**.
+
+   .. image:: images/2.8-changes-6.png
+
+In each type of relationship, there are a few pre-set "meanings" that 
+may affect underlying functionality important to SchoolTool.  For example,
+the basic statuses of student enrollment are defined as:
+
+    * Active (an enrolled student)
+    * Inactive (not an enrolled student)
+    * Pre-enrolled (essentially an unenrolled applicant or future student)
+    * Graduated/Inactive (completed the program and unenrolled)
+    * Graduated/Active (completed the program but still enrolled as a stuent)
+
+In addition to these "meanings," you can create additional statuses with their 
+own Title and Code.  For example, in this form you could add an inactive 
+"Transferred" status.
+
+   .. image:: images/2.8-changes-7.png
+
 
 Creating a New Group
 --------------------
