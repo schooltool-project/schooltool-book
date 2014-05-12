@@ -36,6 +36,8 @@ make this change mid-year.  Current SchoolTool users are advised to set up a
 testing instance of SchoolTool 2.8 with their current database to make sure 
 the database migration works properly.  
 
+We recommend new users of SchoolTool begin with the 2.8 release.
+
 
 2.8.0 (2014-05-08)
 ==================
