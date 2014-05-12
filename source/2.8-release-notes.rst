@@ -27,6 +27,15 @@ Availability
 It is available for all supported Ubuntu releases in a new `2.8 ppa
 <https://launchpad.net/~schooltool-owners/+archive/2.8>`_
 
+When to Upgrade
+===============
+
+Current users of SchoolTool should approach 2.8.0 as a beta quality release.
+There are too many changes to the user interface and internal plumbing to 
+make this change mid-year.  Current SchoolTool users are advised to set up a
+testing instance of SchoolTool 2.8 with their current database to make sure 
+the database migration works properly.  
+
 
 2.8.0 (2014-05-08)
 ==================
