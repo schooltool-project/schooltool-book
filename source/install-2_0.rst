@@ -29,13 +29,6 @@ If you get an "add-apt-repository not found" error, install it::
 
     $ sudo apt-get install software-properties-common
 
-Using **Ubuntu Software Center**.  Choose **Edit > Software Sources**.  
-Click **Other Software > Add**, enter as the **APT line**::
-
-    ppa:schooltool-owners/2.8
-
-And click **Add Source**.
-
 Installation
 ------------
 
@@ -45,6 +38,7 @@ simply search for "SchoolTool" in the Ubuntu Software Center and click
 
 Or enter at the command line::
 
+ $ sudo apt-get update
  $ sudo apt-get install schooltool
 
 After installation, the schooltool server can be accessed from the server at 
