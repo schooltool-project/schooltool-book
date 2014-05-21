@@ -3,8 +3,8 @@ Screenshots
 
 Click an image to expand.
 
-SchoolTool 2.0
---------------
+SchoolTool
+----------
 
 First view of your running server
 +++++++++++++++++++++++++++++++++
