@@ -22,34 +22,67 @@ Whenever SchoolTool is updated to a new version via Ubuntu's update mechanisms, 
 How do I do a manual backup?
 ----------------------------
 
-While it is possible to do a "hot" backup of SchoolTool's database while the application is running, for the sake of simplicity this document will just cover an offline "cold" backup.
+Backing up and restoring SchoolTool's database is done using a script called
+``repozo``.  It supports incremental backup, "hot" backups of a live database 
+while the SchoolTool service is running, and is included with the Ubuntu packages.
 
-Basically, just stop the SchoolTool server, copy ``Data.fs`` and the ``blobs`` directory, and restart the server::
+To perfom a hot incremental backup on the standard default Ubuntu package
+configuration is::
 
-    sudo /etc/init.d/schooltool stop
-    sudo cp /var/lib/schooltool/Data.fs /media/backups/schooltool/Data.fs-$(date +%Y%m%d-%H%M)
-    sudo cp -r /var/lib/schooltool/blobs /media/backups/schooltool/blobs-$(date +%Y%m%d-%H%M)
-    sudo /etc/init.d/schooltool start
+    sudo repozo -B -v -r /path/to/backup -f /var/lib/schooltool/Data.fs
 
-Substitute the actual location of your backup in the place of ``/media/backups``.  The ``date +%Y%m%d-%H%M`` command embedded into the ``cp`` command is a bash command to embed the current date and time into the filename.  That will allow you to keep a bunch of backups by date easily.  Of course, if you've got a more sophisticated backup system than ``cp``, by all means use that!
+Where "/path/to/backup" is the actually path to the directory where you want 
+the backups to be stored.
+
+This will result in a set of timestamped backups that look like this (this is
+after several incremental backups)::
+
+    2014-06-06-12-51-02.dat      2014-06-06-16-01-02.index
+    2014-06-06-12-51-02.fs       2014-06-08-16-01-02.deltafs
+    2014-06-06-12-51-02.index    2014-06-08-16-01-02.index
+    2014-06-06-14-01-02.deltafs  2014-06-10-20-01-02.deltafs
+    2014-06-06-14-01-02.index    2014-06-10-20-01-02.index
+
+You want these backups to be stored as far away from the original database 
+files as possible, at least on a different drive, ideally at a completely 
+different facility.  
+
+You can and should set this up as a scheduled ``cron`` job.  For example, 
+on Ubuntu you can simply create a file (as root) named ``schooltool-repozo`` in the 
+``/etc/cron.daily`` directory containing a this text::
+
+    #!/bin/sh
+
+    repozo -B -v -r /path/to/backup -f /var/lib/schooltool/Data.fs >/dev/null
+    
+This will run once a day automatically.  More documentation on using ``cron``
+is available online or in standard Unix reference books.
+
+You also must back up the ``/var/lib/schooltool/blobs`` directory.  This 
+directory contains image files, generated pdf reports and other binary files.
+It can be backed up like any regular file directory.
 
 Restoring from a backup
 ------------------------
 
-In most cases, if you need to return to a previous automatic database backup, you should stop SchoolTool, rename the current ``Data.fs`` just in case you *do* need it later, remove the ``.0`` from the most recent backup, and restart the server::
+First, stop SchoolTool::
 
-    sudo /etc/init.d/schooltool stop
-    sudo mv /var/lib/schooltool/Data.fs /var/lib/schooltool/Data.fs.bad
-    sudo mv /var/lib/schooltool/Data.fs.0 /var/lib/schooltool/Data.fs
-    sudo /etc/init.d/schooltool start
+    sudo service schooltool stop
 
-If you need to try an even older backup, ungzip it::
+To restore the database from your backup directory back into 
+``/var/lib/schooltool``, the command would be::
 
-    sudo gunzip /var/lib/schooltool/Data.fs.1.gz 
+    sudo repozo -R -v -r /path/to/backup -o /var/lib/schooltool/Data.fs
 
-The procedure for restoring from a previous manual backup is the same, that is, copy the file to the ``Data.fs`` position, except only you know where it is coming from.
+You will also need to copy or restore your backed up contents of the ``blobs``
+directory.
 
-You will also need to backup and restore the files in the blobs directory using standard archiving tools (zip, tar, etc.).
+Then, restart SchoolTool::
+
+    sudo service schooltool start
+
+Running ``repozo --help`` in a terminal will return full documentation of 
+repozo's flags and options.
 
 What if My Database is Empty After an Upgrade?
 ----------------------------------------------
@@ -74,5 +107,12 @@ To pack the database via the web, you must be logged in as a member of "Site Man
 
    .. image:: images/packing.png
 
+You can also run ``zeopack`` to pack the database from the terminal.  The 
+complete usage for the standard install is::
+
+    sudo zeopack localhost:7081
+
 Depending on your site's database usage, this process could take several minutes and put a load on the server, so plan to pack the database at an off-peak time.
+
+You can also use a cron job to run ``zeopack`` weekly or monthly.
 
