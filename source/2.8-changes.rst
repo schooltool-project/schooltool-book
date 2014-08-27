@@ -46,7 +46,7 @@ Click **Update**:
 
 Note that you cannot completely remove a person from a group or section.  
 Making a relationship inactive will omit the person from most relevant 
-views by default.  If the a membership or other relationship is a mistake, use 
+views by default.  If a membership or other relationship is a mistake, use 
 the "Added in error" status to indicate this.
 
 Adding students, or adding and editing other group memberships or relationships 

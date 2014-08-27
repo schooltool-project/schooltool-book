@@ -9,8 +9,8 @@ Series:
 - Stable: 2.8_
 - Previous LTS: 2.1_
 
-Pre-2.8 Release Matrix (deprecated for 2.8 and later)
------------------------------------------------------
+Pre-2.8 Release Matrix (deprecated for 2.8 and later):
+------------------------------------------------------
 
 ======= ======== ========= ========= ==== ====
 release codename ubuntu    universe_ ppa_ dev_
