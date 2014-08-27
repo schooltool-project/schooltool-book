@@ -6,8 +6,11 @@ Release Notes
 Series:
 
 - Development: 2.8_
-- Stable: 2.6_
+- Stable: 2.8_
 - Previous LTS: 2.1_
+
+Pre-2.8 Release Matrix (deprecated for 2.8 and later)
+-----------------------------------------------------
 
 ======= ======== ========= ========= ==== ====
 release codename ubuntu    universe_ ppa_ dev_

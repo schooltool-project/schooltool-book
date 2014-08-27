@@ -12,7 +12,7 @@ See :ref:`2.8-and-beyond` for plans regarding this and future releases.
 New features
 ============
 
-- Relationships with a state in time period
+- Relationships (enrollment, group membership) have explicit states (e.g., pending, enrolled, withdrawn) with explicit start dates
 - Enrollment modes
 - Basic parent access
 - Levels for courses and persons
@@ -30,14 +30,55 @@ It is available for all supported Ubuntu releases in a new `2.8 ppa
 When to Upgrade
 ===============
 
-Current users of SchoolTool should approach 2.8.0 as a beta quality release.
-There are too many changes to the user interface and internal plumbing to 
-make this change mid-year.  Current SchoolTool users are advised to set up a
-testing instance of SchoolTool 2.8 with their current database to make sure 
-the database migration works properly.  
+SchoolTool 2.8.1 is the first bugfix release of the 2.8 series, incorporating 
+a number of fixes to issues reported by users (special thanks to Glenda Lewis).  We included a limited number of important new features, listed below in bold.  
 
 We recommend new users of SchoolTool begin with the 2.8 release.
 
+Users of SchoolTool 2.8.0 should upgrade to 2.8.1 at a convenient time.
+
+Users of SchoolTool 2.6 should upgrade to 2.8.1 after testing against their 
+database and reviewing the changes in functionality.
+
+SchoolTool 2.8.1 (2014-08-25)
+-----------------------------
+
+- **Added Leave School link (under Actions) and relevant information fields for students** 
+- **Added slider and edit view for modifying student level**
+- Added custom CSS handling
+- Fixed row indexing in group importer after relationship change
+- Added relationship states to group accordion in person view
+- Fixed permissions for school year report links and manage year link
+- Fixed page numbers in pdf reports
+- Avoid insecure content warning for fonts.googleapis.com when accessing schooltool through https (https://launchpad.net/bugs/1330106)
+- Fixed email forms
+- Fixed ampersand breaks student detail report (https://launchpad.net/bugs/1328619)
+- Fixed reorder demographics view (https://launchpad.net/bugs/1341514)
+- Included future enrollments in membership counts on School page
+- Updated translations
+
+
+SchoolTool Gradebook 2.8.1 (2014-08-25)
+---------------------------------------
+
+- **Added per activity averages row** at bottom of gradebook grid (https://launchpad.net/bugs/1271867)
+- Fixed printable worksheet report (https://launchpad.net/bugs/1358878)
+- Allowed administrative users to access the request view for the absences by day report
+
+
+SchoolTool CanDo 2.8.1 (2014-08-25)
+-----------------------------------
+
+- Fixed permission issue in gradebook view when students with active IEP were withdrawn
+- **Made importing skills a background task** (no timeouts!)
+- Fixed parent and layer setting in node add view (https://launchpad.net/bugs/1353932)
+
+
+SchoolTool Virginia 2.6.1 (2014-08-25)
+--------------------------------------
+
+- Fixed Export As PDF dialog for skills completion report
+- Made importing Virginia sections a background task
 
 2.8.0 (2014-05-08)
 ==================
