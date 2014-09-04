@@ -10,5 +10,6 @@ Contents:
    years
    terms
    timetables
+   adv-timetabling
    levels
    courses
