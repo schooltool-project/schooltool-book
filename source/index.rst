@@ -5,7 +5,7 @@ The SchoolTool Book
 SchoolTool: the Global Student Information System
 -------------------------------------------------
 
-SchoolTool is a free, open source, web-based student information system for a single school, including student enrollment and demographics, grading and grade reporting, tracking student achievement of skills, competencies or outcomes, attendance, calendars and intervention tracking.  It is also a framework for building customized applications and configurations for individual schools or states.
+SchoolTool is a free, open source, web-based student information system for a single school, including student enrollment and demographics, grading and grade reporting, tracking student achievement of skills, competencies or outcomes, attendance, calendars, and intervention tracking.  It is also a framework for building customized applications and configurations for individual schools or states.
 
 SchoolTool has strong support for translation, localization and automated deployment and updates via the Ubuntu Linux installer and package management system.
 
