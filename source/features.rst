@@ -131,7 +131,7 @@ Technical Features
 
 * **Test-driven development:** SchoolTool includes a comprehensive test suite, including unit and functional tests.  Python "doctests" double as narrative developer documentation.
 
-* **Installation and upgrades:** are managed via the Ubuntu packaging system and Launchpad.net.  Two-step production server deployment on Ubuntu Linux.  One-step bugfix upgrades within SchoolTool release versions.  Major releases synchronized to Ubunutu releases.
+* **Installation and upgrades:** are managed via the Ubuntu packaging system and Launchpad.net.  Two-step production server deployment on Ubuntu Linux.  One-step bugfix upgrades within SchoolTool release versions.  Major releases synchronized to Ubuntu releases.
 
 * **Internationalization:** SchoolTool is completely translatable.  New translations can be contributed via the Rosetta system on Launchpad.net.
 
