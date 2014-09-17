@@ -4,7 +4,7 @@
 Sandbox Configuration
 =====================
 
-Server Virtualization
+Using Virtual Servers
 ---------------------
 
 SchoolTool may be deployed in a "sandbox" (testing environment) for evaluation
@@ -63,6 +63,16 @@ configuration to take effect. This will expose the virtual network adapter of
 your SchoolTool virtual machine to the local network, just as if it were an
 actual physical server.
 
+Log on to the virtual machine and run ``ifconfig`` to determine the new IP
+address assigned to the virtual network adapter, then access your SchoolTool
+server instance at that IP address on port 7080. For example, if ``ifconfig``
+tells you that the IP address for eth0 is ``192.168.1.151``, then you would
+access SchoolTool at ``http://192.168.1.151:7080``.
+
 NOTE: Do not attempt to run a Bridged Adapter network setup outside of a trusted 
 network environment without taking appropriate steps to secure SchoolTool, such 
 as changing your "Default Manager" password!
+
+It is possible for a knowledgable system administrator to deploy SchoolTool as a
+virtual server in production, but such a configuration is beyond the scope of
+this tutorial.
