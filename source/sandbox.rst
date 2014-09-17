@@ -32,7 +32,7 @@ To begin, `download the latest version of VirtualBox
 appropriate binary package for your host operating system. Run the installer and
 follow the prompts, then start VirtualBox.
 
-Meanwhile, download the `Ubuntu Server 14.04.1 LTS
+Meanwhile, `download the latest Ubuntu Server 14 LTS
 <http://www.ubuntu.com/download/server>`_ image. Note that a 64-bit host OS
 is necessary to support a 64-bit guest OS, so this version of Ubuntu Server will
 not run on a 32-bit host platform.
