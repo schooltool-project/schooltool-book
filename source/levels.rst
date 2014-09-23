@@ -12,7 +12,7 @@ in this example: grades 9 through 12.
 
 To create Grade Levels, you must be logged in as a member of **Clerks** or 
 **Site Managers**. Select the **School** tab, and click on **Grade Levels**, 
-under **Customize:
+under **Customize**:
 
    .. image:: images/levels-0.png
 
