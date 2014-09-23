@@ -71,8 +71,8 @@ access SchoolTool at ``http://192.168.1.151:7080``.
 
 **screenshot here...**
 
-It is possible for to deploy SchoolTool in productionon a virtual server
-(including one running on Windows), but the full setup and configuration is 
+It is possible to deploy SchoolTool in production on a virtual server
+(including one running on Windows or Mac OS X), but the full setup and configuration is 
 beyond the scope of this tutorial.
 
 **add setting up multiple vm's that can connect to one another (we have some
