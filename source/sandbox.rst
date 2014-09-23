@@ -69,7 +69,7 @@ server instance at that IP address on port 7080. For example, if ``ifconfig``
 tells you that the IP address for eth0 is ``192.168.1.151``, then you would
 access SchoolTool at ``http://192.168.1.151:7080``.
 
-**screenshot here...**
+    .. image:: images/virtualbox-03.png
 
 It is possible to deploy SchoolTool in production on a virtual server
 (including one running on Windows or Mac OS X), but the full setup and configuration is 
