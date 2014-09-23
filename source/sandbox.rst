@@ -66,8 +66,8 @@ Log on to the virtual machine and run ``ifconfig`` on the command line
 to determine the new IP
 address assigned to the virtual network adapter, then access your SchoolTool
 server instance at that IP address on port 7080. For example, if ``ifconfig``
-tells you that the IP address for eth0 is ``192.168.1.151``, then you would
-access SchoolTool at ``http://192.168.1.151:7080``.
+tells you that the IP address for eth0 is ``192.168.138.171``, then you would
+access SchoolTool at ``http://192.168.138.171:7080``.
 
     .. image:: images/virtualbox-03.png
 
