@@ -38,38 +38,36 @@ Install Ubuntu as a guest OS by following the instructions in the `Ubuntu
 Community Documentation
 <https://help.ubuntu.com/community/Ubuntu_as_Guest_OS>`_.
 
-NAT vs. Bridged Adapter
------------------------
+Network Adapter Settings
+------------------------
 
-By default, a new VirtualBox guest will be attached to the outside world via
+In order to configure the virtual network adapters of your new Schooltool server, 
+click on the "Network" section of the VirtualBox administrative 
+interface.
+
+    .. image:: images/virtualbox-01.png
+
+By default, a new VirtualBox guest should be attached to the outside world via
 Network Address Translation (NAT), which enables the guest machine to reach the
 Internet, but via a private IP address which is not accessible from the host, or
 other machines on your local network.
 
-In order to access the SchoolTool server from the host computer or any other
-computer on your local network, you will need
-to click on the "Network" section of the VirtualBox administrative 
-interface:
-
-    .. image:: images/virtualbox-01.png
-
-... and change the network attachment type from NAT to Bridged Adapter.
-
     .. image:: images/virtualbox-02.png
 
-After doing this, reboot your virtual machine in order for the new network 
-configuration to take effect. This will expose the virtual network adapter of
-your SchoolTool virtual machine to the local network, just as if it were an
-actual physical server.
+This will allow you to access the Internet from within the virtual machine, so
+you can update your Ubuntu Server packages, and install SchoolTool along with
+all of its dependencies. But it won't allow you to access SchoolTool's
+adminitrative interface from a browser on the host, or allow multiple virtual
+machines to access each other.
 
-Log on to the virtual machine and run ``ifconfig`` on the command line
-to determine the new IP
-address assigned to the virtual network adapter, then access your SchoolTool
-server instance at that IP address on port 7080. For example, if ``ifconfig``
-tells you that the IP address for eth0 is ``192.168.138.171``, then you would
-access SchoolTool at ``http://192.168.138.171:7080``.
+In order to access the SchoolTool server from the host computer or any other
+computer on your local network, you'll need to add a second network adapter to
+the guest machine.
 
     .. image:: images/virtualbox-03.png
+
+After doing this, reboot your virtual machine in order for the new network 
+configuration to take effect.
 
 It is possible to deploy SchoolTool in production on a virtual server
 (including one running on Windows or Mac OS X), but the full setup and configuration is 
