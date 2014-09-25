@@ -60,11 +60,32 @@ all of its dependencies. But it won't allow you to access SchoolTool's
 adminitrative interface from a browser on the host, or allow multiple virtual
 machines to access each other.
 
-In order to access the SchoolTool server from the host computer or any other
-computer on your local network, you'll need to add a second network adapter to
-the guest machine.
+In order to access the SchoolTool server securely from the host computer, you'll
+need to create a Host-Only Network adapter. First, select File -> Preferences...
 
-    .. image:: images/virtualbox-03.png
+    .. image:: images/vbox-host-only-01.png
+
+... and select the "Network" tab. If you do not see *vboxnet0* in the list of
+Host-Only Networks, click the green plus (+) icon to create a new one:
+
+    .. image:: images/vbox-host-only-02.png
+
+Select *vboxnet0* and click the orange screwdriver icon to Edit its settings:
+
+    .. image:: images/vbox-host-only-03.png
+
+You should see a dialog like this:
+
+    .. image:: images/vbox-host-only-04.png
+
+Take note of the adapter's IP address (``192.168.56.1`` here); that's the
+address at which your guests can access the host.
+
+    .. image:: images/vbox-host-only-05.png
+
+Leave the "Enable Server" box *unchecked* on the DHCP configuration panel to
+prevent your virtual machines from being assigned random IP addresses every time
+they restart. We will be assigning static IP addresses instead.
 
 After doing this, reboot your virtual machine in order for the new network 
 configuration to take effect.
@@ -75,3 +96,6 @@ beyond the scope of this tutorial.
 
 **add setting up multiple vm's that can connect to one another (we have some
 multi-site functionality now under development).**
+
+See Step 3 and Step 4 of `this tutorial
+<http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox>`_ for detailed instructions. We could link to this, or paraphrase it. Either way, we should cite the source.
