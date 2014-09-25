@@ -7,7 +7,6 @@ Contents:
    :maxdepth: 2
 
    sandbox
-   remote
    apache
    nginx
    ldap
