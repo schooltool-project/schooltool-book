@@ -1,4 +1,3 @@
-.. highlight:: sandbox
 .. _sandbox:
 
 Testing With VirtualBox 
