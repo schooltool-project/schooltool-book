@@ -105,7 +105,7 @@ Configure "Adapter 2" to use the "Host-only Adapter" setting.
 
 Make sure that "Adapter 2" is using the *vboxnet0* Host-Only Network.
 
-    .. image:: images/vbox-host-only-06.png
+    .. image:: images/vbox-host-only-07.png
 
 To assign a static IP address to your SchoolTool VM, log in to the Ubuntu guest
 and execute the ``ifconfig`` command:
