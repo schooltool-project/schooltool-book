@@ -41,32 +41,40 @@ Community Documentation
 Network Adapter Settings
 ------------------------
 
-In order to configure the virtual network adapters of your new Schooltool server, 
-click on the "Network" section of the VirtualBox administrative 
-interface.
+Each virtual machine can have up to four network adapters, which may be
+configured to attach to the host machine and external networks in a variety
+of ways.
+
+The following instructions are based on `this tutorial <http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox>`_, which describes the best configuration for a secure and private testing environment.
+
+First, click on the "Network" section of the VirtualBox administrative 
+interface for your SchoolTool VM.
 
     .. image:: images/virtualbox-01.png
 
-By default, a new VirtualBox guest should be attached to the outside world via
-Network Address Translation (NAT), which enables the guest machine to reach the
-Internet, but via a private IP address which is not accessible from the host, or
-other machines on your local network.
+Set "Adapter 1" to Network Address Translation (NAT), which should be the default.
 
     .. image:: images/virtualbox-02.png
 
 This will allow you to access the Internet from within the virtual machine, so
 you can update your Ubuntu Server packages, and install SchoolTool along with
 all of its dependencies. But it won't allow you to access SchoolTool's
-adminitrative interface from a browser on the host, or allow multiple virtual
+administrative interface from a browser on the host, or allow multiple virtual
 machines to access each other.
 
 In order to access the SchoolTool server securely from the host computer, you'll
-need to create a Host-Only Network adapter. First, select File -> Preferences...
+need to create a Host-Only Network adapter.
+
+First, select File -> Preferences...
 
     .. image:: images/vbox-host-only-01.png
 
-... and select the "Network" tab. If you do not see *vboxnet0* in the list of
-Host-Only Networks, click the green plus (+) icon to create a new one:
+... and select the "Network" settings category from the list on the left-hand
+side. (This is a global preference setting for *all* VirtualBox VMs, as opposed
+to the machine-specific network adapter configuration we used earlier.)
+
+If you do not see *vboxnet0* in the list of Host-Only Networks, click the green 
+plus (+) icon to create a new one:
 
     .. image:: images/vbox-host-only-02.png
 
@@ -85,17 +93,82 @@ address at which your guests can access the host.
 
 Leave the "Enable Server" box *unchecked* on the DHCP configuration panel to
 prevent your virtual machines from being assigned random IP addresses every time
-they restart. We will be assigning static IP addresses instead.
+they restart. (We will be assigning static IP addresses instead.)
 
-After doing this, reboot your virtual machine in order for the new network 
-configuration to take effect.
+Return to the VM-specific network adapter configuration by clicking on the
+"Network" section of the administrative interface for your SchoolTool VM:
+
+    .. image:: images/virtualbox-01.png
+
+Configure "Adapter 2" to use the "Host-only Adapter" setting.
+
+    .. image:: images/vbox-host-only-06.png
+
+Make sure that "Adapter 2" is using the *vboxnet0* Host-Only Network.
+
+    .. image:: images/vbox-host-only-06.png
+
+To assign a static IP address to your SchoolTool VM, log in to the Ubuntu guest
+and execute the ``ifconfig`` command:
+
+::
+
+    sudo ifconfig eth1 192.168.56.101 netmask 255.255.255.0 up
+
+This will configure the second network adapter (eth1) to use the static IP address
+``192.168.56.101`` in the Host-Only Network subnet range. You should now be
+able to access your SchoolTool server interface at
+``http://192.168.56.101:7080``.
+
+To make this configuration persistent, even after rebooting the VM, edit the
+``/etc/network/interfaces`` file using vim (or your favorite text editor):
+
+::
+
+    sudo vim /etc/network/interfaces
+
+Add the following block of code:
+
+::
+
+    # The host-only network interface
+    auto eth1
+    iface eth1 inet static
+    address 192.168.56.101
+    netmask 255.255.255.0
+    network 192.168.56.0
+    broadcast 192.168.56.255
+
+Reboot the VM and use ``ifconfig`` to verify that eth1 is configured with the
+desired IP address.
+
+A multi-site configuration, with a central server that aggregates data from
+multiple SchoolTool instances, is currently under development. The configuration
+described above will allow multiple SchoolTool instances to communicate with one
+another over the Host-Only Network -- just assign a different static IP address
+to each virtual machine.
+
+To expedite multi-site configuration, you may wish to use machine names rather
+than IP addresses. Edit the ``/etc/hosts`` file:
+
+::
+
+    sudo vim /etc/hosts
+
+and add lines like these:
+
+::
+
+    192.168.56.101    schooltool1
+    192.168.56.102    schooltool2
+
+Do this on the host computer as well as the guests. If the host OS is Linux or
+Mac OS X, the file will be ``/etc/hosts``. If the host is Windows, the file will
+be ``\\Windows\\System32\\drivers\\etc\\hosts``.
+
+Now, you should be able to access SchoolTool at ``http://schooltool1:7080``
+instead of ``http://192.168.56.101:7080``.
 
 It is possible to deploy SchoolTool in production on a virtual server
-(including one running on Windows or Mac OS X), but the full setup and configuration is 
-beyond the scope of this tutorial.
-
-**add setting up multiple vm's that can connect to one another (we have some
-multi-site functionality now under development).**
-
-See Step 3 and Step 4 of `this tutorial
-<http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox>`_ for detailed instructions. We could link to this, or paraphrase it. Either way, we should cite the source.
+(including one running on Windows or Mac OS X), but the full setup and
+configuration is beyond the scope of this tutorial.
