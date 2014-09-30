@@ -163,7 +163,7 @@ and add lines like these:
 
 Do this on the host computer as well as the guests. If the host OS is Linux or
 Mac OS X, the file will be ``/etc/hosts``. If the host is Windows, the file will
-be ``\\Windows\\System32\\drivers\\etc\\hosts``.
+be ``\Windows\System32\drivers\etc\hosts``.
 
 Now, you should be able to access SchoolTool at ``http://schooltool1:7080``
 instead of ``http://192.168.56.101:7080``.
