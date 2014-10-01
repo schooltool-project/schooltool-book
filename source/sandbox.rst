@@ -46,6 +46,9 @@ of ways.
 
 The following instructions are based on `this tutorial <http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox>`_, which describes the best configuration for a secure and private testing environment.
 
+Accessing the Internet From the VM
+``````````````````````````````````
+
 First, click on the "Network" section of the VirtualBox administrative 
 interface for your SchoolTool VM.
 
@@ -60,6 +63,9 @@ you can update your Ubuntu Server packages, and install SchoolTool along with
 all of its dependencies. But it won't allow you to access SchoolTool's
 administrative interface from a browser on the host, or allow multiple virtual
 machines to access each other.
+
+Accessing the VM From the Host (and Other VMs)
+``````````````````````````````````````````````
 
 In order to access the SchoolTool server securely from the host computer, you'll
 need to create a Host-Only Network adapter.
@@ -143,6 +149,9 @@ Add the following block of code:
 
 Reboot the VM and use ``ifconfig`` to verify that eth1 is configured with the
 desired IP address.
+
+Multi-Site Configuration
+------------------------
 
 A multi-site configuration, with a central server that aggregates data from
 multiple SchoolTool instances, is currently under development. The configuration
