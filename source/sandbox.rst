@@ -154,10 +154,9 @@ Multi-Site Configuration
 ------------------------
 
 A multi-site configuration, with a central server that aggregates data from
-multiple SchoolTool instances, is currently under development. The configuration
-described above will allow multiple SchoolTool instances to communicate with one
-another over the Host-Only Network -- just assign a different static IP address
-to each virtual machine.
+multiple SchoolTool instances, is currently `under development <http://ark-book.schooltool.org/zrs.html>`_. The configuration described above will allow multiple SchoolTool 
+instances to communicate with one another over the Host-Only Network -- just 
+assign a different static IP address to each virtual machine.
 
 To expedite multi-site configuration, you may wish to use machine names rather
 than IP addresses. Edit the ``/etc/hosts`` file:
