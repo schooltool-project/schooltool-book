@@ -9,6 +9,7 @@ Contents:
    :maxdepth: 2
    
    admin-passwd
+   remote
    roles
    server-settings
    translations
