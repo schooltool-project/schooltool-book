@@ -104,3 +104,7 @@ By the scale of modern storage technology, SchoolTool doesn't require
 significant disk space.  One gigabyte may handle it for quite a while.  
 Disk read and write speed is more important than volume.
 
+Virtual Servers
+---------------
+
+Note that another option for non-Ubuntu users is :ref:`sandbox`.

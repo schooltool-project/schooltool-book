@@ -1,7 +1,7 @@
 .. _sandbox:
 
-Testing With VirtualBox 
-=======================
+Testing SchoolTool with Virtual Servers 
+=======================================
 
 Using Virtual Servers
 ---------------------
