@@ -107,6 +107,9 @@ Make sure that "Adapter 2" is using the *vboxnet0* Host-Only Network.
 
     .. image:: images/vbox-host-only-07.png
 
+Static IP Configuration
+-----------------------
+
 To assign a static IP address to your SchoolTool VM, log in to the Ubuntu guest
 and execute the ``ifconfig`` command:
 
