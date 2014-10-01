@@ -61,33 +61,34 @@ Each virtual machine can have up to four network adapters, which may be
 configured to attach to the host machine and external networks in a variety
 of ways.
 
-The following instructions are based on `this tutorial by Christopher Maier<http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox>`_.
-
-You can reconfigure the adapters after the initial setup of the VM.
+The following instructions are based on `this tutorial by Christopher Maier <http://christophermaier.name/blog/2010/09/01/host-only-networking-with-virtualbox>`_.
 
 Accessing the Internet From the VM
 ``````````````````````````````````
+
+A new virtual machine should be set up for to use a virtual NAT by default.
+To confirm:
 
 First, click on the "Network" section of the VirtualBox administrative 
 interface for your SchoolTool VM.
 
     .. image:: images/virtualbox-01.png
 
-Set "Adapter 1" to Network Address Translation (NAT), which should be the default.
+Set "Adapter 1" to Network Address Translation (NAT).
 
     .. image:: images/virtualbox-02.png
 
 This will allow you to access the Internet from within the virtual machine, so
 you can update your Ubuntu Server packages, and install SchoolTool along with
 all of its dependencies. But it won't allow you to access SchoolTool's
-administrative interface from a browser on the host, or allow multiple virtual
+web interface from a browser on the host, or allow multiple virtual
 machines to access each other.
 
 Accessing the VM From the Host (and Other VMs)
 ``````````````````````````````````````````````
 
 In order to access the SchoolTool server securely from the host computer, you'll
-need to create a Host-Only Network adapter.
+need to create a second Host-Only Network adapter.
 
 First, stop the server.  Then select File -> Preferences...
 
