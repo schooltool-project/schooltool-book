@@ -66,7 +66,7 @@ The following instructions are based on `this tutorial by Christopher Maier <htt
 Accessing the Internet From the VM
 ``````````````````````````````````
 
-A new virtual machine should be set up for to use a virtual NAT by default.
+A new virtual machine should be set up to use a virtual NAT by default.
 To confirm:
 
 First, click on the "Network" section of the VirtualBox administrative 
@@ -125,8 +125,8 @@ Return to the VM-specific network adapter configuration by clicking on the
 
     .. image:: images/virtualbox-01.png
 
-Select the Adapter 2" tab, check **Enable Network Adapter** and select 
-"Host-only Adapter" from the **Attached to:**.
+Select the "Adapter 2" tab, check **Enable Network Adapter** and select 
+"Host-only Adapter" from the **Attached to:** drop-down list.
 
     .. image:: images/vbox-host-only-06.png
 
@@ -148,7 +148,7 @@ This will configure the second network adapter (eth1) to use the static IP addre
 ``192.168.56.101`` in the Host-Only Network subnet range. 
 
 You should now be able to access the SchoolTool running on the guest OS from
-a browser on the host computer::
+a browser on the host computer:
 
     .. image:: images/vbox-host-only-08.png
 
@@ -185,7 +185,7 @@ instances to communicate with one another over the Host-Only Network -- just
 assign a different static IP address to each virtual machine.
 
 To expedite multi-site configuration, you may wish to use machine names rather
-than IP addresses. Edit the ``/etc/hosts`` file on the host and each client:
+than IP addresses. Edit the ``/etc/hosts`` file on the host and each guest VM:
 
 ::
 
@@ -204,5 +204,3 @@ be ``\Windows\System32\drivers\etc\hosts``.
 
 Now, you should be able to access SchoolTool at ``http://schooltool1:7080``
 instead of ``http://192.168.56.101:7080``.
-
-
