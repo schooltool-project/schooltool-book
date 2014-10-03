@@ -49,6 +49,15 @@ http://localhost:7080.  See :ref:`remote`.
 Upgrading SchoolTool
 --------------------
 
-To upgrade SchoolTool, you can switch to a repository containing a newer 
-version as described above.
+To upgrade SchoolTool to a new "point" (2.6, 2.8, etc.), switch to a repository containing a newer version as described above, and enter::
+
+ $ sudo apt-get update
+ $ sudo apt-get dist-upgrade
+ 
+To upgrade to a minor release (2.8.1, 2.8.2, etc), you do not need 
+to change the repository.  Simply enter:
+
+ $ sudo apt-get update
+ $ sudo apt-get dist-upgrade
+
 
