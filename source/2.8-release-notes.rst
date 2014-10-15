@@ -56,8 +56,7 @@ Journal 2.8.1 (2014-10-14)
 --------------------------
 
 - Fixed template error in journal default score system view
-- Changed today access in journal attendance export report
-(https://launchpad.net/bugs/1341519)
+- Changed today access in journal attendance export report (https://launchpad.net/bugs/1341519)
 - Added journal data export for terms
 
 CanDo 2.8.2 (2014-10-14)
