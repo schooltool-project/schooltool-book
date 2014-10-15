@@ -30,15 +30,40 @@ It is available for all supported Ubuntu releases in a new `2.8 ppa
 When to Upgrade
 ===============
 
-SchoolTool 2.8.1 is the first bugfix release of the 2.8 series, incorporating 
-a number of fixes to issues reported by users (special thanks to Glenda Lewis).  We included a limited number of important new features, listed below in bold.  
-
 We recommend new users of SchoolTool begin with the 2.8 release.
 
-Users of SchoolTool 2.8.0 should upgrade to 2.8.1 at a convenient time.
+Users of SchoolTool 2.8.0 should upgrade to 2.8.2 at a convenient time.
 
-Users of SchoolTool 2.6 should upgrade to 2.8.1 after testing against their 
+Users of SchoolTool 2.6 should upgrade to 2.8.2 after testing against their 
 database and reviewing the changes in functionality.
+
+SchoolTool 2.8.2 (2014-10-14)
+-----------------------------
+
+- Added Sign In & Out report for groups/sections
+- Added Mailing Labels report for groups/sections
+- Added Name Labels report for groups
+- Updated and added checkboxes to Roster report for sections
+
+Gradebook 2.8.2 (2014-10-14)
+----------------------------
+
+- Fixed gradebook view when future dates are used for section enrollment
+- Fixed absences by day report to work with multiple years
+- Added absences for range of dates schoolyear report
+
+Journal 2.8.1 (2014-10-14)
+--------------------------
+
+- Fixed template error in journal default score system view
+- Changed today access in journal attendance export report
+(https://launchpad.net/bugs/1341519)
+- Added journal data export for terms
+
+CanDo 2.8.2 (2014-10-14)
+------------------------
+
+- Removed column averages row from gradebooks
 
 SchoolTool 2.8.1 (2014-08-25)
 -----------------------------
