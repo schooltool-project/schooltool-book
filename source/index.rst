@@ -36,6 +36,7 @@ Contents:
    setup-toc
    spreadsheet
    populating
+   reports
    gradebook-toc
    cando-toc
    multi-years
