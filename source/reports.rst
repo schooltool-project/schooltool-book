@@ -40,7 +40,7 @@ The Title and Description should be somewhat self-explanatory.
 For example, the "ID Card" Report for a **Person** returns a PDF which "Includes
 student name, ID number, birth date, contact name and contact phone number."
 
-Meanwhile, the "ID Cards" Report for a **Grouop** returns a PDF which "Includes
+Meanwhile, the "ID Cards" Report for a **Group** returns a PDF which "Includes
 student name, ID number, birth date, contact name and contact phone number.
 Prints eight per page."
 
