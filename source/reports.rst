@@ -1,8 +1,8 @@
-Reports
-=======
+Understanding Reports
+=====================
 
-Reports
--------
+Using Reports
+-------------
 
 In SchoolTool, "Reports" are processes which generate a result, such as a PDF 
 or XLS spreadsheet. Generally, a Report result is a downloadable file.
