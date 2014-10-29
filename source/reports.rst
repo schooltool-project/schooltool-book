@@ -53,7 +53,7 @@ Reports are added through packages. It's possible for a developer to design and
 add custom reports for your organization, but this is acccomplished through
 Python programming rather than the SchoolTool user interface.
 
-:ref:`report-sheet` are customizable by **School Adminatrators** and **Clerks**
+:ref:`report-sheet` are customizable by **School Administrators** and **Clerks**
 through the SchoolTool user interface.
 
 Generating Reports
