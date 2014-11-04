@@ -1,31 +1,50 @@
-Understanding Reports
-=====================
-
 Using Reports
--------------
+=============
 
-In SchoolTool, "Reports" are processes which generate a result, such as a PDF 
+Understanding Reports
+---------------------
+
+In SchoolTool, **Reports** are processes which generate a result, such as a PDF 
 or XLS spreadsheet. Generally, a Report result is a downloadable file.
 
 A few Reports may simply return a webpage, but this is rare.
 
+Reports are mostly *contextual*; you go to the Student to generate their report 
+card, rather than vice versa.
+
+For example, to generate ID cards for all **Students** in a specific 
+**School Year**, you would navigate to the **School** tab, select the sub-tab 
+for the desired date range (in this case, 2011-2012), and 
+click on the **Students** Group (in the **People** section).
+
+   .. image:: images/reports-01.png
+
+Clicking on **ID Cards** (under **Reports** in the left-hand sidebar) will
+generate a PDF returning ID cards for all the Students in the chosen School
+Year.
+
+   .. image:: images/reports-02.png
+
+To generate an ID card for a specific Student, clicking on their name in
+the list, then clicking on the **ID Card** link (under **Reports** in the
+left-hand sidebar) will limit the scope of the Report to an individual Student.
+
+   .. image:: images/reports-03.png
+
 Report Overview
 ---------------
 
-The Report overview tells you what reports can be run on your system.
+The **Report Overview** tells you what reports can be run on your system.
 
 Navigate to the Report Overview by clicking the **School** tab and then
 selecting **Reports: Overview** in the left sidebar.
 
-   .. image:: images/reports-01.png
+   .. image:: images/reports-04.png
 
 The Report Overview displays a table listing the Category, Title, File Type and
 Description of all Reports on the system.
 
-   .. image:: images/reports-02.png
-
-Reports are mostly contextual (you go to the Student to generate their report 
-card, rather than vice versa).
+   .. image:: images/reports-05.png
 
 The Category indicates the scope of the Report, which may be a range of people
 (an individual **Person** or a **Group**, a **Student**, a **Section**, or the
