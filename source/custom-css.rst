@@ -13,6 +13,6 @@ custom-css directory for your custom styles and images, located at::
 
     /etc/schooltool/standard/custom-css/
 
-Because the custom-css directory is located in /etc (along with configuration
-files), any custom styles and images stored here will remain persistent across
-upgrades.
+Because the ``custom-css`` directory is located in ``/etc/schooltool/`` (along
+with configuration files), any custom styles and images stored here will remain
+persistent across upgrades.
