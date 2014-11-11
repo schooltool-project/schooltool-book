@@ -23,10 +23,6 @@ Because the ``custom-css`` directory is located in ``/etc/schooltool/`` (along
 with configuration files), any custom styles and images stored here will remain
 persistent across upgrades.
 
-Overriding SchoolTool's default styles and images with your own customizations
-will require administrative access to the server. It will also require
-knowledge of HTML and CSS, but no Python programming experience is necessary.
-
 The ``custom.css`` File
 ```````````````````````
 
@@ -37,8 +33,36 @@ By default, the ``custom-css`` directory will contain one file::
 Add your CSS rules here, by logging on to the server via ssh and editing the
 file using your favorite text editor.
 
+Adding Resources
+````````````````
+
+Because the entire ``custom-css`` directory gets registered as a resource
+library, any file added to this directory may be accessed in your custom CSS.
+
+For example, if you upload ``image.png`` to the ``custom-css`` directory by
+using rsync or another secure file transfer utility, you can access that
+resource at ``/@@/schooltool.flourish.custom/image.png``.
+
+However, we recommend using relative URLs in your CSS, for clear and concise
+code. In this way, using ``url(image.png)`` will automatically resolve to
+``/@@/schooltool.flourish.custom/image.png``.
+
+
+Requirements
+````````````
+
+Overriding SchoolTool's default styles and images with your own customizations
+will require administrative access to the server. It will also require
+knowledge of HTML and CSS, but no Python programming experience is necessary.
+
 Examples
 --------
 
 Changing Colors
 ```````````````
+
+Replacing SchoolTool Logo (image)
+`````````````````````````````````
+
+Replacing SchoolTool Logo (text)
+````````````````````````````````
