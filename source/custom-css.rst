@@ -11,8 +11,8 @@ Style Sheets with your own customized styles.
 In the past, this could only be accomplished by modifying SchoolTool core files,
 which was undesirable because changes would be lost during upgrades.
 
-The custom-css Directory
-````````````````````````
+The ``custom-css`` Directory
+````````````````````````````
 
 As of SchoolTool 2.8.2, there is now a custom-css directory for your custom
 styles and images, located at::
@@ -27,8 +27,8 @@ Overriding SchoolTool's default styles and images with your own customizations
 will require administrative access to the server. It will also require
 knowledge of HTML and CSS, but no Python programming experience is necessary.
 
-The custom.css File
-```````````````````
+The ``custom.css`` File
+```````````````````````
 
 By default, the ``custom-css`` directory will contain one file::
 
