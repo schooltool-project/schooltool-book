@@ -37,6 +37,22 @@ Users of SchoolTool 2.8.0 should upgrade to 2.8.2 at a convenient time.
 Users of SchoolTool 2.6 should upgrade to 2.8.2 after testing against their 
 database and reviewing the changes in functionality.
 
+SchoolTool 2.8.3 (2014-11-11)
+-----------------------------
+
+- Specified 24 hour format for slots in timetable wizard (https://launchpad.net/bugs/892941)
+- Moved custom CSS handling to /etc/schooltool/standard/custom-css
+
+Gradebook 2.8.3 (2014-11-11)
+----------------------------
+
+- Added journal scores to student detail report
+
+Journal 2.8.2 (2014-11-11)
+--------------------------
+
+- Added attendance by student report
+
 SchoolTool 2.8.2 (2014-10-14)
 -----------------------------
 
