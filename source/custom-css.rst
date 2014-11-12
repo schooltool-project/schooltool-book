@@ -1,3 +1,5 @@
+.. _css:
+
 Customizing SchoolTool CSS
 ==========================
 
