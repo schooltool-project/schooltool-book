@@ -82,7 +82,7 @@ Changing Colors
 
 To change the background color of the header from the default (hexadecimal RGB
 #008c93) to another color specified by hex value or name (in this example,
-green), edit the custom.css file::
+green), edit the ``custom.css`` file::
 
    sudo vim /etc/schooltool/standard/custom-css/custom.css
 
@@ -99,6 +99,19 @@ see the new green background color in the header.
 
 Replacing SchoolTool Logo (image)
 `````````````````````````````````
+
+To replace the default SchoolTool logo with a custom ``logo.png`` image, we will
+first need to hide the default logo. Edit the ``custom.css`` file::
+
+   sudo vim /etc/schooltool/standard/custom-css/custom.css
+
+and add the following block of CSS code::
+
+   ..header > h1.brand span, .header > h1.brand img {
+     display: none;
+   }
+
+Then,
 
 Replacing SchoolTool Logo (text)
 ````````````````````````````````
