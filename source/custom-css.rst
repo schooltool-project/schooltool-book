@@ -58,8 +58,44 @@ knowledge of HTML and CSS, but no Python programming experience is necessary.
 Examples
 --------
 
+The easiest way to determine what CSS rules to override is to use a DOM
+inspector, such as that provided by Google Chrome's built-in Developer Tools
+or the Page Inspector provided by Mozilla Firefox Developer Tools (in either
+browser, right-click on a webpage element and select "Inspect Element" from the
+context menu). 
+
+   .. image:: images/custom-css-01.png
+
+This will allow you to use the inspector to examine and modify the structure and
+layout of a webpage, so that you can pinpoint the CSS rules needed to modify the
+appearance of a page element without the need to search through all the CSS
+files included in the SchoolTool source code.
+
+   .. image:: images/custom-css-02.png
+
+In this example, we are inspecting the ``<h1 class="brand">`` element in the
+SchoolTool page header, which contains the text and image elements of the
+SchoolTool logo.
+
 Changing Colors
 ```````````````
+
+To change the background color of the header from the default (hexadecimal RGB
+#008c93) to another color specified by hex value or name (in this example,
+green), edit the custom.css file::
+
+   sudo vim /etc/schooltool/standard/custom-css/custom.css
+
+and add the following block of CSS code::
+
+   .header ul.navigation {
+     background-color: green
+   }
+
+Then load any page of the SchoolTool administrative interface in the browser to
+see the new green background color in the header.
+
+   .. image:: images/custom-css-03.png
 
 Replacing SchoolTool Logo (image)
 `````````````````````````````````
