@@ -1,6 +1,13 @@
 Customizing SchoolTool CSS
 ==========================
 
+Requirements
+````````````
+
+Overriding SchoolTool's default styles and images with your own customizations
+will require administrative access to the server. It will also require
+knowledge of HTML and CSS, but no Python programming experience is necessary.
+
 CSS Overrides
 -------------
 
@@ -14,14 +21,14 @@ which was undesirable because changes would be lost during upgrades.
 The ``custom-css`` Directory
 ````````````````````````````
 
-As of SchoolTool 2.8.2, there is now a ``custom-css`` directory for your custom
+As of SchoolTool 2.8.3, there is now a ``custom-css`` directory for your custom
 styles and images, located at::
 
     /etc/schooltool/standard/custom-css/
 
 Because the ``custom-css`` directory is located in ``/etc/schooltool/`` (along
-with configuration files), any custom styles and images stored here will remain
-persistent across upgrades.
+with other SchoolTool configuration files), any custom styles and images stored 
+here will persist across SchoolTool and system upgrades.
 
 The ``custom.css`` File
 ```````````````````````
@@ -30,7 +37,7 @@ By default, the ``custom-css`` directory will contain one file::
 
    /etc/schooltool/standard/custom-css/custom.css
 
-Add your CSS rules here, by logging on to the server via ssh and editing the
+Add your CSS rules here, by logging on to the server and editing the
 file using your favorite text editor.
 
 Adding Resources
@@ -39,21 +46,11 @@ Adding Resources
 Because the entire ``custom-css`` directory gets registered as a resource
 library, any file added to this directory may be accessed in your custom CSS.
 
-For example, if you upload ``image.png`` to the ``custom-css`` directory by
-using rsync or another secure file transfer utility, you can access that
-resource at ``/@@/schooltool.flourish.custom/image.png``.
-
-However, we recommend using relative URLs in your CSS, for clear and concise
-code. In this way, using ``url("image.png")`` will automatically resolve to
-``/@@/schooltool.flourish.custom/image.png``.
-
-
-Requirements
-````````````
-
-Overriding SchoolTool's default styles and images with your own customizations
-will require administrative access to the server. It will also require
-knowledge of HTML and CSS, but no Python programming experience is necessary.
+For example, if you upload ``image.png`` to the ``custom-css`` directory, 
+you can access that
+resource at ``/@@/schooltool.flourish.custom/image.png``, or simply use 
+the relative URL in your CSS, for clear and concise
+code, for example ``url("image.png")``.
 
 Examples
 --------
@@ -111,32 +108,13 @@ and add the following block of CSS code::
      display: none;
    }
 
-Then, upload the desired logo image into the ``custom-css`` directory. In this
+Then, upload the desired logo image, in this case ``logo.png`` into the 
+``custom-css`` directory. In this
 example, we will use the PEAS logo, which is a transparent PNG image 195 pixels
 wide and 40 pixels high; your organization's logo may need to be resized to fit
 tidily into the site template.
 
-This may be accomplished via ``rsync`` or another secure file transfer utility::
-
-   rsync -e ssh logo.png root@schooltoolserver:/etc/schooltool/standard/custom-css/
-
-NOTE: This command would be issued from a workstation, with the ``logo.png``
-file in the working directory.
-
-Be sure to replace **schooltoolserver** in the example above with the IP address
-or hostname of your organization's schooltool server. You will also need to
-supply the root user's password, and OpenSSH must be configured to allow root
-access (generally not a good idea) for this method to work.
-
-A more secure alternate method would eliminate the need for ssh root logins by
-pulling the image onto the server using an account with sudo privileges. Since
-the PEAS logo is already published elsewhere online, we can use the ``wget``
-utility to copy the image from the web into the ``custom-css`` working
-directory::
-
-   sudo wget http://dev.schooltool.org/peas/@@/schooltool.flourish.custom/logo.png
-
-Finally, edit the ``custom.css`` file::
+Edit the ``custom.css`` file::
 
    sudo vim /etc/schooltool/standard/custom-css/custom.css
 
