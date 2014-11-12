@@ -14,7 +14,7 @@ which was undesirable because changes would be lost during upgrades.
 The ``custom-css`` Directory
 ````````````````````````````
 
-As of SchoolTool 2.8.2, there is now a custom-css directory for your custom
+As of SchoolTool 2.8.2, there is now a ``custom-css`` directory for your custom
 styles and images, located at::
 
     /etc/schooltool/standard/custom-css/
@@ -59,7 +59,7 @@ Examples
 --------
 
 The easiest way to determine what CSS rules to override is to use a DOM
-inspector, such as that provided by Google Chrome's built-in Developer Tools
+inspector, such as that provided by Google Chrome's built-in Developer Tools,
 or the Page Inspector provided by Mozilla Firefox Developer Tools (in either
 browser, right-click on a webpage element and select "Inspect Element" from the
 context menu). 
@@ -179,5 +179,17 @@ Then, edit the ``custom.css`` file::
 
 and add the following block of CSS code::
 
-   ???
-   PROFIT!
+   .header > h1.brand::before {
+     content: "Foo ";
+     color: pink;
+     font-weight: bold;
+   }
+
+   .header > h1.brand::after {
+     content: "School";
+     color: lightblue;
+   }
+
+This will yield the result seen in the following screenshot:
+
+   .. image:: images/custom-css-05.png
