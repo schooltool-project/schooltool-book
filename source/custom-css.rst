@@ -120,10 +120,13 @@ This may be accomplished via ``rsync`` or another secure file transfer utility::
 
    rsync -e ssh logo.png root@schooltoolserver:/etc/schooltool/standard/custom-css/
 
+NOTE: This command would be issued from a workstation, with the ``logo.png``
+file in the working directory.
+
 Be sure to replace **schooltoolserver** in the example above with the IP address
 or hostname of your organization's schooltool server. You will also need to
 supply the root user's password, and OpenSSH must be configured to allow root
-access for this method to work.
+access (generally not a good idea) for this method to work.
 
 A more secure alternate method would eliminate the need for ssh root logins by
 pulling the image onto the server using an account with sudo privileges. Since
@@ -152,3 +155,29 @@ class="brand">`` element in the SchoolTool page header.
 
 Replacing SchoolTool Logo (text)
 ````````````````````````````````
+
+If you'd like to use text instead of a background image, this is also possible
+using the ``::after`` and ``::before`` CSS selectors:
+
+    * `::after <http://www.w3schools.com/cssref/sel_after.asp>`_
+    * `::before <http://www.w3schools.com/cssref/sel_before.asp>`_
+
+Again, we will first need to hide the default logo. Edit the ``custom.css``
+file::
+
+   sudo vim /etc/schooltool/standard/custom-css/custom.css
+
+and add the following block of CSS code::
+
+   .header > h1.brand span, .header > h1.brand img {
+     display: none;
+   }
+
+Then, edit the ``custom.css`` file::
+
+   sudo vim /etc/schooltool/standard/custom-css/custom.css
+
+and add the following block of CSS code::
+
+   ???
+   PROFIT!
