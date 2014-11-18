@@ -1,13 +1,6 @@
 Customizing SchoolTool CSS
 ==========================
 
-Requirements
-````````````
-
-Overriding SchoolTool's default styles and images with your own customizations
-will require administrative access to the server. It will also require
-knowledge of HTML and CSS, but no Python programming experience is necessary.
-
 CSS Overrides
 -------------
 
@@ -17,6 +10,13 @@ Style Sheets with your own customized styles.
 
 In the past, this could only be accomplished by modifying SchoolTool core files,
 which was undesirable because changes would be lost during upgrades.
+
+Requirements
+````````````
+
+Overriding SchoolTool's default styles and images with your own customizations
+will require administrative access to the server. It will also require
+knowledge of HTML and CSS, but no Python programming experience is necessary.
 
 The ``custom-css`` Directory
 ````````````````````````````
