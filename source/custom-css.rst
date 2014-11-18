@@ -108,7 +108,7 @@ and add the following block of CSS code::
      display: none;
    }
 
-Then, upload the desired logo image, in this case ``logo.png`` into the 
+Then, upload the desired logo image (in this case, ``logo.png``) into the 
 ``custom-css`` directory. In this
 example, we will use the PEAS logo, which is a transparent PNG image 195 pixels
 wide and 40 pixels high; your organization's logo may need to be resized to fit
