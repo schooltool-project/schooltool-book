@@ -171,3 +171,41 @@ and add the following block of CSS code::
 This will yield the result seen in the following screenshot:
 
    .. image:: images/custom-css-05.png
+
+Replacing SchoolTool Logo (text and image)
+``````````````````````````````````````````
+
+With a little CSS finesse, we can even replace the SchoolTool logo with our own
+custom logo combining HTML text and an uploaded image.
+
+Again, we will first need to hide the default logo. Edit the ``custom.css``
+file::
+
+   sudo vim /etc/schooltool/standard/custom-css/custom.css
+
+and add the following block of CSS code::
+
+   .header > h1.brand span, .header > h1.brand img {
+     display: none;
+   }
+
+Then, edit the ``custom.css`` file::
+
+   sudo vim /etc/schooltool/standard/custom-css/custom.css
+
+and add the following block of CSS code::
+
+   .header > h1.brand::before {
+     content: "Foo School";
+     padding-right: 150px;
+   }
+
+   .header > h1.brand {
+     background: url("logo.png") top right no-repeat;
+     width: 350px;
+     height: 40px;
+   }
+
+This will yield the result seen in the following screenshot:
+
+   .. image:: images/custom-css-06.png
