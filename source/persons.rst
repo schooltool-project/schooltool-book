@@ -47,4 +47,4 @@ To import user data from a CSV, you must be logged in as "manager." Select the *
 XLS Import
 ++++++++++
 
-:ref:`spreadsheet` is another method of importing People.  The one trick here is that if you have changed the demographic schema, you should first do an **XLS Export** to get a worksheet that has your new fields in the correct sequence.  Add your People and re-import the worksheet.
+:ref:`spreadsheet` is another method of importing People.  The one trick here is that if you have changed the demographic schema (as shown in :ref:`adv-timetabling`) you should first do an **XLS Export** to get a worksheet that has your new fields in the correct sequence.  Add your People and re-import the worksheet.
