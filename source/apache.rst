@@ -38,14 +38,19 @@ Begin by creating a new file in your Apache configuration directory,
         deny from none
     </Proxy>
 
-    ProxyPass / http://127.0.0.1:7080/++vh++http:school1.example.org:80/++/
+    ProxyPreserveHost on
+    RewriteEngine On
+
+    RewriteRule ^/schooltool.task_results(/?.*) http://127.0.0.1:7080/schooltool.task_results/$1 [P,L]
+    RewriteRule ^(/?.*) http://127.0.0.1:7080/++vh++http:school1.example.org:80/++$1 [P,L]
 
   </VirtualHost>
 
-You will need to enable Apache modules ``mod_proxy`` and ``mod_proxy_http``::
+You will need to enable Apache modules ``mod_proxy``, ``mod_proxy_http`` and ``mod_rewrite``::
 
   $ sudo a2enmod proxy
   $ sudo a2enmod proxy_http
+  $ sudo a2enmod rewrite
 
 Then enable the site and restart apache::
 
@@ -57,7 +62,7 @@ it available at a custom path on another site, e.g. ``example.org/schooltool``.
 Place the path before the last ``++`` in the URL, and put it somewhere in
 the configuration of that site::
 
-    ProxyPass /schooltool http://127.0.0.1:7080/++vh++http:example.org:80/schooltool/++/
+    RewriteRule ^/schooltool(/?.*) http://127.0.0.1:7080/++vh++http:school1.example.org:80/schooltool/++$1 [P,L]
 
 For more information, see `Virtual Hosting`_ in Zope 3.
 
@@ -85,7 +90,11 @@ https instead of http::
             deny from none
     </Proxy>
 
-    ProxyPass / http://localhost:7080/++vh++https:school1.example.org:443/++/
+    ProxyPreserveHost on
+    RewriteEngine On
+
+    RewriteRule ^/schooltool.task_results(/?.*) http://127.0.0.1:7080/schooltool.task_results/$1 [P,L]
+    RewriteRule ^(/?.*) http://127.0.0.1:7080/++vh++http:school1.example.org:443/++$1 [P,L]
 
   </VirtualHost>
 
