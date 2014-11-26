@@ -1,3 +1,5 @@
+.. _adv_timetabling:
+
 Advanced Timetabling
 ====================
 
