@@ -37,6 +37,16 @@ Users of SchoolTool 2.8.0 should upgrade to 2.8.2 at a convenient time.
 Users of SchoolTool 2.6 should upgrade to 2.8.2 after testing against their 
 database and reviewing the changes in functionality.
 
+Gradebook 2.8.3.1 (2014-12-03)
+----------------------------
+
+- Removed attendance scores from report card (https://bugs.launchpad.net/bugs/1393720)
+
+Journal 2.8.2.1 (2014-12-03)
+--------------------------
+
+- Fixed request dialog for attendance by student report (https://bugs.launchpad.net/bugs/1398265)
+
 SchoolTool 2.8.3 (2014-11-11)
 -----------------------------
 
