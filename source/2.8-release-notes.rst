@@ -37,6 +37,19 @@ Users of SchoolTool 2.8.0 should upgrade to 2.8.3 at a convenient time.
 Users of SchoolTool 2.6 should upgrade to 2.8.3 after testing against their 
 database and reviewing the changes in functionality.
 
+2.8.4 (2015-07-02)
+==================
+
+SchoolTool 2.8.4
+----------------
+
+- Fixed ckeditor widget in gradebook overview popup dialog (https://launchpad.net/bugs/1436881)
+
+SchoolTool Gradebook 2.8.4
+--------------------------
+
+- Added school year dropdown to report card request view (https://launchpad.net/bugs/1432672)
+
 
 2.8.3 (2014-11-11)
 ==================
