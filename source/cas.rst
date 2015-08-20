@@ -31,7 +31,7 @@ And add to the file, where "my.cas.server" is replaced by the URL of your CAS se
 
 Enable plugin::
 
-    $ sudo vim /etc/schooltool/standard/schooltool/plugins/cas.zcml
+    $ sudo vim /etc/schooltool/standard/plugins/cas.zcml
 
 Put this line (only) in that file::
 
