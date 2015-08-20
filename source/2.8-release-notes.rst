@@ -40,7 +40,7 @@ database and reviewing the changes in functionality.
 SchoolTool 2.8.3 (2014-11-11)
 -----------------------------
 
-- Moved custom CSS handling to /etc/schooltool/standard/custom-css see ref:`css` for instructions.
+- Moved custom CSS handling to /etc/schooltool/standard/custom-css see :ref:`css` for instructions.
 - Specified 24 hour format for slots in timetable wizard (https://launchpad.net/bugs/892941)
 
 Gradebook 2.8.3 (2014-11-11)
