@@ -72,4 +72,36 @@ Fill out the (lengthy) form and click **Submit** or **Submit and add** if you wa
 
    .. image:: images/niswonger-6.png
 
+Viewing and Editing a Student Record
+------------------------
+
+The default view for an advisor includes a search field and a list of their advisees:
+
+   .. image:: images/niswonger-7.png
+
+For a member of **Clerks** or **School Administrators** to view a student, he or she should click the **School** tab, then **People**:
+
+   .. image:: images/niswonger-8.png
+   
+In either case, once the student is located, clicking on the name will take you to the main info page for the student (or other user):
+
+   .. image:: images/niswonger-9.png
+
+To edit any information, click the yellow circle (the "edit pencil") in the relevant area.  
+
+Generating Reports
+------------------
+
+To generate a report spreadsheet for the system as a whole, a member of **Clerks** or **School Administrators** should click on the School Tab and select **Reports: Custom Export** at left.
+
+First, select the relevant year:
+
+   .. image:: images/niswonger-10.png
+
+At left, the user can filter the students included in the report by School, Level and other criteria, and add data columns.  This will update on the web page, and **Export as XLS** will generate and download a corresponding spreadsheet.
+
+   .. image:: images/niswonger-11.png
+
+Advisors can access a slightly simplified version of this which automatically filters for their advisees by clicking **Reports: Custom Export** from their home page.
+
 
