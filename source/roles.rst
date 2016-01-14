@@ -28,8 +28,6 @@ If you forget the password for "Default Manager", you can reset the "Default Man
 
 Where PASS is the desired password::
 
- $ sudo service schooltool stop
  $ sudo python -m schooltool.app.main -c /etc/schooltool/standard/schooltool.conf --restore-manager PASS
- $ sudo service schooltool start
 
 And log in with the new password.
