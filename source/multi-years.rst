@@ -1,3 +1,5 @@
+.. _multi-years:
+
 Managing Multiple Years and Terms
 =================================
 

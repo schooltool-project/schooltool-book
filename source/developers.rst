@@ -8,6 +8,7 @@ Contents:
 .. toctree::
    :maxdepth: 1
 
+   dev_tools
    dev_sandbox
    dev_devmode
    style-guide

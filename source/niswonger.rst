@@ -104,4 +104,62 @@ At left, the user can filter the students included in the report by School, Leve
 
 Advisors can access a slightly simplified version of this which automatically filters for their advisees by clicking **Reports: Custom Export** from their home page.
 
+Starting a New Year
+-------------------
+
+I already created a new year -- 2016-2017 -- and set it as "active" see :ref:`multi-years` if you're interested.
+
+My understanding is that most of the students do not carry over to the new year (having graduated), but some of the Advisors do, and the participating schools have remained the same.
+
+Adding New Advisors
+-------------------
+
+Advisors are added by members of the **Clerks** group, and they must be assigned to the Teacher group.
+
+So, to add a new advisor, log in as user that is a member of **Clerks**:
+
+   .. image:: images/niswonger-12.png
+   
+Click on People, and then **Add: Teacher** at left:
+
+   .. image:: images/niswonger-13.png
+   
+Fill out the relevant info -- you probably only need to complete the **Full Name** and **User** sections.  Use **Submit** if you are only entering one advisor or **Submit and add** if you want to add multiple teachers in sequence.
+
+   .. image:: images/niswonger-14.png
+
+Editing Advisees
+----------------
+
+To add existing students as advisees, click on the **Advisory** slider and then on the yellow edit pencil next to **Advisees**:
+
+   .. image:: images/niswonger-15.png
+
+Use this view to search for and add existing students to an advisor as necessary.
+
+   .. image:: images/niswonger-16.png
+
+If it makes more sense in your workflow, you can also reverse the process and add an advisor from a student's view.  
+
+Updating Repeating Students
+---------------------------
+
+All of the accounts for repeating students are still in the system, but no students are enrolled in the students group or in any of the groups corresponding to specific schools, so this should be done manually, which should be managable if the number of students is relatively small.
+
+A member of **Clerks** can do this for all students, or an Advisor can edit *their advisees*.  The advisor can select the student from their list of advisees when they log in.  A clerk can click on **People** from the main **School** page, and search for the person from there.
+
+   .. image:: images/niswonger-17.png
+
+On the student's page, select the **Groups** slider.  
+
+   .. image:: images/niswonger-18.png
+   
+Click on the edit pencil next to **Group Memberships**.
+
+From here select the group corresponding to the correct school and the **Students** group and add the student to both.
+
+   .. image:: images/niswonger-19.png
+
+If you need to edit the student's advisor as well, you can do that from his or her **Advisory** slider as described above, except editing **Advisors** instead of **Advisees**.
+
 

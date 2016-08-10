@@ -5,22 +5,27 @@ SchoolTool uses Bazaar_ VCS.  Be sure to install it first::
 
   ~$ sudo apt-get install bzr
 
-Install `build dependencies`_ like compilers, development libraries and fonts::
-
-  ~$ sudo make ubuntu-environment
-
 .. _Bazaar: http://bazaar-vcs.org/
 
+If you don't already have it, you need make to bootstrap the process::
+
+  ~$ sudo apt-get install make
 
 Quickstart
 ----------
 
-"But I just want to look at it!"
-
-This is not a preferred way to develop SchoolTool, but it will give you a quick taste::
+To get started with a sandbox::
 
   ~$ bzr co lp:schooltool schooltool
   ~$ cd schooltool
+
+Install `build dependencies`_ like compilers, development libraries and fonts::
+
+  ~$ sudo make ubuntu-environment
+  
+Next, pull down additional libraries via PIP and get everything in place::
+
+  ~$ make develop
 
 The **schooltool** package just contains the "core" functionality of SchoolTool: gets the server up and running, lets you define the structure of the school and the calendar.
 
@@ -28,7 +33,7 @@ To *use* SchoolTool for anything (beyond calendaring) you need plugins.
 
 Enable plugins (optional).
 
-To enable plugins, edit buildout.cfg to contain::
+To enable plugins, edit buildout.cfg to contain, for example::
 
   [package]
   eggs += schooltool
@@ -40,15 +45,15 @@ Build and run schooltool::
 
   ~/schooltool$ make run
 
-Open http://localhost:7080/ in your browser.
+Open http://localhost:7080/ in your browser.  To make SchoolTool accessible over the network, edit ``./instance/paste.ini`` as described in :ref:`remote`.
 
 If you want to change enabled plugins, edit buildout.cfg, and run SchoolTool again::
 
   ~/schooltool$ make run
 
 
-Setting up a development sandbox
---------------------------------
+Setting up a full development sandbox
+-------------------------------------
 
 Set your buildout eggs and cache directories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -108,7 +113,7 @@ Ensure you have all needed dev tools::
 
 Now, build the project::
 
-  ~/schooltool_sandbox/schooltool.gradebook_super_ajax$ make
+  ~/schooltool_sandbox/schooltool.gradebook_super_ajax$ make develop
 
 Congratulations, you can run the server now::
 
@@ -123,7 +128,7 @@ Push your branch to Launchpad::
   ~/schooltool_sandbox/schooltool.gradebook$ bzr push lp:~ideveloper/schooltool/schooltool.gradebook_super_ajax
                                                           ----------            -------------------------------
 
-Now you can begin your work.  Commit using ``bzr ci`` diff using ``bzr diff`` update your branch using ``bzr pull``.  Commit often and in small chunks.
+Now you can begin your work.  Commit using ``bzr ci``; diff using ``bzr diff``; update your branch using ``bzr pull``.  Commit often and in small chunks.
 
 Don't forget to update the eggs from time to time to the latest released versions::
 

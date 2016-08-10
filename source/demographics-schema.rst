@@ -1,3 +1,5 @@
+.. _demographics:
+
 Customizing Demographics
 ========================
 
