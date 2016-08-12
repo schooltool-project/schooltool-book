@@ -27,7 +27,8 @@ and passing traffic to SchoolTool on port 7080, you will need root access to
 the Apache server.
 
 Begin by creating a new file in your Apache configuration directory,
-``/etc/apache/sites-available/school1.example.org``, containing the following::
+``/etc/apache/sites-available/school1.example.org.conf``, containing
+the following::
 
   <VirtualHost *:80>
     ServerName school1.example.org
@@ -57,11 +58,10 @@ Then enable the site and restart apache::
   $ sudo a2ensite school1.example.org
   $ sudo service apache reload
 
-If you cannot (or don't want to) set up a subdomain for SchoolTool, you can make
-it available at a custom path on another site, e.g. ``example.org/schooltool``.
-Place the path before the last ``++`` in the URL, and put it somewhere in
-the configuration of that site::
+You can make SchoolTool available in a custom path,
+e.g. ``school1.example.org/schooltool``::
 
+    RewriteRule ^/schooltool/schooltool.task_results(/?.*) http://127.0.0.1:7080/schooltool.task_results/$1 [P,L]
     RewriteRule ^/schooltool(/?.*) http://127.0.0.1:7080/++vh++http:school1.example.org:80/schooltool/++$1 [P,L]
 
 For more information, see `Virtual Hosting`_ in Zope 3.
@@ -82,7 +82,7 @@ https instead of http::
 
     SSLEngine On
     SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem
-    SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.pem
+    SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
 
     <Proxy *>
             order allow,deny
@@ -94,7 +94,7 @@ https instead of http::
     RewriteEngine On
 
     RewriteRule ^/schooltool.task_results(/?.*) http://127.0.0.1:7080/schooltool.task_results/$1 [P,L]
-    RewriteRule ^(/?.*) http://127.0.0.1:7080/++vh++http:school1.example.org:443/++$1 [P,L]
+    RewriteRule ^(/?.*) http://127.0.0.1:7080/++vh++https:school1.example.org:443/++$1 [P,L]
 
   </VirtualHost>
 
@@ -109,8 +109,7 @@ The ``mod_ssl`` module has to be enabled.::
   $ sudo a2enmod ssl
 
 When you get this working, you may want to redirect users that connect through
-regular HTTP to the secure site.  Remove the ``ProxyPass`` for port 80 and
-replace it with a ``Redirect``::
+regular HTTP to the secure site.  Add a ``Redirect``::
 
   <VirtualHost *:80>
     ServerName school1.example.org
@@ -121,5 +120,5 @@ replace it with a ``Redirect``::
 Example
 -------
 
-Download `example configuration file <_static/school1-apache.conf>`_ with all of the
+Download `example configuration file <_static/school1.example.org.conf>`_ with all of the
 above and more.
