@@ -11,12 +11,16 @@ The ``schooltool.ark`` package has the functionality that the three ARK projects
 Assessment
 ++++++++++
 
-The assessment functionality is based on the ``AssessmentSetContainer`` object that you can get from a ``SchoolYear`` object::
+The assessment functionality is based on the ``AssessmentSetContainer`` object that you can get from a ``SchoolYear`` object:
+
+.. code-block:: python
 
  >>> from schooltool.ark.interfaces import IAssesmentSetContainer
  >>> assessment_set_container = IAssessmentSetContainer(schoolyear)
 
-This is a container for ``AssessmentSet`` objects::
+This is a container for ``AssessmentSet`` objects:
+
+.. code-block:: python
 
  >>> from schooltool.ark.assessment import AssessmentSet
  >>> term_1_set = AssessmentSet()

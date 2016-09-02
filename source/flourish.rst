@@ -1,17 +1,19 @@
-SchoolTool “presentation” components
+.. _flourish:
+
+SchoolTool "presentation" components
 ====================================
 
-`The Zope publishing mechanism <https://pypi.python.org/pypi/zope.publisher>`_ provides a way of filtering (enabling or disabling) view components based on a marker interface called “layer.”
+`The Zope publishing mechanism <https://pypi.python.org/pypi/zope.publisher>`_ provides a way of filtering (enabling or disabling) view components based on a marker interface called “layer."
 
-SchoolTool’s look and feel functionality for HTML pages and PDF reports comes from a layer called “Flourish” which is placed in the ``schooltool.skin.flourish`` package.  “Flourish” was the codename, essentially, for a complete redesign of SchoolTool’s web interface roughly midway through its history.
+SchoolTool’s look and feel functionality for HTML pages and PDF reports comes from a layer called “Flourish" which is placed in the ``schooltool.skin.flourish`` package.  “Flourish" was the codename, essentially, for a complete redesign of SchoolTool’s web interface roughly midway through its history.
 
 HTML rendering
 --------------
 
 The ``schooltool.skin.flourish.page.Page`` class is the base component for Flourish. It provides a two step pattern, common to most of SchoolTool’s view components, for producing HTML code through two methods:
 
- 1. The ``update`` method is supposed to “calculate” the data needed. It also invokes its subcomponents ``update`` methods.
- 2. Then the ``render`` method produces and returns the HTML code based on the data calculated in ``update``. This step usually involves calling a `Zope Page Template <Zope Page Template <https://docs.zope.org/zope2/zope2book/ZPT.html>`_ (ZPT) file able to handle conditionals and iterations. The default logic for this method is based on the ``schooltool/skin/flourish/templates/main.pt`` template.
+ 1. The ``update`` method is supposed to “calculate" the data needed. It also invokes its subcomponents ``update`` methods.
+ 2. Then the ``render`` method produces and returns the HTML code based on the data calculated in ``update``. This step usually involves calling a `Zope Page Template <https://docs.zope.org/zope2/zope2book/ZPT.html>`_ (ZPT) file able to handle conditionals and iterations. The default logic for this method is based on the ``schooltool/skin/flourish/templates/main.pt`` template.
 
 Main template
 +++++++++++++
@@ -20,9 +22,9 @@ This template has the base HTML 4 document structure for pages and it’s logica
 
 Let’s review some of these:
 
- * The ``schooltool.skin.flourish`` `resource library <https://pypi.python.org/pypi/zc.resourcelibrary>`_ is inserted in the header (<head> element) of the page and it’s in charge of including CSS and Javascript files taking care of dependencies between “sublibraries”.
+ * The ``schooltool.skin.flourish`` `resource library <https://pypi.python.org/pypi/zc.resourcelibrary>`_ is inserted in the header (<head> element) of the page and it’s in charge of including CSS and Javascript files taking care of dependencies between “sublibraries".
  * A few `providers <https://pypi.python.org/pypi/zope.contentprovider>`_ are used in this template. Providers are just view components that filter and prepare their subcomponents for rendering. This way a full page can be built by merging several small and focused components. The providers in this template render the navigational area at the top of the page.
- * A second template is referenced as the ``page_template`` attribute of the ``Page`` which is used for rendering the “main content area” of the page.
+ * A second template is referenced as the ``page_template`` attribute of the ``Page`` which is used for rendering the “main content area" of the page.
 
 Page template
 +++++++++++++
@@ -33,15 +35,15 @@ This is roughly the HTML code rendered by this template:
 
 .. code-block:: xml
 
- <div class=”body”>
-   <div class=”sidebar refine”>
+ <div class="body">
+   <div class="sidebar refine">
    </div>
-   <div class=”sidebar related”>
+   <div class="sidebar related">
    </div>
-   <div class=”container”>
-     <div class=”main”>
+   <div class="container">
+     <div class="main">
      </div>
-     <div class=”additional”>
+     <div class="additional">
      </div>
    </div>
   </div>
@@ -104,7 +106,7 @@ Forms
 AJAX parts
 ----------
 
-The ``schooltool.skin.flourish.ajax`` module registers an additional provider for ``Page`` objects. It’s referenced as “ajax” in ZPT code. It’s used for registering special viewlets, called AJAX parts, that have the ability to render and update without fully reloading their ``Page``. This functionality is mostly used for tables. See the ``schooltool.table.ajax`` module.
+The ``schooltool.skin.flourish.ajax`` module registers an additional provider for ``Page`` objects. It’s referenced as “ajax" in ZPT code. It’s used for registering special viewlets, called AJAX parts, that have the ability to render and update without fully reloading their ``Page``. This functionality is mostly used for tables. See the ``schooltool.table.ajax`` module.
 
 Tables
 ------

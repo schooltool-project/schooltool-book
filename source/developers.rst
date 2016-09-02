@@ -13,6 +13,7 @@ Contents:
    dev_sandbox
    instance
    top_level
+   policy
    flourish
    ui_guidelines
    report_example

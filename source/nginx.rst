@@ -1,5 +1,5 @@
 .. _nginx:
-.. highlight:: nginx
+
 
 Nginx configuration
 ===================
@@ -24,4 +24,3 @@ To provide web access to schooltool using the Nginx web server as a proxy, add t
         }
       }
 
-Read more at http://grok.zope.org/documentation/how-to/grok-virtual-hosting-and-nginx

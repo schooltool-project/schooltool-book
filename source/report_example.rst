@@ -344,7 +344,7 @@ This method looks like this:
 
 The report would look like this:
 
-   .. image:: images/report-sample-0.png
+   .. image:: images/myreport.png
 
 
 

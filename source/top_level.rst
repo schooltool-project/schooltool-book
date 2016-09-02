@@ -8,32 +8,36 @@ SchoolTool takes the approach of avoiding premature optimization in searching in
 
 Catalogs have the ability to reindex when their definition is changed (like when new indexes are added).  Most of them look for a specific kind of object to index based on their implemented interfaces.  
 
-SchoolTool’s custom cataloging functionality is based on the ``zc.catalog`` and ``zope.catalog`` packages.
+SchoolTool's custom cataloging functionality is based on the ``zc.catalog`` and ``zope.catalog`` packages.
 
 
-Usually to get a catalog you adapt the object container:: 
+Usually to get a catalog you adapt the object container:
 
-  contacts = app[‘contacts’]
+.. code-block:: python
+
+  contacts = app['contacts']
   contacts_catalog = ICatalog(contacts)
 
   persons = app['persons']
   persons_catalog = ICatalog(persons)
 
 
-Then you can use its indexes to search specific properties in the indexed objects. Here we’ll search people with first name ‘Tom’. The ``apply`` method returns a set of ``IntId`` identifiers that we turn into actual ``Person`` objects to print their title::
+Then you can use its indexes to search specific properties in the indexed objects. Here we'll search people with first name 'Tom'. The ``apply`` method returns a set of ``IntId`` identifiers that we turn into actual ``Person`` objects to print their title:
+
+.. code-block:: python
 
   from zope.intid.interfaces import IIntIds
   from schooltool.table.column import unindex
 
   ids_utility = getUtility(IIntIds)
-  index = persons_catalog[‘first_name’]
-  for id in index.apply({‘first_name’: ‘Tom’}):
+  index = persons_catalog['first_name']
+  for id in index.apply({'first_name': 'Tom'}):
       person = ids_utility.getObject(id)
       print person.title
 
 Or you can search using the catalog directly passing the indexes you want to query. Unlike querying indexes directly with ``apply``, ``searchResults`` returns an iterator of content objects::
 
-  params = {‘text’: ‘Douglas Cerna’}
+  params = {'text': 'Douglas Cerna'}
   for contact in contacts_catalog.searchResults(**params):
       print contact.title
 
@@ -42,7 +46,7 @@ Relationships, temporal and otherwise
 
 ``RelationshipProperty`` objects properties are used to link objects.  This is easier to just demonstrate in code.
 
-We’ll create a temporal relationship between ``Group`` objects and ``Person`` objects.
+We'll create a temporal relationship between ``Group`` objects and ``Person`` objects.
 
 First you define the roles in the relationship. This relationship will be between a group and a member::
 
@@ -88,9 +92,9 @@ Then you set a relationship property on a “content” object, in this case ``G
 Then you link a ``Group`` object with a ``Person`` object using the property ``add`` method::
 
     # students_group is Group object
-    students_group = groups[‘students’]
+    students_group = groups['students']
     # tom is Person object
-    tom = persons[‘tom.hoffman’]
+    tom = persons['tom.hoffman']
     students_group.members.add(tom)
 
 Since this is a temporal relationship you can add the link from a starting date::
@@ -107,7 +111,7 @@ You can traverse the relationship property::
 
 By default, iterating a relationship property like this will show only “active” objects.  
 
-You can use states in a query to specify which ``Relationship`` objects you’re looking for::
+You can use states in a query to specify which ``Relationship`` objects you're looking for::
 
     from schooltool.relationship.temporal import INACTIVE 
     for student in students_group.members.any(INACTIVE):
@@ -123,26 +127,26 @@ You can use states in a query to specify which ``Relationship`` objects you’re
 
 There is no direct relationship between the dates used in relationships, such as levels, and the beginning and ends of ``Term`` and ``SchoolYear`` objects.  By default, the web forms for changing relationships use the current date, but it is editable in the form.  
 
-For example, let’s say the last day of classes is in June 1, but the official end of the ``SchoolYear`` in SchoolTool is at the end of July.  If graduating students are set as inactive from the ``Students`` group as of June 1, but a report is run on active students as of the end of the year on July 31, users might still expect to see the graduated (on June 1) students show up in their end of year report.
+For example, let's say the last day of classes is in June 1, but the official end of the ``SchoolYear`` in SchoolTool is at the end of July.  If graduating students are set as inactive from the ``Students`` group as of June 1, but a report is run on active students as of the end of the year on July 31, users might still expect to see the graduated (on June 1) students show up in their end of year report.
 
-There is not necessarily a “correct” way to handle these issues from the application’s point of view, but some kind of logic/policy has to be consistently applied at the user level.
+There is not necessarily a “correct” way to handle these issues from the application's point of view, but some kind of logic/policy has to be consistently applied at the user level.
 
 Top level containers
 --------------------
 
-In SchoolTool’s ZODB, we use a number of top-level containers (BTrees) which behave similarly to Python dictionaries.  Objects in these containers are often connected by relationship properties.  Understanding what’s in these containers and how they work is the first step in grokking SchoolTool’s data model.
+In SchoolTool's ZODB, we use a number of top-level containers (BTrees) which behave similarly to Python dictionaries.  Objects in these containers are often connected by relationship properties.  Understanding what's in these containers and how they work is the first step in grokking SchoolTool's data model.
 
 The SchoolTool Application
 ++++++++++++++++++++++++++
 
-The ``SchoolToolApplication`` object is the root and stores all the top level containers in the system. It’s also acts like the root site manager for component look ups.
+The ``SchoolToolApplication`` object is the root and stores all the top level containers in the system. It's also acts like the root site manager for component look ups.
 
 You usually get a reference to it by just using the ISchoolToolApplication interface adapter::
 
   from schooltool.app.interfaces import ISchoolToolApplication
   app = ISchoolToolApplication(None)
 
-In the following where we refer to `app` assume it has been assigned this way.
+In the following where we refer to ``app`` assume it has been assigned this way.
 
 Relationship States
 +++++++++++++++++++
@@ -155,25 +159,25 @@ For example to create relationship state objects for the group membership relati
   from schooltool.relationship.temporal import INACTIVE
 
   relationship_states = IRelationshipStateContainer(app)
-  group_membership_states = relationship_states[‘group-membership’]
+  group_membership_states = relationship_states['group-membership']
 
   # built using: title, active, code
-  pending_state = RelationshipState(‘Pending’, INACTIVE, ‘p’)
-  removed_state = RelationshipState(‘Removed’, INACTIVE, ‘r’)
+  pending_state = RelationshipState('Pending', INACTIVE, 'p')
+  removed_state = RelationshipState('Removed', INACTIVE, 'r')
 
   group_membership_states[pending_state.code] = pending_state
   group_membership_states[removed_state.code] = removed_state
 
 You can then use these states in a relationship::
 
-  students_group = groups[‘students’]
-  tom = persons[‘tom.hoffman’]
+  students_group = groups['students']
+  tom = persons['tom.hoffman']
   students_group.members.relate(
       tom,
       removed_state.active,
       removed_state.code)
 
-Or to query specific states by code, like getting removed students only:
+Or to query specific states by code, like getting removed students only::
 
   for person in students_group.members.coded(removed_state.code):
       print person.title
@@ -181,11 +185,11 @@ Or to query specific states by code, like getting removed students only:
 Persons
 +++++++
 
-The ``Persons`` container holds Person objects.  These are essentially all the people with logins in the system.  There are not separate objects for students and teachers per se.  See :ref:`roles` for more on this.
+The ``Persons`` container holds Person objects.  These are essentially all the people with logins in the system.  There are not separate objects for students and teachers *per se*.  
 
 To get the container::
 
-  persons = app[‘persons’]
+  persons = app['persons']
 
 The ``Person`` functionality is split between two Python packages, ``schooltool.person`` and ``schooltool.basicperson``, with ``.person`` being the older of the two.  
 
@@ -220,27 +224,27 @@ You can create demographics fields like this::
   from schooltool.basicperson.interfaces import IDemographicsFields
   fields = IDemographicsFields(app)
   # field id and title for text fields
-  field[‘diet’] = TextFieldDescription(‘diet’, ‘Dietary requirements’)
+  field['diet'] = TextFieldDescription('diet', 'Dietary requirements')
 
 Demographics fields can be limited to members of some of the built-in groups -- Students, Teachers and School Administrators, so that, for example, teachers and administrators see a “Date hired” field while students do not.  This is actually just enforced on the view level, so if you remove someone from one of the groups, the relevant data is still there, just not displayed.
 
 We have fields for: text lines, integer numbers, text paragraphs, dates, boolean values and selection lists.
 
-It’s worth mentioning that the demographics fields container is an ordered container so they can be reordered and traversed in order -- that is, you can set the order in which they are displayed in forms.
+It's worth mentioning that the demographics fields container is an ordered container so they can be reordered and traversed in order -- that is, you can set the order in which they are displayed in forms.
 
 This is how you store actual ``Person`` data for a custom demographics field::
 
   from schooltool.basicperson.interfaces import IDemographics
-  tom = persons[‘tom.hoffman’]
+  tom = persons['tom.hoffman']
   tom_demographics_data = IDemographics(tom)
-  tom_demographics_data[‘diet’] = ‘Lactose intolerance’
+  tom_demographics_data['diet'] = 'Lactose intolerance'
 
 Contacts
 ++++++++
 
 As SchoolTool is designed primarily for K-12 schools, most formal contact information is focused on parents and other people related to the student.  Parents, etc., are created as contacts which store phone, address and email information.  Contacts are established as temporal relationships.  
 
-The initial implementation where contacts could not log in.  We later added the capability for contacts to have their own login. For this a new ``Person`` object is added to the system based on the ``Contact`` object information and the ``Contact`` object is deleted.  If the contact person logs in, they will have access to read-only views of the related student’s data.
+The initial implementation where contacts could not log in.  We later added the capability for contacts to have their own login. For this a new ``Person`` object is added to the system based on the ``Contact`` object information and the ``Contact`` object is deleted.  If the contact person logs in, they will have access to read-only views of the related student's data.
 
 Resources
 +++++++++
@@ -249,12 +253,12 @@ Resources
 
 .. warning::
 
-  Resources have been underutilized and underdeveloped in SchoolTool, particularly after a large calendar refactoring several years ago.  The original idea was that resources could be scheduled and reserved and generally interact with the calendar and other objects like sections in useful ways.  The Ark clients aren’t using them, and you shouldn’t count on them to do what you expect without testing (and perhaps fixing…).
+  Resources have been underutilized and underdeveloped in SchoolTool, particularly after a large calendar refactoring several years ago.  The original idea was that resources could be scheduled and reserved and generally interact with the calendar and other objects like sections in useful ways.  The Ark clients aren't using them, and you shouldn't count on them to do what you expect without testing (and perhaps fixing…).
 
 “Resource Demographics”
 +++++++++++++++++++++++
 
-You can add custom fields to resources with an implementation of the same design as used for people.  For example, you could track serial numbers on equipment or specific facilities within a location.  Again, this hasn’t been used much and should be tested before trying to do anything important or complicated with it.  
+You can add custom fields to resources with an implementation of the same design as used for people.  For example, you could track serial numbers on equipment or specific facilities within a location.  Again, this hasn't been used much and should be tested before trying to do anything important or complicated with it.  
 
 Terms
 +++++
@@ -265,7 +269,7 @@ Terms
   from schooltool.term.term import Term
   start = date(2016, 1, 1)
   end = date(2016, 6, 30)
-  term_1 = Term(‘Term 1’, start, end)
+  term_1 = Term('Term 1', start, end)
 
 Terms may not overlap in date span.
 
@@ -286,9 +290,9 @@ You can get the “active” school year (see :ref:`multi-years`) like this::
 ``SchoolYear`` objects are also containers for ``Term`` objects::
 
   from schooltool.term.term import Term
-  active_year[‘term-1’] = term_1
+  active_year['term-1'] = term_1
 
-It’s worth noting that ``SchoolYear`` objects are not ordered containers.
+It's worth noting that ``SchoolYear`` objects are not ordered containers.
 
 .. warning::
 
@@ -302,7 +306,7 @@ For an explanation of the general role of courses in SchoolTool, see :ref:`cours
 ``Course`` objects are stored in containers that you can get from the ``SchoolYear`` object::
 
   from schooltool.course.interfaces import ICourseContainer
-  schoolyear = schoolyears[‘2016’]
+  schoolyear = schoolyears['2016']
   courses = ICourseContainer(schoolyear)
   for course in course.values():
       print course.title
@@ -311,7 +315,7 @@ The course container is also an ordered container.
 
 ``Course`` objects have non-temporal relationships to ``Section`` objects::
 
-  course = courses[‘math’]
+  course = courses['math']
   for section in course.sections:
       print section.title
 
@@ -326,7 +330,7 @@ For an explanation of the general role of sections in SchoolTool, see :ref:`sect
 
 ``Section`` objects are mainly accessed from their related course::
 
-  course = courses[‘math’]
+  course = courses['math']
   for section in course.sections:
       print section.title
 
@@ -335,7 +339,7 @@ A back reference relationship is also available to get the courses of the sectio
   for course in section.courses:
       print course.title
 
-In the data model, courses have a many to many relationship to sections, however, on the user interface level, it was later restricted to a one to many relationship for simplicity.  That is, even though “courses” is a relationship (which is an iterable property) the system’s user interface only allows the user to set one course per section.
+In the data model, courses have a many to many relationship to sections, however, on the user interface level, it was later restricted to a one to many relationship for simplicity.  That is, even though “courses” is a relationship (which is an iterable property) the system's user interface only allows the user to set one course per section.
 
 .. warning::
 
@@ -345,7 +349,7 @@ That is, in a four term year, a section for a course that happens to run all yea
 
 ``Section`` objects in a multi-term section are linked with other ``Section`` objects, like a linked list. The “previous” and “next” attributes are used for this.  In most cases, changes to a section, such as enrolment changes, are propagated to *later* linked sections.  
 
-Sections are stored in ``SectionContainer`` objects. There’s a ``SectionContainer`` object for every ``Term`` object in the system. You can get a ``Term`` reference for a section::
+Sections are stored in ``SectionContainer`` objects. There's a ``SectionContainer`` object for every ``Term`` object in the system. You can get a ``Term`` reference for a section::
 
   from schooltool.term.interfaces import ITerm
   term = ITerm(section)
@@ -354,7 +358,7 @@ Sections are stored in ``SectionContainer`` objects. There’s a ``SectionContai
 
 .. warning::
 
- It is extremely important to understand that the ``Section`` ``instructors`` and ``members`` relationships are fundamental to SchoolTool’s security model and privacy.  
+ It is extremely important to understand that the ``Section`` ``instructors`` and ``members`` relationships are fundamental to SchoolTool's  and privacy.  See also :ref:`roles` :ref:`policy`.
 
 Teachers and students are granted few additional privileges based simply on membership in the ``Teachers`` and ``Students`` groups.  Teachers gain most of their functionality and access privileges based on their role as ``instructors`` within a ``Section``.  For example, they can view personal information only about ``Person`` objects who are assigned as ``members`` of a ``Section`` they are ``instructor`` of. 
 
@@ -377,14 +381,14 @@ There are also “built in” groups which have important implications for acces
 
 These implications of memberships in these groups is described in detail at :ref:`roles`.  Note again that membership in ``Students`` and ``Teachers`` has little affect on access permissions.  Primarily these cue the user interface in various ways so users see what is most relevant to them.  
 
-Groups are stored in ``GroupContainer`` objects. There’s a ``GroupContainer`` object for each ``SchoolYear`` object that is created when the ``SchoolYear`` object is added to the system and that is automatically populated with the five “built in” groups.
+Groups are stored in ``GroupContainer`` objects. There's a ``GroupContainer`` object for each ``SchoolYear`` object that is created when the ``SchoolYear`` object is added to the system and that is automatically populated with the five “built in” groups.
 
 The “built in” groups cannot be removed from the system.
 
 You can get the group container for a school year::
 
   from schooltool.group.interfaces import IGroupContainer
-  schoolyear = schoolyears[‘2016’]
+  schoolyear = schoolyears['2016']
   groups = IGroupContainer(schoolyear)
 
 ``Group`` objects have a temporal relationship ``members``, with ``Person`` objects.
@@ -400,7 +404,7 @@ Levels
 
  Internally this tends to be very confusing because levels are not simply an attribute on a student.  
 
-The student has temporal relationships with each level indicating beginning and completing the level.
+ The student has temporal relationships with each ``Level`` indicating beginning and completing the ``Level``.  These are not mutually exclusive, so you could continue adding a student to new levels without removing him or her from the previous one -- which is probably not the expected behavior for a school.  Ensuring that a student is only associated with one ``Level`` at a time is enforced at the view level.
 
 To get the container for ``Level`` objects::
 
@@ -412,26 +416,26 @@ This container is an ordered container.
 ``Level`` objects are relatively simple with just a title attribute::
 
   from schooltool.level.level import Level
-  levels[‘1’] = Level(‘1st grade’)
-  levels[‘2’] = Level(‘2nd grade’)
+  levels['1'] = Level('1st grade')
+  levels['2'] = Level('2nd grade')
 
-Enrolling a student into a level is done from the ``Person`` object using the ``levels`` temporal relationship. Let’s enroll a person in 1st grade starting on January 1st, 2015::
+Enrolling a student into a level is done from the ``Person`` object using the ``levels`` temporal relationship. Let's enroll a person in 1st grade starting on January 1st, 2015::
 
-  first_grade = levels[‘1’]
-  tom = persons[‘tom.hoffman’]
+  first_grade = levels['1']
+  tom = persons['tom.hoffman']
   tom.levels.on(date(2015, 1, 1)).add(first_grade)
 
-Promoting a student can be represented by first graduating them from their current level. We may also want to mark them as inactive in that level (the ‘r’ code used here corresponds to the default state code)::
+Promoting a student can be represented by first graduating them from their current level. We may also want to mark them as inactive in that level (the 'r' code used here corresponds to the default state code)::
 
   from schooltool.app.states import GRADUATE
   tom.levels.on(date(2015, 12, 31)).relate(
       first_grade,
       INACTIVE + GRADUATED,
-      ‘r’)
+      'r')
 
 Then we can enroll the student in second grade::
 
-  second_grade = levels[‘2’]
+  second_grade = levels['2']
   tom.levels.on(date(2016, 1, 1)).add(second_grade)
 
 Remote Tasks and Messages
@@ -439,7 +443,7 @@ Remote Tasks and Messages
 
 ``RemoteTask`` objects represent a background job performed by Celery. In fact they reference a custom Celery ``Task`` object.
 
-They’re stored in a ``TaskContainer`` container::
+They're stored in a ``TaskContainer`` container::
 
   from schooltool.task.interfaces import ITaskContainer
   tasks = ITaskContainer(app)
@@ -456,12 +460,12 @@ Some of the important methods of a ``RemoteTask`` object are:
 
  * schedule: this method is responsable for:
 
-Setting the creator for the task based on an HTTP request provided by a view.
-Creating a custom transaction manager and adding it to the current transaction machinery (see http://zodb.readthedocs.io/en/latest/transactions.html#transaction-managers).
-Adding the ``RemoteTask`` object to the task container.
-Notifying subscribers that the task has been scheduled.
+    * Setting the creator for the task based on an HTTP request provided by a view.
+    * Creating a custom transaction manager and adding it to the current transaction machinery (see http://zodb.readthedocs.io/en/latest/transactions.html#transaction-managers).
+    * Adding the ``RemoteTask`` object to the task container.
+    * Notifying subscribers that the task has been scheduled.
 
- * complete: notifies subscribers that the celery task has been successfully executed (the transaction was committed). These subscribers, for example, create success ``Message`` objects that are displayed in the user’s profile. The method finally deletes the ``RemoteTask`` object from the task container.
+ * complete: notifies subscribers that the celery task has been successfully executed (the transaction was committed). These subscribers, for example, create success ``Message`` objects that are displayed in the user's profile. The method finally deletes the ``RemoteTask`` object from the task container.
 
  * fail: notifies subscribers that the celery task has failed (the transaction was aborted).
 
@@ -490,9 +494,6 @@ You can get the container for ``Email`` objects like this::
 
 The logic for sending and queuing (in case of errors) ``Email`` objects is handled through the ``EmailUtility`` utility which acts as an SMTP client.
 
-Timetables and Schedules
-++++++++++++++++++++++++
 
-TODO
 
 
