@@ -9,7 +9,14 @@ Contents:
    :maxdepth: 1
 
    dev_tools
+   sandbox_structure
    dev_sandbox
-   dev_devmode
-   style-guide
-
+   instance
+   top_level
+   flourish
+   ui_guidelines
+   report_example
+   ark
+   testing
+   package_structure
+   packaging

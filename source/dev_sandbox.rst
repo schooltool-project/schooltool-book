@@ -1,5 +1,7 @@
-Developing SchoolTool
-=====================
+.. _dev_sandbox:
+
+Setting up a sandbox
+====================
 
 SchoolTool uses Bazaar_ VCS.  Be sure to install it first::
 
@@ -232,3 +234,5 @@ Development libraries::
 You also need virtualenv and both Ubuntu and Liberation fonts::
 
   $ apt-get install python-virtualenv ttf-ubuntu-font-family ttf-liberation
+
+See also :ref:`sandbox` if you want to manage several sandboxes using VirtualBox.
