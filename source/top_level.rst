@@ -395,6 +395,17 @@ You can get the group container for a school year::
 
 Groups can also have ``leaders`` who have elevated permissions to edit the group.  For example, the coach of the chess team can be given permission to add and remove people from the group.
 
+Streams
++++++++
+
+You can get the stream container for a school year::
+
+  from schooltool.stream.interfaces import IStreamContainer
+  schoolyear = schoolyears['2016']
+  groups = IStreamContainer(schoolyear)
+
+``Stream`` objects have a temporal relationships ``members``, with ``Person`` objects and a non-temporal relationship ``sections``, with ``Section`` objects.
+
 Levels
 ++++++
 
