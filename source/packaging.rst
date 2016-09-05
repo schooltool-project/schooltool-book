@@ -132,7 +132,7 @@ and branch schooltool.ark 2.10::
 
  $ bzr branch lp:schooltool.ark/2.10 schooltool.ark
 
-The process to merge changes and get the source distribution file is similar to the described above for the ``schooltool` package. 
+The process to merge changes and get the source distribution file is similar to the described above for the ``schooltool`` package.
 
 An additional step is to upload the distribution file somewhere we can reference in the ``debian/watch`` file of the packaging branch. The ``schooltool.ark`` package uses the http://ftp.schooltool.org/schooltool/ark/ directory for this.
 

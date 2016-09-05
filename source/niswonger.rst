@@ -73,7 +73,7 @@ Fill out the (lengthy) form and click **Submit** or **Submit and add** if you wa
    .. image:: images/niswonger-6.png
 
 Viewing and Editing a Student Record
-------------------------
+------------------------------------
 
 The default view for an advisor includes a search field and a list of their advisees:
 

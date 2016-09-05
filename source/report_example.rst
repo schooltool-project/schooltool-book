@@ -88,6 +88,7 @@ Then let’s register and implement the ``request_attendance_report.html`` view 
 Then we implement the request dialog view. In this case this is a simple class with just an attribute pointing to the name of the component that will render the XLS report. In more advanced cases this dialog can also become a form and react dynamically to user inputs:
 
 .. code-block:: python
+
  ...
  from schooltool.export.export import RequestXLSReportDialog
  ...
