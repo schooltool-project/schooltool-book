@@ -203,7 +203,7 @@ Set the development environment::
 
   make develop
 
-.. note::
+.. warning::
    Due to incomplete configuration this command could throw an error at first.
 
 Edit the ``buildout.cfg`` file and change the ``develop = .`` line to add the *base* branches::
