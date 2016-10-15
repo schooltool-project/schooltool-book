@@ -176,4 +176,53 @@ ISLI
 
 The ``schooltool.isli`` package has the ISLI specific functionality. The main development branch in Launchpad is `lp:schooltool.isli <https://code.launchpad.net/~sielibre/schooltool.isli/trunk>`_.
 
+How to set up a development sandbox
+-----------------------------------
 
+First branch the *base* branches::
+
+  mkdir mysandbox
+  cd mysandbox
+  bzr branch lp:~schooltool-owners/schooltool/ark schooltool
+  bzr branch lp:~schooltool-owners/schooltool.gradebook/ark schooltool.gradebook
+  bzr branch lp:~schooltool-owners/schooltool.lyceum.journal/ark schooltool.lyceum.journal
+  bzr branch lp:schooltool.ark
+  bzr branch lp:schooltool.fee
+
+Then branch the *project specific* branches::
+
+  bzr branch lp:schooltool.peas
+  bzr branch lp:schooltool.isli
+  bzr branch lp:schooltool.rising
+
+Now when you want to work on a project branch::
+
+  cd schooltool.isli
+
+Set the development environment::
+
+  make develop
+
+.. note::
+   Due to incomplete configuration this command could throw an error at first.
+
+Edit the ``buildout.cfg`` file and change the ``develop = .`` line to add the *base* branches::
+
+  develop = . ../schooltool ../schooltool.gradebook ../schooltool.lyceum.journal ../schooltool.ark ../schooltool.fee
+
+Then add the *base* branches to the ``[versions]`` section::
+
+  [versions]
+  # Unset versions of packages you want to develop
+  schooltool.isli =
+  schooltool =
+  schooltool.gradebook =
+  schooltool.lyceum.journal =
+  schooltool.ark =
+  schooltool.fee =
+
+After saving the changes to ``buildout.cfg``, run::
+
+  bin/buildout
+
+The project branch is finally set up.
